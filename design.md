@@ -28,4 +28,17 @@ First script that I want to create:
 
 - we enter a task/prompt with attached files of some sort
 - the first llm call implements the task/prompt AND also keeps track of the files that it updates and a description of what it updates, call this file "{task}_updated_files.txt
-- in the second llm call implement the task/prompt, updated files file, and 
+- in the second llm call implement the task/prompt, updated files file, and include a small snippet of context saying something like "here are the files that already have part of the implementation"
+
+
+3) "end to end" feature loop
+- will be in depth of like 10-12 llm calls, will implement this later
+
+4) "implement + audit" / "implement / critique"
+
+- basically want to have 3 llm calls
+- enter the task/prompt at hand, then run the implementation/output (wherever it lies), through a "critiquer" the input for this should be the original task/prompt, the output/files affected with description of changes, and then the "criiquers system prompt (to go at the beginning), then, with the critiquers generated .md file of the critique, we should run it through another llm call that implements the feedback of the critiquer
+
+- should output first llm call with all the context somewhere (either singular artifact generated or list of files edited with descriptions)
+- critiquer output should be outputted somwhere in reports (task_name/critique.md in the claude reports folder)
+- third llm should have full original task/prompt, first llm call output, critiquer feedback, and then using this should implement changes accordingly

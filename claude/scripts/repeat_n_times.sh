@@ -2,11 +2,15 @@
 set -euo pipefail
 
 ITERATIONS=5
+ITERATIONS_SET=false
 TASK=""
 TASK_FILE=""
 OUTPUT_ROOT="claude/reports/repeat_n_times"
+OUTPUT_ROOT_SET=false
+RESUME_DIR=""
 INCLUDE_CODEBASE=false
 MAX_TREE_FILES=250
+MAX_TREE_FILES_SET=false
 DRY_RUN=false
 SKILL_FILES=()
 CONTEXT_FILES=()
@@ -21,6 +25,7 @@ Options:
   --task, -t <text>           Task text to execute.
   --task-file <path>          Read task text from file.
   --iterations, -n <number>   Number of iterations (default: 5).
+  --resume <run-dir>          Resume an existing run directory.
   --skill-file <path>         Add skill file contents to report.txt (repeatable).
   --context-file <path>       Add extra context file contents to report.txt (repeatable).
   --output-root <path>        Run folder parent path (default: claude/reports/repeat_n_times).
@@ -29,6 +34,23 @@ Options:
   --dry-run                   Generate files/prompts but skip codex execution.
   --help, -h                  Show this help text.
 EOF
+}
+
+require_option_value() {
+  local option_name="$1"
+  local option_value="${2-}"
+
+  case "$option_value" in
+    ""|--task|-t|--task-file|--iterations|-n|--resume|--skill-file|--context-file|--output-root|--include-codebase|--max-tree-files|--dry-run|--help|-h|--)
+      echo "Missing value for $option_name." >&2
+      exit 2
+      ;;
+  esac
+
+  if [[ -z "$option_value" ]]; then
+    echo "Missing value for $option_name." >&2
+    exit 2
+  fi
 }
 
 slugify() {
@@ -58,30 +80,119 @@ file_mtime() {
   fi
 }
 
+file_fingerprint() {
+  local path="$1"
+  if command -v sha256sum >/dev/null 2>&1; then
+    sha256sum "$path" | awk '{print $1}'
+  elif command -v shasum >/dev/null 2>&1; then
+    shasum -a 256 "$path" | awk '{print $1}'
+  else
+    printf '%s:%s' "$(file_mtime "$path")" "$(wc -c < "$path" | tr -d '[:space:]')"
+  fi
+}
+
+extract_target_iterations() {
+  local path="$1"
+  awk '
+    $0 ~ /^- Target iterations:[[:space:]]*[0-9]+[[:space:]]*$/ {
+      line = $0
+      sub(/^- Target iterations:[[:space:]]*/, "", line)
+      sub(/[[:space:]]*$/, "", line)
+      target = line
+    }
+    END {
+      if (target != "") {
+        printf "%s", target
+      }
+    }
+  ' "$path"
+}
+
+sync_target_iterations() {
+  local path="$1"
+  local new_target="$2"
+  local temp_path="${path}.tmp.$$"
+
+  if grep -Eq '^- Target iterations:[[:space:]]*[0-9]+[[:space:]]*$' "$path"; then
+    awk -v new_target="$new_target" '
+      BEGIN { replaced = 0 }
+      {
+        if (replaced == 0 && $0 ~ /^- Target iterations:[[:space:]]*[0-9]+[[:space:]]*$/) {
+          print "- Target iterations: " new_target
+          replaced = 1
+          next
+        }
+        print
+      }
+    ' "$path" > "$temp_path"
+  else
+    awk -v new_target="$new_target" '
+      BEGIN { inserted = 0 }
+      {
+        print
+        if (inserted == 0 && $0 ~ /^- Session started:/) {
+          print "- Target iterations: " new_target
+          inserted = 1
+        }
+      }
+      END {
+        if (inserted == 0) {
+          print "- Target iterations: " new_target
+        }
+      }
+    ' "$path" > "$temp_path"
+  fi
+
+  mv "$temp_path" "$path"
+}
+
+last_logged_iteration() {
+  local path="$1"
+  local last
+  last="$(grep -Eo '^- \[[0-9]+\]' "$path" | grep -Eo '[0-9]+' | sort -n | tail -n 1 || true)"
+  if [[ -z "$last" ]]; then
+    last=0
+  fi
+  printf '%s' "$last"
+}
+
 while [[ $# -gt 0 ]]; do
   case "$1" in
     --task|-t)
+      require_option_value "$1" "${2-}"
       TASK="${2:-}"
       shift 2
       ;;
     --task-file)
+      require_option_value "$1" "${2-}"
       TASK_FILE="${2:-}"
       shift 2
       ;;
     --iterations|-n)
+      require_option_value "$1" "${2-}"
       ITERATIONS="${2:-}"
+      ITERATIONS_SET=true
+      shift 2
+      ;;
+    --resume)
+      require_option_value "$1" "${2-}"
+      RESUME_DIR="${2:-}"
       shift 2
       ;;
     --skill-file)
+      require_option_value "$1" "${2-}"
       SKILL_FILES+=("${2:-}")
       shift 2
       ;;
     --context-file)
+      require_option_value "$1" "${2-}"
       CONTEXT_FILES+=("${2:-}")
       shift 2
       ;;
     --output-root)
+      require_option_value "$1" "${2-}"
       OUTPUT_ROOT="${2:-}"
+      OUTPUT_ROOT_SET=true
       shift 2
       ;;
     --include-codebase)
@@ -89,7 +200,9 @@ while [[ $# -gt 0 ]]; do
       shift
       ;;
     --max-tree-files)
+      require_option_value "$1" "${2-}"
       MAX_TREE_FILES="${2:-}"
+      MAX_TREE_FILES_SET=true
       shift 2
       ;;
     --dry-run)
@@ -117,22 +230,39 @@ while [[ $# -gt 0 ]]; do
   esac
 done
 
-if [[ -n "$TASK_FILE" && -n "$TASK" ]]; then
-  echo "Provide either --task/positional task or --task-file, not both." >&2
-  exit 2
-fi
-
-if [[ -n "$TASK_FILE" ]]; then
-  if [[ ! -f "$TASK_FILE" ]]; then
-    echo "Task file not found: $TASK_FILE" >&2
+if [[ -n "$RESUME_DIR" ]]; then
+  if [[ -n "$TASK" || -n "$TASK_FILE" ]]; then
+    echo "When using --resume, do not pass --task, positional task, or --task-file." >&2
     exit 2
   fi
-  TASK="$(cat "$TASK_FILE")"
-fi
 
-if [[ -z "${TASK// }" ]]; then
-  echo "Task is required. Use --task, positional task, or --task-file." >&2
-  exit 2
+  if ((${#SKILL_FILES[@]} > 0)) || ((${#CONTEXT_FILES[@]} > 0)) || [[ "$INCLUDE_CODEBASE" == true ]]; then
+    echo "--skill-file, --context-file, and --include-codebase cannot be used with --resume." >&2
+    exit 2
+  fi
+
+  if [[ "$OUTPUT_ROOT_SET" == true || "$MAX_TREE_FILES_SET" == true ]]; then
+    echo "--output-root and --max-tree-files cannot be used with --resume." >&2
+    exit 2
+  fi
+else
+  if [[ -n "$TASK_FILE" && -n "$TASK" ]]; then
+    echo "Provide either --task/positional task or --task-file, not both." >&2
+    exit 2
+  fi
+
+  if [[ -n "$TASK_FILE" ]]; then
+    if [[ ! -f "$TASK_FILE" ]]; then
+      echo "Task file not found: $TASK_FILE" >&2
+      exit 2
+    fi
+    TASK="$(cat "$TASK_FILE")"
+  fi
+
+  if [[ -z "${TASK// }" ]]; then
+    echo "Task is required. Use --task, positional task, or --task-file." >&2
+    exit 2
+  fi
 fi
 
 if ! [[ "$ITERATIONS" =~ ^[0-9]+$ ]] || [[ "$ITERATIONS" -lt 1 ]]; then
@@ -159,20 +289,60 @@ for context_file in "${CONTEXT_FILES[@]}"; do
   fi
 done
 
+start_iteration=1
+
+if [[ -n "$RESUME_DIR" ]]; then
+  run_dir="$RESUME_DIR"
+  report_path="${run_dir}/report.txt"
+  progress_path="${run_dir}/progress.txt"
+  system_prompt_path="${run_dir}/system_prompt.txt"
+
+  if [[ ! -d "$run_dir" ]]; then
+    echo "Run directory not found: $run_dir" >&2
+    exit 2
+  fi
+
+  if [[ ! -f "$report_path" || ! -f "$progress_path" || ! -f "$system_prompt_path" ]]; then
+    echo "Resume directory must contain report.txt, progress.txt, and system_prompt.txt: $run_dir" >&2
+    exit 2
+  fi
+
+  extracted_iterations="$(extract_target_iterations "$progress_path")"
+
+  if [[ "$ITERATIONS_SET" != true ]]; then
+    if [[ -z "$extracted_iterations" ]]; then
+      echo "Could not determine target iterations from $progress_path. Pass --iterations explicitly." >&2
+      exit 2
+    fi
+    ITERATIONS="$extracted_iterations"
+  elif [[ -z "$extracted_iterations" || "$extracted_iterations" != "$ITERATIONS" ]]; then
+    sync_target_iterations "$progress_path" "$ITERATIONS"
+  fi
+
+  last_iteration="$(last_logged_iteration "$progress_path")"
+  if [[ "$last_iteration" =~ ^[0-9]+$ ]] && [[ "$ITERATIONS" =~ ^[0-9]+$ ]] && (( last_iteration > ITERATIONS )); then
+    echo "Last logged iteration ($last_iteration) exceeds requested --iterations ($ITERATIONS)." >&2
+    echo "Use --iterations >= $last_iteration or omit --iterations when resuming." >&2
+    exit 2
+  fi
+  start_iteration="$((last_iteration + 1))"
+else
+  timestamp="$(date +"%Y%m%d_%H%M%S")"
+  run_slug="$(slugify "$TASK")"
+  run_dir="${OUTPUT_ROOT}/${timestamp}_${run_slug}"
+  mkdir -p "$run_dir"
+
+  report_path="${run_dir}/report.txt"
+  progress_path="${run_dir}/progress.txt"
+  system_prompt_path="${run_dir}/system_prompt.txt"
+fi
+
 if [[ "$DRY_RUN" != true ]] && ! command -v codex >/dev/null 2>&1; then
   echo "codex CLI not found on PATH. Install it or run with --dry-run." >&2
   exit 2
 fi
 
-timestamp="$(date +"%Y%m%d_%H%M%S")"
-run_slug="$(slugify "$TASK")"
-run_dir="${OUTPUT_ROOT}/${timestamp}_${run_slug}"
-mkdir -p "$run_dir"
-
-report_path="${run_dir}/report.txt"
-progress_path="${run_dir}/progress.txt"
-system_prompt_path="${run_dir}/system_prompt.txt"
-
+if [[ -z "$RESUME_DIR" ]]; then
 cat > "$system_prompt_path" <<'EOF'
 <Identity>
 You are a senior implementation agent specialized in executing real code and workflow tasks over multiple iterative turns while preserving continuity from persistent files rather than chat memory. You treat report.txt as source-of-truth requirements and use progress.txt as the live state handoff between iterations. You prioritize concrete implementation progress in every run, and when required work is complete you shift to quality improvements without losing traceability. You are explicit, disciplined, and outcome-focused.
@@ -244,22 +414,31 @@ cat > "$progress_path" <<EOF
 ## Iteration Log
 - [0] Session initialized.
 EOF
+fi
 
 echo "Run folder: $run_dir"
 echo "Iterations: $ITERATIONS"
 echo "System prompt: $system_prompt_path"
 echo "Report: $report_path"
 echo "Progress: $progress_path"
+if [[ -n "$RESUME_DIR" ]]; then
+  echo "Resuming from iteration: $start_iteration"
+fi
 if [[ "$DRY_RUN" == true ]]; then
   echo "Dry run enabled: codex calls will be skipped."
 fi
 
-for ((i=1; i<=ITERATIONS; i++)); do
+if ((start_iteration > ITERATIONS)); then
+  echo "No remaining iterations to run."
+  exit 0
+fi
+
+for ((i=start_iteration; i<=ITERATIONS; i++)); do
   iteration_id="$(printf "%02d" "$i")"
   iteration_prompt_path="${run_dir}/iteration_${iteration_id}_prompt.txt"
   iteration_output_path="${run_dir}/iteration_${iteration_id}_output.log"
 
-  before_mtime="$(file_mtime "$progress_path")"
+  before_fingerprint="$(file_fingerprint "$progress_path")"
 
   cat > "$iteration_prompt_path" <<EOF
 $(cat "$system_prompt_path")
@@ -293,12 +472,13 @@ EOF
   fi
 
   if ! codex exec --full-auto "$(cat "$iteration_prompt_path")" > "$iteration_output_path" 2>&1; then
+    echo "- [$i] System note: runner failed at $(iso_now). See $iteration_output_path for details." >> "$progress_path"
     echo "Iteration $i failed. See $iteration_output_path for details." >&2
     exit 1
   fi
 
-  after_mtime="$(file_mtime "$progress_path")"
-  if [[ "$before_mtime" == "$after_mtime" ]]; then
+  after_fingerprint="$(file_fingerprint "$progress_path")"
+  if [[ "$before_fingerprint" == "$after_fingerprint" ]]; then
     echo "- [$i] System note: runner finished but no progress update was detected at $(iso_now)." >> "$progress_path"
   fi
 done

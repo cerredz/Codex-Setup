@@ -1,0 +1,5 @@
+Create a comprehensive research report on all functionalities and capabilities of OpenClaw. Cover what it can do, how to set it up, how to use it in practice, key workflows, architecture/components if available, limitations, and what makes it unique versus alternatives. Write everything in very easy-to-understand, natural dialogue-style prose with complete sentences. Avoid vague, clipped, or overly short sentences. Be thorough and research-oriented, aiming to capture everything OpenClaw has to offer.
+
+Use this file for optional attached context: claude/reports/run_twice/20260220_182437_create-a-comprehensive-research-report-on-all-functionalitie/report.txt.
+Use this file as continuation context: claude/reports/run_twice/20260220_182437_create-a-comprehensive-research-report-on-all-functionalitie/create-a-comprehensive-research-report-on-all-functionalitie_updated_files.txt, which lists files already updated and what was implemented in those files.
+Continue from that state instead of starting over, then overwrite the updated files file so it reflects the final combined state after call 2.

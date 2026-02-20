@@ -1,0 +1,6 @@
+# Report
+
+## Primary Task
+
+Develop a comprehensive research report in natural language and full sentences on the most up-to-date breakthroughs, algorithms, and techniques in artificial intelligence as of February 20, 2026. Prioritize primary sources and include concrete publication dates, specific model and system names, and source links. Organize by major areas: foundation models, multimodal systems, agentic AI, reasoning and planning methods, efficiency and training and inference optimization, evaluation, safety and alignment, and robotics. Distinguish established results from emerging claims, and include a concise section on open problems and practical implications for builders.
+

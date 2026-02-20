@@ -1,0 +1,279 @@
+# OpenClaw Research Report (Comprehensive, Easy-to-Understand)
+
+## Scope and method
+
+This report reflects OpenClaw documentation and repository materials available on February 20, 2026. I treated this as a verification-first research task, so I checked official docs sections and the upstream README before writing this second-pass version.
+
+## 1) What OpenClaw is, in plain language
+
+If you explain OpenClaw to a friend in one sentence, you can say this: OpenClaw is a self-hosted AI assistant system that lives on your own machine or server and lets you chat with your assistant from everyday messaging apps like WhatsApp, Telegram, Discord, Slack, Signal, and more.
+
+The key idea is that OpenClaw is not just a chat window. It is a long-running "Gateway" that routes messages, manages sessions, applies security rules, and lets the assistant use tools to do real work.
+
+## 2) Core capabilities: what OpenClaw can do
+
+### 2.1 Multi-channel assistant in one place
+
+OpenClaw can connect one assistant runtime to many channels at once. Official docs list core and plugin channels, including WhatsApp, Telegram, Discord, IRC, Slack, Feishu, Google Chat, Mattermost (plugin), Signal, BlueBubbles for iMessage (recommended), legacy iMessage, Microsoft Teams (plugin), LINE (plugin), Matrix (plugin), Nextcloud Talk (plugin), Nostr (plugin), Twitch (plugin), Zalo (plugin), Zalo Personal (plugin), and WebChat.
+
+In practice, this means you do not need one bot per platform. You can keep one control plane and route messages by channel, account, group, or specific sender.
+
+### 2.2 Tooling that executes actions, not only text
+
+OpenClaw exposes typed tools to the model. The built-in inventory includes:
+
+- `exec`: run shell commands with host/sandbox/node targeting, timeout controls, and optional background execution.
+- `process`: inspect and control background command sessions (`list`, `poll`, `log`, `write`, `kill`, etc.).
+- `apply_patch`: structured multi-hunk patching (experimental and policy-gated).
+- `web_search` and `web_fetch`: web search and readable-content extraction.
+- `browser`: managed browser automation (status/start/stop, snapshots, actions, screenshots, uploads, profile management).
+- `canvas`: present/evaluate/snapshot UI and A2UI operations on nodes.
+- `nodes`: discover paired nodes and run device actions (notify, run command on macOS node, camera/screen/location actions).
+- `image`: image understanding via image-capable model routing.
+- `message`: send/edit/delete/react/poll/thread/moderation and other channel actions.
+- `cron`: manage scheduled jobs and wakeups.
+- `gateway`: restart/apply config patch/apply updates to the running gateway.
+- session tools: `sessions_list`, `sessions_history`, `sessions_send`, `sessions_spawn`, `session_status`.
+- `agents_list`: discover allowed agent targets for spawned runs.
+
+OpenClaw also supports tool governance patterns that are unusually detailed for a personal assistant stack: allow/deny lists, profile presets (`minimal`, `coding`, `messaging`, `full`), provider-specific restrictions, grouped tool policies (`group:runtime`, `group:fs`, etc.), and loop-detection guardrails.
+
+### 2.3 Automation and always-on behavior
+
+OpenClaw supports several automation layers:
+
+- Heartbeat runs on a schedule (default style is periodic check-ins).
+- Cron jobs for scheduled actions and wake events.
+- Hooks/webhook ingress with token auth, mapping rules, template transforms, and agent routing.
+- Gmail Pub/Sub integration with auto-watch serving and hook mapping.
+
+The practical implication is that OpenClaw can behave like an operations assistant that reacts to events and runs recurring workflows, not only as a passive chatbot.
+
+### 2.4 Multi-agent routing and isolation
+
+OpenClaw can host multiple isolated agents in one running gateway. Each agent can have:
+
+- its own workspace files,
+- its own auth profile store,
+- its own session store,
+- its own tool policy and sandbox policy.
+
+Routing is explicit through bindings. Matching precedence is deterministic (for example peer-specific rules outrank broad channel rules). This lets you split personal/work/family/public personas safely instead of running one overpowered global agent.
+
+### 2.5 Memory and session model
+
+OpenClaw uses an explicit on-disk model for state. Sessions are gateway-owned, with JSONL transcripts and session metadata on the gateway host. Memory is markdown-first in the workspace (`memory/YYYY-MM-DD.md` daily logs plus optional `MEMORY.md` for curated long-term memory).
+
+A key operational detail is DM session scope. Default mode (`main`) gives continuity, but secure multi-user mode (`per-channel-peer` or `per-account-channel-peer`) prevents cross-user context bleed.
+
+### 2.6 Device and media capabilities
+
+OpenClaw supports media and paired nodes. Capabilities include image/audio/document handling, Canvas rendering, camera snapshots/clips, screen recording, location retrieval, node notifications, and node command execution for approved hosts. The docs and README also describe voice-oriented features (for supported platforms), including Talk Mode and Voice Wake flows.
+
+### 2.7 Web interfaces and API surfaces
+
+OpenClaw provides:
+
+- Dashboard / Control UI,
+- WebChat,
+- gateway-backed HTTP surfaces,
+- optional OpenAI-compatible API endpoints (Chat Completions and Responses API toggles, with URL-input hardening controls).
+
+This means OpenClaw can be used both as a chat-native assistant and as a programmable gateway service.
+
+### 2.8 Model and provider flexibility
+
+OpenClaw supports provider/model references as `provider/model`, provider auth profiles, profile rotation, cooldowns, billing-failure disable windows, and model fallback chains.
+
+Docs list built-in and configurable provider paths such as OpenAI, Anthropic, OpenRouter, LiteLLM, Amazon Bedrock, Vercel AI Gateway, Moonshot/Kimi, MiniMax, GLM/Z.AI, Qianfan, local Ollama/vLLM-style paths, and others.
+
+## 3) Setup: the practical way to get running
+
+The easiest reliable setup path is the onboarding wizard.
+
+### Step-by-step baseline setup
+
+1. Install prerequisites and OpenClaw (Node 22+).
+2. Run onboarding and install gateway service:
+   - `openclaw onboard --install-daemon`
+3. Confirm status:
+   - `openclaw gateway status`
+   - `openclaw doctor`
+4. Open dashboard:
+   - `openclaw dashboard`
+5. Pair your first channel (for example WhatsApp or Telegram).
+
+### Recommended platform notes
+
+- macOS and Linux are first-class runtime targets.
+- Windows is supported, but docs strongly recommend running inside WSL2.
+- Node is the recommended runtime. Bun is documented as not recommended for gateway stability (especially channel-heavy flows).
+
+### First security posture you should adopt
+
+Start with conservative defaults:
+
+- loopback bind,
+- gateway auth token/password enabled,
+- DM policy `pairing`,
+- mention requirement for groups,
+- limited tool profile,
+- sandbox for untrusted or shared agents.
+
+Then expand permissions intentionally.
+
+## 4) How to use OpenClaw in real workflows
+
+### Workflow A: Local-first personal assistant
+
+You run gateway locally, use dashboard/WebChat first, and keep DM policy strict while learning. This is the safest on-ramp and gives fast feedback without exposing broad tool access.
+
+### Workflow B: Mobile-first messaging assistant
+
+You pair WhatsApp or Telegram, keep mention gating in groups, and message your assistant from your phone. This makes OpenClaw feel like a personal operator instead of a separate AI website.
+
+### Workflow C: Research + action pipeline
+
+You let the assistant start with `web_search`/`web_fetch`, then move to `browser` only for JS-heavy pages or authenticated steps. This keeps lightweight tasks fast while preserving full browser automation when needed.
+
+### Workflow D: Multi-agent split by trust boundary
+
+You route personal DMs to a trusted agent with broader tools, and route family/shared/public channels to sandboxed read-only or messaging-only agents. This is one of the highest-value production patterns in OpenClaw.
+
+### Workflow E: Scheduled automations
+
+You add cron jobs for periodic tasks, and use hooks/webhooks for event-driven triggers (for example email, notifications, internal events). OpenClaw can then execute recurring routines without manual prompting.
+
+### Workflow F: Device-assisted operations
+
+You pair a node device and use canvas, camera/screen, notifications, or location commands where appropriate. This extends the assistant into real device context while keeping approvals and visibility controls.
+
+## 5) Architecture and components
+
+OpenClaw is gateway-centric.
+
+### Main architecture pieces
+
+- Gateway daemon: always-on control plane and source of truth.
+- Agent runtime: model calls, tool orchestration, prompt/context injection, and streaming.
+- Channel adapters: transport connectors per platform.
+- Nodes: device clients with declared capabilities and pairing.
+- UI/clients: CLI, dashboard, web surfaces, app clients.
+
+### Message flow (simplified)
+
+Inbound channel message -> gateway routing/session logic -> selected agent + tools -> outbound response through the same channel (or directed target).
+
+### Protocol behavior
+
+Docs describe a typed WebSocket protocol with:
+
+- mandatory `connect` handshake,
+- request/response frames,
+- server-pushed events,
+- schema validation,
+- auth checks,
+- idempotency keys for side-effecting methods.
+
+### State and persistence
+
+OpenClaw stores operational state under `~/.openclaw` (or configured state dir), with per-agent subtrees for auth and sessions. This is powerful for ownership and auditability, but it means your host filesystem security matters a lot.
+
+## 6) Security model and safeguards
+
+OpenClaw documentation is unusually explicit that "perfect security" is not realistic in an agentic, tool-enabled system. The design focus is reducing blast radius.
+
+Major controls include:
+
+- DM policies: `pairing`, `allowlist`, `open`, `disabled`.
+- Group allowlists and mention gating.
+- DM session isolation (`session.dmScope`) for shared inbox safety.
+- Gateway auth modes (`token`, `password`, `trusted-proxy`) with fail-closed behavior.
+- Tool policy controls (`allow`, `deny`, profiles, provider-specific limits).
+- Sandbox controls and workspace access modes (`none`, `ro`, `rw`).
+- Per-agent security posture in multi-agent deployments.
+- Security audit tooling (`openclaw security audit`, `--deep`, `--fix`).
+- Incident response guidance (contain, rotate, audit, collect evidence).
+
+A practical insight from the docs is that prompt injection is treated as expected, not hypothetical. The recommended mitigation stack is identity controls + tool boundaries + sandboxing + careful model choice.
+
+## 7) Limitations and constraints you should expect
+
+OpenClaw is capable, but it is not "zero-ops."
+
+1. Security configuration is your responsibility.
+   If you expose channels and tools too widely, risk rises quickly.
+
+2. Prompt injection remains a live risk.
+   Even private DMs are not a full defense if the assistant reads untrusted web/docs content.
+
+3. Operational overhead is real.
+   You manage credentials, pairing stores, provider auth profiles, logs, retention, and updates.
+
+4. Platform/runtime caveats exist.
+   Windows is best via WSL2. Bun is not recommended for stable gateway operation.
+
+5. Data sensitivity is local but persistent.
+   Sessions, logs, and auth files live on disk, so host permissions and encryption matter.
+
+6. Some functionality depends on plugins or platform specifics.
+   Channel and device features can vary by maturity and environment.
+
+## 8) What makes OpenClaw unique versus alternatives
+
+The strongest differentiators are architectural, not cosmetic.
+
+1. One long-lived gateway for many channels.
+   Many tools can run agents, but fewer provide a unified messaging control plane across so many chat surfaces.
+
+2. Serious multi-agent isolation with routing.
+   Workspaces, auth stores, sessions, and bindings are built into the design, not bolted on.
+
+3. Rich operational security controls for chat-native assistants.
+   Pairing defaults, DM/group policy layers, tool governance, sandbox guidance, and security audit tooling are all first-class.
+
+4. Device-node model with real capabilities.
+   Canvas, media capture, and node command pathways let the assistant operate across host and paired devices.
+
+5. Local-first ownership.
+   You can inspect and control state/config/runtime directly.
+
+Inference note: compared with common alternatives (hosted assistant apps, lightweight bot wrappers, or generic agent orchestration libraries), OpenClaw appears most differentiated in its combination of multi-channel routing + long-lived gateway ops + integrated security posture for real-world messaging deployment.
+
+## 9) Adoption advice
+
+If you adopt OpenClaw, do it in phases.
+
+Start local and private. Keep DM pairing on. Isolate DM sessions if more than one person can message the bot. Keep powerful tools off initially. Then add channels, automations, and higher-risk tools one layer at a time.
+
+That path matches the docs and materially lowers early mistakes.
+
+## 10) Source links used
+
+Primary project and docs:
+- https://github.com/openclaw/openclaw
+- https://raw.githubusercontent.com/openclaw/openclaw/main/README.md
+- https://docs.openclaw.ai/
+
+Core capability and architecture pages:
+- https://docs.openclaw.ai/concepts/features
+- https://docs.openclaw.ai/concepts/architecture
+- https://docs.openclaw.ai/concepts/agent
+- https://docs.openclaw.ai/concepts/session
+- https://docs.openclaw.ai/concepts/multi-agent
+- https://docs.openclaw.ai/concepts/memory
+- https://docs.openclaw.ai/concepts/model-providers
+- https://docs.openclaw.ai/concepts/model-failover
+
+Operational and configuration pages:
+- https://docs.openclaw.ai/install
+- https://docs.openclaw.ai/platforms
+- https://docs.openclaw.ai/windows
+- https://docs.openclaw.ai/gateway/configuration
+- https://docs.openclaw.ai/gateway/configuration-reference
+- https://docs.openclaw.ai/gateway/security
+
+Channels and tools:
+- https://docs.openclaw.ai/channels/index
+- https://docs.openclaw.ai/tools
+- https://docs.openclaw.ai/cli/message

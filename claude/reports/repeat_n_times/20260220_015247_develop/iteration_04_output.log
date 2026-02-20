@@ -1,0 +1,2878 @@
+OpenAI Codex v0.104.0 (research preview)
+--------
+workdir: C:\Users\422mi\skills
+model: gpt-5.3-codex
+provider: openai
+approval: never
+sandbox: workspace-write [workdir, /tmp, $TMPDIR]
+reasoning effort: high
+reasoning summaries: auto
+session id: 019c79d9-e4ee-7f03-998b-c64f2e265841
+--------
+user
+<Identity>
+You are a senior implementation agent specialized in executing real code and workflow tasks over multiple iterative turns while preserving continuity from persistent files rather than chat memory. You treat report.txt as source-of-truth requirements and use progress.txt as the live state handoff between iterations. You prioritize concrete implementation progress in every run, and when required work is complete you shift to quality improvements without losing traceability. You are explicit, disciplined, and outcome-focused.
+</Identity>
+
+<Goal>
+Your goal is to complete the task described in report.txt by taking concrete action in the repository and recording precise iteration updates in progress.txt so each new call can continue seamlessly from the latest state. You must update progress.txt every iteration with what changed, which files were touched, remaining work, and immediate next steps.
+
+If the core task is complete, improve the implementation for robustness and quality, and still record those improvements in progress.txt before ending the turn.
+</Goal>
+
+<Input>
+You will receive iteration metadata plus paths to report.txt and progress.txt. Read those files directly, execute the work, and then append an iteration entry to progress.txt.
+</Input>
+
+<RunMetadata>
+Iteration: 4/5
+ReportPath: claude/reports/repeat_n_times/20260220_015247_develop/report.txt
+ProgressPath: claude/reports/repeat_n_times/20260220_015247_develop/progress.txt
+</RunMetadata>
+
+<MandatoryRules>
+1. Read report.txt and progress.txt from disk first.
+2. Treat report.txt as static requirements and progress.txt as live handoff state.
+3. Implement real progress in this repository now.
+4. Append an iteration log entry to progress.txt before finishing.
+5. If core work is done, improve quality and still update progress.txt.
+6. Include files changed and specific actions in your progress update.
+</MandatoryRules>
+
+<ExecutionInstruction>
+Start now. Execute the work, then update progress.txt for iteration 4.
+</ExecutionInstruction>
+mcp startup: no servers
+
+thinking
+**Activating taskmaster skill**
+codex
+I’m going to load `report.txt` and `progress.txt` first, then inspect the current implementation state and apply the next concrete changes for iteration 4. I’ll also use the `taskmaster` skill workflow because this task requires strict continuation discipline across iterations.
+
+thinking
+**Planning parallel file reads**
+exec
+"C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -Command 'Get-Content -Raw C:/Users/422mi/.codex/skills/taskmaster/SKILL.md' in C:\Users\422mi\skillsexec
+"C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -Command 'Get-Content -Raw claude/reports/repeat_n_times/20260220_015247_develop/progress.txt' in C:\Users\422mi\skillsexec
+"C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -Command 'Get-Content -Raw claude/reports/repeat_n_times/20260220_015247_develop/report.txt' in C:\Users\422mi\skills succeeded in 287ms:
+---
+name: taskmaster
+description: |
+  Continuation-discipline skill for Codex sessions. Use this when you want a
+  strict completion review before stopping so unfinished work is continued.
+author: blader
+version: 1.0.2-codex
+---
+
+<!--
+Context Header
+Purpose: Defines the global Taskmaster skill for Codex sessions so users can explicitly invoke a strict completion workflow before the agent stops.
+Responsibilities:
+- Describe the Taskmaster completion-review process in a Codex-friendly format.
+- Define the continuation-cap behavior and the default limit used by this installation.
+- Point to the optional hook implementation for environments that support stop hooks.
+Boundaries:
+- Does not auto-register stop hooks in Codex.
+- Does not execute shell hooks by itself; this file only defines reusable skill guidance.
+Key Sections:
+ succeeded in 300ms:
+# Report
+
+## Primary Task
+
+Develop
+
+
+ succeeded in 311ms:
+# Progress
+
+- Session started: 2026-02-20T01:52:47-05:00
+- Target iterations: 5
+- Report file: claude/reports/repeat_n_times/20260220_015247_develop/report.txt
+- Task summary: Develop
+
+## Iteration Log
+- [0] Session initialized.
+- [1] 2026-02-20T01:55:17.2880238-05:00
+  Summary: Developed repeat_n_times runner robustness and continuation behavior.
+  Files changed:
+  - claude/scripts/repeat_n_times.sh
+  - claude/reports/repeat_n_times/20260220_015247_develop/progress.txt
+  Actions completed:
+  - Added --resume <run-dir> support to continue existing runs without recreating report.txt, progress.txt, or system_prompt.txt.
+  - Added strict resume argument validation (disallow task/context inputs when resuming).
+  - Added progress target extraction from existing progress.txt and auto-start from next unlogged iteration.
+  - Switched progress-update detection from mtime to content fingerprint (sha256/shasum fallback) to avoid false negatives.
+  - Added explicit failure note append to progress.txt when a codex iteration fails.
+
+thinking
+**Inspecting repeat script for improvements**
+codex
+I loaded the handoff files: `report.txt` is minimal (“Develop”), and `progress.txt` shows the active target is the `repeat_n_times` runner with iteration 4 focused on validation and hardening. Next I’ll inspect the current script and test harness for gaps I can close in this environment, then implement a concrete robustness improvement and record it in `progress.txt`.
+
+thinking
+**Planning parallel file inspection**
+exec
+"C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -Command 'Get-Content -Raw claude/scripts/repeat_n_times.sh' in C:\Users\422mi\skillsexec
+"C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -Command 'Get-Content -Raw claude/scripts/repeat_n_times_smoke_test.sh' in C:\Users\422mi\skillsexec
+"C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -Command 'Get-Content -Raw claude/scripts/repeat_n_times_validation.md' in C:\Users\422mi\skills succeeded in 284ms:
+#!/usr/bin/env bash
+set -euo pipefail
+
+ITERATIONS=5
+ITERATIONS_SET=false
+TASK=""
+TASK_FILE=""
+OUTPUT_ROOT="claude/reports/repeat_n_times"
+RESUME_DIR=""
+INCLUDE_CODEBASE=false
+MAX_TREE_FILES=250
+DRY_RUN=false
+SKILL_FILES=()
+CONTEXT_FILES=()
+
+usage() {
+  cat <<'EOF'
+Usage:
+  ./claude/scripts/repeat_n_times.sh --task "your task" [options]
+  ./claude/scripts/repeat_n_times.sh "your task" [options]
+ succeeded in 276ms:
+#!/usr/bin/env bash
+set -euo pipefail
+
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+TARGET_SCRIPT="${SCRIPT_DIR}/repeat_n_times.sh"
+
+if [[ ! -f "$TARGET_SCRIPT" ]]; then
+  echo "Target script not found: $TARGET_SCRIPT" >&2
+  exit 1
+fi
+
+TMP_ROOT="${TMPDIR:-/tmp}/repeat_n_times_smoke_${RANDOM}_$$"
+trap 'rm -rf "$TMP_ROOT"' EXIT
+mkdir -p "$TMP_ROOT"
+
+pass_count=0
+fail_count=0
+
+pass() {
+  pass_count=$((pass_count + 1))
+ succeeded in 270ms:
+# repeat_n_times.sh Validation
+
+This document defines a minimal, repeatable validation flow for `claude/scripts/repeat_n_times.sh`.
+
+## Prerequisites
+
+- Bash shell available (`bash --version`)
+- `codex` CLI is optional when running dry-run checks
+
+## Fast Smoke Test
+
+Run the bundled smoke test harness:
+
+```bash
+bash claude/scripts/repeat_n_times_smoke_test.sh
+```
+
+What it checks:
+
+- New dry-run execution creates run files and logs all iterations.
+
+thinking
+**Testing bash availability**
+codex
+I’ve reviewed the runner and harness; the remaining gap is execution-time validation in this environment. I’m now going to probe Bash availability and run the smoke harness to either capture real results or identify an environment-safe fallback, then I’ll harden the script based on what I find.
+
+thinking
+**Sequencing commands for capture**
+exec
+"C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -Command 'bash --version' in C:\Users\422mi\skills exited 1 in 253ms:
+      0 [main] bash (35536) C:\Program Files\Git\usr\bin\bash.exe: *** fatal error - couldn't create signal pipe, Win32 error 5
+
+thinking
+**Identifying resume iteration metadata bug**
+codex
+I found a concrete bug to fix: resuming with an explicit higher `--iterations` can leave `progress.txt` metadata stale, which breaks future resumes without `--iterations`.  
+Plan:
+1. Patch `repeat_n_times.sh` to synchronize `- Target iterations:` in `progress.txt` when resuming with explicit `--iterations`.
+2. Extend `repeat_n_times_smoke_test.sh` with a regression case for this resume-flow metadata drift.
+3. Update `repeat_n_times_validation.md` to include this scenario.
+4. Append iteration 4 details to `progress.txt`.
+
+thinking
+**Initiating plan update**
+Plan update
+  → Patch repeat_n_times.sh to keep progress target-iteration metadata in sync during resume
+  • Add smoke-test regression case for explicit resume iteration override
+  • Update validation doc for new resume override behavior
+  • Append iteration 4 log entry in progress.txt
+
+thinking
+**Crafting iteration sync function**
+codex
+I’m now patching `repeat_n_times.sh` to keep `progress.txt` target metadata synchronized when `--resume` is used with an explicit `--iterations` value, preventing future resume inconsistencies.
+file update
+M C:\Users\422mi\skills\claude/scripts/repeat_n_times.sh
+@@ -108,2 +108,40 @@
+ 
++sync_target_iterations() {
++  local path="$1"
++  local new_target="$2"
++  local temp_path="${path}.tmp.$$"
++
++  if grep -Eq '^- Target iterations:[[:space:]]*[0-9]+[[:space:]]*$' "$path"; then
++    awk -v new_target="$new_target" '
++      BEGIN { replaced = 0 }
++      {
++        if (replaced == 0 && $0 ~ /^- Target iterations:[[:space:]]*[0-9]+[[:space:]]*$/) {
++          print "- Target iterations: " new_target
++          replaced = 1
++          next
++        }
++        print
++      }
++    ' "$path" > "$temp_path"
++  else
++    awk -v new_target="$new_target" '
++      BEGIN { inserted = 0 }
++      {
++        print
++        if (inserted == 0 && $0 ~ /^- Session started:/) {
++          print "- Target iterations: " new_target
++          inserted = 1
++        }
++      }
++      END {
++        if (inserted == 0) {
++          print "- Target iterations: " new_target
++        }
++      }
++    ' "$path" > "$temp_path"
++  fi
++
++  mv "$temp_path" "$path"
++}
++
+ last_logged_iteration() {
+@@ -262,4 +300,5 @@
+ 
++  extracted_iterations="$(extract_target_iterations "$progress_path")"
++
+   if [[ "$ITERATIONS_SET" != true ]]; then
+-    extracted_iterations="$(extract_target_iterations "$progress_path")"
+     if [[ -z "$extracted_iterations" ]]; then
+@@ -269,2 +308,4 @@
+     ITERATIONS="$extracted_iterations"
++  elif [[ -z "$extracted_iterations" || "$extracted_iterations" != "$ITERATIONS" ]]; then
++    sync_target_iterations "$progress_path" "$ITERATIONS"
+   fi
+apply_patch(auto_approved=true) exited 0 in 112ms:
+Success. Updated the following files:
+M claude/scripts/repeat_n_times.sh
+file update:
+diff --git a/claude/scripts/repeat_n_times.sh b/claude/scripts/repeat_n_times.sh
+index b46904cd2ee0a42d9022cf56ad1249e0ad2a1f99..40fd71c34234e6229c757dd4142d7be9a17bb475
+--- a/claude/scripts/repeat_n_times.sh
++++ b/claude/scripts/repeat_n_times.sh
+@@ -106,6 +106,44 @@
+   ' "$path"
+ }
+ 
++sync_target_iterations() {
++  local path="$1"
++  local new_target="$2"
++  local temp_path="${path}.tmp.$$"
++
++  if grep -Eq '^- Target iterations:[[:space:]]*[0-9]+[[:space:]]*$' "$path"; then
++    awk -v new_target="$new_target" '
++      BEGIN { replaced = 0 }
++      {
++        if (replaced == 0 && $0 ~ /^- Target iterations:[[:space:]]*[0-9]+[[:space:]]*$/) {
++          print "- Target iterations: " new_target
++          replaced = 1
++          next
++        }
++        print
++      }
++    ' "$path" > "$temp_path"
++  else
++    awk -v new_target="$new_target" '
++      BEGIN { inserted = 0 }
++      {
++        print
++        if (inserted == 0 && $0 ~ /^- Session started:/) {
++          print "- Target iterations: " new_target
++          inserted = 1
++        }
++      }
++      END {
++        if (inserted == 0) {
++          print "- Target iterations: " new_target
++        }
++      }
++    ' "$path" > "$temp_path"
++  fi
++
++  mv "$temp_path" "$path"
++}
++
+ last_logged_iteration() {
+   local path="$1"
+   local last
+@@ -260,13 +298,16 @@
+     exit 2
+   fi
+ 
++  extracted_iterations="$(extract_target_iterations "$progress_path")"
++
+   if [[ "$ITERATIONS_SET" != true ]]; then
+-    extracted_iterations="$(extract_target_iterations "$progress_path")"
+     if [[ -z "$extracted_iterations" ]]; then
+       echo "Could not determine target iterations from $progress_path. Pass --iterations explicitly." >&2
+       exit 2
+     fi
+     ITERATIONS="$extracted_iterations"
++  elif [[ -z "$extracted_iterations" || "$extracted_iterations" != "$ITERATIONS" ]]; then
++    sync_target_iterations "$progress_path" "$ITERATIONS"
+   fi
+ 
+   last_iteration="$(last_logged_iteration "$progress_path")"
+
+file update:
+diff --git a/claude/scripts/repeat_n_times.sh b/claude/scripts/repeat_n_times.sh
+index b46904cd2ee0a42d9022cf56ad1249e0ad2a1f99..40fd71c34234e6229c757dd4142d7be9a17bb475
+--- a/claude/scripts/repeat_n_times.sh
++++ b/claude/scripts/repeat_n_times.sh
+@@ -106,6 +106,44 @@
+   ' "$path"
+ }
+ 
++sync_target_iterations() {
++  local path="$1"
++  local new_target="$2"
++  local temp_path="${path}.tmp.$$"
++
++  if grep -Eq '^- Target iterations:[[:space:]]*[0-9]+[[:space:]]*$' "$path"; then
++    awk -v new_target="$new_target" '
++      BEGIN { replaced = 0 }
++      {
++        if (replaced == 0 && $0 ~ /^- Target iterations:[[:space:]]*[0-9]+[[:space:]]*$/) {
++          print "- Target iterations: " new_target
++          replaced = 1
++          next
++        }
++        print
++      }
++    ' "$path" > "$temp_path"
++  else
++    awk -v new_target="$new_target" '
++      BEGIN { inserted = 0 }
++      {
++        print
++        if (inserted == 0 && $0 ~ /^- Session started:/) {
++          print "- Target iterations: " new_target
++          inserted = 1
++        }
++      }
++      END {
++        if (inserted == 0) {
++          print "- Target iterations: " new_target
++        }
++      }
++    ' "$path" > "$temp_path"
++  fi
++
++  mv "$temp_path" "$path"
++}
++
+ last_logged_iteration() {
+   local path="$1"
+   local last
+@@ -260,13 +298,16 @@
+     exit 2
+   fi
+ 
++  extracted_iterations="$(extract_target_iterations "$progress_path")"
++
+   if [[ "$ITERATIONS_SET" != true ]]; then
+-    extracted_iterations="$(extract_target_iterations "$progress_path")"
+     if [[ -z "$extracted_iterations" ]]; then
+       echo "Could not determine target iterations from $progress_path. Pass --iterations explicitly." >&2
+       exit 2
+     fi
+     ITERATIONS="$extracted_iterations"
++  elif [[ -z "$extracted_iterations" || "$extracted_iterations" != "$ITERATIONS" ]]; then
++    sync_target_iterations "$progress_path" "$ITERATIONS"
+   fi
+ 
+   last_iteration="$(last_logged_iteration "$progress_path")"
+
+
+thinking
+**Adding explicit resume override test**
+codex
+Next I’m extending the smoke test with a regression case that reproduces and verifies this metadata-sync issue: resume with `--iterations` override, then resume again without it.
+file update
+M C:\Users\422mi\skills\claude/scripts/repeat_n_times_smoke_test.sh
+@@ -225,2 +225,52 @@
+ 
++# Case 7: Resume with explicit --iterations updates target metadata for future resumes.
++OVERRIDE_RUN_DIR="${TMP_ROOT}/manual_override_resume"
++mkdir -p "$OVERRIDE_RUN_DIR"
++cat > "${OVERRIDE_RUN_DIR}/report.txt" <<'EOF'
++# Report
++
++## Primary Task
++
++manual override resume
++EOF
++
++cat > "${OVERRIDE_RUN_DIR}/system_prompt.txt" <<'EOF'
++placeholder system prompt
++EOF
++
++cat > "${OVERRIDE_RUN_DIR}/progress.txt" <<'EOF'
++# Progress
++
++- Session started: 2026-02-20T00:00:00-05:00
++- Target iterations: 2
++- Report file: manual/report.txt
++- Task summary: manual override resume
++
++## Iteration Log
++- [0] Session initialized.
++- [1] Existing iteration.
++EOF
++
++run_capture case7a_out case7a_status \
++  bash "$TARGET_SCRIPT" \
++  --resume "$OVERRIDE_RUN_DIR" \
++  --iterations 4 \
++  --dry-run
++
++assert_status "$case7a_status" "0" "case7a exits successfully"
++assert_contains "$case7a_out" "Resuming from iteration: 2" "case7a resumes from expected next iteration"
++assert_file_contains "${OVERRIDE_RUN_DIR}/progress.txt" "- Target iterations: 4" "case7a updates target iterations metadata"
++assert_file_contains "${OVERRIDE_RUN_DIR}/progress.txt" "- [2] Dry run at " "case7a logs resumed iteration 2"
++assert_file_contains "${OVERRIDE_RUN_DIR}/progress.txt" "- [3] Dry run at " "case7a logs resumed iteration 3"
++assert_file_contains "${OVERRIDE_RUN_DIR}/progress.txt" "- [4] Dry run at " "case7a logs resumed iteration 4"
++
++run_capture case7b_out case7b_status \
++  bash "$TARGET_SCRIPT" \
++  --resume "$OVERRIDE_RUN_DIR" \
++  --dry-run
++
++assert_status "$case7b_status" "0" "case7b exits successfully"
++assert_contains "$case7b_out" "Resuming from iteration: 5" "case7b uses updated target metadata"
++assert_contains "$case7b_out" "No remaining iterations to run." "case7b no-ops after completion"
++
+ printf '\nResult: %d passed, %d failed\n' "$pass_count" "$fail_count"
+apply_patch(auto_approved=true) exited 0 in 121ms:
+Success. Updated the following files:
+M claude/scripts/repeat_n_times_smoke_test.sh
+file update:
+diff --git a/claude/scripts/repeat_n_times.sh b/claude/scripts/repeat_n_times.sh
+index b46904cd2ee0a42d9022cf56ad1249e0ad2a1f99..40fd71c34234e6229c757dd4142d7be9a17bb475
+--- a/claude/scripts/repeat_n_times.sh
++++ b/claude/scripts/repeat_n_times.sh
+@@ -106,6 +106,44 @@
+   ' "$path"
+ }
+ 
++sync_target_iterations() {
++  local path="$1"
++  local new_target="$2"
++  local temp_path="${path}.tmp.$$"
++
++  if grep -Eq '^- Target iterations:[[:space:]]*[0-9]+[[:space:]]*$' "$path"; then
++    awk -v new_target="$new_target" '
++      BEGIN { replaced = 0 }
++      {
++        if (replaced == 0 && $0 ~ /^- Target iterations:[[:space:]]*[0-9]+[[:space:]]*$/) {
++          print "- Target iterations: " new_target
++          replaced = 1
++          next
++        }
++        print
++      }
++    ' "$path" > "$temp_path"
++  else
++    awk -v new_target="$new_target" '
++      BEGIN { inserted = 0 }
++      {
++        print
++        if (inserted == 0 && $0 ~ /^- Session started:/) {
++          print "- Target iterations: " new_target
++          inserted = 1
++        }
++      }
++      END {
++        if (inserted == 0) {
++          print "- Target iterations: " new_target
++        }
++      }
++    ' "$path" > "$temp_path"
++  fi
++
++  mv "$temp_path" "$path"
++}
++
+ last_logged_iteration() {
+   local path="$1"
+   local last
+@@ -260,13 +298,16 @@
+     exit 2
+   fi
+ 
++  extracted_iterations="$(extract_target_iterations "$progress_path")"
++
+   if [[ "$ITERATIONS_SET" != true ]]; then
+-    extracted_iterations="$(extract_target_iterations "$progress_path")"
+     if [[ -z "$extracted_iterations" ]]; then
+       echo "Could not determine target iterations from $progress_path. Pass --iterations explicitly." >&2
+       exit 2
+     fi
+     ITERATIONS="$extracted_iterations"
++  elif [[ -z "$extracted_iterations" || "$extracted_iterations" != "$ITERATIONS" ]]; then
++    sync_target_iterations "$progress_path" "$ITERATIONS"
+   fi
+ 
+   last_iteration="$(last_logged_iteration "$progress_path")"
+diff --git a/claude/scripts/repeat_n_times_smoke_test.sh b/claude/scripts/repeat_n_times_smoke_test.sh
+index 926d6a150713680f6525950ed51e2398101f1799..346051c98cb3031cdb4d7d7f0b36aff4a6999ece
+--- a/claude/scripts/repeat_n_times_smoke_test.sh
++++ b/claude/scripts/repeat_n_times_smoke_test.sh
+@@ -223,6 +223,56 @@
+ fi
+ assert_contains "$case6_out" "Last logged iteration (4) exceeds requested --iterations (3)." "case6 prints iteration ceiling validation error"
+ 
++# Case 7: Resume with explicit --iterations updates target metadata for future resumes.
++OVERRIDE_RUN_DIR="${TMP_ROOT}/manual_override_resume"
++mkdir -p "$OVERRIDE_RUN_DIR"
++cat > "${OVERRIDE_RUN_DIR}/report.txt" <<'EOF'
++# Report
++
++## Primary Task
++
++manual override resume
++EOF
++
++cat > "${OVERRIDE_RUN_DIR}/system_prompt.txt" <<'EOF'
++placeholder system prompt
++EOF
++
++cat > "${OVERRIDE_RUN_DIR}/progress.txt" <<'EOF'
++# Progress
++
++- Session started: 2026-02-20T00:00:00-05:00
++- Target iterations: 2
++- Report file: manual/report.txt
++- Task summary: manual override resume
++
++## Iteration Log
++- [0] Session initialized.
++- [1] Existing iteration.
++EOF
++
++run_capture case7a_out case7a_status \
++  bash "$TARGET_SCRIPT" \
++  --resume "$OVERRIDE_RUN_DIR" \
++  --iterations 4 \
++  --dry-run
++
++assert_status "$case7a_status" "0" "case7a exits successfully"
++assert_contains "$case7a_out" "Resuming from iteration: 2" "case7a resumes from expected next iteration"
++assert_file_contains "${OVERRIDE_RUN_DIR}/progress.txt" "- Target iterations: 4" "case7a updates target iterations metadata"
++assert_file_contains "${OVERRIDE_RUN_DIR}/progress.txt" "- [2] Dry run at " "case7a logs resumed iteration 2"
++assert_file_contains "${OVERRIDE_RUN_DIR}/progress.txt" "- [3] Dry run at " "case7a logs resumed iteration 3"
++assert_file_contains "${OVERRIDE_RUN_DIR}/progress.txt" "- [4] Dry run at " "case7a logs resumed iteration 4"
++
++run_capture case7b_out case7b_status \
++  bash "$TARGET_SCRIPT" \
++  --resume "$OVERRIDE_RUN_DIR" \
++  --dry-run
++
++assert_status "$case7b_status" "0" "case7b exits successfully"
++assert_contains "$case7b_out" "Resuming from iteration: 5" "case7b uses updated target metadata"
++assert_contains "$case7b_out" "No remaining iterations to run." "case7b no-ops after completion"
++
+ printf '\nResult: %d passed, %d failed\n' "$pass_count" "$fail_count"
+ 
+ if (( fail_count > 0 )); then
+
+file update:
+diff --git a/claude/scripts/repeat_n_times.sh b/claude/scripts/repeat_n_times.sh
+index b46904cd2ee0a42d9022cf56ad1249e0ad2a1f99..40fd71c34234e6229c757dd4142d7be9a17bb475
+--- a/claude/scripts/repeat_n_times.sh
++++ b/claude/scripts/repeat_n_times.sh
+@@ -106,6 +106,44 @@
+   ' "$path"
+ }
+ 
++sync_target_iterations() {
++  local path="$1"
++  local new_target="$2"
++  local temp_path="${path}.tmp.$$"
++
++  if grep -Eq '^- Target iterations:[[:space:]]*[0-9]+[[:space:]]*$' "$path"; then
++    awk -v new_target="$new_target" '
++      BEGIN { replaced = 0 }
++      {
++        if (replaced == 0 && $0 ~ /^- Target iterations:[[:space:]]*[0-9]+[[:space:]]*$/) {
++          print "- Target iterations: " new_target
++          replaced = 1
++          next
++        }
++        print
++      }
++    ' "$path" > "$temp_path"
++  else
++    awk -v new_target="$new_target" '
++      BEGIN { inserted = 0 }
++      {
++        print
++        if (inserted == 0 && $0 ~ /^- Session started:/) {
++          print "- Target iterations: " new_target
++          inserted = 1
++        }
++      }
++      END {
++        if (inserted == 0) {
++          print "- Target iterations: " new_target
++        }
++      }
++    ' "$path" > "$temp_path"
++  fi
++
++  mv "$temp_path" "$path"
++}
++
+ last_logged_iteration() {
+   local path="$1"
+   local last
+@@ -260,13 +298,16 @@
+     exit 2
+   fi
+ 
++  extracted_iterations="$(extract_target_iterations "$progress_path")"
++
+   if [[ "$ITERATIONS_SET" != true ]]; then
+-    extracted_iterations="$(extract_target_iterations "$progress_path")"
+     if [[ -z "$extracted_iterations" ]]; then
+       echo "Could not determine target iterations from $progress_path. Pass --iterations explicitly." >&2
+       exit 2
+     fi
+     ITERATIONS="$extracted_iterations"
++  elif [[ -z "$extracted_iterations" || "$extracted_iterations" != "$ITERATIONS" ]]; then
++    sync_target_iterations "$progress_path" "$ITERATIONS"
+   fi
+ 
+   last_iteration="$(last_logged_iteration "$progress_path")"
+diff --git a/claude/scripts/repeat_n_times_smoke_test.sh b/claude/scripts/repeat_n_times_smoke_test.sh
+index 926d6a150713680f6525950ed51e2398101f1799..346051c98cb3031cdb4d7d7f0b36aff4a6999ece
+--- a/claude/scripts/repeat_n_times_smoke_test.sh
++++ b/claude/scripts/repeat_n_times_smoke_test.sh
+@@ -223,6 +223,56 @@
+ fi
+ assert_contains "$case6_out" "Last logged iteration (4) exceeds requested --iterations (3)." "case6 prints iteration ceiling validation error"
+ 
++# Case 7: Resume with explicit --iterations updates target metadata for future resumes.
++OVERRIDE_RUN_DIR="${TMP_ROOT}/manual_override_resume"
++mkdir -p "$OVERRIDE_RUN_DIR"
++cat > "${OVERRIDE_RUN_DIR}/report.txt" <<'EOF'
++# Report
++
++## Primary Task
++
++manual override resume
++EOF
++
++cat > "${OVERRIDE_RUN_DIR}/system_prompt.txt" <<'EOF'
++placeholder system prompt
++EOF
++
++cat > "${OVERRIDE_RUN_DIR}/progress.txt" <<'EOF'
++# Progress
++
++- Session started: 2026-02-20T00:00:00-05:00
++- Target iterations: 2
++- Report file: manual/report.txt
++- Task summary: manual override resume
++
++## Iteration Log
++- [0] Session initialized.
++- [1] Existing iteration.
++EOF
++
++run_capture case7a_out case7a_status \
++  bash "$TARGET_SCRIPT" \
++  --resume "$OVERRIDE_RUN_DIR" \
++  --iterations 4 \
++  --dry-run
++
++assert_status "$case7a_status" "0" "case7a exits successfully"
++assert_contains "$case7a_out" "Resuming from iteration: 2" "case7a resumes from expected next iteration"
++assert_file_contains "${OVERRIDE_RUN_DIR}/progress.txt" "- Target iterations: 4" "case7a updates target iterations metadata"
++assert_file_contains "${OVERRIDE_RUN_DIR}/progress.txt" "- [2] Dry run at " "case7a logs resumed iteration 2"
++assert_file_contains "${OVERRIDE_RUN_DIR}/progress.txt" "- [3] Dry run at " "case7a logs resumed iteration 3"
++assert_file_contains "${OVERRIDE_RUN_DIR}/progress.txt" "- [4] Dry run at " "case7a logs resumed iteration 4"
++
++run_capture case7b_out case7b_status \
++  bash "$TARGET_SCRIPT" \
++  --resume "$OVERRIDE_RUN_DIR" \
++  --dry-run
++
++assert_status "$case7b_status" "0" "case7b exits successfully"
++assert_contains "$case7b_out" "Resuming from iteration: 5" "case7b uses updated target metadata"
++assert_contains "$case7b_out" "No remaining iterations to run." "case7b no-ops after completion"
++
+ printf '\nResult: %d passed, %d failed\n' "$pass_count" "$fail_count"
+ 
+ if (( fail_count > 0 )); then
+
+
+thinking
+**Updating validation documentation**
+codex
+I’m updating the validation document to include the new explicit-override resume scenario so this behavior is verifiable in the same command matrix.
+file update
+M C:\Users\422mi\skills\claude/scripts/repeat_n_times_validation.md
+@@ -25,2 +25,3 @@
+ - Resume guard rejects `--iterations` lower than last logged iteration.
++- Resume with explicit `--iterations` updates progress metadata for future resume runs.
+ 
+@@ -37,2 +38,5 @@
+ 
++# Resume with an explicit higher iteration target
++bash claude/scripts/repeat_n_times.sh --resume "RUN_DIR" --iterations 4 --dry-run
++
+ # Expected validation failure
+@@ -45,2 +49,3 @@
+ - Second command prints `No remaining iterations to run.` when all iterations are complete.
+-- Third command exits non-zero with a resume/task argument validation message.
++- Third command updates `- Target iterations:` and logs dry-run entries up to the requested iteration.
++- Fourth command exits non-zero with a resume/task argument validation message.
+apply_patch(auto_approved=true) exited 0 in 128ms:
+Success. Updated the following files:
+M claude/scripts/repeat_n_times_validation.md
+file update:
+diff --git a/claude/scripts/repeat_n_times.sh b/claude/scripts/repeat_n_times.sh
+index b46904cd2ee0a42d9022cf56ad1249e0ad2a1f99..40fd71c34234e6229c757dd4142d7be9a17bb475
+--- a/claude/scripts/repeat_n_times.sh
++++ b/claude/scripts/repeat_n_times.sh
+@@ -106,6 +106,44 @@
+   ' "$path"
+ }
+ 
++sync_target_iterations() {
++  local path="$1"
++  local new_target="$2"
++  local temp_path="${path}.tmp.$$"
++
++  if grep -Eq '^- Target iterations:[[:space:]]*[0-9]+[[:space:]]*$' "$path"; then
++    awk -v new_target="$new_target" '
++      BEGIN { replaced = 0 }
++      {
++        if (replaced == 0 && $0 ~ /^- Target iterations:[[:space:]]*[0-9]+[[:space:]]*$/) {
++          print "- Target iterations: " new_target
++          replaced = 1
++          next
++        }
++        print
++      }
++    ' "$path" > "$temp_path"
++  else
++    awk -v new_target="$new_target" '
++      BEGIN { inserted = 0 }
++      {
++        print
++        if (inserted == 0 && $0 ~ /^- Session started:/) {
++          print "- Target iterations: " new_target
++          inserted = 1
++        }
++      }
++      END {
++        if (inserted == 0) {
++          print "- Target iterations: " new_target
++        }
++      }
++    ' "$path" > "$temp_path"
++  fi
++
++  mv "$temp_path" "$path"
++}
++
+ last_logged_iteration() {
+   local path="$1"
+   local last
+@@ -260,13 +298,16 @@
+     exit 2
+   fi
+ 
++  extracted_iterations="$(extract_target_iterations "$progress_path")"
++
+   if [[ "$ITERATIONS_SET" != true ]]; then
+-    extracted_iterations="$(extract_target_iterations "$progress_path")"
+     if [[ -z "$extracted_iterations" ]]; then
+       echo "Could not determine target iterations from $progress_path. Pass --iterations explicitly." >&2
+       exit 2
+     fi
+     ITERATIONS="$extracted_iterations"
++  elif [[ -z "$extracted_iterations" || "$extracted_iterations" != "$ITERATIONS" ]]; then
++    sync_target_iterations "$progress_path" "$ITERATIONS"
+   fi
+ 
+   last_iteration="$(last_logged_iteration "$progress_path")"
+diff --git a/claude/scripts/repeat_n_times_smoke_test.sh b/claude/scripts/repeat_n_times_smoke_test.sh
+index 926d6a150713680f6525950ed51e2398101f1799..346051c98cb3031cdb4d7d7f0b36aff4a6999ece
+--- a/claude/scripts/repeat_n_times_smoke_test.sh
++++ b/claude/scripts/repeat_n_times_smoke_test.sh
+@@ -223,6 +223,56 @@
+ fi
+ assert_contains "$case6_out" "Last logged iteration (4) exceeds requested --iterations (3)." "case6 prints iteration ceiling validation error"
+ 
++# Case 7: Resume with explicit --iterations updates target metadata for future resumes.
++OVERRIDE_RUN_DIR="${TMP_ROOT}/manual_override_resume"
++mkdir -p "$OVERRIDE_RUN_DIR"
++cat > "${OVERRIDE_RUN_DIR}/report.txt" <<'EOF'
++# Report
++
++## Primary Task
++
++manual override resume
++EOF
++
++cat > "${OVERRIDE_RUN_DIR}/system_prompt.txt" <<'EOF'
++placeholder system prompt
++EOF
++
++cat > "${OVERRIDE_RUN_DIR}/progress.txt" <<'EOF'
++# Progress
++
++- Session started: 2026-02-20T00:00:00-05:00
++- Target iterations: 2
++- Report file: manual/report.txt
++- Task summary: manual override resume
++
++## Iteration Log
++- [0] Session initialized.
++- [1] Existing iteration.
++EOF
++
++run_capture case7a_out case7a_status \
++  bash "$TARGET_SCRIPT" \
++  --resume "$OVERRIDE_RUN_DIR" \
++  --iterations 4 \
++  --dry-run
++
++assert_status "$case7a_status" "0" "case7a exits successfully"
++assert_contains "$case7a_out" "Resuming from iteration: 2" "case7a resumes from expected next iteration"
++assert_file_contains "${OVERRIDE_RUN_DIR}/progress.txt" "- Target iterations: 4" "case7a updates target iterations metadata"
++assert_file_contains "${OVERRIDE_RUN_DIR}/progress.txt" "- [2] Dry run at " "case7a logs resumed iteration 2"
++assert_file_contains "${OVERRIDE_RUN_DIR}/progress.txt" "- [3] Dry run at " "case7a logs resumed iteration 3"
++assert_file_contains "${OVERRIDE_RUN_DIR}/progress.txt" "- [4] Dry run at " "case7a logs resumed iteration 4"
++
++run_capture case7b_out case7b_status \
++  bash "$TARGET_SCRIPT" \
++  --resume "$OVERRIDE_RUN_DIR" \
++  --dry-run
++
++assert_status "$case7b_status" "0" "case7b exits successfully"
++assert_contains "$case7b_out" "Resuming from iteration: 5" "case7b uses updated target metadata"
++assert_contains "$case7b_out" "No remaining iterations to run." "case7b no-ops after completion"
++
+ printf '\nResult: %d passed, %d failed\n' "$pass_count" "$fail_count"
+ 
+ if (( fail_count > 0 )); then
+diff --git a/claude/scripts/repeat_n_times_validation.md b/claude/scripts/repeat_n_times_validation.md
+index 1e696d6833d54deb7b1e77606af79041b530232c..25f3a697f27531bfcb263121ee406138f2958c9b
+--- a/claude/scripts/repeat_n_times_validation.md
++++ b/claude/scripts/repeat_n_times_validation.md
+@@ -23,6 +23,7 @@
+ - Missing option value handling returns a validation error.
+ - Resume from partial progress continues from the next missing iteration.
+ - Resume guard rejects `--iterations` lower than last logged iteration.
++- Resume with explicit `--iterations` updates progress metadata for future resume runs.
+ 
+ ## Manual Command Matrix
+ 
+@@ -35,6 +36,9 @@
+ # Resume same run directory (replace RUN_DIR)
+ bash claude/scripts/repeat_n_times.sh --resume "RUN_DIR" --dry-run
+ 
++# Resume with an explicit higher iteration target
++bash claude/scripts/repeat_n_times.sh --resume "RUN_DIR" --iterations 4 --dry-run
++
+ # Expected validation failure
+ bash claude/scripts/repeat_n_times.sh --resume "RUN_DIR" --task "should fail" --dry-run
+ ```
+@@ -43,4 +47,5 @@
+ 
+ - First command prints run paths and appends `[1]` and `[2]` dry-run log entries in `progress.txt`.
+ - Second command prints `No remaining iterations to run.` when all iterations are complete.
+-- Third command exits non-zero with a resume/task argument validation message.
++- Third command updates `- Target iterations:` and logs dry-run entries up to the requested iteration.
++- Fourth command exits non-zero with a resume/task argument validation message.
+
+file update:
+diff --git a/claude/scripts/repeat_n_times.sh b/claude/scripts/repeat_n_times.sh
+index b46904cd2ee0a42d9022cf56ad1249e0ad2a1f99..40fd71c34234e6229c757dd4142d7be9a17bb475
+--- a/claude/scripts/repeat_n_times.sh
++++ b/claude/scripts/repeat_n_times.sh
+@@ -106,6 +106,44 @@
+   ' "$path"
+ }
+ 
++sync_target_iterations() {
++  local path="$1"
++  local new_target="$2"
++  local temp_path="${path}.tmp.$$"
++
++  if grep -Eq '^- Target iterations:[[:space:]]*[0-9]+[[:space:]]*$' "$path"; then
++    awk -v new_target="$new_target" '
++      BEGIN { replaced = 0 }
++      {
++        if (replaced == 0 && $0 ~ /^- Target iterations:[[:space:]]*[0-9]+[[:space:]]*$/) {
++          print "- Target iterations: " new_target
++          replaced = 1
++          next
++        }
++        print
++      }
++    ' "$path" > "$temp_path"
++  else
++    awk -v new_target="$new_target" '
++      BEGIN { inserted = 0 }
++      {
++        print
++        if (inserted == 0 && $0 ~ /^- Session started:/) {
++          print "- Target iterations: " new_target
++          inserted = 1
++        }
++      }
++      END {
++        if (inserted == 0) {
++          print "- Target iterations: " new_target
++        }
++      }
++    ' "$path" > "$temp_path"
++  fi
++
++  mv "$temp_path" "$path"
++}
++
+ last_logged_iteration() {
+   local path="$1"
+   local last
+@@ -260,13 +298,16 @@
+     exit 2
+   fi
+ 
++  extracted_iterations="$(extract_target_iterations "$progress_path")"
++
+   if [[ "$ITERATIONS_SET" != true ]]; then
+-    extracted_iterations="$(extract_target_iterations "$progress_path")"
+     if [[ -z "$extracted_iterations" ]]; then
+       echo "Could not determine target iterations from $progress_path. Pass --iterations explicitly." >&2
+       exit 2
+     fi
+     ITERATIONS="$extracted_iterations"
++  elif [[ -z "$extracted_iterations" || "$extracted_iterations" != "$ITERATIONS" ]]; then
++    sync_target_iterations "$progress_path" "$ITERATIONS"
+   fi
+ 
+   last_iteration="$(last_logged_iteration "$progress_path")"
+diff --git a/claude/scripts/repeat_n_times_smoke_test.sh b/claude/scripts/repeat_n_times_smoke_test.sh
+index 926d6a150713680f6525950ed51e2398101f1799..346051c98cb3031cdb4d7d7f0b36aff4a6999ece
+--- a/claude/scripts/repeat_n_times_smoke_test.sh
++++ b/claude/scripts/repeat_n_times_smoke_test.sh
+@@ -223,6 +223,56 @@
+ fi
+ assert_contains "$case6_out" "Last logged iteration (4) exceeds requested --iterations (3)." "case6 prints iteration ceiling validation error"
+ 
++# Case 7: Resume with explicit --iterations updates target metadata for future resumes.
++OVERRIDE_RUN_DIR="${TMP_ROOT}/manual_override_resume"
++mkdir -p "$OVERRIDE_RUN_DIR"
++cat > "${OVERRIDE_RUN_DIR}/report.txt" <<'EOF'
++# Report
++
++## Primary Task
++
++manual override resume
++EOF
++
++cat > "${OVERRIDE_RUN_DIR}/system_prompt.txt" <<'EOF'
++placeholder system prompt
++EOF
++
++cat > "${OVERRIDE_RUN_DIR}/progress.txt" <<'EOF'
++# Progress
++
++- Session started: 2026-02-20T00:00:00-05:00
++- Target iterations: 2
++- Report file: manual/report.txt
++- Task summary: manual override resume
++
++## Iteration Log
++- [0] Session initialized.
++- [1] Existing iteration.
++EOF
++
++run_capture case7a_out case7a_status \
++  bash "$TARGET_SCRIPT" \
++  --resume "$OVERRIDE_RUN_DIR" \
++  --iterations 4 \
++  --dry-run
++
++assert_status "$case7a_status" "0" "case7a exits successfully"
++assert_contains "$case7a_out" "Resuming from iteration: 2" "case7a resumes from expected next iteration"
++assert_file_contains "${OVERRIDE_RUN_DIR}/progress.txt" "- Target iterations: 4" "case7a updates target iterations metadata"
++assert_file_contains "${OVERRIDE_RUN_DIR}/progress.txt" "- [2] Dry run at " "case7a logs resumed iteration 2"
++assert_file_contains "${OVERRIDE_RUN_DIR}/progress.txt" "- [3] Dry run at " "case7a logs resumed iteration 3"
++assert_file_contains "${OVERRIDE_RUN_DIR}/progress.txt" "- [4] Dry run at " "case7a logs resumed iteration 4"
++
++run_capture case7b_out case7b_status \
++  bash "$TARGET_SCRIPT" \
++  --resume "$OVERRIDE_RUN_DIR" \
++  --dry-run
++
++assert_status "$case7b_status" "0" "case7b exits successfully"
++assert_contains "$case7b_out" "Resuming from iteration: 5" "case7b uses updated target metadata"
++assert_contains "$case7b_out" "No remaining iterations to run." "case7b no-ops after completion"
++
+ printf '\nResult: %d passed, %d failed\n' "$pass_count" "$fail_count"
+ 
+ if (( fail_count > 0 )); then
+diff --git a/claude/scripts/repeat_n_times_validation.md b/claude/scripts/repeat_n_times_validation.md
+index 1e696d6833d54deb7b1e77606af79041b530232c..25f3a697f27531bfcb263121ee406138f2958c9b
+--- a/claude/scripts/repeat_n_times_validation.md
++++ b/claude/scripts/repeat_n_times_validation.md
+@@ -23,6 +23,7 @@
+ - Missing option value handling returns a validation error.
+ - Resume from partial progress continues from the next missing iteration.
+ - Resume guard rejects `--iterations` lower than last logged iteration.
++- Resume with explicit `--iterations` updates progress metadata for future resume runs.
+ 
+ ## Manual Command Matrix
+ 
+@@ -35,6 +36,9 @@
+ # Resume same run directory (replace RUN_DIR)
+ bash claude/scripts/repeat_n_times.sh --resume "RUN_DIR" --dry-run
+ 
++# Resume with an explicit higher iteration target
++bash claude/scripts/repeat_n_times.sh --resume "RUN_DIR" --iterations 4 --dry-run
++
+ # Expected validation failure
+ bash claude/scripts/repeat_n_times.sh --resume "RUN_DIR" --task "should fail" --dry-run
+ ```
+@@ -43,4 +47,5 @@
+ 
+ - First command prints run paths and appends `[1]` and `[2]` dry-run log entries in `progress.txt`.
+ - Second command prints `No remaining iterations to run.` when all iterations are complete.
+-- Third command exits non-zero with a resume/task argument validation message.
++- Third command updates `- Target iterations:` and logs dry-run entries up to the requested iteration.
++- Fourth command exits non-zero with a resume/task argument validation message.
+
+
+thinking
+**Planning static validation steps**
+codex
+Code changes are in place; I’m doing a quick static verification pass (diff and targeted searches) since Bash execution is still blocked in this environment.
+exec
+"C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -Command 'rg -n "sync_target_iterations|case7a|case7b|Target iterations" claude/scripts/repeat_n_times.sh claude/scripts/repeat_n_times_smoke_test.sh claude/scripts/repeat_n_times_validation.md' in C:\Users\422mi\skillsexec
+"C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -Command 'git diff -- claude/scripts/repeat_n_times.sh claude/scripts/repeat_n_times_smoke_test.sh claude/scripts/repeat_n_times_validation.md' in C:\Users\422mi\skills succeeded in 252ms:
+claude/scripts/repeat_n_times_validation.md:50:- Third command updates `- Target iterations:` and logs dry-run entries up to the requested iteration.
+claude/scripts/repeat_n_times_smoke_test.sh:166:- Target iterations: 3
+claude/scripts/repeat_n_times_smoke_test.sh:204:- Target iterations: 5
+claude/scripts/repeat_n_times_smoke_test.sh:245:- Target iterations: 2
+claude/scripts/repeat_n_times_smoke_test.sh:254:run_capture case7a_out case7a_status \
+claude/scripts/repeat_n_times_smoke_test.sh:260:assert_status "$case7a_status" "0" "case7a exits successfully"
+claude/scripts/repeat_n_times_smoke_test.sh:261:assert_contains "$case7a_out" "Resuming from iteration: 2" "case7a resumes from expected next iteration"
+claude/scripts/repeat_n_times_smoke_test.sh:262:assert_file_contains "${OVERRIDE_RUN_DIR}/progress.txt" "- Target iterations: 4" "case7a updates target iterations metadata"
+claude/scripts/repeat_n_times_smoke_test.sh:263:assert_file_contains "${OVERRIDE_RUN_DIR}/progress.txt" "- [2] Dry run at " "case7a logs resumed iteration 2"
+claude/scripts/repeat_n_times_smoke_test.sh:264:assert_file_contains "${OVERRIDE_RUN_DIR}/progress.txt" "- [3] Dry run at " "case7a logs resumed iteration 3"
+claude/scripts/repeat_n_times_smoke_test.sh:265:assert_file_contains "${OVERRIDE_RUN_DIR}/progress.txt" "- [4] Dry run at " "case7a logs resumed iteration 4"
+claude/scripts/repeat_n_times_smoke_test.sh:267:run_capture case7b_out case7b_status \
+claude/scripts/repeat_n_times_smoke_test.sh:272:assert_status "$case7b_status" "0" "case7b exits successfully"
+claude/scripts/repeat_n_times_smoke_test.sh:273:assert_contains "$case7b_out" "Resuming from iteration: 5" "case7b uses updated target metadata"
+claude/scripts/repeat_n_times_smoke_test.sh:274:assert_contains "$case7b_out" "No remaining iterations to run." "case7b no-ops after completion"
+claude/scripts/repeat_n_times.sh:95:    $0 ~ /^- Target iterations:[[:space:]]*[0-9]+[[:space:]]*$/ {
+claude/scripts/repeat_n_times.sh:97:      sub(/^- Target iterations:[[:space:]]*/, "", line)
+claude/scripts/repeat_n_times.sh:109:sync_target_iterations() {
+claude/scripts/repeat_n_times.sh:114:  if grep -Eq '^- Target iterations:[[:space:]]*[0-9]+[[:space:]]*$' "$path"; then
+claude/scripts/repeat_n_times.sh:118:        if (replaced == 0 && $0 ~ /^- Target iterations:[[:space:]]*[0-9]+[[:space:]]*$/) {
+ succeeded in 285ms:
+diff --git a/claude/scripts/repeat_n_times.sh b/claude/scripts/repeat_n_times.sh
+index ed0d562..40fd71c 100644
+--- a/claude/scripts/repeat_n_times.sh
++++ b/claude/scripts/repeat_n_times.sh
+@@ -2,9 +2,11 @@
+ set -euo pipefail
+ 
+ ITERATIONS=5
++ITERATIONS_SET=false
+ TASK=""
+ TASK_FILE=""
+ OUTPUT_ROOT="claude/reports/repeat_n_times"
++RESUME_DIR=""
+ INCLUDE_CODEBASE=false
+ MAX_TREE_FILES=250
+ DRY_RUN=false
+@@ -21,6 +23,7 @@ Options:
+   --task, -t <text>           Task text to execute.
+   --task-file <path>          Read task text from file.
+   --iterations, -n <number>   Number of iterations (default: 5).
+file update:
+diff --git a/claude/scripts/repeat_n_times.sh b/claude/scripts/repeat_n_times.sh
+index b46904cd2ee0a42d9022cf56ad1249e0ad2a1f99..40fd71c34234e6229c757dd4142d7be9a17bb475
+--- a/claude/scripts/repeat_n_times.sh
++++ b/claude/scripts/repeat_n_times.sh
+@@ -106,6 +106,44 @@
+   ' "$path"
+ }
+ 
++sync_target_iterations() {
++  local path="$1"
++  local new_target="$2"
++  local temp_path="${path}.tmp.$$"
++
++  if grep -Eq '^- Target iterations:[[:space:]]*[0-9]+[[:space:]]*$' "$path"; then
++    awk -v new_target="$new_target" '
++      BEGIN { replaced = 0 }
++      {
++        if (replaced == 0 && $0 ~ /^- Target iterations:[[:space:]]*[0-9]+[[:space:]]*$/) {
++          print "- Target iterations: " new_target
++          replaced = 1
++          next
++        }
++        print
++      }
++    ' "$path" > "$temp_path"
++  else
++    awk -v new_target="$new_target" '
++      BEGIN { inserted = 0 }
++      {
++        print
++        if (inserted == 0 && $0 ~ /^- Session started:/) {
++          print "- Target iterations: " new_target
++          inserted = 1
++        }
++      }
++      END {
++        if (inserted == 0) {
++          print "- Target iterations: " new_target
++        }
++      }
++    ' "$path" > "$temp_path"
++  fi
++
++  mv "$temp_path" "$path"
++}
++
+ last_logged_iteration() {
+   local path="$1"
+   local last
+@@ -260,13 +298,16 @@
+     exit 2
+   fi
+ 
++  extracted_iterations="$(extract_target_iterations "$progress_path")"
++
+   if [[ "$ITERATIONS_SET" != true ]]; then
+-    extracted_iterations="$(extract_target_iterations "$progress_path")"
+     if [[ -z "$extracted_iterations" ]]; then
+       echo "Could not determine target iterations from $progress_path. Pass --iterations explicitly." >&2
+       exit 2
+     fi
+     ITERATIONS="$extracted_iterations"
++  elif [[ -z "$extracted_iterations" || "$extracted_iterations" != "$ITERATIONS" ]]; then
++    sync_target_iterations "$progress_path" "$ITERATIONS"
+   fi
+ 
+   last_iteration="$(last_logged_iteration "$progress_path")"
+diff --git a/claude/scripts/repeat_n_times_smoke_test.sh b/claude/scripts/repeat_n_times_smoke_test.sh
+index 926d6a150713680f6525950ed51e2398101f1799..346051c98cb3031cdb4d7d7f0b36aff4a6999ece
+--- a/claude/scripts/repeat_n_times_smoke_test.sh
++++ b/claude/scripts/repeat_n_times_smoke_test.sh
+@@ -223,6 +223,56 @@
+ fi
+ assert_contains "$case6_out" "Last logged iteration (4) exceeds requested --iterations (3)." "case6 prints iteration ceiling validation error"
+ 
++# Case 7: Resume with explicit --iterations updates target metadata for future resumes.
++OVERRIDE_RUN_DIR="${TMP_ROOT}/manual_override_resume"
++mkdir -p "$OVERRIDE_RUN_DIR"
++cat > "${OVERRIDE_RUN_DIR}/report.txt" <<'EOF'
++# Report
++
++## Primary Task
++
++manual override resume
++EOF
++
++cat > "${OVERRIDE_RUN_DIR}/system_prompt.txt" <<'EOF'
++placeholder system prompt
++EOF
++
++cat > "${OVERRIDE_RUN_DIR}/progress.txt" <<'EOF'
++# Progress
++
++- Session started: 2026-02-20T00:00:00-05:00
++- Target iterations: 2
++- Report file: manual/report.txt
++- Task summary: manual override resume
++
++## Iteration Log
++- [0] Session initialized.
++- [1] Existing iteration.
++EOF
++
++run_capture case7a_out case7a_status \
++  bash "$TARGET_SCRIPT" \
++  --resume "$OVERRIDE_RUN_DIR" \
++  --iterations 4 \
++  --dry-run
++
++assert_status "$case7a_status" "0" "case7a exits successfully"
++assert_contains "$case7a_out" "Resuming from iteration: 2" "case7a resumes from expected next iteration"
++assert_file_contains "${OVERRIDE_RUN_DIR}/progress.txt" "- Target iterations: 4" "case7a updates target iterations metadata"
++assert_file_contains "${OVERRIDE_RUN_DIR}/progress.txt" "- [2] Dry run at " "case7a logs resumed iteration 2"
++assert_file_contains "${OVERRIDE_RUN_DIR}/progress.txt" "- [3] Dry run at " "case7a logs resumed iteration 3"
++assert_file_contains "${OVERRIDE_RUN_DIR}/progress.txt" "- [4] Dry run at " "case7a logs resumed iteration 4"
++
++run_capture case7b_out case7b_status \
++  bash "$TARGET_SCRIPT" \
++  --resume "$OVERRIDE_RUN_DIR" \
++  --dry-run
++
++assert_status "$case7b_status" "0" "case7b exits successfully"
++assert_contains "$case7b_out" "Resuming from iteration: 5" "case7b uses updated target metadata"
++assert_contains "$case7b_out" "No remaining iterations to run." "case7b no-ops after completion"
++
+ printf '\nResult: %d passed, %d failed\n' "$pass_count" "$fail_count"
+ 
+ if (( fail_count > 0 )); then
+diff --git a/claude/scripts/repeat_n_times_validation.md b/claude/scripts/repeat_n_times_validation.md
+index 1e696d6833d54deb7b1e77606af79041b530232c..25f3a697f27531bfcb263121ee406138f2958c9b
+--- a/claude/scripts/repeat_n_times_validation.md
++++ b/claude/scripts/repeat_n_times_validation.md
+@@ -23,6 +23,7 @@
+ - Missing option value handling returns a validation error.
+ - Resume from partial progress continues from the next missing iteration.
+ - Resume guard rejects `--iterations` lower than last logged iteration.
++- Resume with explicit `--iterations` updates progress metadata for future resume runs.
+ 
+ ## Manual Command Matrix
+ 
+@@ -35,6 +36,9 @@
+ # Resume same run directory (replace RUN_DIR)
+ bash claude/scripts/repeat_n_times.sh --resume "RUN_DIR" --dry-run
+ 
++# Resume with an explicit higher iteration target
++bash claude/scripts/repeat_n_times.sh --resume "RUN_DIR" --iterations 4 --dry-run
++
+ # Expected validation failure
+ bash claude/scripts/repeat_n_times.sh --resume "RUN_DIR" --task "should fail" --dry-run
+ ```
+@@ -43,4 +47,5 @@
+ 
+ - First command prints run paths and appends `[1]` and `[2]` dry-run log entries in `progress.txt`.
+ - Second command prints `No remaining iterations to run.` when all iterations are complete.
+-- Third command exits non-zero with a resume/task argument validation message.
++- Third command updates `- Target iterations:` and logs dry-run entries up to the requested iteration.
++- Fourth command exits non-zero with a resume/task argument validation message.
+
+
+thinking
+**Confirming diff scope and updating plan**
+Plan update
+  ✓ Patch repeat_n_times.sh to keep progress target-iteration metadata in sync during resume
+  ✓ Add smoke-test regression case for explicit resume iteration override
+  ✓ Update validation doc for new resume override behavior
+  → Append iteration 4 log entry in progress.txt
+file update:
+diff --git a/claude/scripts/repeat_n_times.sh b/claude/scripts/repeat_n_times.sh
+index b46904cd2ee0a42d9022cf56ad1249e0ad2a1f99..40fd71c34234e6229c757dd4142d7be9a17bb475
+--- a/claude/scripts/repeat_n_times.sh
++++ b/claude/scripts/repeat_n_times.sh
+@@ -106,6 +106,44 @@
+   ' "$path"
+ }
+ 
++sync_target_iterations() {
++  local path="$1"
++  local new_target="$2"
++  local temp_path="${path}.tmp.$$"
++
++  if grep -Eq '^- Target iterations:[[:space:]]*[0-9]+[[:space:]]*$' "$path"; then
++    awk -v new_target="$new_target" '
++      BEGIN { replaced = 0 }
++      {
++        if (replaced == 0 && $0 ~ /^- Target iterations:[[:space:]]*[0-9]+[[:space:]]*$/) {
++          print "- Target iterations: " new_target
++          replaced = 1
++          next
++        }
++        print
++      }
++    ' "$path" > "$temp_path"
++  else
++    awk -v new_target="$new_target" '
++      BEGIN { inserted = 0 }
++      {
++        print
++        if (inserted == 0 && $0 ~ /^- Session started:/) {
++          print "- Target iterations: " new_target
++          inserted = 1
++        }
++      }
++      END {
++        if (inserted == 0) {
++          print "- Target iterations: " new_target
++        }
++      }
++    ' "$path" > "$temp_path"
++  fi
++
++  mv "$temp_path" "$path"
++}
++
+ last_logged_iteration() {
+   local path="$1"
+   local last
+@@ -260,13 +298,16 @@
+     exit 2
+   fi
+ 
++  extracted_iterations="$(extract_target_iterations "$progress_path")"
++
+   if [[ "$ITERATIONS_SET" != true ]]; then
+-    extracted_iterations="$(extract_target_iterations "$progress_path")"
+     if [[ -z "$extracted_iterations" ]]; then
+       echo "Could not determine target iterations from $progress_path. Pass --iterations explicitly." >&2
+       exit 2
+     fi
+     ITERATIONS="$extracted_iterations"
++  elif [[ -z "$extracted_iterations" || "$extracted_iterations" != "$ITERATIONS" ]]; then
++    sync_target_iterations "$progress_path" "$ITERATIONS"
+   fi
+ 
+   last_iteration="$(last_logged_iteration "$progress_path")"
+diff --git a/claude/scripts/repeat_n_times_smoke_test.sh b/claude/scripts/repeat_n_times_smoke_test.sh
+index 926d6a150713680f6525950ed51e2398101f1799..346051c98cb3031cdb4d7d7f0b36aff4a6999ece
+--- a/claude/scripts/repeat_n_times_smoke_test.sh
++++ b/claude/scripts/repeat_n_times_smoke_test.sh
+@@ -223,6 +223,56 @@
+ fi
+ assert_contains "$case6_out" "Last logged iteration (4) exceeds requested --iterations (3)." "case6 prints iteration ceiling validation error"
+ 
++# Case 7: Resume with explicit --iterations updates target metadata for future resumes.
++OVERRIDE_RUN_DIR="${TMP_ROOT}/manual_override_resume"
++mkdir -p "$OVERRIDE_RUN_DIR"
++cat > "${OVERRIDE_RUN_DIR}/report.txt" <<'EOF'
++# Report
++
++## Primary Task
++
++manual override resume
++EOF
++
++cat > "${OVERRIDE_RUN_DIR}/system_prompt.txt" <<'EOF'
++placeholder system prompt
++EOF
++
++cat > "${OVERRIDE_RUN_DIR}/progress.txt" <<'EOF'
++# Progress
++
++- Session started: 2026-02-20T00:00:00-05:00
++- Target iterations: 2
++- Report file: manual/report.txt
++- Task summary: manual override resume
++
++## Iteration Log
++- [0] Session initialized.
++- [1] Existing iteration.
++EOF
++
++run_capture case7a_out case7a_status \
++  bash "$TARGET_SCRIPT" \
++  --resume "$OVERRIDE_RUN_DIR" \
++  --iterations 4 \
++  --dry-run
++
++assert_status "$case7a_status" "0" "case7a exits successfully"
++assert_contains "$case7a_out" "Resuming from iteration: 2" "case7a resumes from expected next iteration"
++assert_file_contains "${OVERRIDE_RUN_DIR}/progress.txt" "- Target iterations: 4" "case7a updates target iterations metadata"
++assert_file_contains "${OVERRIDE_RUN_DIR}/progress.txt" "- [2] Dry run at " "case7a logs resumed iteration 2"
++assert_file_contains "${OVERRIDE_RUN_DIR}/progress.txt" "- [3] Dry run at " "case7a logs resumed iteration 3"
++assert_file_contains "${OVERRIDE_RUN_DIR}/progress.txt" "- [4] Dry run at " "case7a logs resumed iteration 4"
++
++run_capture case7b_out case7b_status \
++  bash "$TARGET_SCRIPT" \
++  --resume "$OVERRIDE_RUN_DIR" \
++  --dry-run
++
++assert_status "$case7b_status" "0" "case7b exits successfully"
++assert_contains "$case7b_out" "Resuming from iteration: 5" "case7b uses updated target metadata"
++assert_contains "$case7b_out" "No remaining iterations to run." "case7b no-ops after completion"
++
+ printf '\nResult: %d passed, %d failed\n' "$pass_count" "$fail_count"
+ 
+ if (( fail_count > 0 )); then
+diff --git a/claude/scripts/repeat_n_times_validation.md b/claude/scripts/repeat_n_times_validation.md
+index 1e696d6833d54deb7b1e77606af79041b530232c..25f3a697f27531bfcb263121ee406138f2958c9b
+--- a/claude/scripts/repeat_n_times_validation.md
++++ b/claude/scripts/repeat_n_times_validation.md
+@@ -23,6 +23,7 @@
+ - Missing option value handling returns a validation error.
+ - Resume from partial progress continues from the next missing iteration.
+ - Resume guard rejects `--iterations` lower than last logged iteration.
++- Resume with explicit `--iterations` updates progress metadata for future resume runs.
+ 
+ ## Manual Command Matrix
+ 
+@@ -35,6 +36,9 @@
+ # Resume same run directory (replace RUN_DIR)
+ bash claude/scripts/repeat_n_times.sh --resume "RUN_DIR" --dry-run
+ 
++# Resume with an explicit higher iteration target
++bash claude/scripts/repeat_n_times.sh --resume "RUN_DIR" --iterations 4 --dry-run
++
+ # Expected validation failure
+ bash claude/scripts/repeat_n_times.sh --resume "RUN_DIR" --task "should fail" --dry-run
+ ```
+@@ -43,4 +47,5 @@
+ 
+ - First command prints run paths and appends `[1]` and `[2]` dry-run log entries in `progress.txt`.
+ - Second command prints `No remaining iterations to run.` when all iterations are complete.
+-- Third command exits non-zero with a resume/task argument validation message.
++- Third command updates `- Target iterations:` and logs dry-run entries up to the requested iteration.
++- Fourth command exits non-zero with a resume/task argument validation message.
+
+
+thinking
+**Planning progress file appending**
+codex
+I’ve finished the implementation and regression-test updates; next I’m appending the iteration 4 handoff entry to `progress.txt` with exact files touched, validation status, and next actions.
+
+thinking
+**Planning shell append with timestamp**
+exec
+"C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -Command "(Get-Date).ToString('o')" in C:\Users\422mi\skills succeeded in 281ms:
+2026-02-20T02:02:56.7315220-05:00
+file update:
+diff --git a/claude/scripts/repeat_n_times.sh b/claude/scripts/repeat_n_times.sh
+index b46904cd2ee0a42d9022cf56ad1249e0ad2a1f99..40fd71c34234e6229c757dd4142d7be9a17bb475
+--- a/claude/scripts/repeat_n_times.sh
++++ b/claude/scripts/repeat_n_times.sh
+@@ -106,6 +106,44 @@
+   ' "$path"
+ }
+ 
++sync_target_iterations() {
++  local path="$1"
++  local new_target="$2"
++  local temp_path="${path}.tmp.$$"
++
++  if grep -Eq '^- Target iterations:[[:space:]]*[0-9]+[[:space:]]*$' "$path"; then
++    awk -v new_target="$new_target" '
++      BEGIN { replaced = 0 }
++      {
++        if (replaced == 0 && $0 ~ /^- Target iterations:[[:space:]]*[0-9]+[[:space:]]*$/) {
++          print "- Target iterations: " new_target
++          replaced = 1
++          next
++        }
++        print
++      }
++    ' "$path" > "$temp_path"
++  else
++    awk -v new_target="$new_target" '
++      BEGIN { inserted = 0 }
++      {
++        print
++        if (inserted == 0 && $0 ~ /^- Session started:/) {
++          print "- Target iterations: " new_target
++          inserted = 1
++        }
++      }
++      END {
++        if (inserted == 0) {
++          print "- Target iterations: " new_target
++        }
++      }
++    ' "$path" > "$temp_path"
++  fi
++
++  mv "$temp_path" "$path"
++}
++
+ last_logged_iteration() {
+   local path="$1"
+   local last
+@@ -260,13 +298,16 @@
+     exit 2
+   fi
+ 
++  extracted_iterations="$(extract_target_iterations "$progress_path")"
++
+   if [[ "$ITERATIONS_SET" != true ]]; then
+-    extracted_iterations="$(extract_target_iterations "$progress_path")"
+     if [[ -z "$extracted_iterations" ]]; then
+       echo "Could not determine target iterations from $progress_path. Pass --iterations explicitly." >&2
+       exit 2
+     fi
+     ITERATIONS="$extracted_iterations"
++  elif [[ -z "$extracted_iterations" || "$extracted_iterations" != "$ITERATIONS" ]]; then
++    sync_target_iterations "$progress_path" "$ITERATIONS"
+   fi
+ 
+   last_iteration="$(last_logged_iteration "$progress_path")"
+diff --git a/claude/scripts/repeat_n_times_smoke_test.sh b/claude/scripts/repeat_n_times_smoke_test.sh
+index 926d6a150713680f6525950ed51e2398101f1799..346051c98cb3031cdb4d7d7f0b36aff4a6999ece
+--- a/claude/scripts/repeat_n_times_smoke_test.sh
++++ b/claude/scripts/repeat_n_times_smoke_test.sh
+@@ -223,6 +223,56 @@
+ fi
+ assert_contains "$case6_out" "Last logged iteration (4) exceeds requested --iterations (3)." "case6 prints iteration ceiling validation error"
+ 
++# Case 7: Resume with explicit --iterations updates target metadata for future resumes.
++OVERRIDE_RUN_DIR="${TMP_ROOT}/manual_override_resume"
++mkdir -p "$OVERRIDE_RUN_DIR"
++cat > "${OVERRIDE_RUN_DIR}/report.txt" <<'EOF'
++# Report
++
++## Primary Task
++
++manual override resume
++EOF
++
++cat > "${OVERRIDE_RUN_DIR}/system_prompt.txt" <<'EOF'
++placeholder system prompt
++EOF
++
++cat > "${OVERRIDE_RUN_DIR}/progress.txt" <<'EOF'
++# Progress
++
++- Session started: 2026-02-20T00:00:00-05:00
++- Target iterations: 2
++- Report file: manual/report.txt
++- Task summary: manual override resume
++
++## Iteration Log
++- [0] Session initialized.
++- [1] Existing iteration.
++EOF
++
++run_capture case7a_out case7a_status \
++  bash "$TARGET_SCRIPT" \
++  --resume "$OVERRIDE_RUN_DIR" \
++  --iterations 4 \
++  --dry-run
++
++assert_status "$case7a_status" "0" "case7a exits successfully"
++assert_contains "$case7a_out" "Resuming from iteration: 2" "case7a resumes from expected next iteration"
++assert_file_contains "${OVERRIDE_RUN_DIR}/progress.txt" "- Target iterations: 4" "case7a updates target iterations metadata"
++assert_file_contains "${OVERRIDE_RUN_DIR}/progress.txt" "- [2] Dry run at " "case7a logs resumed iteration 2"
++assert_file_contains "${OVERRIDE_RUN_DIR}/progress.txt" "- [3] Dry run at " "case7a logs resumed iteration 3"
++assert_file_contains "${OVERRIDE_RUN_DIR}/progress.txt" "- [4] Dry run at " "case7a logs resumed iteration 4"
++
++run_capture case7b_out case7b_status \
++  bash "$TARGET_SCRIPT" \
++  --resume "$OVERRIDE_RUN_DIR" \
++  --dry-run
++
++assert_status "$case7b_status" "0" "case7b exits successfully"
++assert_contains "$case7b_out" "Resuming from iteration: 5" "case7b uses updated target metadata"
++assert_contains "$case7b_out" "No remaining iterations to run." "case7b no-ops after completion"
++
+ printf '\nResult: %d passed, %d failed\n' "$pass_count" "$fail_count"
+ 
+ if (( fail_count > 0 )); then
+diff --git a/claude/scripts/repeat_n_times_validation.md b/claude/scripts/repeat_n_times_validation.md
+index 1e696d6833d54deb7b1e77606af79041b530232c..25f3a697f27531bfcb263121ee406138f2958c9b
+--- a/claude/scripts/repeat_n_times_validation.md
++++ b/claude/scripts/repeat_n_times_validation.md
+@@ -23,6 +23,7 @@
+ - Missing option value handling returns a validation error.
+ - Resume from partial progress continues from the next missing iteration.
+ - Resume guard rejects `--iterations` lower than last logged iteration.
++- Resume with explicit `--iterations` updates progress metadata for future resume runs.
+ 
+ ## Manual Command Matrix
+ 
+@@ -35,6 +36,9 @@
+ # Resume same run directory (replace RUN_DIR)
+ bash claude/scripts/repeat_n_times.sh --resume "RUN_DIR" --dry-run
+ 
++# Resume with an explicit higher iteration target
++bash claude/scripts/repeat_n_times.sh --resume "RUN_DIR" --iterations 4 --dry-run
++
+ # Expected validation failure
+ bash claude/scripts/repeat_n_times.sh --resume "RUN_DIR" --task "should fail" --dry-run
+ ```
+@@ -43,4 +47,5 @@
+ 
+ - First command prints run paths and appends `[1]` and `[2]` dry-run log entries in `progress.txt`.
+ - Second command prints `No remaining iterations to run.` when all iterations are complete.
+-- Third command exits non-zero with a resume/task argument validation message.
++- Third command updates `- Target iterations:` and logs dry-run entries up to the requested iteration.
++- Fourth command exits non-zero with a resume/task argument validation message.
+
+
+thinking
+**Appending markdown log entry**
+exec
+"C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -Command "@'
+- [4] 2026-02-20T02:02:56.7315220-05:00
+  Summary: Fixed resume iteration-metadata drift and added regression coverage for explicit iteration overrides.
+  Files changed:
+  - claude/scripts/repeat_n_times.sh
+  - claude/scripts/repeat_n_times_smoke_test.sh
+  - claude/scripts/repeat_n_times_validation.md
+  - claude/reports/repeat_n_times/20260220_015247_develop/progress.txt
+  Actions completed:
+  - Added "'`sync_target_iterations` in the runner and wired resume flow to update `- Target iterations:` when `--iterations` is explicitly provided and differs from stored metadata.
+  - Preserved existing safety checks (`last_logged_iteration` ceiling guard) while preventing stale-progress metadata from breaking later resumes without `--iterations`.
+  - Added smoke-test case 7 to verify explicit resume override updates metadata and that a subsequent resume without `--iterations` cleanly no-ops.
+  - Updated validation documentation to include the explicit-override resume command and expected outcomes.
+  Validation attempted:
+  - bash --version (blocked in this environment: Git Bash fatal signal pipe, Win32 error 5).
+  - Static verification via `git diff` and `rg` to confirm function wiring and new smoke-test assertions.
+  Remaining work:
+  - Run `bash claude/scripts/repeat_n_times_smoke_test.sh` in a Bash-capable environment and capture actual pass/fail output.
+  - Consider adding the smoke test to CI with a Linux/Bash runner.
+  Immediate next steps:
+  - In iteration 5, execute the smoke harness where Bash works; if failures appear, patch `repeat_n_times.sh` and update docs/progress accordingly.
+'"'@ | Add-Content claude/reports/repeat_n_times/20260220_015247_develop/progress.txt" in C:\Users\422mi\skills succeeded in 264ms:
+
+file update:
+diff --git a/claude/scripts/repeat_n_times.sh b/claude/scripts/repeat_n_times.sh
+index b46904cd2ee0a42d9022cf56ad1249e0ad2a1f99..40fd71c34234e6229c757dd4142d7be9a17bb475
+--- a/claude/scripts/repeat_n_times.sh
++++ b/claude/scripts/repeat_n_times.sh
+@@ -106,6 +106,44 @@
+   ' "$path"
+ }
+ 
++sync_target_iterations() {
++  local path="$1"
++  local new_target="$2"
++  local temp_path="${path}.tmp.$$"
++
++  if grep -Eq '^- Target iterations:[[:space:]]*[0-9]+[[:space:]]*$' "$path"; then
++    awk -v new_target="$new_target" '
++      BEGIN { replaced = 0 }
++      {
++        if (replaced == 0 && $0 ~ /^- Target iterations:[[:space:]]*[0-9]+[[:space:]]*$/) {
++          print "- Target iterations: " new_target
++          replaced = 1
++          next
++        }
++        print
++      }
++    ' "$path" > "$temp_path"
++  else
++    awk -v new_target="$new_target" '
++      BEGIN { inserted = 0 }
++      {
++        print
++        if (inserted == 0 && $0 ~ /^- Session started:/) {
++          print "- Target iterations: " new_target
++          inserted = 1
++        }
++      }
++      END {
++        if (inserted == 0) {
++          print "- Target iterations: " new_target
++        }
++      }
++    ' "$path" > "$temp_path"
++  fi
++
++  mv "$temp_path" "$path"
++}
++
+ last_logged_iteration() {
+   local path="$1"
+   local last
+@@ -260,13 +298,16 @@
+     exit 2
+   fi
+ 
++  extracted_iterations="$(extract_target_iterations "$progress_path")"
++
+   if [[ "$ITERATIONS_SET" != true ]]; then
+-    extracted_iterations="$(extract_target_iterations "$progress_path")"
+     if [[ -z "$extracted_iterations" ]]; then
+       echo "Could not determine target iterations from $progress_path. Pass --iterations explicitly." >&2
+       exit 2
+     fi
+     ITERATIONS="$extracted_iterations"
++  elif [[ -z "$extracted_iterations" || "$extracted_iterations" != "$ITERATIONS" ]]; then
++    sync_target_iterations "$progress_path" "$ITERATIONS"
+   fi
+ 
+   last_iteration="$(last_logged_iteration "$progress_path")"
+diff --git a/claude/scripts/repeat_n_times_smoke_test.sh b/claude/scripts/repeat_n_times_smoke_test.sh
+index 926d6a150713680f6525950ed51e2398101f1799..346051c98cb3031cdb4d7d7f0b36aff4a6999ece
+--- a/claude/scripts/repeat_n_times_smoke_test.sh
++++ b/claude/scripts/repeat_n_times_smoke_test.sh
+@@ -223,6 +223,56 @@
+ fi
+ assert_contains "$case6_out" "Last logged iteration (4) exceeds requested --iterations (3)." "case6 prints iteration ceiling validation error"
+ 
++# Case 7: Resume with explicit --iterations updates target metadata for future resumes.
++OVERRIDE_RUN_DIR="${TMP_ROOT}/manual_override_resume"
++mkdir -p "$OVERRIDE_RUN_DIR"
++cat > "${OVERRIDE_RUN_DIR}/report.txt" <<'EOF'
++# Report
++
++## Primary Task
++
++manual override resume
++EOF
++
++cat > "${OVERRIDE_RUN_DIR}/system_prompt.txt" <<'EOF'
++placeholder system prompt
++EOF
++
++cat > "${OVERRIDE_RUN_DIR}/progress.txt" <<'EOF'
++# Progress
++
++- Session started: 2026-02-20T00:00:00-05:00
++- Target iterations: 2
++- Report file: manual/report.txt
++- Task summary: manual override resume
++
++## Iteration Log
++- [0] Session initialized.
++- [1] Existing iteration.
++EOF
++
++run_capture case7a_out case7a_status \
++  bash "$TARGET_SCRIPT" \
++  --resume "$OVERRIDE_RUN_DIR" \
++  --iterations 4 \
++  --dry-run
++
++assert_status "$case7a_status" "0" "case7a exits successfully"
++assert_contains "$case7a_out" "Resuming from iteration: 2" "case7a resumes from expected next iteration"
++assert_file_contains "${OVERRIDE_RUN_DIR}/progress.txt" "- Target iterations: 4" "case7a updates target iterations metadata"
++assert_file_contains "${OVERRIDE_RUN_DIR}/progress.txt" "- [2] Dry run at " "case7a logs resumed iteration 2"
++assert_file_contains "${OVERRIDE_RUN_DIR}/progress.txt" "- [3] Dry run at " "case7a logs resumed iteration 3"
++assert_file_contains "${OVERRIDE_RUN_DIR}/progress.txt" "- [4] Dry run at " "case7a logs resumed iteration 4"
++
++run_capture case7b_out case7b_status \
++  bash "$TARGET_SCRIPT" \
++  --resume "$OVERRIDE_RUN_DIR" \
++  --dry-run
++
++assert_status "$case7b_status" "0" "case7b exits successfully"
++assert_contains "$case7b_out" "Resuming from iteration: 5" "case7b uses updated target metadata"
++assert_contains "$case7b_out" "No remaining iterations to run." "case7b no-ops after completion"
++
+ printf '\nResult: %d passed, %d failed\n' "$pass_count" "$fail_count"
+ 
+ if (( fail_count > 0 )); then
+diff --git a/claude/scripts/repeat_n_times_validation.md b/claude/scripts/repeat_n_times_validation.md
+index 1e696d6833d54deb7b1e77606af79041b530232c..25f3a697f27531bfcb263121ee406138f2958c9b
+--- a/claude/scripts/repeat_n_times_validation.md
++++ b/claude/scripts/repeat_n_times_validation.md
+@@ -23,6 +23,7 @@
+ - Missing option value handling returns a validation error.
+ - Resume from partial progress continues from the next missing iteration.
+ - Resume guard rejects `--iterations` lower than last logged iteration.
++- Resume with explicit `--iterations` updates progress metadata for future resume runs.
+ 
+ ## Manual Command Matrix
+ 
+@@ -35,6 +36,9 @@
+ # Resume same run directory (replace RUN_DIR)
+ bash claude/scripts/repeat_n_times.sh --resume "RUN_DIR" --dry-run
+ 
++# Resume with an explicit higher iteration target
++bash claude/scripts/repeat_n_times.sh --resume "RUN_DIR" --iterations 4 --dry-run
++
+ # Expected validation failure
+ bash claude/scripts/repeat_n_times.sh --resume "RUN_DIR" --task "should fail" --dry-run
+ ```
+@@ -43,4 +47,5 @@
+ 
+ - First command prints run paths and appends `[1]` and `[2]` dry-run log entries in `progress.txt`.
+ - Second command prints `No remaining iterations to run.` when all iterations are complete.
+-- Third command exits non-zero with a resume/task argument validation message.
++- Third command updates `- Target iterations:` and logs dry-run entries up to the requested iteration.
++- Fourth command exits non-zero with a resume/task argument validation message.
+
+
+thinking
+**Verifying appended content position**
+exec
+"C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -Command 'Get-Content -Tail 60 claude/reports/repeat_n_times/20260220_015247_develop/progress.txt' in C:\Users\422mi\skills succeeded in 268ms:
+  Remaining work:
+  - Run end-to-end dry-run and live-run validation in a Bash-capable environment.
+  - Add/update script-level tests or verification docs once execution environment allows Bash.
+  Immediate next steps:
+  - In iteration 2, validate resume flow against a real run directory and tighten edge-case handling based on observed behavior.
+- [2] 2026-02-20T01:57:53.8183242-05:00
+  Summary: Hardened repeat_n_times resume parsing and argument validation for safer continuation runs.
+  Files changed:
+  - claude/scripts/repeat_n_times.sh
+  - claude/reports/repeat_n_times/20260220_015247_develop/progress.txt
+  Actions completed:
+  - Added require_option_value and wired it into all value-taking flags to fail fast on missing option values.
+  - Reworked target-iteration extraction to an awk parser that is safe under set -euo pipefail even when the metadata line is missing.
+  - Added a resume consistency guard that errors when the last logged iteration exceeds requested --iterations.
+  - Kept resume startup behavior deterministic by preserving auto-start from last_logged_iteration + 1.
+  Validation attempted:
+  - bash -lc "echo bash_available" (blocked in this environment: Git Bash signal pipe Win32 error 5).
+  - Static diff review of claude/scripts/repeat_n_times.sh to confirm argument parsing and resume checks are correctly inserted.
+  Remaining work:
+  - Execute Bash-based end-to-end checks for new-run, resume, and dry-run flows in a Bash-capable environment.
+file update:
+diff --git a/claude/scripts/repeat_n_times.sh b/claude/scripts/repeat_n_times.sh
+index b46904cd2ee0a42d9022cf56ad1249e0ad2a1f99..40fd71c34234e6229c757dd4142d7be9a17bb475
+--- a/claude/scripts/repeat_n_times.sh
++++ b/claude/scripts/repeat_n_times.sh
+@@ -106,6 +106,44 @@
+   ' "$path"
+ }
+ 
++sync_target_iterations() {
++  local path="$1"
++  local new_target="$2"
++  local temp_path="${path}.tmp.$$"
++
++  if grep -Eq '^- Target iterations:[[:space:]]*[0-9]+[[:space:]]*$' "$path"; then
++    awk -v new_target="$new_target" '
++      BEGIN { replaced = 0 }
++      {
++        if (replaced == 0 && $0 ~ /^- Target iterations:[[:space:]]*[0-9]+[[:space:]]*$/) {
++          print "- Target iterations: " new_target
++          replaced = 1
++          next
++        }
++        print
++      }
++    ' "$path" > "$temp_path"
++  else
++    awk -v new_target="$new_target" '
++      BEGIN { inserted = 0 }
++      {
++        print
++        if (inserted == 0 && $0 ~ /^- Session started:/) {
++          print "- Target iterations: " new_target
++          inserted = 1
++        }
++      }
++      END {
++        if (inserted == 0) {
++          print "- Target iterations: " new_target
++        }
++      }
++    ' "$path" > "$temp_path"
++  fi
++
++  mv "$temp_path" "$path"
++}
++
+ last_logged_iteration() {
+   local path="$1"
+   local last
+@@ -260,13 +298,16 @@
+     exit 2
+   fi
+ 
++  extracted_iterations="$(extract_target_iterations "$progress_path")"
++
+   if [[ "$ITERATIONS_SET" != true ]]; then
+-    extracted_iterations="$(extract_target_iterations "$progress_path")"
+     if [[ -z "$extracted_iterations" ]]; then
+       echo "Could not determine target iterations from $progress_path. Pass --iterations explicitly." >&2
+       exit 2
+     fi
+     ITERATIONS="$extracted_iterations"
++  elif [[ -z "$extracted_iterations" || "$extracted_iterations" != "$ITERATIONS" ]]; then
++    sync_target_iterations "$progress_path" "$ITERATIONS"
+   fi
+ 
+   last_iteration="$(last_logged_iteration "$progress_path")"
+diff --git a/claude/scripts/repeat_n_times_smoke_test.sh b/claude/scripts/repeat_n_times_smoke_test.sh
+index 926d6a150713680f6525950ed51e2398101f1799..346051c98cb3031cdb4d7d7f0b36aff4a6999ece
+--- a/claude/scripts/repeat_n_times_smoke_test.sh
++++ b/claude/scripts/repeat_n_times_smoke_test.sh
+@@ -223,6 +223,56 @@
+ fi
+ assert_contains "$case6_out" "Last logged iteration (4) exceeds requested --iterations (3)." "case6 prints iteration ceiling validation error"
+ 
++# Case 7: Resume with explicit --iterations updates target metadata for future resumes.
++OVERRIDE_RUN_DIR="${TMP_ROOT}/manual_override_resume"
++mkdir -p "$OVERRIDE_RUN_DIR"
++cat > "${OVERRIDE_RUN_DIR}/report.txt" <<'EOF'
++# Report
++
++## Primary Task
++
++manual override resume
++EOF
++
++cat > "${OVERRIDE_RUN_DIR}/system_prompt.txt" <<'EOF'
++placeholder system prompt
++EOF
++
++cat > "${OVERRIDE_RUN_DIR}/progress.txt" <<'EOF'
++# Progress
++
++- Session started: 2026-02-20T00:00:00-05:00
++- Target iterations: 2
++- Report file: manual/report.txt
++- Task summary: manual override resume
++
++## Iteration Log
++- [0] Session initialized.
++- [1] Existing iteration.
++EOF
++
++run_capture case7a_out case7a_status \
++  bash "$TARGET_SCRIPT" \
++  --resume "$OVERRIDE_RUN_DIR" \
++  --iterations 4 \
++  --dry-run
++
++assert_status "$case7a_status" "0" "case7a exits successfully"
++assert_contains "$case7a_out" "Resuming from iteration: 2" "case7a resumes from expected next iteration"
++assert_file_contains "${OVERRIDE_RUN_DIR}/progress.txt" "- Target iterations: 4" "case7a updates target iterations metadata"
++assert_file_contains "${OVERRIDE_RUN_DIR}/progress.txt" "- [2] Dry run at " "case7a logs resumed iteration 2"
++assert_file_contains "${OVERRIDE_RUN_DIR}/progress.txt" "- [3] Dry run at " "case7a logs resumed iteration 3"
++assert_file_contains "${OVERRIDE_RUN_DIR}/progress.txt" "- [4] Dry run at " "case7a logs resumed iteration 4"
++
++run_capture case7b_out case7b_status \
++  bash "$TARGET_SCRIPT" \
++  --resume "$OVERRIDE_RUN_DIR" \
++  --dry-run
++
++assert_status "$case7b_status" "0" "case7b exits successfully"
++assert_contains "$case7b_out" "Resuming from iteration: 5" "case7b uses updated target metadata"
++assert_contains "$case7b_out" "No remaining iterations to run." "case7b no-ops after completion"
++
+ printf '\nResult: %d passed, %d failed\n' "$pass_count" "$fail_count"
+ 
+ if (( fail_count > 0 )); then
+diff --git a/claude/scripts/repeat_n_times_validation.md b/claude/scripts/repeat_n_times_validation.md
+index 1e696d6833d54deb7b1e77606af79041b530232c..25f3a697f27531bfcb263121ee406138f2958c9b
+--- a/claude/scripts/repeat_n_times_validation.md
++++ b/claude/scripts/repeat_n_times_validation.md
+@@ -23,6 +23,7 @@
+ - Missing option value handling returns a validation error.
+ - Resume from partial progress continues from the next missing iteration.
+ - Resume guard rejects `--iterations` lower than last logged iteration.
++- Resume with explicit `--iterations` updates progress metadata for future resume runs.
+ 
+ ## Manual Command Matrix
+ 
+@@ -35,6 +36,9 @@
+ # Resume same run directory (replace RUN_DIR)
+ bash claude/scripts/repeat_n_times.sh --resume "RUN_DIR" --dry-run
+ 
++# Resume with an explicit higher iteration target
++bash claude/scripts/repeat_n_times.sh --resume "RUN_DIR" --iterations 4 --dry-run
++
+ # Expected validation failure
+ bash claude/scripts/repeat_n_times.sh --resume "RUN_DIR" --task "should fail" --dry-run
+ ```
+@@ -43,4 +47,5 @@
+ 
+ - First command prints run paths and appends `[1]` and `[2]` dry-run log entries in `progress.txt`.
+ - Second command prints `No remaining iterations to run.` when all iterations are complete.
+-- Third command exits non-zero with a resume/task argument validation message.
++- Third command updates `- Target iterations:` and logs dry-run entries up to the requested iteration.
++- Fourth command exits non-zero with a resume/task argument validation message.
+
+
+thinking
+**Checking modified files via git status**
+exec
+"C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -Command 'git status --short' in C:\Users\422mi\skills succeeded in 242ms:
+ M claude/scripts/repeat_n_times.sh
+ M design.md
+?? claude/reports/
+?? claude/scripts/repeat_n_times_smoke_test.sh
+?? claude/scripts/repeat_n_times_validation.md
+?? claude/scripts/run_twice.sh
+file update:
+diff --git a/claude/scripts/repeat_n_times.sh b/claude/scripts/repeat_n_times.sh
+index b46904cd2ee0a42d9022cf56ad1249e0ad2a1f99..40fd71c34234e6229c757dd4142d7be9a17bb475
+--- a/claude/scripts/repeat_n_times.sh
++++ b/claude/scripts/repeat_n_times.sh
+@@ -106,6 +106,44 @@
+   ' "$path"
+ }
+ 
++sync_target_iterations() {
++  local path="$1"
++  local new_target="$2"
++  local temp_path="${path}.tmp.$$"
++
++  if grep -Eq '^- Target iterations:[[:space:]]*[0-9]+[[:space:]]*$' "$path"; then
++    awk -v new_target="$new_target" '
++      BEGIN { replaced = 0 }
++      {
++        if (replaced == 0 && $0 ~ /^- Target iterations:[[:space:]]*[0-9]+[[:space:]]*$/) {
++          print "- Target iterations: " new_target
++          replaced = 1
++          next
++        }
++        print
++      }
++    ' "$path" > "$temp_path"
++  else
++    awk -v new_target="$new_target" '
++      BEGIN { inserted = 0 }
++      {
++        print
++        if (inserted == 0 && $0 ~ /^- Session started:/) {
++          print "- Target iterations: " new_target
++          inserted = 1
++        }
++      }
++      END {
++        if (inserted == 0) {
++          print "- Target iterations: " new_target
++        }
++      }
++    ' "$path" > "$temp_path"
++  fi
++
++  mv "$temp_path" "$path"
++}
++
+ last_logged_iteration() {
+   local path="$1"
+   local last
+@@ -260,13 +298,16 @@
+     exit 2
+   fi
+ 
++  extracted_iterations="$(extract_target_iterations "$progress_path")"
++
+   if [[ "$ITERATIONS_SET" != true ]]; then
+-    extracted_iterations="$(extract_target_iterations "$progress_path")"
+     if [[ -z "$extracted_iterations" ]]; then
+       echo "Could not determine target iterations from $progress_path. Pass --iterations explicitly." >&2
+       exit 2
+     fi
+     ITERATIONS="$extracted_iterations"
++  elif [[ -z "$extracted_iterations" || "$extracted_iterations" != "$ITERATIONS" ]]; then
++    sync_target_iterations "$progress_path" "$ITERATIONS"
+   fi
+ 
+   last_iteration="$(last_logged_iteration "$progress_path")"
+diff --git a/claude/scripts/repeat_n_times_smoke_test.sh b/claude/scripts/repeat_n_times_smoke_test.sh
+index 926d6a150713680f6525950ed51e2398101f1799..346051c98cb3031cdb4d7d7f0b36aff4a6999ece
+--- a/claude/scripts/repeat_n_times_smoke_test.sh
++++ b/claude/scripts/repeat_n_times_smoke_test.sh
+@@ -223,6 +223,56 @@
+ fi
+ assert_contains "$case6_out" "Last logged iteration (4) exceeds requested --iterations (3)." "case6 prints iteration ceiling validation error"
+ 
++# Case 7: Resume with explicit --iterations updates target metadata for future resumes.
++OVERRIDE_RUN_DIR="${TMP_ROOT}/manual_override_resume"
++mkdir -p "$OVERRIDE_RUN_DIR"
++cat > "${OVERRIDE_RUN_DIR}/report.txt" <<'EOF'
++# Report
++
++## Primary Task
++
++manual override resume
++EOF
++
++cat > "${OVERRIDE_RUN_DIR}/system_prompt.txt" <<'EOF'
++placeholder system prompt
++EOF
++
++cat > "${OVERRIDE_RUN_DIR}/progress.txt" <<'EOF'
++# Progress
++
++- Session started: 2026-02-20T00:00:00-05:00
++- Target iterations: 2
++- Report file: manual/report.txt
++- Task summary: manual override resume
++
++## Iteration Log
++- [0] Session initialized.
++- [1] Existing iteration.
++EOF
++
++run_capture case7a_out case7a_status \
++  bash "$TARGET_SCRIPT" \
++  --resume "$OVERRIDE_RUN_DIR" \
++  --iterations 4 \
++  --dry-run
++
++assert_status "$case7a_status" "0" "case7a exits successfully"
++assert_contains "$case7a_out" "Resuming from iteration: 2" "case7a resumes from expected next iteration"
++assert_file_contains "${OVERRIDE_RUN_DIR}/progress.txt" "- Target iterations: 4" "case7a updates target iterations metadata"
++assert_file_contains "${OVERRIDE_RUN_DIR}/progress.txt" "- [2] Dry run at " "case7a logs resumed iteration 2"
++assert_file_contains "${OVERRIDE_RUN_DIR}/progress.txt" "- [3] Dry run at " "case7a logs resumed iteration 3"
++assert_file_contains "${OVERRIDE_RUN_DIR}/progress.txt" "- [4] Dry run at " "case7a logs resumed iteration 4"
++
++run_capture case7b_out case7b_status \
++  bash "$TARGET_SCRIPT" \
++  --resume "$OVERRIDE_RUN_DIR" \
++  --dry-run
++
++assert_status "$case7b_status" "0" "case7b exits successfully"
++assert_contains "$case7b_out" "Resuming from iteration: 5" "case7b uses updated target metadata"
++assert_contains "$case7b_out" "No remaining iterations to run." "case7b no-ops after completion"
++
+ printf '\nResult: %d passed, %d failed\n' "$pass_count" "$fail_count"
+ 
+ if (( fail_count > 0 )); then
+diff --git a/claude/scripts/repeat_n_times_validation.md b/claude/scripts/repeat_n_times_validation.md
+index 1e696d6833d54deb7b1e77606af79041b530232c..25f3a697f27531bfcb263121ee406138f2958c9b
+--- a/claude/scripts/repeat_n_times_validation.md
++++ b/claude/scripts/repeat_n_times_validation.md
+@@ -23,6 +23,7 @@
+ - Missing option value handling returns a validation error.
+ - Resume from partial progress continues from the next missing iteration.
+ - Resume guard rejects `--iterations` lower than last logged iteration.
++- Resume with explicit `--iterations` updates progress metadata for future resume runs.
+ 
+ ## Manual Command Matrix
+ 
+@@ -35,6 +36,9 @@
+ # Resume same run directory (replace RUN_DIR)
+ bash claude/scripts/repeat_n_times.sh --resume "RUN_DIR" --dry-run
+ 
++# Resume with an explicit higher iteration target
++bash claude/scripts/repeat_n_times.sh --resume "RUN_DIR" --iterations 4 --dry-run
++
+ # Expected validation failure
+ bash claude/scripts/repeat_n_times.sh --resume "RUN_DIR" --task "should fail" --dry-run
+ ```
+@@ -43,4 +47,5 @@
+ 
+ - First command prints run paths and appends `[1]` and `[2]` dry-run log entries in `progress.txt`.
+ - Second command prints `No remaining iterations to run.` when all iterations are complete.
+-- Third command exits non-zero with a resume/task argument validation message.
++- Third command updates `- Target iterations:` and logs dry-run entries up to the requested iteration.
++- Fourth command exits non-zero with a resume/task argument validation message.
+
+
+thinking
+**Clarifying handling of unexpected changes**
+Plan update
+  ✓ Patch repeat_n_times.sh to keep progress target-iteration metadata in sync during resume
+  ✓ Add smoke-test regression case for explicit resume iteration override
+  ✓ Update validation doc for new resume override behavior
+  ✓ Append iteration 4 log entry in progress.txt
+file update:
+diff --git a/claude/scripts/repeat_n_times.sh b/claude/scripts/repeat_n_times.sh
+index b46904cd2ee0a42d9022cf56ad1249e0ad2a1f99..40fd71c34234e6229c757dd4142d7be9a17bb475
+--- a/claude/scripts/repeat_n_times.sh
++++ b/claude/scripts/repeat_n_times.sh
+@@ -106,6 +106,44 @@
+   ' "$path"
+ }
+ 
++sync_target_iterations() {
++  local path="$1"
++  local new_target="$2"
++  local temp_path="${path}.tmp.$$"
++
++  if grep -Eq '^- Target iterations:[[:space:]]*[0-9]+[[:space:]]*$' "$path"; then
++    awk -v new_target="$new_target" '
++      BEGIN { replaced = 0 }
++      {
++        if (replaced == 0 && $0 ~ /^- Target iterations:[[:space:]]*[0-9]+[[:space:]]*$/) {
++          print "- Target iterations: " new_target
++          replaced = 1
++          next
++        }
++        print
++      }
++    ' "$path" > "$temp_path"
++  else
++    awk -v new_target="$new_target" '
++      BEGIN { inserted = 0 }
++      {
++        print
++        if (inserted == 0 && $0 ~ /^- Session started:/) {
++          print "- Target iterations: " new_target
++          inserted = 1
++        }
++      }
++      END {
++        if (inserted == 0) {
++          print "- Target iterations: " new_target
++        }
++      }
++    ' "$path" > "$temp_path"
++  fi
++
++  mv "$temp_path" "$path"
++}
++
+ last_logged_iteration() {
+   local path="$1"
+   local last
+@@ -260,13 +298,16 @@
+     exit 2
+   fi
+ 
++  extracted_iterations="$(extract_target_iterations "$progress_path")"
++
+   if [[ "$ITERATIONS_SET" != true ]]; then
+-    extracted_iterations="$(extract_target_iterations "$progress_path")"
+     if [[ -z "$extracted_iterations" ]]; then
+       echo "Could not determine target iterations from $progress_path. Pass --iterations explicitly." >&2
+       exit 2
+     fi
+     ITERATIONS="$extracted_iterations"
++  elif [[ -z "$extracted_iterations" || "$extracted_iterations" != "$ITERATIONS" ]]; then
++    sync_target_iterations "$progress_path" "$ITERATIONS"
+   fi
+ 
+   last_iteration="$(last_logged_iteration "$progress_path")"
+diff --git a/claude/scripts/repeat_n_times_smoke_test.sh b/claude/scripts/repeat_n_times_smoke_test.sh
+index 926d6a150713680f6525950ed51e2398101f1799..346051c98cb3031cdb4d7d7f0b36aff4a6999ece
+--- a/claude/scripts/repeat_n_times_smoke_test.sh
++++ b/claude/scripts/repeat_n_times_smoke_test.sh
+@@ -223,6 +223,56 @@
+ fi
+ assert_contains "$case6_out" "Last logged iteration (4) exceeds requested --iterations (3)." "case6 prints iteration ceiling validation error"
+ 
++# Case 7: Resume with explicit --iterations updates target metadata for future resumes.
++OVERRIDE_RUN_DIR="${TMP_ROOT}/manual_override_resume"
++mkdir -p "$OVERRIDE_RUN_DIR"
++cat > "${OVERRIDE_RUN_DIR}/report.txt" <<'EOF'
++# Report
++
++## Primary Task
++
++manual override resume
++EOF
++
++cat > "${OVERRIDE_RUN_DIR}/system_prompt.txt" <<'EOF'
++placeholder system prompt
++EOF
++
++cat > "${OVERRIDE_RUN_DIR}/progress.txt" <<'EOF'
++# Progress
++
++- Session started: 2026-02-20T00:00:00-05:00
++- Target iterations: 2
++- Report file: manual/report.txt
++- Task summary: manual override resume
++
++## Iteration Log
++- [0] Session initialized.
++- [1] Existing iteration.
++EOF
++
++run_capture case7a_out case7a_status \
++  bash "$TARGET_SCRIPT" \
++  --resume "$OVERRIDE_RUN_DIR" \
++  --iterations 4 \
++  --dry-run
++
++assert_status "$case7a_status" "0" "case7a exits successfully"
++assert_contains "$case7a_out" "Resuming from iteration: 2" "case7a resumes from expected next iteration"
++assert_file_contains "${OVERRIDE_RUN_DIR}/progress.txt" "- Target iterations: 4" "case7a updates target iterations metadata"
++assert_file_contains "${OVERRIDE_RUN_DIR}/progress.txt" "- [2] Dry run at " "case7a logs resumed iteration 2"
++assert_file_contains "${OVERRIDE_RUN_DIR}/progress.txt" "- [3] Dry run at " "case7a logs resumed iteration 3"
++assert_file_contains "${OVERRIDE_RUN_DIR}/progress.txt" "- [4] Dry run at " "case7a logs resumed iteration 4"
++
++run_capture case7b_out case7b_status \
++  bash "$TARGET_SCRIPT" \
++  --resume "$OVERRIDE_RUN_DIR" \
++  --dry-run
++
++assert_status "$case7b_status" "0" "case7b exits successfully"
++assert_contains "$case7b_out" "Resuming from iteration: 5" "case7b uses updated target metadata"
++assert_contains "$case7b_out" "No remaining iterations to run." "case7b no-ops after completion"
++
+ printf '\nResult: %d passed, %d failed\n' "$pass_count" "$fail_count"
+ 
+ if (( fail_count > 0 )); then
+diff --git a/claude/scripts/repeat_n_times_validation.md b/claude/scripts/repeat_n_times_validation.md
+index 1e696d6833d54deb7b1e77606af79041b530232c..25f3a697f27531bfcb263121ee406138f2958c9b
+--- a/claude/scripts/repeat_n_times_validation.md
++++ b/claude/scripts/repeat_n_times_validation.md
+@@ -23,6 +23,7 @@
+ - Missing option value handling returns a validation error.
+ - Resume from partial progress continues from the next missing iteration.
+ - Resume guard rejects `--iterations` lower than last logged iteration.
++- Resume with explicit `--iterations` updates progress metadata for future resume runs.
+ 
+ ## Manual Command Matrix
+ 
+@@ -35,6 +36,9 @@
+ # Resume same run directory (replace RUN_DIR)
+ bash claude/scripts/repeat_n_times.sh --resume "RUN_DIR" --dry-run
+ 
++# Resume with an explicit higher iteration target
++bash claude/scripts/repeat_n_times.sh --resume "RUN_DIR" --iterations 4 --dry-run
++
+ # Expected validation failure
+ bash claude/scripts/repeat_n_times.sh --resume "RUN_DIR" --task "should fail" --dry-run
+ ```
+@@ -43,4 +47,5 @@
+ 
+ - First command prints run paths and appends `[1]` and `[2]` dry-run log entries in `progress.txt`.
+ - Second command prints `No remaining iterations to run.` when all iterations are complete.
+-- Third command exits non-zero with a resume/task argument validation message.
++- Third command updates `- Target iterations:` and logs dry-run entries up to the requested iteration.
++- Fourth command exits non-zero with a resume/task argument validation message.
+
+
+thinking
+**Planning line number collection**
+exec
+"C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -Command 'rg -n "sync_target_iterations|extracted_iterations|Could not determine target iterations|Resuming from iteration" claude/scripts/repeat_n_times.sh' in C:\Users\422mi\skillsexec
+"C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -Command 'rg -n "explicit `--iterations`|Resume with an explicit higher iteration target|Third command updates" claude/scripts/repeat_n_times_validation.md' in C:\Users\422mi\skillsexec
+"C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -Command 'rg -n "Case 7|case7a|case7b|Target iterations: 4" claude/scripts/repeat_n_times_smoke_test.sh' in C:\Users\422mi\skills succeeded in 262ms:
+109:sync_target_iterations() {
+301:  extracted_iterations="$(extract_target_iterations "$progress_path")"
+304:    if [[ -z "$extracted_iterations" ]]; then
+305:      echo "Could not determine target iterations from $progress_path. Pass --iterations explicitly." >&2
+308:    ITERATIONS="$extracted_iterations"
+309:  elif [[ -z "$extracted_iterations" || "$extracted_iterations" != "$ITERATIONS" ]]; then
+310:    sync_target_iterations "$progress_path" "$ITERATIONS"
+416:  echo "Resuming from iteration: $start_iteration"
+ succeeded in 237ms:
+39:# Resume with an explicit higher iteration target
+50:- Third command updates `- Target iterations:` and logs dry-run entries up to the requested iteration.
+ succeeded in 244ms:
+226:# Case 7: Resume with explicit --iterations updates target metadata for future resumes.
+254:run_capture case7a_out case7a_status \
+260:assert_status "$case7a_status" "0" "case7a exits successfully"
+261:assert_contains "$case7a_out" "Resuming from iteration: 2" "case7a resumes from expected next iteration"
+262:assert_file_contains "${OVERRIDE_RUN_DIR}/progress.txt" "- Target iterations: 4" "case7a updates target iterations metadata"
+263:assert_file_contains "${OVERRIDE_RUN_DIR}/progress.txt" "- [2] Dry run at " "case7a logs resumed iteration 2"
+264:assert_file_contains "${OVERRIDE_RUN_DIR}/progress.txt" "- [3] Dry run at " "case7a logs resumed iteration 3"
+265:assert_file_contains "${OVERRIDE_RUN_DIR}/progress.txt" "- [4] Dry run at " "case7a logs resumed iteration 4"
+267:run_capture case7b_out case7b_status \
+272:assert_status "$case7b_status" "0" "case7b exits successfully"
+273:assert_contains "$case7b_out" "Resuming from iteration: 5" "case7b uses updated target metadata"
+274:assert_contains "$case7b_out" "No remaining iterations to run." "case7b no-ops after completion"
+file update:
+diff --git a/claude/scripts/repeat_n_times.sh b/claude/scripts/repeat_n_times.sh
+index b46904cd2ee0a42d9022cf56ad1249e0ad2a1f99..40fd71c34234e6229c757dd4142d7be9a17bb475
+--- a/claude/scripts/repeat_n_times.sh
++++ b/claude/scripts/repeat_n_times.sh
+@@ -106,6 +106,44 @@
+   ' "$path"
+ }
+ 
++sync_target_iterations() {
++  local path="$1"
++  local new_target="$2"
++  local temp_path="${path}.tmp.$$"
++
++  if grep -Eq '^- Target iterations:[[:space:]]*[0-9]+[[:space:]]*$' "$path"; then
++    awk -v new_target="$new_target" '
++      BEGIN { replaced = 0 }
++      {
++        if (replaced == 0 && $0 ~ /^- Target iterations:[[:space:]]*[0-9]+[[:space:]]*$/) {
++          print "- Target iterations: " new_target
++          replaced = 1
++          next
++        }
++        print
++      }
++    ' "$path" > "$temp_path"
++  else
++    awk -v new_target="$new_target" '
++      BEGIN { inserted = 0 }
++      {
++        print
++        if (inserted == 0 && $0 ~ /^- Session started:/) {
++          print "- Target iterations: " new_target
++          inserted = 1
++        }
++      }
++      END {
++        if (inserted == 0) {
++          print "- Target iterations: " new_target
++        }
++      }
++    ' "$path" > "$temp_path"
++  fi
++
++  mv "$temp_path" "$path"
++}
++
+ last_logged_iteration() {
+   local path="$1"
+   local last
+@@ -260,13 +298,16 @@
+     exit 2
+   fi
+ 
++  extracted_iterations="$(extract_target_iterations "$progress_path")"
++
+   if [[ "$ITERATIONS_SET" != true ]]; then
+-    extracted_iterations="$(extract_target_iterations "$progress_path")"
+     if [[ -z "$extracted_iterations" ]]; then
+       echo "Could not determine target iterations from $progress_path. Pass --iterations explicitly." >&2
+       exit 2
+     fi
+     ITERATIONS="$extracted_iterations"
++  elif [[ -z "$extracted_iterations" || "$extracted_iterations" != "$ITERATIONS" ]]; then
++    sync_target_iterations "$progress_path" "$ITERATIONS"
+   fi
+ 
+   last_iteration="$(last_logged_iteration "$progress_path")"
+diff --git a/claude/scripts/repeat_n_times_smoke_test.sh b/claude/scripts/repeat_n_times_smoke_test.sh
+index 926d6a150713680f6525950ed51e2398101f1799..346051c98cb3031cdb4d7d7f0b36aff4a6999ece
+--- a/claude/scripts/repeat_n_times_smoke_test.sh
++++ b/claude/scripts/repeat_n_times_smoke_test.sh
+@@ -223,6 +223,56 @@
+ fi
+ assert_contains "$case6_out" "Last logged iteration (4) exceeds requested --iterations (3)." "case6 prints iteration ceiling validation error"
+ 
++# Case 7: Resume with explicit --iterations updates target metadata for future resumes.
++OVERRIDE_RUN_DIR="${TMP_ROOT}/manual_override_resume"
++mkdir -p "$OVERRIDE_RUN_DIR"
++cat > "${OVERRIDE_RUN_DIR}/report.txt" <<'EOF'
++# Report
++
++## Primary Task
++
++manual override resume
++EOF
++
++cat > "${OVERRIDE_RUN_DIR}/system_prompt.txt" <<'EOF'
++placeholder system prompt
++EOF
++
++cat > "${OVERRIDE_RUN_DIR}/progress.txt" <<'EOF'
++# Progress
++
++- Session started: 2026-02-20T00:00:00-05:00
++- Target iterations: 2
++- Report file: manual/report.txt
++- Task summary: manual override resume
++
++## Iteration Log
++- [0] Session initialized.
++- [1] Existing iteration.
++EOF
++
++run_capture case7a_out case7a_status \
++  bash "$TARGET_SCRIPT" \
++  --resume "$OVERRIDE_RUN_DIR" \
++  --iterations 4 \
++  --dry-run
++
++assert_status "$case7a_status" "0" "case7a exits successfully"
++assert_contains "$case7a_out" "Resuming from iteration: 2" "case7a resumes from expected next iteration"
++assert_file_contains "${OVERRIDE_RUN_DIR}/progress.txt" "- Target iterations: 4" "case7a updates target iterations metadata"
++assert_file_contains "${OVERRIDE_RUN_DIR}/progress.txt" "- [2] Dry run at " "case7a logs resumed iteration 2"
++assert_file_contains "${OVERRIDE_RUN_DIR}/progress.txt" "- [3] Dry run at " "case7a logs resumed iteration 3"
++assert_file_contains "${OVERRIDE_RUN_DIR}/progress.txt" "- [4] Dry run at " "case7a logs resumed iteration 4"
++
++run_capture case7b_out case7b_status \
++  bash "$TARGET_SCRIPT" \
++  --resume "$OVERRIDE_RUN_DIR" \
++  --dry-run
++
++assert_status "$case7b_status" "0" "case7b exits successfully"
++assert_contains "$case7b_out" "Resuming from iteration: 5" "case7b uses updated target metadata"
++assert_contains "$case7b_out" "No remaining iterations to run." "case7b no-ops after completion"
++
+ printf '\nResult: %d passed, %d failed\n' "$pass_count" "$fail_count"
+ 
+ if (( fail_count > 0 )); then
+diff --git a/claude/scripts/repeat_n_times_validation.md b/claude/scripts/repeat_n_times_validation.md
+index 1e696d6833d54deb7b1e77606af79041b530232c..25f3a697f27531bfcb263121ee406138f2958c9b
+--- a/claude/scripts/repeat_n_times_validation.md
++++ b/claude/scripts/repeat_n_times_validation.md
+@@ -23,6 +23,7 @@
+ - Missing option value handling returns a validation error.
+ - Resume from partial progress continues from the next missing iteration.
+ - Resume guard rejects `--iterations` lower than last logged iteration.
++- Resume with explicit `--iterations` updates progress metadata for future resume runs.
+ 
+ ## Manual Command Matrix
+ 
+@@ -35,6 +36,9 @@
+ # Resume same run directory (replace RUN_DIR)
+ bash claude/scripts/repeat_n_times.sh --resume "RUN_DIR" --dry-run
+ 
++# Resume with an explicit higher iteration target
++bash claude/scripts/repeat_n_times.sh --resume "RUN_DIR" --iterations 4 --dry-run
++
+ # Expected validation failure
+ bash claude/scripts/repeat_n_times.sh --resume "RUN_DIR" --task "should fail" --dry-run
+ ```
+@@ -43,4 +47,5 @@
+ 
+ - First command prints run paths and appends `[1]` and `[2]` dry-run log entries in `progress.txt`.
+ - Second command prints `No remaining iterations to run.` when all iterations are complete.
+-- Third command exits non-zero with a resume/task argument validation message.
++- Third command updates `- Target iterations:` and logs dry-run entries up to the requested iteration.
++- Fourth command exits non-zero with a resume/task argument validation message.
+
+
+thinking
+**Seeking line numbers in progress**
+exec
+"C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -Command 'rg -n "''^- '"\\[4\\]\" claude/reports/repeat_n_times/20260220_015247_develop/progress.txt" in C:\Users\422mi\skills succeeded in 249ms:
+66:- [4] 2026-02-20T02:02:56.7315220-05:00
+file update:
+diff --git a/claude/scripts/repeat_n_times.sh b/claude/scripts/repeat_n_times.sh
+index b46904cd2ee0a42d9022cf56ad1249e0ad2a1f99..40fd71c34234e6229c757dd4142d7be9a17bb475
+--- a/claude/scripts/repeat_n_times.sh
++++ b/claude/scripts/repeat_n_times.sh
+@@ -106,6 +106,44 @@
+   ' "$path"
+ }
+ 
++sync_target_iterations() {
++  local path="$1"
++  local new_target="$2"
++  local temp_path="${path}.tmp.$$"
++
++  if grep -Eq '^- Target iterations:[[:space:]]*[0-9]+[[:space:]]*$' "$path"; then
++    awk -v new_target="$new_target" '
++      BEGIN { replaced = 0 }
++      {
++        if (replaced == 0 && $0 ~ /^- Target iterations:[[:space:]]*[0-9]+[[:space:]]*$/) {
++          print "- Target iterations: " new_target
++          replaced = 1
++          next
++        }
++        print
++      }
++    ' "$path" > "$temp_path"
++  else
++    awk -v new_target="$new_target" '
++      BEGIN { inserted = 0 }
++      {
++        print
++        if (inserted == 0 && $0 ~ /^- Session started:/) {
++          print "- Target iterations: " new_target
++          inserted = 1
++        }
++      }
++      END {
++        if (inserted == 0) {
++          print "- Target iterations: " new_target
++        }
++      }
++    ' "$path" > "$temp_path"
++  fi
++
++  mv "$temp_path" "$path"
++}
++
+ last_logged_iteration() {
+   local path="$1"
+   local last
+@@ -260,13 +298,16 @@
+     exit 2
+   fi
+ 
++  extracted_iterations="$(extract_target_iterations "$progress_path")"
++
+   if [[ "$ITERATIONS_SET" != true ]]; then
+-    extracted_iterations="$(extract_target_iterations "$progress_path")"
+     if [[ -z "$extracted_iterations" ]]; then
+       echo "Could not determine target iterations from $progress_path. Pass --iterations explicitly." >&2
+       exit 2
+     fi
+     ITERATIONS="$extracted_iterations"
++  elif [[ -z "$extracted_iterations" || "$extracted_iterations" != "$ITERATIONS" ]]; then
++    sync_target_iterations "$progress_path" "$ITERATIONS"
+   fi
+ 
+   last_iteration="$(last_logged_iteration "$progress_path")"
+diff --git a/claude/scripts/repeat_n_times_smoke_test.sh b/claude/scripts/repeat_n_times_smoke_test.sh
+index 926d6a150713680f6525950ed51e2398101f1799..346051c98cb3031cdb4d7d7f0b36aff4a6999ece
+--- a/claude/scripts/repeat_n_times_smoke_test.sh
++++ b/claude/scripts/repeat_n_times_smoke_test.sh
+@@ -223,6 +223,56 @@
+ fi
+ assert_contains "$case6_out" "Last logged iteration (4) exceeds requested --iterations (3)." "case6 prints iteration ceiling validation error"
+ 
++# Case 7: Resume with explicit --iterations updates target metadata for future resumes.
++OVERRIDE_RUN_DIR="${TMP_ROOT}/manual_override_resume"
++mkdir -p "$OVERRIDE_RUN_DIR"
++cat > "${OVERRIDE_RUN_DIR}/report.txt" <<'EOF'
++# Report
++
++## Primary Task
++
++manual override resume
++EOF
++
++cat > "${OVERRIDE_RUN_DIR}/system_prompt.txt" <<'EOF'
++placeholder system prompt
++EOF
++
++cat > "${OVERRIDE_RUN_DIR}/progress.txt" <<'EOF'
++# Progress
++
++- Session started: 2026-02-20T00:00:00-05:00
++- Target iterations: 2
++- Report file: manual/report.txt
++- Task summary: manual override resume
++
++## Iteration Log
++- [0] Session initialized.
++- [1] Existing iteration.
++EOF
++
++run_capture case7a_out case7a_status \
++  bash "$TARGET_SCRIPT" \
++  --resume "$OVERRIDE_RUN_DIR" \
++  --iterations 4 \
++  --dry-run
++
++assert_status "$case7a_status" "0" "case7a exits successfully"
++assert_contains "$case7a_out" "Resuming from iteration: 2" "case7a resumes from expected next iteration"
++assert_file_contains "${OVERRIDE_RUN_DIR}/progress.txt" "- Target iterations: 4" "case7a updates target iterations metadata"
++assert_file_contains "${OVERRIDE_RUN_DIR}/progress.txt" "- [2] Dry run at " "case7a logs resumed iteration 2"
++assert_file_contains "${OVERRIDE_RUN_DIR}/progress.txt" "- [3] Dry run at " "case7a logs resumed iteration 3"
++assert_file_contains "${OVERRIDE_RUN_DIR}/progress.txt" "- [4] Dry run at " "case7a logs resumed iteration 4"
++
++run_capture case7b_out case7b_status \
++  bash "$TARGET_SCRIPT" \
++  --resume "$OVERRIDE_RUN_DIR" \
++  --dry-run
++
++assert_status "$case7b_status" "0" "case7b exits successfully"
++assert_contains "$case7b_out" "Resuming from iteration: 5" "case7b uses updated target metadata"
++assert_contains "$case7b_out" "No remaining iterations to run." "case7b no-ops after completion"
++
+ printf '\nResult: %d passed, %d failed\n' "$pass_count" "$fail_count"
+ 
+ if (( fail_count > 0 )); then
+diff --git a/claude/scripts/repeat_n_times_validation.md b/claude/scripts/repeat_n_times_validation.md
+index 1e696d6833d54deb7b1e77606af79041b530232c..25f3a697f27531bfcb263121ee406138f2958c9b
+--- a/claude/scripts/repeat_n_times_validation.md
++++ b/claude/scripts/repeat_n_times_validation.md
+@@ -23,6 +23,7 @@
+ - Missing option value handling returns a validation error.
+ - Resume from partial progress continues from the next missing iteration.
+ - Resume guard rejects `--iterations` lower than last logged iteration.
++- Resume with explicit `--iterations` updates progress metadata for future resume runs.
+ 
+ ## Manual Command Matrix
+ 
+@@ -35,6 +36,9 @@
+ # Resume same run directory (replace RUN_DIR)
+ bash claude/scripts/repeat_n_times.sh --resume "RUN_DIR" --dry-run
+ 
++# Resume with an explicit higher iteration target
++bash claude/scripts/repeat_n_times.sh --resume "RUN_DIR" --iterations 4 --dry-run
++
+ # Expected validation failure
+ bash claude/scripts/repeat_n_times.sh --resume "RUN_DIR" --task "should fail" --dry-run
+ ```
+@@ -43,4 +47,5 @@
+ 
+ - First command prints run paths and appends `[1]` and `[2]` dry-run log entries in `progress.txt`.
+ - Second command prints `No remaining iterations to run.` when all iterations are complete.
+-- Third command exits non-zero with a resume/task argument validation message.
++- Third command updates `- Target iterations:` and logs dry-run entries up to the requested iteration.
++- Fourth command exits non-zero with a resume/task argument validation message.
+
+
+thinking
+**Summarizing final implementation and progress**
+codex
+Implemented iteration 4 with concrete repo changes and logged it in `progress.txt`.
+
+- Fixed resume metadata drift in `claude/scripts/repeat_n_times.sh:109` and `claude/scripts/repeat_n_times.sh:301` by syncing `- Target iterations:` when `--resume` is used with explicit `--iterations`.
+- Added regression coverage in `claude/scripts/repeat_n_times_smoke_test.sh:226` (new case 7) to verify:
+  - explicit override updates metadata,
+  - follow-up resume without `--iterations` works and no-ops correctly.
+- Updated validation doc in `claude/scripts/repeat_n_times_validation.md:39` and `claude/scripts/repeat_n_times_validation.md:50`.
+- Appended iteration entry at `claude/reports/repeat_n_times/20260220_015247_develop/progress.txt:66`.
+
+Validation status:
+- Could not run Bash-based tests here (`bash --version` fails with Git Bash signal pipe Win32 error 5).
+- Performed static verification with `git diff` and `rg` for function wiring and new assertions.
+
+Next natural step:
+1. Run `bash claude/scripts/repeat_n_times_smoke_test.sh` in a Bash-capable environment and fix anything it surfaces in iteration 5.
+file update:
+diff --git a/claude/scripts/repeat_n_times.sh b/claude/scripts/repeat_n_times.sh
+index b46904cd2ee0a42d9022cf56ad1249e0ad2a1f99..40fd71c34234e6229c757dd4142d7be9a17bb475
+--- a/claude/scripts/repeat_n_times.sh
++++ b/claude/scripts/repeat_n_times.sh
+@@ -106,6 +106,44 @@
+   ' "$path"
+ }
+ 
++sync_target_iterations() {
++  local path="$1"
++  local new_target="$2"
++  local temp_path="${path}.tmp.$$"
++
++  if grep -Eq '^- Target iterations:[[:space:]]*[0-9]+[[:space:]]*$' "$path"; then
++    awk -v new_target="$new_target" '
++      BEGIN { replaced = 0 }
++      {
++        if (replaced == 0 && $0 ~ /^- Target iterations:[[:space:]]*[0-9]+[[:space:]]*$/) {
++          print "- Target iterations: " new_target
++          replaced = 1
++          next
++        }
++        print
++      }
++    ' "$path" > "$temp_path"
++  else
++    awk -v new_target="$new_target" '
++      BEGIN { inserted = 0 }
++      {
++        print
++        if (inserted == 0 && $0 ~ /^- Session started:/) {
++          print "- Target iterations: " new_target
++          inserted = 1
++        }
++      }
++      END {
++        if (inserted == 0) {
++          print "- Target iterations: " new_target
++        }
++      }
++    ' "$path" > "$temp_path"
++  fi
++
++  mv "$temp_path" "$path"
++}
++
+ last_logged_iteration() {
+   local path="$1"
+   local last
+@@ -260,13 +298,16 @@
+     exit 2
+   fi
+ 
++  extracted_iterations="$(extract_target_iterations "$progress_path")"
++
+   if [[ "$ITERATIONS_SET" != true ]]; then
+-    extracted_iterations="$(extract_target_iterations "$progress_path")"
+     if [[ -z "$extracted_iterations" ]]; then
+       echo "Could not determine target iterations from $progress_path. Pass --iterations explicitly." >&2
+       exit 2
+     fi
+     ITERATIONS="$extracted_iterations"
++  elif [[ -z "$extracted_iterations" || "$extracted_iterations" != "$ITERATIONS" ]]; then
++    sync_target_iterations "$progress_path" "$ITERATIONS"
+   fi
+ 
+   last_iteration="$(last_logged_iteration "$progress_path")"
+diff --git a/claude/scripts/repeat_n_times_smoke_test.sh b/claude/scripts/repeat_n_times_smoke_test.sh
+index 926d6a150713680f6525950ed51e2398101f1799..346051c98cb3031cdb4d7d7f0b36aff4a6999ece
+--- a/claude/scripts/repeat_n_times_smoke_test.sh
++++ b/claude/scripts/repeat_n_times_smoke_test.sh
+@@ -223,6 +223,56 @@
+ fi
+ assert_contains "$case6_out" "Last logged iteration (4) exceeds requested --iterations (3)." "case6 prints iteration ceiling validation error"
+ 
++# Case 7: Resume with explicit --iterations updates target metadata for future resumes.
++OVERRIDE_RUN_DIR="${TMP_ROOT}/manual_override_resume"
++mkdir -p "$OVERRIDE_RUN_DIR"
++cat > "${OVERRIDE_RUN_DIR}/report.txt" <<'EOF'
++# Report
++
++## Primary Task
++
++manual override resume
++EOF
++
++cat > "${OVERRIDE_RUN_DIR}/system_prompt.txt" <<'EOF'
++placeholder system prompt
++EOF
++
++cat > "${OVERRIDE_RUN_DIR}/progress.txt" <<'EOF'
++# Progress
++
++- Session started: 2026-02-20T00:00:00-05:00
++- Target iterations: 2
++- Report file: manual/report.txt
++- Task summary: manual override resume
++
++## Iteration Log
++- [0] Session initialized.
++- [1] Existing iteration.
++EOF
++
++run_capture case7a_out case7a_status \
++  bash "$TARGET_SCRIPT" \
++  --resume "$OVERRIDE_RUN_DIR" \
++  --iterations 4 \
++  --dry-run
++
++assert_status "$case7a_status" "0" "case7a exits successfully"
++assert_contains "$case7a_out" "Resuming from iteration: 2" "case7a resumes from expected next iteration"
++assert_file_contains "${OVERRIDE_RUN_DIR}/progress.txt" "- Target iterations: 4" "case7a updates target iterations metadata"
++assert_file_contains "${OVERRIDE_RUN_DIR}/progress.txt" "- [2] Dry run at " "case7a logs resumed iteration 2"
++assert_file_contains "${OVERRIDE_RUN_DIR}/progress.txt" "- [3] Dry run at " "case7a logs resumed iteration 3"
++assert_file_contains "${OVERRIDE_RUN_DIR}/progress.txt" "- [4] Dry run at " "case7a logs resumed iteration 4"
++
++run_capture case7b_out case7b_status \
++  bash "$TARGET_SCRIPT" \
++  --resume "$OVERRIDE_RUN_DIR" \
++  --dry-run
++
++assert_status "$case7b_status" "0" "case7b exits successfully"
++assert_contains "$case7b_out" "Resuming from iteration: 5" "case7b uses updated target metadata"
++assert_contains "$case7b_out" "No remaining iterations to run." "case7b no-ops after completion"
++
+ printf '\nResult: %d passed, %d failed\n' "$pass_count" "$fail_count"
+ 
+ if (( fail_count > 0 )); then
+diff --git a/claude/scripts/repeat_n_times_validation.md b/claude/scripts/repeat_n_times_validation.md
+index 1e696d6833d54deb7b1e77606af79041b530232c..25f3a697f27531bfcb263121ee406138f2958c9b
+--- a/claude/scripts/repeat_n_times_validation.md
++++ b/claude/scripts/repeat_n_times_validation.md
+@@ -23,6 +23,7 @@
+ - Missing option value handling returns a validation error.
+ - Resume from partial progress continues from the next missing iteration.
+ - Resume guard rejects `--iterations` lower than last logged iteration.
++- Resume with explicit `--iterations` updates progress metadata for future resume runs.
+ 
+ ## Manual Command Matrix
+ 
+@@ -35,6 +36,9 @@
+ # Resume same run directory (replace RUN_DIR)
+ bash claude/scripts/repeat_n_times.sh --resume "RUN_DIR" --dry-run
+ 
++# Resume with an explicit higher iteration target
++bash claude/scripts/repeat_n_times.sh --resume "RUN_DIR" --iterations 4 --dry-run
++
+ # Expected validation failure
+ bash claude/scripts/repeat_n_times.sh --resume "RUN_DIR" --task "should fail" --dry-run
+ ```
+@@ -43,4 +47,5 @@
+ 
+ - First command prints run paths and appends `[1]` and `[2]` dry-run log entries in `progress.txt`.
+ - Second command prints `No remaining iterations to run.` when all iterations are complete.
+-- Third command exits non-zero with a resume/task argument validation message.
++- Third command updates `- Target iterations:` and logs dry-run entries up to the requested iteration.
++- Fourth command exits non-zero with a resume/task argument validation message.
+
+tokens used
+49,702
+Implemented iteration 4 with concrete repo changes and logged it in `progress.txt`.
+
+- Fixed resume metadata drift in `claude/scripts/repeat_n_times.sh:109` and `claude/scripts/repeat_n_times.sh:301` by syncing `- Target iterations:` when `--resume` is used with explicit `--iterations`.
+- Added regression coverage in `claude/scripts/repeat_n_times_smoke_test.sh:226` (new case 7) to verify:
+  - explicit override updates metadata,
+  - follow-up resume without `--iterations` works and no-ops correctly.
+- Updated validation doc in `claude/scripts/repeat_n_times_validation.md:39` and `claude/scripts/repeat_n_times_validation.md:50`.
+- Appended iteration entry at `claude/reports/repeat_n_times/20260220_015247_develop/progress.txt:66`.
+
+Validation status:
+- Could not run Bash-based tests here (`bash --version` fails with Git Bash signal pipe Win32 error 5).
+- Performed static verification with `git diff` and `rg` for function wiring and new assertions.
+
+Next natural step:
+1. Run `bash claude/scripts/repeat_n_times_smoke_test.sh` in a Bash-capable environment and fix anything it surfaces in iteration 5.

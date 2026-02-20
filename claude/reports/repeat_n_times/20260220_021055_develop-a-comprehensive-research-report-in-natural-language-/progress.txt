@@ -1,0 +1,103 @@
+﻿# Progress
+
+- Session started: 2026-02-20T02:10:55-05:00
+- Target iterations: 5
+- Report file: claude/reports/repeat_n_times/20260220_021055_develop-a-comprehensive-research-report-in-natural-language-/report.txt
+- Task summary: Develop a comprehensive research report in natural language and full sentences on the most up-to-date breakthroughs, algorithms, and techniques in artificial intelligence as of February 20, 2026. Prioritize primary sources and include concrete publication dates, specific model and system names, and source links. Organize by major areas: foundation models, multimodal systems, agentic AI, reasoning and planning methods, efficiency and training and inference optimization, evaluation, safety and alignment, and robotics. Distinguish established results from emerging claims, and include a concise section on open problems and practical implications for builders.
+
+## Iteration Log
+- [0] Session initialized.
+- [1] 2026-02-20T02:17:48.1213950-05:00
+  Summary: Authored a comprehensive AI research report (as-of 2026-02-20) with primary-source citations, dated breakthroughs, and required topical coverage.
+  Files changed:
+  - claude/reports/repeat_n_times/20260220_021055_develop-a-comprehensive-research-report-in-natural-language-/research_report_2026-02-20.md
+  - claude/reports/repeat_n_times/20260220_021055_develop-a-comprehensive-research-report-in-natural-language-/progress.txt
+  Actions completed:
+  - Created a new report artifact with full-sentence analysis across all required areas: foundation models, multimodal systems, agentic AI, reasoning/planning, efficiency optimization, evaluation, safety/alignment, and robotics.
+  - Added explicit publication dates, concrete model/system names, and direct primary links (technical reports, system cards, official research/product announcements).
+  - Explicitly separated established results from emerging claims in each major area.
+  - Added concise sections on open problems and practical implications for builders.
+  - Included a consolidated primary-source reference list (25 entries) at the end of the report.
+  Validation attempted:
+  - Verified report file creation with Test-Path.
+  - Verified major required headings with rg "^## [1-8]\\)" and verified closing sections (Open problems, Practical implications, Primary sources).
+  Remaining work:
+  - Tighten evidence grading by adding confidence labels per claim (high/medium/low) and explicit independent-replication status where available.
+  - Add a compact comparative matrix (model family vs context length, modality support, agent/tool support, and noted safety posture) sourced only from primary docs.
+  - Spot-check all external links for availability and archive mirrors where pages are dynamic.
+  Immediate next steps:
+  - In iteration 2, add an evidence-confidence appendix and a comparison table, then run a full link integrity sweep and update the report accordingly.
+- [2] 2026-02-20T02:19:56.7116240-05:00
+  Summary: Strengthened report rigor with explicit evidence-confidence grading, a compact cross-system comparison matrix, and traceable link-integrity artifacts.
+  Files changed:
+  - claude/reports/repeat_n_times/20260220_021055_develop-a-comprehensive-research-report-in-natural-language-/research_report_2026-02-20.md
+  - claude/reports/repeat_n_times/20260220_021055_develop-a-comprehensive-research-report-in-natural-language-/link_check_2026-02-20.csv
+  - claude/reports/repeat_n_times/20260220_021055_develop-a-comprehensive-research-report-in-natural-language-/archive_lookup_2026-02-20.md
+  - claude/reports/repeat_n_times/20260220_021055_develop-a-comprehensive-research-report-in-natural-language-/progress.txt
+  Actions completed:
+  - Appended three new quality sections to the report: evidence-confidence/replication appendix, compact model-system comparison matrix, and link-integrity plus archival notes.
+  - Ran an automated URL sweep over all cited primary-source links and exported machine-readable results.
+  - Generated an archive-lookup companion document with per-source Wayback lookup URLs to improve retrieval resilience for dynamic pages.
+  Validation attempted:
+  - Verified new report sections exist via heading scan (## 9, ## 10, ## 11).
+  - Confirmed creation of artifact files (link_check_2026-02-20.csv, archive_lookup_2026-02-20.md).
+  - Link liveness check executed; all requests failed with Unable to connect to the remote server due runtime network restriction in this environment.
+  Remaining work:
+  - Perform an external-network link verification pass (outside restricted sandbox) to replace connectivity-error placeholders with real HTTP status outcomes.
+  - Optionally add per-claim inline source IDs (e.g., [S12], [S13]) in core narrative paragraphs for faster auditability.
+  Immediate next steps:
+  - In iteration 3, run a non-sandboxed/connected link validation pass if available and fold real status codes plus any corrected URLs back into the report and appendix.
+
+- [3] 2026-02-20T02:22:17.8002903-05:00
+  Summary: Added full inline source-traceability markers across the core narrative and open-problem bullets to improve auditability of each claim against the primary-source list.
+  Files changed:
+  - claude/reports/repeat_n_times/20260220_021055_develop-a-comprehensive-research-report-in-natural-language-/research_report_2026-02-20.md
+  - claude/reports/repeat_n_times/20260220_021055_develop-a-comprehensive-research-report-in-natural-language-/progress.txt
+  Actions completed:
+  - Updated sections 1-8, Scope/method, Open problems, and Practical implications with inline `[S#]` references tied to the numbered `Primary sources` entries.
+  - Added explicit citation-usage guidance in the methodology section so readers can map narrative claims directly to source IDs.
+  - Rephrased evaluation caveat language to anchor contamination/memorization concerns to cited benchmark artifacts rather than uncited general claims.
+  Validation attempted:
+  - Ran regex-based citation checks to confirm only valid source IDs are used (`S1`-`S25`) with no out-of-range references.
+  - Confirmed section structure remained intact after edits (all required headings still present).
+  Remaining work:
+  - External HTTP liveness verification is still blocked in this runtime due network restrictions; current link-integrity artifact still reflects connectivity failures, not endpoint truth.
+  - Optional: add a compact bidirectional citation index (`S# -> sections`) for even faster audit navigation.
+  Immediate next steps:
+  - In iteration 4, generate an optional citation index appendix and, if connectivity is available, rerun link checks to replace sandbox connectivity placeholders with real status codes.
+- [4] 2026-02-20T02:23:42.3802994-05:00
+  Summary: Added an auditable bidirectional citation index appendix mapping every primary source ID (S1-S25) to the exact report sections where each source is cited.
+  Files changed:
+  - claude/reports/repeat_n_times/20260220_021055_develop-a-comprehensive-research-report-in-natural-language-/research_report_2026-02-20.md
+  - claude/reports/repeat_n_times/20260220_021055_develop-a-comprehensive-research-report-in-natural-language-/progress.txt
+  Actions completed:
+  - Appended new section ## 12) Citation index (source -> sections) to improve traceability and audit navigation.
+  - Generated the index directly from in-document [S#] markers to avoid manual mismatch errors.
+  - Added rows for all source IDs S1 through S25, including per-source section usage lists.
+  Validation attempted:
+  - Verified section presence and row coverage with regex scans for heading plus | S1 | through | S25 |.
+  - Checked for uncited placeholders and confirmed no (not cited) rows were emitted.
+  - Reviewed report tail to confirm final section order remains intact (## 11 then ## 12).
+  Remaining work:
+  - External HTTP liveness verification remains blocked in this sandboxed runtime; link-check CSV still reflects connectivity errors rather than true endpoint status.
+  - Optional final polish: add a reciprocal mini-index (Section -> source IDs) for two-way navigation symmetry.
+  Immediate next steps:
+  - In iteration 5, perform final quality sweep (consistency/date wording/source-label integrity), optionally add Section -> source IDs index if useful, and finalize handoff.
+- [5] 2026-02-20T02:24:56.1611298-05:00
+  Summary: Completed final iteration polish by adding reciprocal citation navigation (`section -> source IDs`), tightening citation-index wording, and re-validating structural and citation integrity.
+  Files changed:
+  - claude/reports/repeat_n_times/20260220_021055_develop-a-comprehensive-research-report-in-natural-language-/research_report_2026-02-20.md
+  - claude/reports/repeat_n_times/20260220_021055_develop-a-comprehensive-research-report-in-natural-language-/progress.txt
+  Actions completed:
+  - Updated section `## 12) Citation index (source -> sections)` description to clarify it is the source-to-section half of a bidirectional audit map.
+  - Added new section `## 13) Citation index (section -> source IDs)` with a complete reciprocal mapping for key narrative sections.
+  - Preserved existing report scope, evidence confidence matrix, comparison table, and primary-source list while improving audit navigation quality.
+  Validation attempted:
+  - Verified heading structure includes all expected sections through `## 13` via regex heading scan.
+  - Re-checked all inline citation tokens and confirmed all source IDs remain within valid range (`S1`-`S25`).
+  - Spot-checked representative rows in the new section-to-source table for expected presence.
+  Remaining work:
+  - Core task requirements are complete.
+  - External HTTP liveness verification remains environment-blocked (network-restricted sandbox), so endpoint status truth cannot be confirmed from this runtime.
+  Immediate next steps:
+  - Handoff complete for iteration 5/5; no required content work remains in-repo.

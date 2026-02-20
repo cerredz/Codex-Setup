@@ -1,0 +1,590 @@
+OpenAI Codex v0.104.0 (research preview)
+--------
+workdir: C:\Users\422mi\skills
+model: gpt-5.3-codex
+provider: openai
+approval: never
+sandbox: workspace-write [workdir, /tmp, $TMPDIR]
+reasoning effort: high
+reasoning summaries: auto
+session id: 019c7d5e-a0d6-7900-838a-9aae1176e2f8
+--------
+user
+Create a comprehensive research report on all functionalities and capabilities of OpenClaw. Cover what it can do, how to set it up, how to use it in practice, key workflows, architecture/components if available, limitations, and what makes it unique versus alternatives. Write everything in very easy-to-understand, natural dialogue-style prose with complete sentences. Avoid vague, clipped, or overly short sentences. Be thorough and research-oriented, aiming to capture everything OpenClaw has to offer.
+
+Use this file for optional attached context: claude/reports/run_twice/20260220_182437_create-a-comprehensive-research-report-on-all-functionalitie/report.txt.
+Also keep track of every file updated during implementation in claude/reports/run_twice/20260220_182437_create-a-comprehensive-research-report-on-all-functionalitie/create-a-comprehensive-research-report-on-all-functionalitie_updated_files.txt, using one line per file in the format "- path | what changed".
+Before finishing this call, overwrite the updated files file so it accurately reflects the implementation work completed in call 1.
+mcp startup: no servers
+
+thinking
+**Identifying researcher skill for task**
+codex
+I’m going to produce the full OpenClaw research report and update the tracking file exactly as requested. First I’ll inspect the existing report location and load the relevant skill guidance for a research-oriented workflow, then I’ll research OpenClaw and write the final report into your workspace.
+
+thinking
+**Scoping skill usage plan**
+exec
+"C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -Command "Get-Content -Raw 'C:/Users/422mi/.codex/skills/modes-personas-researcher/SKILL.md'" in C:\Users\422mi\skillsexec
+"C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -Command 'Get-ChildItem -Force' in C:\Users\422mi\skills succeeded in 264ms:
+---
+name: modes-personas-researcher
+description: "Guidance and workflows for modes personas: researcher. Use when working on researcher tasks."
+---
+
+Before responding, research the topic thoroughly using available toolsâ€”do not rely solely on what you already know or assume you have sufficient context. Identify what information you need to answer well, then actively gather it: search for relevant sources, read documentation, examine referenced files, and verify your understanding against actual data rather than assumptions. Only after you have done the legwork should you formulate your response. If you are answering without having consulted any external sources, you are likely giving a shallow or incomplete answer. Research first, respond second.
+
+
+ succeeded in 282ms:
+
+
+    Directory: C:\Users\422mi\skills
+
+
+Mode                 LastWriteTime         Length Name                                                                 
+----                 -------------         ------ ----                                                                 
+d--h--         2/20/2026   4:57 PM                .git                                                                 
+d-----         2/20/2026   2:06 AM                claude                                                               
+-a----         2/20/2026   1:05 AM             64 .gitignore                                                           
+-a----         2/20/2026   4:52 PM           3367 design.md                                                            
+-a----         2/20/2026  12:56 AM           1291 prompt.md                                                            
+
+
+
+thinking
+**Announcing skill usage and locating files**
+codex
+I’m using `modes-personas-researcher` because this is a research-heavy request; I’ll follow it first, then draft the report. Next I’ll open the optional context file and confirm the exact report/output file paths before writing.
+
+thinking
+**Inspecting directory files**
+exec
+"C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -Command "Get-ChildItem -Recurse -Force 'claude/reports/run_twice/20260220_182437_create-a-comprehensive-research-report-on-all-functionalitie'" in C:\Users\422mi\skillsexec
+"C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -Command "Get-Content -Raw 'claude/reports/run_twice/20260220_182437_create-a-comprehensive-research-report-on-all-functionalitie/report.txt'" in C:\Users\422mi\skills succeeded in 237ms:
+
+
+    Directory: C:\Users\422mi\skills\claude\reports\run_twice\20260220_182437_create-a-comprehensive-research-report-on
+    -all-functionalitie
+
+
+Mode                 LastWriteTime         Length Name                                                                 
+----                 -------------         ------ ----                                                                 
+-a----         2/20/2026   6:24 PM              0 call_1_output.log                                                    
+-a----         2/20/2026   6:24 PM           1106 call_1_prompt.txt                                                    
+-a----         2/20/2026   6:24 PM           1105 call_2_prompt.txt                                                    
+-a----         2/20/2026   6:24 PM            207 create-a-comprehensive-research-report-on-all-functionalitie_updated_
+                                                  files.txt                                                            
+-a----         2/20/2026   6:24 PM            534 report.txt                                                           
+
+
+ succeeded in 209ms:
+# Report
+
+## Primary Task
+
+Create a comprehensive research report on all functionalities and capabilities of OpenClaw. Cover what it can do, how to set it up, how to use it in practice, key workflows, architecture/components if available, limitations, and what makes it unique versus alternatives. Write everything in very easy-to-understand, natural dialogue-style prose with complete sentences. Avoid vague, clipped, or overly short sentences. Be thorough and research-oriented, aiming to capture everything OpenClaw has to offer.
+
+
+
+thinking
+**Checking updated files tracker**
+exec
+"C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -Command "Get-Content -Raw 'claude/reports/run_twice/20260220_182437_create-a-comprehensive-research-report-on-all-functionalitie/create-a-comprehensive-research-report-on-all-functionalitie_updated_files.txt'" in C:\Users\422mi\skills succeeded in 226ms:
+# Updated Files
+
+Task slug: create-a-comprehensive-research-report-on-all-functionalitie
+Created: 2026-02-20T18:24:37-05:00
+
+Format:
+- path/to/file.ext | short summary of what changed
+
+Entries:
+- (none yet)
+
+
+thinking
+**Researching OpenClaw identity**
+🌐 Searching the web...
+🌐 Searched: OpenClaw GitHub documentation setup usage workflows architecture
+
+thinking
+**Verifying official OpenClaw source**
+🌐 Searching the web...
+🌐 Searched: github OpenClaw personal AI assistant official repository
+
+thinking
+**Focusing search on official repo**
+🌐 Searching the web...
+🌐 Searched: site:github.com openclaw open source personal AI assistant
+
+thinking
+**Inspecting official docs site**
+codex
+I’ve identified the likely official OpenClaw GitHub repo and I’m now pulling data directly from its README/docs so the report is based on primary sources, not third-party summaries. After that I’ll synthesize setup, workflows, architecture, limitations, and comparison points into the required dialogue-style report.
+🌐 Searching the web...
+🌐 Searched: https://github.com/clawdbot/clawdbot
+
+thinking
+**Accessing full README content**
+🌐 Searching the web...
+🌐 Searched: https://github.com/openclaw/openclaw/blob/main/README.md
+
+thinking
+**Testing raw URL access**
+🌐 Searching the web...
+🌐 Searched: https://raw.githubusercontent.com/openclaw/openclaw/main/README.md
+
+thinking
+**Planning docs extraction**
+🌐 Searching the web...
+🌐 Searched: https://docs.openclaw.ai/start/getting-started
+
+thinking
+**Planning docs scraping strategy**
+🌐 Searching the web...
+🌐 Searched the web
+
+thinking
+**Planning targeted doc searches**
+🌐 Searching the web...
+🌐 Searched: site:docs.openclaw.ai features OpenClaw
+
+thinking
+**Planning additional architecture pages**
+🌐 Searching the web...
+🌐 Searched: https://docs.openclaw.ai/architecture
+
+thinking
+**Testing response length for full lines**
+🌐 Searching the web...
+🌐 Searched: https://docs.openclaw.ai/start/wizard
+
+thinking
+**Clarifying source quoting limits**
+🌐 Searching the web...
+🌐 Searched: https://docs.openclaw.ai/tools
+
+thinking
+**Identifying code region for safety flows**
+🌐 Searching the web...
+🌐 Searched: https://docs.openclaw.ai/tools
+
+thinking
+**Planning channels documentation gathering**
+codex
+I’ve extracted detailed official docs for architecture and tooling, including concrete command flows and safety controls. Next I’m gathering channels, automation, models, sessions/memory, and security docs so the report covers the full operational picture and limitations.
+🌐 Searching the web...
+🌐 Searched: site:docs.openclaw.ai/channels OpenClaw channels overview
+
+thinking
+**Investigating channels documentation**
+🌐 Searching the web...
+🌐 Searched: site:docs.openclaw.ai channels openclaw whatsapp telegram discord signal imessage
+
+thinking
+**Planning comprehensive channel coverage**
+🌐 Searching the web...
+🌐 Searched: site:docs.openclaw.ai/channels/index OpenClaw channels overview page
+
+thinking
+**Planning resource gathering**
+🌐 Searching the web...
+🌐 Searched: https://docs.openclaw.ai/channels/index
+
+thinking
+**Planning pattern-based extraction**
+🌐 Searching the web...
+🌐 Searched: 'On this page' in https://docs.openclaw.ai/gateway/security
+
+thinking
+**Using line-numbered file opens for focused inspection**
+🌐 Searching the web...
+🌐 Searched: https://docs.openclaw.ai/gateway/security
+
+thinking
+**Considering security baseline around line 120**
+🌐 Searching the web...
+🌐 Searched: https://docs.openclaw.ai/gateway/security
+
+thinking
+**Planning source exploration for automation hooks**
+🌐 Searching the web...
+🌐 Searched: https://docs.openclaw.ai/automation/hooks
+
+thinking
+**Identifying hook section range**
+🌐 Searching the web...
+🌐 Searched: https://docs.openclaw.ai/automation/hooks
+
+thinking
+**Planning webhook integration**
+🌐 Searching the web...
+🌐 Searched: https://docs.openclaw.ai/automation/webhook
+
+thinking
+**Identifying webhook response details**
+🌐 Searching the web...
+🌐 Searched: https://docs.openclaw.ai/automation/webhook
+
+thinking
+**Planning optimized web queries**
+codex
+I have enough coverage for setup, architecture, channels, tools, automation, and security. I’m doing one final source pass for model/provider support and explicit FAQ/troubleshooting limitations, then I’ll write the full report and update the file-tracking manifest.
+🌐 Searching the web...
+🌐 Searched: site:docs.openclaw.ai/concepts/models OpenClaw
+
+thinking
+**Planning final information retrieval**
+🌐 Searching the web...
+🌐 Searched: https://docs.openclaw.ai/models
+
+thinking
+**Planning multi-pattern final search**
+🌐 Searching the web...
+🌐 Searched: 'What runtime do I need?' in https://docs.openclaw.ai/start/faq/
+
+thinking
+**Planning comprehensive report generation**
+codex
+I’m moving to the write phase now: I’ll replace `report.txt` with a complete, plain-language research report that covers capabilities, setup, workflows, architecture, limitations, and alternatives. After that I’ll overwrite the updated-files tracker so it lists exactly the files changed in this call.
+
+thinking
+**Planning detailed user report**
+exec
+"C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -Command "@'
+# OpenClaw Research Report (Comprehensive, Plain-Language)
+
+## 1) What OpenClaw is, in simple terms
+
+If you want the shortest honest description, OpenClaw is a self-hosted personal AI assistant platform that you run on your own machine or server, then talk to through the chat apps you already use. It is designed to do more than chat. It can execute tools, automate recurring tasks, route messages across multiple channels, and keep long-running context through session and memory systems.
+
+The core philosophy is “local-first control with real actions.” In other words, OpenClaw tries to give you one assistant brain that can receive requests from many chat surfaces, use tools to do actual work, and still stay under your operational control.
+
+## 2) What OpenClaw can do
+
+OpenClaw’s capability set is broad. The easiest way to understand it is by capability layers.
+
+### A) Multi-channel communication
+
+OpenClaw can connect one assistant to many messaging channels at the same time. The documentation lists major built-in and plugin channels, including WhatsApp, Telegram, Discord, IRC, Slack, Google Chat, Signal, BlueBubbles (recommended path for iMessage), legacy iMessage, Microsoft Teams (plugin), LINE (plugin), Matrix (plugin), Zalo and Zalo Personal (plugin), and WebChat.
+
+Practically, this means you can keep one assistant and meet it where you already work, instead of opening a separate AI app every time.
+
+### B) Agent tools that do work, not just text
+
+OpenClaw exposes typed, first-class tools. These include:
+
+- Browser automation ("'`browser`) with snapshots, actions, screenshots, uploads, profile management, and target selection (sandbox, host, or node).
+- Web research tools (`web_search`, `web_fetch`) for search and content extraction.
+- System execution (`exec`, plus `process` management for background jobs).
+- File patching (`apply_patch`, experimental and policy-gated).
+- Visual and device tools (`canvas`, `nodes`, `image`).
+- Messaging action tool (`message`) for sends, reactions, edits, deletes, thread actions, moderation-style actions, and channel-specific features.
+- Automation and control-plane tools (`cron`, `gateway`).
+- Session and coordination tools (`sessions_list`, `sessions_history`, `sessions_send`, `sessions_spawn`, `session_status`, `agents_list`).
+
+Tool exposure is policy-driven through allow/deny rules, profiles, and provider-specific restrictions.
+
+### C) Automation
+
+OpenClaw supports multiple automation styles:
+
+- Scheduled automation via cron jobs.
+- Event hooks inside Gateway (for command, message, session, agent, and gateway lifecycle events).
+- External webhook ingestion with token auth and mapped routes.
+- Gmail Pub/Sub integrations through webhook presets and helper commands.
+
+This enables daily summaries, event-triggered actions, inbox triage, or custom pipelines without building a separate automation backend.
+
+### D) Multi-agent isolation and routing
+
+OpenClaw can run multiple agents side by side in one Gateway. Each agent can have isolated workspace files, its own auth profiles, and separate session storage. Bindings route incoming channel messages to the right agent based on channel, account, peer, or other match fields.
+
+This is useful if you want separate “brains,” for example a personal assistant, a work assistant, and a family-safe assistant with stricter tool policies.
+
+### E) Web and app surfaces
+
+OpenClaw includes a browser-based Control UI / Dashboard and companion app workflows (especially on macOS). There is also node-based support for macOS, iOS, and Android capabilities such as Canvas rendering, camera operations, screen recording, notifications, and location commands.
+
+### F) Model and auth flexibility
+
+OpenClaw supports provider/model selection with:
+
+- Primary model + fallback chain.
+- Provider-level auth profile rotation.
+- Session-level model switching (`/model`).
+- Provider/model allowlists.
+- Image model routing when needed.
+
+Docs list provider integrations such as Anthropic, OpenAI, OpenRouter, LiteLLM, Amazon Bedrock, Vercel AI Gateway, Moonshot, MiniMax, GLM, Z.AI, and others.
+
+## 3) How to set it up
+
+The recommended setup path is intentionally wizard-first.
+
+### Recommended baseline path
+
+1. Install OpenClaw (Node 22+ required).
+2. Run onboarding:
+   - `openclaw onboard --install-daemon`
+3. Verify Gateway:
+   - `openclaw gateway status`
+4. Open local dashboard:
+   - `openclaw dashboard`
+
+The onboarding wizard configures model auth, workspace, gateway settings, optional channel setup, daemon/service install, and recommended skills/hooks.
+
+### Operating system notes
+
+- macOS and Linux are first-class paths.
+- Windows is supported, but docs strongly recommend using WSL2 for the smoothest setup.
+- Bun is explicitly documented as not recommended for stable gateway operation, especially with WhatsApp/Telegram.
+
+### First safe configuration mindset
+
+The docs repeatedly push a safe baseline:
+
+- Keep Gateway on loopback by default.
+- Keep token auth enabled.
+- Keep DM policy in `pairing` or strict allowlist mode.
+- Use mention gating in groups.
+- Restrict high-risk tools unless needed.
+
+## 4) How to use OpenClaw in practice (real workflows)
+
+### Workflow 1: Fastest first chat
+
+If you only want to verify the system quickly, skip channel setup and use Dashboard/WebChat. You can get a working first chat through the local control UI immediately after onboarding.
+
+### Workflow 2: Channel-based daily assistant
+
+A common path is Telegram or WhatsApp first:
+
+- Configure channel token/QR login.
+- Start Gateway.
+- Approve pairing for first DM.
+- Message the bot from the app.
+
+This turns OpenClaw into a “message-native” assistant, so you can trigger tasks from mobile chats instead of opening a dev console.
+
+### Workflow 3: Web research and action
+
+Use `web_search` + `web_fetch` for fast reading tasks, then switch to `browser` for JS-heavy sites or interactive flows. For login-required websites, docs recommend manual login in the controlled browser profile instead of giving credentials to the model.
+
+### Workflow 4: Background automations
+
+Use cron, hooks, and webhooks together:
+
+- Cron for periodic checks.
+- Hooks for lifecycle/event reactions.
+- Webhooks for external event ingestion.
+
+This is where OpenClaw starts behaving like an always-on operations assistant instead of a chatbot.
+
+### Workflow 5: Multi-agent split
+
+Create separate agents and bind specific channels/peers to each one. Then apply different tool policies per agent. This is the practical way to avoid one “overpowered global assistant” and enforce clearer boundaries.
+
+## 5) Architecture and components (how it works under the hood)
+
+OpenClaw uses a Gateway-centric architecture.
+
+### Core components
+
+- Gateway daemon: the long-lived control plane.
+- Control-plane clients: CLI, web UI, app surfaces.
+- Nodes: macOS/iOS/Android/headless clients with declared capabilities.
+- Agent runtime: handles model calls, tool orchestration, sessions, and responses.
+- Channel connectors: transport-specific integrations (WhatsApp, Telegram, Discord, etc.).
+
+### Message/control flow
+
+Incoming message -> Gateway routing/session logic -> agent runtime + tools -> outbound reply routed back through originating channel.
+
+The docs describe a typed WebSocket protocol with a mandatory connect handshake, request/response frames, event push frames, schema validation, and auth/token checks.
+
+### Session and memory model
+
+- Direct chats usually collapse into a `main` session by default.
+- Group sessions are isolated by channel/group identity.
+- Optional DM isolation modes exist for multi-user safety.
+- Compaction summarizes older history to stay within model context limits.
+
+## 6) Security model and operational safeguards
+
+Security is a major part of OpenClaw’s design and docs. The project openly states that no setup is perfectly secure because you are connecting model behavior to real tools.
+
+Important controls include:
+
+- DM policies: `pairing`, `allowlist`, `open`, `disabled`.
+- Group gating + mention requirements.
+- Gateway auth token/password.
+- Pairing approval flow for devices and unknown DM senders.
+- Tool allow/deny profiles.
+- Optional sandboxing modes and workspace access modes.
+- Security audit command (`openclaw security audit`) with deeper checks.
+- Strong warnings around prompt injection, untrusted content, and plugin trust.
+
+There is also explicit incident response guidance: contain, rotate secrets, audit, and verify before restoring wider access.
+
+## 7) Limitations, risks, and practical constraints
+
+OpenClaw is powerful, but the constraints are real:
+
+1. Security complexity is non-trivial.
+   - If you expose broad tools and open inbound channels, risk rises quickly.
+
+2. Prompt injection is not “solved.”
+   - Docs explicitly note that system prompts are not hard security boundaries.
+
+3. Operational overhead exists.
+   - Tokens, channel credentials, pairings, provider auth, logs, and updates all require management.
+
+4. Platform-specific caveats exist.
+   - Windows path is better via WSL2.
+   - Bun is not recommended for stable production gateway usage.
+   - Some channels/features are plugin-based and may vary in maturity.
+
+5. Data lives on disk.
+   - Session transcripts and auth-related files are local files you must secure with proper permissions and host hardening.
+
+6. Multi-user shared inboxes need explicit isolation.
+   - Default DM continuity can cause context mixing unless you configure per-peer DM scope.
+
+## 8) What makes OpenClaw unique versus alternatives
+
+Compared to many agent projects, OpenClaw’s differentiators are not just “it can call tools.” The bigger differences are architectural and operational.
+
+1. Gateway as a single, long-lived control plane.
+   - It is designed for continuous multi-channel operations, not just single-run agent tasks.
+
+2. Chat-native multi-channel delivery.
+   - It treats WhatsApp/Telegram/Discord and similar surfaces as first-class control interfaces.
+
+3. Strong practical controls around real-world risk.
+   - Pairing defaults, allowlists, tool policies, sandboxing guidance, and security audits are integrated into the core flow.
+
+4. Multi-agent routing with isolated workspaces/auth/session stores.
+   - This is much stronger than “one global chatbot with different prompts.”
+
+5. Device-node architecture.
+   - The assistant can extend into macOS/iOS/Android capabilities through paired nodes.
+
+6. Local-first ownership with open-source distribution.
+   - You can run it where you choose, keep data local, and inspect behavior/config end-to-end.
+
+In short, OpenClaw feels less like a standalone chatbot and more like a self-hosted assistant operating system with messaging interfaces.
+
+## 9) Practical recommendation if you are adopting it
+
+Start with a conservative configuration first. Keep it local, use pairing, isolate DM sessions if more than one human can trigger it, and keep high-risk tools off until your trust boundaries are clear. Then expand capabilities gradually by channel, tool, and automation layer.
+
+That adoption order matches how OpenClaw is documented and will save you from most early security and reliability mistakes.
+
+## 10) Source links used for this report
+
+- https://github.com/openclaw/openclaw
+- https://raw.githubusercontent.com/openclaw/openclaw/main/README.md
+- https://docs.openclaw.ai/
+- https://docs.openclaw.ai/start/getting-started
+- https://docs.openclaw.ai/start/wizard
+- https://docs.openclaw.ai/install/index
+- https://docs.openclaw.ai/concepts/architecture
+- https://docs.openclaw.ai/concepts/features
+- https://docs.openclaw.ai/channels/index
+- https://docs.openclaw.ai/channels/whatsapp
+- https://docs.openclaw.ai/channels/telegram
+- https://docs.openclaw.ai/channels/discord
+- https://docs.openclaw.ai/channels/signal
+- https://docs.openclaw.ai/tools
+- https://docs.openclaw.ai/tools/browser-login
+- https://docs.openclaw.ai/automation/hooks
+- https://docs.openclaw.ai/automation/webhook
+- https://docs.openclaw.ai/concepts/multi-agent
+- https://docs.openclaw.ai/concepts/models
+- https://docs.openclaw.ai/concepts/model-failover
+- https://docs.openclaw.ai/gateway/security
+- https://docs.openclaw.ai/help/troubleshooting
+- https://docs.openclaw.ai/help/faq
+'"'@ | Set-Content -Encoding UTF8 'claude/reports/run_twice/20260220_182437_create-a-comprehensive-research-report-on-all-functionalitie/report.txt'" in C:\Users\422mi\skills succeeded in 3.73s:
+
+
+thinking
+**Finalizing update tracking file**
+codex
+I’ve written the report and I’m now overwriting the updated-files manifest so it precisely lists the files changed in this call using the required `- path | what changed` format.
+exec
+"C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -Command "@'
+- claude/reports/run_twice/20260220_182437_create-a-comprehensive-research-report-on-all-functionalitie/report.txt | Replaced placeholder with a full research report on OpenClaw capabilities, setup, workflows, architecture, limitations, and differentiators.
+- claude/reports/run_twice/20260220_182437_create-a-comprehensive-research-report-on-all-functionalitie/create-a-comprehensive-research-report-on-all-functionalitie_updated_files.txt | Overwrote manifest to accurately track files updated in call 1.
+'@ | Set-Content -Encoding UTF8 'claude/reports/run_twice/20260220_182437_create-a-comprehensive-research-report-on-all-functionalitie/create-a-comprehensive-research-report-on-all-functionalitie_updated_files.txt'" in C:\Users\422mi\skills succeeded in 226ms:
+
+
+thinking
+**Verifying combined content output**
+exec
+"C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -Command "Get-Content -Raw 'claude/reports/run_twice/20260220_182437_create-a-comprehensive-research-report-on-all-functionalitie/create-a-comprehensive-research-report-on-all-functionalitie_updated_files.txt'" in C:\Users\422mi\skillsexec
+"C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -Command "Get-Content -Raw 'claude/reports/run_twice/20260220_182437_create-a-comprehensive-research-report-on-all-functionalitie/report.txt'" in C:\Users\422mi\skills succeeded in 214ms:
+- claude/reports/run_twice/20260220_182437_create-a-comprehensive-research-report-on-all-functionalitie/report.txt | Replaced placeholder with a full research report on OpenClaw capabilities, setup, workflows, architecture, limitations, and differentiators.
+- claude/reports/run_twice/20260220_182437_create-a-comprehensive-research-report-on-all-functionalitie/create-a-comprehensive-research-report-on-all-functionalitie_updated_files.txt | Overwrote manifest to accurately track files updated in call 1.
+
+ succeeded in 228ms:
+# OpenClaw Research Report (Comprehensive, Plain-Language)
+
+## 1) What OpenClaw is, in simple terms
+
+If you want the shortest honest description, OpenClaw is a self-hosted personal AI assistant platform that you run on your own machine or server, then talk to through the chat apps you already use. It is designed to do more than chat. It can execute tools, automate recurring tasks, route messages across multiple channels, and keep long-running context through session and memory systems.
+
+The core philosophy is “local-first control with real actions.” In other words, OpenClaw tries to give you one assistant brain that can receive requests from many chat surfaces, use tools to do actual work, and still stay under your operational control.
+
+## 2) What OpenClaw can do
+
+OpenClaw’s capability set is broad. The easiest way to understand it is by capability layers.
+
+### A) Multi-channel communication
+
+OpenClaw can connect one assistant to many messaging channels at the same time. The documentation lists major built-in and plugin channels, including WhatsApp, Telegram, Discord, IRC, Slack, Google Chat, Signal, BlueBubbles (recommended path for iMessage), legacy iMessage, Microsoft Teams (plugin), LINE (plugin), Matrix (plugin), Zalo and Zalo Personal (plugin), and WebChat.
+
+Practically, this means you can keep one assistant and meet it where you already work, instead of opening a separate AI app every time.
+
+### B) Agent tools that do work, not just text
+
+
+thinking
+**Checking for unintended file changes**
+exec
+"C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -Command 'git status --short' in C:\Users\422mi\skills succeeded in 205ms:
+ M claude/scripts/repeat_n_times.sh
+ M design.md
+?? claude/reports/
+?? claude/scripts/implement_then_critique.sh
+?? claude/scripts/repeat_n_times_smoke_test.sh
+?? claude/scripts/repeat_n_times_validation.md
+?? claude/scripts/run_twice.sh
+?? claude/tmp/
+
+thinking
+**Summarizing final output details**
+codex
+Implemented and written to disk.
+
+- `claude/reports/run_twice/20260220_182437_create-a-comprehensive-research-report-on-all-functionalitie/report.txt`  
+  Replaced with a full, plain-language research report on OpenClaw covering capabilities, setup, practical workflows, architecture/components, limitations, and differentiators vs alternatives.
+- `claude/reports/run_twice/20260220_182437_create-a-comprehensive-research-report-on-all-functionalitie/create-a-comprehensive-research-report-on-all-functionalitie_updated_files.txt`  
+  Overwritten to accurately track files updated in call 1 using the required `- path | what changed` format.
+
+Primary research sources used include:
+- https://github.com/openclaw/openclaw
+- https://docs.openclaw.ai/
+tokens used
+135,386
+Implemented and written to disk.
+
+- `claude/reports/run_twice/20260220_182437_create-a-comprehensive-research-report-on-all-functionalitie/report.txt`  
+  Replaced with a full, plain-language research report on OpenClaw covering capabilities, setup, practical workflows, architecture/components, limitations, and differentiators vs alternatives.
+- `claude/reports/run_twice/20260220_182437_create-a-comprehensive-research-report-on-all-functionalitie/create-a-comprehensive-research-report-on-all-functionalitie_updated_files.txt`  
+  Overwritten to accurately track files updated in call 1 using the required `- path | what changed` format.
+
+Primary research sources used include:
+- https://github.com/openclaw/openclaw
+- https://docs.openclaw.ai/
