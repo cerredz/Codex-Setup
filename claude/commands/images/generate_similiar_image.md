@@ -1,0 +1,1 @@
+I want you to generate me an image of [topic] using the input photos as reference images and the reference style for your final image to generate. I don't want the content inside of the image to be like the reference image. I more so wanted the style of the image to replicate it, and then the actual content inside of the image to represent [topic]

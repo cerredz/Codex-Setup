@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "WebFetch(domain:refactoring.guru)",
+      "WebFetch(domain:realpython.com)",
+      "WebFetch(domain:sourcery.ai)",
+      "WebFetch(domain:www.glukhov.org)",
+      "Skill(ask_questions)",
+      "Skill(framer_motion)",
+      "Bash(npx eslint:*)",
+      "Bash(node --check:*)",
+      "Bash(npx next lint:*)",
+      "Bash(python -m py_compile:*)",
+      "Bash(python:*)",
+      "Bash(ls -la \"C:\\\\Users\\\\422mi\\\\vidbyte\\\\.claude\\\\reasoning\"\" 2>/dev/null || echo \"Directory may not exist \")",
+      "Bash(git ls-tree:*)",
+      "Bash(git show:*)"
+    ]
+  }
+}
