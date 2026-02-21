@@ -66,3 +66,23 @@ First script that I want to create:
 - third llm call should receive original task/prompt, questions, answers, and decomposed plan and should implement the solution 
 
 8) recursive self improvement prompting
+
+- 
+
+9) devil's advocate loop
+
+- basically we want a llm call that serves as an "adversary", and doesnt try to implement a task but rather tries to crique a potential solution/plan to a problem
+- include a parameter `auto_implement` that can be set to true or false and defaults to false. when false, stop after outputting the final improved plan so it can be manually reviewed/edited; when true, trigger one more llm call that takes the original task/prompt plus the final plan and implements it.
+
+- user will enter a task/prompt
+- first llm call should do everything in the task/prompt to generate a in-depth plan for the task, output this in a .md file
+- second llm call will serve as a "devils advocate", it should try to find things that are wrong and try to create objections to the plan. It should also try to find weaknesses, places where there are assumptions, places where the plan should go into more detail and be more clear, find misalignments, etc
+    - note, all of these should be in relation to the task/prompt at hand, and aim at critiquing the plan in relation to the original prompt
+    - it should output all of this information in a seperate .md file
+
+- third llm call will take in original prompt, .md file of the plan, .md file of the devil advocate, and it should edit the plan
+
+- then this new plan gets uploaded to the "devils advocate" again with the original task/prompt
+
+- should repeat the "devil advocate" process 3 times, and by the end should be a very comprehensive plan to implement in a .md file
+

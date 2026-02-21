@@ -1,0 +1,2352 @@
+OpenAI Codex v0.104.0 (research preview)
+--------
+workdir: C:\Users\422mi\skills
+model: gpt-5.3-codex
+provider: openai
+approval: never
+sandbox: workspace-write [workdir, /tmp, $TMPDIR]
+reasoning effort: high
+reasoning summaries: auto
+session id: 019c7d9d-dd9f-7ce3-a3a0-0814faf39ac2
+--------
+user
+Execute the final selected prompt below exactly as written.
+Do not add extra goals, constraints, structure, personas, or side requests beyond the prompt itself.
+
+<<<FINAL_PROMPT_TO_EXECUTE>>>
+I want to set up a comprehensive testing suite for harness engineering. Basically, I want to decompose the exact steps I need to take to build a very robust and secure testing suite for using AI in projects, while making sure nothing in my codebase breaks. The thing I am trying to explore is developing a test suite that is far more extensive than regular because we're using AI so much to automate things.
+<<<END_FINAL_PROMPT_TO_EXECUTE>>>
+
+Available context report (task + skill-file context): claude/reports/recursive_self_improvement/harness-engineering-ai-testing-suite/runs/20260220_193304/report.txt
+Prompt improvement provenance (reference only): claude/reports/recursive_self_improvement/harness-engineering-ai-testing-suite/runs/20260220_193304/prompt_improvements.md
+
+After completing execution, write a concise execution summary to claude/reports/recursive_self_improvement/harness-engineering-ai-testing-suite/runs/20260220_193304/execution_summary.md including files changed, key decisions, and validation performed.
+mcp startup: no servers
+
+thinking
+**Preparing testing skill usage**
+codex
+I’m going to execute that prompt directly by first checking the provided context report, then I’ll produce the requested testing-suite guidance and write a concise `execution_summary.md` with what I changed and validated.
+
+thinking
+**Planning parallel file reads**
+exec
+"C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -Command "Get-Content -Path 'claude/reports/recursive_self_improvement/harness-engineering-ai-testing-suite/runs/20260220_193304/report.txt'" in C:\Users\422mi\skillsexec
+"C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -Command "Get-Content -Path 'claude/reports/recursive_self_improvement/harness-engineering-ai-testing-suite/runs/20260220_193304/prompt_improvements.md'" in C:\Users\422mi\skillsexec
+"C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -Command "Get-Content -Path 'C:/Users/422mi/.codex/skills/testing-quality-tester/SKILL.md'" in C:\Users\422mi\skills succeeded in 222ms:
+# Prompt Improvements
+
+## Prompt Version 1
+I want to set up a comprehensive testing suite inside the world of harness engineering. Basically, I want to decompose the exact steps I need to take to generate a very robust and secure testing suite for using AI inside projects and making sure nothing in my codebase breaks. The thing I am trying to explore is developing a far more extensive test suite than regular because we're using AI so much to automate things.
+
+**Fidelity Check**
+Matches the original objective and scope: comprehensive, robust, secure AI-related testing in harness engineering, with exact steps and codebase breakage prevention.
+
+**Style Preservation Check**
+Keeps the same direct, conversational tone and phrasing pattern, including "Basically" and "The thing I am trying to explore."
+
+**Added Requirements Check**
+None.
+
+## Prompt Version 2
+I want to set up a comprehensive testing suite for the world of harness engineering. Basically, I want to break down the exact steps I need to take to build a very robust and secure testing suite for using AI inside projects, while making sure nothing in my codebase breaks. The thing I am trying to explore is building a far more extensive test suite than regular, because we're using AI so much to automate things.
+
+**Fidelity Check**
+Preserves the same core objective, deliverable, and scope: exact step decomposition for a robust and secure AI-focused testing suite that protects the codebase.
+
+ succeeded in 253ms:
+---
+name: testing-quality-tester
+description: "Guidance and workflows for testing quality: tester. Use when working on tester tasks."
+---
+
+This prompt explains how we write out tests. This is the "expert tester" prompt, so before writing any tests you should always reference this file. Before writing any code, make sure to plan you tests in the .claude/reasoning/test-plans.md file. If this file already exists with unrelated content, clear it completely and start fresh. You will receive comprehensive context including all backend routes, core business logic, database schemas, database operations, middleware configurations, and related components that need test coverage, and if not you should explore the codebase for all context that you need. Your first and only task is to generate a comprehensive, strategic testing plan that identifies every critical failure point, edge case, and system-breaking scenario across the provided contextâ€”but you must be ruthlessly selective about what merits a test. The goal is not maximum test quantity but maximum system resilience: tests must target logic breaks, state corruption, data integrity failures, security vulnerabilities, race conditions, cascade failures, integration breakdowns, and any scenario that could cause user-facing errors or system instability. Do not waste effort on trivial validations like data type checks, string capitalization, or other superficial assertions that provide no meaningful protection against real-world failures. Every test you plan must answer the question: "If this specific scenario occurs in production, would it break core functionality, corrupt data, expose security flaws, or degrade system reliability?". Genuinely try to break the system (within the rules of it) in order to maximize system resilence.Structure the test plan in phases covering unit tests for critical business logic and stateful operations, integration tests for component interactions where mismatched contracts could cause cascading failures, end-to-end tests for complete workflows, and stress tests for performance degradation or failure under load. For each planned test, specify the exact file path in the format backend/tests/{feature_being_tested}/test_specific_scenario.py, describe the precise failure scenario being tested and why that scenario is critical, identify which backend routes, core logic functions, database operations, or middleware are involved and how failure would manifest, and note dependencies on test fixtures or mocks. Include error scenarios spanning boundary conditions, concurrency issues, failure recovery, dependency failures, and data corruptionâ€”but focus exclusively on scenarios that represent genuine risk to system integrity, not superficial coverage metrics. Do not write any test code until I have reviewed and explicitly approved this test-plans.md file. Once approved, we will implement tests sequentially, marking each as completed to maintain clear progress tracking throughout the testing implementation.
+
+Also, for all tests make sure to use the Junk database located at backend/database/connect.py
+
+ succeeded in 258ms:
+# Report
+
+## Primary Task
+
+I want to set up a comprehensive testing suite for things inside of the world of harness engineering. Basically I want to decompose the exact steps I need to take to generate a very robust and secure testing suite for using AI inside of projects and making sure nothing in my codebase breaks. The thing that I am trying to explore is developing a far more extensive test suite than regular because we're using AI so much to automate things.
+
+
+thinking
+**Planning comprehensive test strategy**
+codex
+I reviewed the report and the tester skill instructions. Next I’m checking the workspace structure so I can place the testing plan in the expected location and align it to your harness-engineering context.
+exec
+"C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -Command 'Get-ChildItem -Force' in C:\Users\422mi\skillsexec
+"C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -Command "Get-ChildItem -Recurse -File -Filter 'test-plans.md' | Select-Object -ExpandProperty FullName" in C:\Users\422mi\skills succeeded in 236ms:
+
+
+    Directory: C:\Users\422mi\skills
+
+
+Mode                 LastWriteTime         Length Name                                                                 
+----                 -------------         ------ ----                                                                 
+d-----         2/20/2026   7:33 PM                .claude                                                              
+d--h--         2/20/2026   7:31 PM                .git                                                                 
+d-----         2/20/2026   2:06 AM                claude                                                               
+-a----         2/20/2026   1:05 AM             64 .gitignore                                                           
+-a----         2/20/2026   7:33 PM           5082 design.md                                                            
+-a----         2/20/2026   6:47 PM             33 harness.md                                                           
+-a----         2/20/2026  12:56 AM           1291 prompt.md                                                            
+
+
+ succeeded in 247ms:
+
+
+thinking
+**Reviewing design and harness docs**
+exec
+"C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -Command "Get-Content -Path 'design.md'" in C:\Users\422mi\skillsexec
+"C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -Command "Get-Content -Path 'prompt.md'" in C:\Users\422mi\skillsexec
+"C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -Command "Get-Content -Path 'harness.md'" in C:\Users\422mi\skills succeeded in 220ms:
+Great. Now here is what I want you to do. I want you to generate a plan to create a skill prompt for creating images. the final skill files is located at images/create_image.md. Here is the overall process that I want you to employ to create this skill file. Basically For creating the prompt, I want you to follow the lm_promptengineer.skill file that we have created to create the start of this prompt. Then I want to an "examples" section to the end of this prompt, Where each example is an extremely detailed and comprehensive JSON object of the corresponding image that it represents. So basically you should go through each of the images in the image file and create a singular JSON object for this image. This JSON object should be extremely comprehensive, extremely detailed, and aim at replicating the image that it corresponds to. You should then append all of these JSON objects to the end of the image skill file after the identity and goal sections. Note, also create a new directory for all of the json objects that you create inside of json directory, and have a file for each one. I do not want you to implement this all at once. I want you to first create an extremely detailed plan for each task that you need to achieve and to reference the attached skill files as well.
+ succeeded in 239ms:
+This repo will serve as a collection for all of my scripts, prompts, skills, automations, and llm orchestrations, it will be connected to a github so that way I can very easily pull it. Below is the directory/repo structure that we have for this project:
+
+claude/: This folder is where all of the skills/prompts/scripts/reasoning outputs will live
+
+claude/commands: Skill files, there are also subfolders to organize the type of skill files that we have
+
+claude/scripts: Scripts location, we have a skill for creating scripts inside of codex or claude code, and this is the location where the scripts will be located. 
+
+claude/reasoning and claude/reports: This is the location for either reasoning skill outputs or report skill outputs. (each script should create a subfolder in the reports folder for all outputted artifacts of the script, the subfolder should be related to the "task name" at hand)
+
+
+First script that I want to create:
+
+1) "repeat n times"
+- basically instead of using 1 llm call for something, I want to use n llms calls for something (n)
+
+- flow looks something like this: 
+
+- 1) enter task/prompt with skill files
+- 2) script copy's the task/prompt into a "report.txt" file (can also explore the codebase/add more context to help better guide the model) , it also creates a "progress.txt", we also have a system prompt placed at the beginning of the prompt saying like "you are working on report and progress on multiple llms turns, use the report to see what you have to do, write down everything you have done in progress, and if the task is already done then looks for ways to improve the implementation, still update the progress.txt when doing this"
+ succeeded in 243ms:
+harness engineering setup: 
+
+- 
+
+thinking
+**Planning comprehensive test suite**
+codex
+I’m using the `testing-quality-tester` skill because this request is explicitly about designing a high-rigor testing strategy, and I’ll produce the strategic plan in `.claude/reasoning/test-plans.md` before giving you the exact decomposed steps in the response.
+
+thinking
+**Outlining detailed test plan**
+exec
+"C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -Command "Get-ChildItem -Force '.claude'" in C:\Users\422mi\skills succeeded in 298ms:
+
+
+    Directory: C:\Users\422mi\skills\.claude
+
+
+Mode                 LastWriteTime         Length Name                                                                 
+----                 -------------         ------ ----                                                                 
+-a----         2/20/2026   7:33 PM            669 settings.local.json                                                  
+
+
+codex
+I have enough context and I’m now writing the strategic test-plan artifact with exact steps, phase structure, and high-risk AI failure scenarios, then I’ll add the required execution summary file.
+
+thinking
+**Drafting comprehensive test plan**
+file update
+A C:\Users\422mi\skills\.claude/reasoning/test-plans.md
+# Harness Engineering AI Testing Suite Plan
+
+## Goal
+Build a robust, security-first, AI-aware testing suite that catches system-breaking failures before merge/release, with explicit protection against state corruption, unsafe automation, data leakage, and orchestration regressions.
+
+## Assumed Harness Components (for targeting tests)
+- `POST /api/harness/run` (start task)
+- `POST /api/harness/approve` (human gate)
+- `GET /api/harness/runs/{id}` (status/artifacts)
+- Orchestrator/service layer (prompt assembly, model routing, tool execution, retries)
+- Worker/queue layer (async execution, retries, dead-letter)
+- Audit/log middleware
+- DB writes for runs, steps, approvals, artifacts (use Junk DB at `backend/database/connect.py`)
+
+## Exact Build Steps
+1. Define failure budgets and release gates.
+2. Freeze a deterministic test baseline (`temperature=0`, fixed seeds, mocked clock, stable fixtures).
+3. Create dedicated test envs: `unit`, `integration`, `e2e`, `stress`, each isolated and reproducible.
+4. Enforce secret-safe test plumbing (never real keys, synthetic secrets only, log scrubbing enabled).
+5. Add hermetic provider mocks for LLM/tool vendors and fault injectors (timeouts, malformed payloads, 5xx, slow streams).
+6. Build fixture factories for runs/steps/approvals/artifacts with valid and adversarial variants.
+7. Add contract tests for every internal boundary (API schema, orchestrator-tool contracts, queue message schema).
+8. Implement critical unit tests first (policy, prompt assembly, state transitions, idempotency, redaction).
+9. Implement integration tests for cross-component breakpoints (API->service->DB->queue->worker).
+10. Implement adversarial e2e tests (prompt injection, exfiltration attempts, unsafe tool requests, partial-failure rollback).
+11. Implement concurrency/race tests (duplicate deliveries, simultaneous approvals, lock contention, replay attacks).
+12. Add chaos and stress tests (provider outage/latency spikes, queue lag, DB contention, large payload saturation).
+13. Add security regression tests mapped to threat model (authz bypass, tenant isolation, audit tampering, PII leakage).
+14. Wire CI gates by risk tier:
+15. PR gate: lint + unit critical + integration critical + smoke e2e.
+16. Nightly gate: full integration + full e2e + stress/chaos.
+17. Release gate: security regressions + rollback drills + disaster recovery checks.
+18. Add observability assertions in tests (metrics/log traces validated, not just HTTP codes).
+19. Add mutation testing for policy/guardrail modules to ensure tests actually catch logic tampering.
+20. Set flake budget and quarantine policy, then continuously harden flaky tests until below threshold.
+
+## Test Plan by Phase
+
+### Phase 1: Unit Tests (Critical Logic and Stateful Operations)
+
+`backend/tests/harness_orchestrator/test_prompt_template_injection_guard.py`
+- Scenario: User input attempts prompt-template escape and hidden-system-instruction override.
+- Why critical: Could disable safety controls and execute unsafe automation.
+- Involved logic: prompt builder/orchestrator guardrail functions.
+- Failure manifestation: Model receives unsafe/system-overridden prompt.
+- Fixtures/mocks: adversarial prompt fixtures, expected sanitized prompt snapshot.
+
+`backend/tests/harness_orchestrator/test_model_router_policy_bypass.py`
+- Scenario: Request attempts to force disallowed model/tool via crafted params.
+- Why critical: Security and cost controls bypass.
+- Involved logic: routing policy evaluator.
+- Failure manifestation: router selects forbidden model/tool.
+- Fixtures/mocks: allowed/denied policy matrix fixtures.
+
+`backend/tests/harness_orchestrator/test_tool_call_path_traversal_block.py`
+- Scenario: Tool args include path traversal (`../`, absolute paths).
+- Why critical: File exfiltration or workspace tampering.
+- Involved logic: tool arg validator/sandbox adapter.
+- Failure manifestation: unauthorized file access allowed.
+- Fixtures/mocks: malicious tool-arg payloads.
+
+`backend/tests/harness_security/test_secret_redaction_on_logs.py`
+- Scenario: Model output contains key-like tokens and connection strings.
+- Why critical: Credential leakage via logs/telemetry.
+- Involved logic: audit/log middleware + redaction utility.
+- Failure manifestation: secrets appear in stored logs.
+- Fixtures/mocks: synthetic secret corpus.
+
+`backend/tests/harness_state/test_run_state_machine_invalid_transition.py`
+- Scenario: Transition `FAILED -> RUNNING` or duplicate `APPROVED`.
+- Why critical: Corrupt state and inconsistent downstream behavior.
+- Involved logic: run state machine.
+- Failure manifestation: illegal transition accepted.
+- Fixtures/mocks: state transition table fixture.
+
+`backend/tests/harness_state/test_idempotency_duplicate_run_submission.py`
+- Scenario: Same idempotency key submitted concurrently.
+- Why critical: duplicate execution and duplicate writes.
+- Involved logic: request dedupe + run creation.
+- Failure manifestation: >1 run created for same logical request.
+- Fixtures/mocks: concurrent request harness, shared key.
+
+`backend/tests/harness_resilience/test_retry_backoff_circuit_breaker.py`
+- Scenario: upstream provider continuously fails then recovers.
+- Why critical: retry storm, cascading failures, cost explosion.
+- Involved logic: retry policy + circuit breaker.
+- Failure manifestation: unbounded retries or no recovery.
+- Fixtures/mocks: provider failure/recovery simulator.
+
+`backend/tests/harness_policy/test_allow_deny_precedence.py`
+- Scenario: conflicting policy rules exist for same action.
+- Why critical: authorization ambiguity can allow unsafe execution.
+- Involved logic: policy resolution engine.
+- Failure manifestation: `allow` wins over explicit `deny`.
+- Fixtures/mocks: overlapping policy fixtures.
+
+### Phase 2: Integration Tests (Cross-Component Contract Breakpoints)
+
+`backend/tests/harness_api/test_run_endpoint_authz_rate_limit_integration.py`
+- Scenario: unauthenticated/over-limit caller hits `POST /api/harness/run`.
+- Why critical: abuse and unauthorized execution risk.
+- Involved routes/middleware: auth middleware, rate limiter, run controller.
+- Failure manifestation: request accepted when it should be blocked.
+- Fixtures/mocks: auth token variants, burst traffic generator.
+
+`backend/tests/harness_integration/test_api_to_orchestrator_to_db_atomicity.py`
+- Scenario: DB write fails after orchestration starts.
+- Why critical: orphaned worker tasks and unrecoverable partial state.
+- Involved flow: controller -> orchestrator -> run repository.
+- Failure manifestation: task executes without persisted run record.
+- Fixtures/mocks: DB failure injector (Junk DB via `backend/database/connect.py`).
+
+`backend/tests/harness_integration/test_queue_retry_dead_letter_no_duplicate_side_effects.py`
+- Scenario: message retries then dead-letters after max attempts.
+- Why critical: duplicate side effects and data corruption.
+- Involved flow: queue producer/consumer + persistence.
+- Failure manifestation: repeated writes/actions across retries.
+- Fixtures/mocks: queue emulator, retry counters.
+
+`backend/tests/harness_integration/test_provider_failover_guardrails_preserved.py`
+- Scenario: primary model fails; fallback model used.
+- Why critical: failover must not disable policy filters.
+- Involved flow: model client abstraction + guardrail middleware.
+- Failure manifestation: fallback path skips validation/redaction.
+- Fixtures/mocks: provider A outage + provider B fallback response.
+
+`backend/tests/harness_integration/test_retrieval_prompt_assembly_tenant_isolation.py`
+- Scenario: retrieval returns mixed-tenant context.
+- Why critical: cross-tenant data exposure.
+- Involved flow: retrieval service + prompt assembly.
+- Failure manifestation: wrong-tenant docs in final prompt.
+- Fixtures/mocks: multi-tenant fixture dataset.
+
+`backend/tests/harness_integration/test_artifact_writer_atomic_commit_and_rollback.py`
+- Scenario: artifact write partially succeeds then fails.
+- Why critical: corrupted artifacts and inconsistent run status.
+- Involved flow: artifact service + run finalizer.
+- Failure manifestation: run marked success with incomplete artifacts.
+- Fixtures/mocks: filesystem/object-store partial failure injector.
+
+`backend/tests/harness_integration/test_audit_log_tamper_evidence.py`
+- Scenario: modified historical audit entry.
+- Why critical: compliance and incident forensics failure.
+- Involved flow: audit middleware + integrity checks.
+- Failure manifestation: tampering undetected.
+- Fixtures/mocks: signed log fixture with intentional modification.
+
+### Phase 3: End-to-End Tests (Real Workflow Safety)
+
+`backend/tests/harness_e2e/test_full_run_happy_path_with_human_approval.py`
+- Scenario: complete run from `POST /api/harness/run` to approval to finalized artifacts.
+- Why critical: validates core user journey and system wiring.
+- Involved routes/services: run/approve/status endpoints, orchestrator, DB, queue.
+- Failure manifestation: workflow stalls, status mismatch, missing artifacts.
+- Fixtures/mocks: standard request fixture, mocked model/tool outputs.
+
+`backend/tests/harness_e2e/test_prompt_injection_exfiltration_blocked.py`
+- Scenario: adversarial prompt requests secrets/file exfiltration.
+- Why critical: direct security breach vector in AI-heavy automation.
+- Involved flow: input filters, prompt guardrails, tool policy layer.
+- Failure manifestation: secret/tool exfiltration succeeds.
+- Fixtures/mocks: red-team prompt corpus.
+
+`backend/tests/harness_e2e/test_dependency_outage_graceful_degradation.py`
+- Scenario: model provider outage during active run.
+- Why critical: must fail safely with clear recoverable state.
+- Involved flow: provider client, retry/circuit breaker, run finalizer.
+- Failure manifestation: hung run, inconsistent final status.
+- Fixtures/mocks: outage injector, recovery timeout config.
+
+`backend/tests/harness_e2e/test_partial_failure_rollback_integrity.py`
+- Scenario: one step fails after prior steps wrote state.
+- Why critical: prevents persistent inconsistent state.
+- Involved flow: orchestrator step transaction boundaries + compensating actions.
+- Failure manifestation: stale/contradictory records after rollback.
+- Fixtures/mocks: step failure trigger at controlled point.
+
+`backend/tests/harness_e2e/test_replay_attack_idempotency_enforced.py`
+- Scenario: attacker replays signed request payload.
+- Why critical: duplicate/unauthorized re-execution.
+- Involved flow: request signature validation + idempotency store.
+- Failure manifestation: replayed request accepted/executed.
+- Fixtures/mocks: captured signed request replay fixture.
+
+### Phase 4: Stress/Chaos Tests (Reliability Under Pressure)
+
+`backend/tests/harness_stress/test_high_concurrency_run_submission_race_conditions.py`
+- Scenario: burst of concurrent run requests for same project/user.
+- Why critical: lock contention, duplicate runs, queue collapse.
+- Involved flow: API ingress, idempotency, queue producer, DB transactions.
+- Failure manifestation: duplicate runs, deadlocks, high error rate.
+- Fixtures/mocks: load generator, contention telemetry hooks.
+
+`backend/tests/harness_stress/test_long_running_worker_memory_growth.py`
+- Scenario: sustained processing over long duration.
+- Why critical: memory leaks cause worker crashes and retry storms.
+- Involved flow: worker execution loop + provider streaming client.
+- Failure manifestation: monotonic memory growth beyond threshold.
+- Fixtures/mocks: long-sequence workload fixture.
+
+`backend/tests/harness_stress/test_token_budget_exhaustion_safe_failure.py`
+- Scenario: oversized prompt/context drives token overrun.
+- Why critical: runaway cost and provider hard-fail.
+- Involved flow: token estimator + budget guard middleware.
+- Failure manifestation: request executes despite budget breach.
+- Fixtures/mocks: oversized context fixtures.
+
+`backend/tests/harness_stress/test_provider_latency_spike_backpressure.py`
+- Scenario: upstream latency spikes + partial packet loss.
+- Why critical: queue backlog and SLA collapse.
+- Involved flow: async workers, queue consumer concurrency controls.
+- Failure manifestation: no backpressure, uncontrolled queue growth.
+- Fixtures/mocks: latency/packet-loss fault injector.
+
+`backend/tests/harness_stress/test_db_contention_and_recovery.py`
+- Scenario: lock-heavy DB workload while runs are active.
+- Why critical: transaction failures can corrupt state.
+- Involved flow: repositories + transaction retry policy (Junk DB at `backend/database/connect.py`).
+- Failure manifestation: partial commits, unrecoverable run state.
+- Fixtures/mocks: lock contention scenarios, retry telemetry.
+
+## Security Regression Set (Must Always Run in PR Gate)
+- Authn/Authz bypass attempts across all harness endpoints.
+- Tenant isolation checks in retrieval, artifacts, status APIs.
+- Secret leakage checks in logs, traces, and returned artifacts.
+- Tool sandbox escape/path traversal checks.
+- Audit tamper detection checks.
+
+## CI/CD Gating Strategy
+- Tier 0 (every commit): deterministic unit critical set.
+- Tier 1 (every PR): Tier 0 + integration critical + security regression set + e2e smoke.
+- Tier 2 (nightly): full integration/e2e + stress/chaos + mutation tests on policy modules.
+- Tier 3 (pre-release): rollback/disaster drills + full security + performance SLO validation.
+
+## Exit Criteria (Suite Readiness)
+- No critical/high findings in security regression set.
+- 0 failing tests in Tier 1.
+- Flake rate under agreed threshold (example: <1% over 7 days).
+- Stress tests meet SLO/error-budget targets.
+- All high-risk components mapped to at least one destructive-path test.
+apply_patch(auto_approved=true) exited 0 in 107ms:
+Success. Updated the following files:
+A .claude/reasoning/test-plans.md
+file update:
+diff --git a/.claude/reasoning/test-plans.md b/.claude/reasoning/test-plans.md
+new file mode 100644
+index 0000000000000000000000000000000000000000..d00643dddf8b409ebae6ffc943cf2be4495be492
+--- /dev/null
++++ b/.claude/reasoning/test-plans.md
+@@ -0,0 +1,240 @@
++# Harness Engineering AI Testing Suite Plan
++
++## Goal
++Build a robust, security-first, AI-aware testing suite that catches system-breaking failures before merge/release, with explicit protection against state corruption, unsafe automation, data leakage, and orchestration regressions.
++
++## Assumed Harness Components (for targeting tests)
++- `POST /api/harness/run` (start task)
++- `POST /api/harness/approve` (human gate)
++- `GET /api/harness/runs/{id}` (status/artifacts)
++- Orchestrator/service layer (prompt assembly, model routing, tool execution, retries)
++- Worker/queue layer (async execution, retries, dead-letter)
++- Audit/log middleware
++- DB writes for runs, steps, approvals, artifacts (use Junk DB at `backend/database/connect.py`)
++
++## Exact Build Steps
++1. Define failure budgets and release gates.
++2. Freeze a deterministic test baseline (`temperature=0`, fixed seeds, mocked clock, stable fixtures).
++3. Create dedicated test envs: `unit`, `integration`, `e2e`, `stress`, each isolated and reproducible.
++4. Enforce secret-safe test plumbing (never real keys, synthetic secrets only, log scrubbing enabled).
++5. Add hermetic provider mocks for LLM/tool vendors and fault injectors (timeouts, malformed payloads, 5xx, slow streams).
++6. Build fixture factories for runs/steps/approvals/artifacts with valid and adversarial variants.
++7. Add contract tests for every internal boundary (API schema, orchestrator-tool contracts, queue message schema).
++8. Implement critical unit tests first (policy, prompt assembly, state transitions, idempotency, redaction).
++9. Implement integration tests for cross-component breakpoints (API->service->DB->queue->worker).
++10. Implement adversarial e2e tests (prompt injection, exfiltration attempts, unsafe tool requests, partial-failure rollback).
++11. Implement concurrency/race tests (duplicate deliveries, simultaneous approvals, lock contention, replay attacks).
++12. Add chaos and stress tests (provider outage/latency spikes, queue lag, DB contention, large payload saturation).
++13. Add security regression tests mapped to threat model (authz bypass, tenant isolation, audit tampering, PII leakage).
++14. Wire CI gates by risk tier:
++15. PR gate: lint + unit critical + integration critical + smoke e2e.
++16. Nightly gate: full integration + full e2e + stress/chaos.
++17. Release gate: security regressions + rollback drills + disaster recovery checks.
++18. Add observability assertions in tests (metrics/log traces validated, not just HTTP codes).
++19. Add mutation testing for policy/guardrail modules to ensure tests actually catch logic tampering.
++20. Set flake budget and quarantine policy, then continuously harden flaky tests until below threshold.
++
++## Test Plan by Phase
++
++### Phase 1: Unit Tests (Critical Logic and Stateful Operations)
++
++`backend/tests/harness_orchestrator/test_prompt_template_injection_guard.py`
++- Scenario: User input attempts prompt-template escape and hidden-system-instruction override.
++- Why critical: Could disable safety controls and execute unsafe automation.
++- Involved logic: prompt builder/orchestrator guardrail functions.
++- Failure manifestation: Model receives unsafe/system-overridden prompt.
++- Fixtures/mocks: adversarial prompt fixtures, expected sanitized prompt snapshot.
++
++`backend/tests/harness_orchestrator/test_model_router_policy_bypass.py`
++- Scenario: Request attempts to force disallowed model/tool via crafted params.
++- Why critical: Security and cost controls bypass.
++- Involved logic: routing policy evaluator.
++- Failure manifestation: router selects forbidden model/tool.
++- Fixtures/mocks: allowed/denied policy matrix fixtures.
++
++`backend/tests/harness_orchestrator/test_tool_call_path_traversal_block.py`
++- Scenario: Tool args include path traversal (`../`, absolute paths).
++- Why critical: File exfiltration or workspace tampering.
++- Involved logic: tool arg validator/sandbox adapter.
++- Failure manifestation: unauthorized file access allowed.
++- Fixtures/mocks: malicious tool-arg payloads.
++
++`backend/tests/harness_security/test_secret_redaction_on_logs.py`
++- Scenario: Model output contains key-like tokens and connection strings.
++- Why critical: Credential leakage via logs/telemetry.
++- Involved logic: audit/log middleware + redaction utility.
++- Failure manifestation: secrets appear in stored logs.
++- Fixtures/mocks: synthetic secret corpus.
++
++`backend/tests/harness_state/test_run_state_machine_invalid_transition.py`
++- Scenario: Transition `FAILED -> RUNNING` or duplicate `APPROVED`.
++- Why critical: Corrupt state and inconsistent downstream behavior.
++- Involved logic: run state machine.
++- Failure manifestation: illegal transition accepted.
++- Fixtures/mocks: state transition table fixture.
++
++`backend/tests/harness_state/test_idempotency_duplicate_run_submission.py`
++- Scenario: Same idempotency key submitted concurrently.
++- Why critical: duplicate execution and duplicate writes.
++- Involved logic: request dedupe + run creation.
++- Failure manifestation: >1 run created for same logical request.
++- Fixtures/mocks: concurrent request harness, shared key.
++
++`backend/tests/harness_resilience/test_retry_backoff_circuit_breaker.py`
++- Scenario: upstream provider continuously fails then recovers.
++- Why critical: retry storm, cascading failures, cost explosion.
++- Involved logic: retry policy + circuit breaker.
++- Failure manifestation: unbounded retries or no recovery.
++- Fixtures/mocks: provider failure/recovery simulator.
++
++`backend/tests/harness_policy/test_allow_deny_precedence.py`
++- Scenario: conflicting policy rules exist for same action.
++- Why critical: authorization ambiguity can allow unsafe execution.
++- Involved logic: policy resolution engine.
++- Failure manifestation: `allow` wins over explicit `deny`.
++- Fixtures/mocks: overlapping policy fixtures.
++
++### Phase 2: Integration Tests (Cross-Component Contract Breakpoints)
++
++`backend/tests/harness_api/test_run_endpoint_authz_rate_limit_integration.py`
++- Scenario: unauthenticated/over-limit caller hits `POST /api/harness/run`.
++- Why critical: abuse and unauthorized execution risk.
++- Involved routes/middleware: auth middleware, rate limiter, run controller.
++- Failure manifestation: request accepted when it should be blocked.
++- Fixtures/mocks: auth token variants, burst traffic generator.
++
++`backend/tests/harness_integration/test_api_to_orchestrator_to_db_atomicity.py`
++- Scenario: DB write fails after orchestration starts.
++- Why critical: orphaned worker tasks and unrecoverable partial state.
++- Involved flow: controller -> orchestrator -> run repository.
++- Failure manifestation: task executes without persisted run record.
++- Fixtures/mocks: DB failure injector (Junk DB via `backend/database/connect.py`).
++
++`backend/tests/harness_integration/test_queue_retry_dead_letter_no_duplicate_side_effects.py`
++- Scenario: message retries then dead-letters after max attempts.
++- Why critical: duplicate side effects and data corruption.
++- Involved flow: queue producer/consumer + persistence.
++- Failure manifestation: repeated writes/actions across retries.
++- Fixtures/mocks: queue emulator, retry counters.
++
++`backend/tests/harness_integration/test_provider_failover_guardrails_preserved.py`
++- Scenario: primary model fails; fallback model used.
++- Why critical: failover must not disable policy filters.
++- Involved flow: model client abstraction + guardrail middleware.
++- Failure manifestation: fallback path skips validation/redaction.
++- Fixtures/mocks: provider A outage + provider B fallback response.
++
++`backend/tests/harness_integration/test_retrieval_prompt_assembly_tenant_isolation.py`
++- Scenario: retrieval returns mixed-tenant context.
++- Why critical: cross-tenant data exposure.
++- Involved flow: retrieval service + prompt assembly.
++- Failure manifestation: wrong-tenant docs in final prompt.
++- Fixtures/mocks: multi-tenant fixture dataset.
++
++`backend/tests/harness_integration/test_artifact_writer_atomic_commit_and_rollback.py`
++- Scenario: artifact write partially succeeds then fails.
++- Why critical: corrupted artifacts and inconsistent run status.
++- Involved flow: artifact service + run finalizer.
++- Failure manifestation: run marked success with incomplete artifacts.
++- Fixtures/mocks: filesystem/object-store partial failure injector.
++
++`backend/tests/harness_integration/test_audit_log_tamper_evidence.py`
++- Scenario: modified historical audit entry.
++- Why critical: compliance and incident forensics failure.
++- Involved flow: audit middleware + integrity checks.
++- Failure manifestation: tampering undetected.
++- Fixtures/mocks: signed log fixture with intentional modification.
++
++### Phase 3: End-to-End Tests (Real Workflow Safety)
++
++`backend/tests/harness_e2e/test_full_run_happy_path_with_human_approval.py`
++- Scenario: complete run from `POST /api/harness/run` to approval to finalized artifacts.
++- Why critical: validates core user journey and system wiring.
++- Involved routes/services: run/approve/status endpoints, orchestrator, DB, queue.
++- Failure manifestation: workflow stalls, status mismatch, missing artifacts.
++- Fixtures/mocks: standard request fixture, mocked model/tool outputs.
++
++`backend/tests/harness_e2e/test_prompt_injection_exfiltration_blocked.py`
++- Scenario: adversarial prompt requests secrets/file exfiltration.
++- Why critical: direct security breach vector in AI-heavy automation.
++- Involved flow: input filters, prompt guardrails, tool policy layer.
++- Failure manifestation: secret/tool exfiltration succeeds.
++- Fixtures/mocks: red-team prompt corpus.
++
++`backend/tests/harness_e2e/test_dependency_outage_graceful_degradation.py`
++- Scenario: model provider outage during active run.
++- Why critical: must fail safely with clear recoverable state.
++- Involved flow: provider client, retry/circuit breaker, run finalizer.
++- Failure manifestation: hung run, inconsistent final status.
++- Fixtures/mocks: outage injector, recovery timeout config.
++
++`backend/tests/harness_e2e/test_partial_failure_rollback_integrity.py`
++- Scenario: one step fails after prior steps wrote state.
++- Why critical: prevents persistent inconsistent state.
++- Involved flow: orchestrator step transaction boundaries + compensating actions.
++- Failure manifestation: stale/contradictory records after rollback.
++- Fixtures/mocks: step failure trigger at controlled point.
++
++`backend/tests/harness_e2e/test_replay_attack_idempotency_enforced.py`
++- Scenario: attacker replays signed request payload.
++- Why critical: duplicate/unauthorized re-execution.
++- Involved flow: request signature validation + idempotency store.
++- Failure manifestation: replayed request accepted/executed.
++- Fixtures/mocks: captured signed request replay fixture.
++
++### Phase 4: Stress/Chaos Tests (Reliability Under Pressure)
++
++`backend/tests/harness_stress/test_high_concurrency_run_submission_race_conditions.py`
++- Scenario: burst of concurrent run requests for same project/user.
++- Why critical: lock contention, duplicate runs, queue collapse.
++- Involved flow: API ingress, idempotency, queue producer, DB transactions.
++- Failure manifestation: duplicate runs, deadlocks, high error rate.
++- Fixtures/mocks: load generator, contention telemetry hooks.
++
++`backend/tests/harness_stress/test_long_running_worker_memory_growth.py`
++- Scenario: sustained processing over long duration.
++- Why critical: memory leaks cause worker crashes and retry storms.
++- Involved flow: worker execution loop + provider streaming client.
++- Failure manifestation: monotonic memory growth beyond threshold.
++- Fixtures/mocks: long-sequence workload fixture.
++
++`backend/tests/harness_stress/test_token_budget_exhaustion_safe_failure.py`
++- Scenario: oversized prompt/context drives token overrun.
++- Why critical: runaway cost and provider hard-fail.
++- Involved flow: token estimator + budget guard middleware.
++- Failure manifestation: request executes despite budget breach.
++- Fixtures/mocks: oversized context fixtures.
++
++`backend/tests/harness_stress/test_provider_latency_spike_backpressure.py`
++- Scenario: upstream latency spikes + partial packet loss.
++- Why critical: queue backlog and SLA collapse.
++- Involved flow: async workers, queue consumer concurrency controls.
++- Failure manifestation: no backpressure, uncontrolled queue growth.
++- Fixtures/mocks: latency/packet-loss fault injector.
++
++`backend/tests/harness_stress/test_db_contention_and_recovery.py`
++- Scenario: lock-heavy DB workload while runs are active.
++- Why critical: transaction failures can corrupt state.
++- Involved flow: repositories + transaction retry policy (Junk DB at `backend/database/connect.py`).
++- Failure manifestation: partial commits, unrecoverable run state.
++- Fixtures/mocks: lock contention scenarios, retry telemetry.
++
++## Security Regression Set (Must Always Run in PR Gate)
++- Authn/Authz bypass attempts across all harness endpoints.
++- Tenant isolation checks in retrieval, artifacts, status APIs.
++- Secret leakage checks in logs, traces, and returned artifacts.
++- Tool sandbox escape/path traversal checks.
++- Audit tamper detection checks.
++
++## CI/CD Gating Strategy
++- Tier 0 (every commit): deterministic unit critical set.
++- Tier 1 (every PR): Tier 0 + integration critical + security regression set + e2e smoke.
++- Tier 2 (nightly): full integration/e2e + stress/chaos + mutation tests on policy modules.
++- Tier 3 (pre-release): rollback/disaster drills + full security + performance SLO validation.
++
++## Exit Criteria (Suite Readiness)
++- No critical/high findings in security regression set.
++- 0 failing tests in Tier 1.
++- Flake rate under agreed threshold (example: <1% over 7 days).
++- Stress tests meet SLO/error-budget targets.
++- All high-risk components mapped to at least one destructive-path test.
+
+file update:
+diff --git a/.claude/reasoning/test-plans.md b/.claude/reasoning/test-plans.md
+new file mode 100644
+index 0000000000000000000000000000000000000000..d00643dddf8b409ebae6ffc943cf2be4495be492
+--- /dev/null
++++ b/.claude/reasoning/test-plans.md
+@@ -0,0 +1,240 @@
++# Harness Engineering AI Testing Suite Plan
++
++## Goal
++Build a robust, security-first, AI-aware testing suite that catches system-breaking failures before merge/release, with explicit protection against state corruption, unsafe automation, data leakage, and orchestration regressions.
++
++## Assumed Harness Components (for targeting tests)
++- `POST /api/harness/run` (start task)
++- `POST /api/harness/approve` (human gate)
++- `GET /api/harness/runs/{id}` (status/artifacts)
++- Orchestrator/service layer (prompt assembly, model routing, tool execution, retries)
++- Worker/queue layer (async execution, retries, dead-letter)
++- Audit/log middleware
++- DB writes for runs, steps, approvals, artifacts (use Junk DB at `backend/database/connect.py`)
++
++## Exact Build Steps
++1. Define failure budgets and release gates.
++2. Freeze a deterministic test baseline (`temperature=0`, fixed seeds, mocked clock, stable fixtures).
++3. Create dedicated test envs: `unit`, `integration`, `e2e`, `stress`, each isolated and reproducible.
++4. Enforce secret-safe test plumbing (never real keys, synthetic secrets only, log scrubbing enabled).
++5. Add hermetic provider mocks for LLM/tool vendors and fault injectors (timeouts, malformed payloads, 5xx, slow streams).
++6. Build fixture factories for runs/steps/approvals/artifacts with valid and adversarial variants.
++7. Add contract tests for every internal boundary (API schema, orchestrator-tool contracts, queue message schema).
++8. Implement critical unit tests first (policy, prompt assembly, state transitions, idempotency, redaction).
++9. Implement integration tests for cross-component breakpoints (API->service->DB->queue->worker).
++10. Implement adversarial e2e tests (prompt injection, exfiltration attempts, unsafe tool requests, partial-failure rollback).
++11. Implement concurrency/race tests (duplicate deliveries, simultaneous approvals, lock contention, replay attacks).
++12. Add chaos and stress tests (provider outage/latency spikes, queue lag, DB contention, large payload saturation).
++13. Add security regression tests mapped to threat model (authz bypass, tenant isolation, audit tampering, PII leakage).
++14. Wire CI gates by risk tier:
++15. PR gate: lint + unit critical + integration critical + smoke e2e.
++16. Nightly gate: full integration + full e2e + stress/chaos.
++17. Release gate: security regressions + rollback drills + disaster recovery checks.
++18. Add observability assertions in tests (metrics/log traces validated, not just HTTP codes).
++19. Add mutation testing for policy/guardrail modules to ensure tests actually catch logic tampering.
++20. Set flake budget and quarantine policy, then continuously harden flaky tests until below threshold.
++
++## Test Plan by Phase
++
++### Phase 1: Unit Tests (Critical Logic and Stateful Operations)
++
++`backend/tests/harness_orchestrator/test_prompt_template_injection_guard.py`
++- Scenario: User input attempts prompt-template escape and hidden-system-instruction override.
++- Why critical: Could disable safety controls and execute unsafe automation.
++- Involved logic: prompt builder/orchestrator guardrail functions.
++- Failure manifestation: Model receives unsafe/system-overridden prompt.
++- Fixtures/mocks: adversarial prompt fixtures, expected sanitized prompt snapshot.
++
++`backend/tests/harness_orchestrator/test_model_router_policy_bypass.py`
++- Scenario: Request attempts to force disallowed model/tool via crafted params.
++- Why critical: Security and cost controls bypass.
++- Involved logic: routing policy evaluator.
++- Failure manifestation: router selects forbidden model/tool.
++- Fixtures/mocks: allowed/denied policy matrix fixtures.
++
++`backend/tests/harness_orchestrator/test_tool_call_path_traversal_block.py`
++- Scenario: Tool args include path traversal (`../`, absolute paths).
++- Why critical: File exfiltration or workspace tampering.
++- Involved logic: tool arg validator/sandbox adapter.
++- Failure manifestation: unauthorized file access allowed.
++- Fixtures/mocks: malicious tool-arg payloads.
++
++`backend/tests/harness_security/test_secret_redaction_on_logs.py`
++- Scenario: Model output contains key-like tokens and connection strings.
++- Why critical: Credential leakage via logs/telemetry.
++- Involved logic: audit/log middleware + redaction utility.
++- Failure manifestation: secrets appear in stored logs.
++- Fixtures/mocks: synthetic secret corpus.
++
++`backend/tests/harness_state/test_run_state_machine_invalid_transition.py`
++- Scenario: Transition `FAILED -> RUNNING` or duplicate `APPROVED`.
++- Why critical: Corrupt state and inconsistent downstream behavior.
++- Involved logic: run state machine.
++- Failure manifestation: illegal transition accepted.
++- Fixtures/mocks: state transition table fixture.
++
++`backend/tests/harness_state/test_idempotency_duplicate_run_submission.py`
++- Scenario: Same idempotency key submitted concurrently.
++- Why critical: duplicate execution and duplicate writes.
++- Involved logic: request dedupe + run creation.
++- Failure manifestation: >1 run created for same logical request.
++- Fixtures/mocks: concurrent request harness, shared key.
++
++`backend/tests/harness_resilience/test_retry_backoff_circuit_breaker.py`
++- Scenario: upstream provider continuously fails then recovers.
++- Why critical: retry storm, cascading failures, cost explosion.
++- Involved logic: retry policy + circuit breaker.
++- Failure manifestation: unbounded retries or no recovery.
++- Fixtures/mocks: provider failure/recovery simulator.
++
++`backend/tests/harness_policy/test_allow_deny_precedence.py`
++- Scenario: conflicting policy rules exist for same action.
++- Why critical: authorization ambiguity can allow unsafe execution.
++- Involved logic: policy resolution engine.
++- Failure manifestation: `allow` wins over explicit `deny`.
++- Fixtures/mocks: overlapping policy fixtures.
++
++### Phase 2: Integration Tests (Cross-Component Contract Breakpoints)
++
++`backend/tests/harness_api/test_run_endpoint_authz_rate_limit_integration.py`
++- Scenario: unauthenticated/over-limit caller hits `POST /api/harness/run`.
++- Why critical: abuse and unauthorized execution risk.
++- Involved routes/middleware: auth middleware, rate limiter, run controller.
++- Failure manifestation: request accepted when it should be blocked.
++- Fixtures/mocks: auth token variants, burst traffic generator.
++
++`backend/tests/harness_integration/test_api_to_orchestrator_to_db_atomicity.py`
++- Scenario: DB write fails after orchestration starts.
++- Why critical: orphaned worker tasks and unrecoverable partial state.
++- Involved flow: controller -> orchestrator -> run repository.
++- Failure manifestation: task executes without persisted run record.
++- Fixtures/mocks: DB failure injector (Junk DB via `backend/database/connect.py`).
++
++`backend/tests/harness_integration/test_queue_retry_dead_letter_no_duplicate_side_effects.py`
++- Scenario: message retries then dead-letters after max attempts.
++- Why critical: duplicate side effects and data corruption.
++- Involved flow: queue producer/consumer + persistence.
++- Failure manifestation: repeated writes/actions across retries.
++- Fixtures/mocks: queue emulator, retry counters.
++
++`backend/tests/harness_integration/test_provider_failover_guardrails_preserved.py`
++- Scenario: primary model fails; fallback model used.
++- Why critical: failover must not disable policy filters.
++- Involved flow: model client abstraction + guardrail middleware.
++- Failure manifestation: fallback path skips validation/redaction.
++- Fixtures/mocks: provider A outage + provider B fallback response.
++
++`backend/tests/harness_integration/test_retrieval_prompt_assembly_tenant_isolation.py`
++- Scenario: retrieval returns mixed-tenant context.
++- Why critical: cross-tenant data exposure.
++- Involved flow: retrieval service + prompt assembly.
++- Failure manifestation: wrong-tenant docs in final prompt.
++- Fixtures/mocks: multi-tenant fixture dataset.
++
++`backend/tests/harness_integration/test_artifact_writer_atomic_commit_and_rollback.py`
++- Scenario: artifact write partially succeeds then fails.
++- Why critical: corrupted artifacts and inconsistent run status.
++- Involved flow: artifact service + run finalizer.
++- Failure manifestation: run marked success with incomplete artifacts.
++- Fixtures/mocks: filesystem/object-store partial failure injector.
++
++`backend/tests/harness_integration/test_audit_log_tamper_evidence.py`
++- Scenario: modified historical audit entry.
++- Why critical: compliance and incident forensics failure.
++- Involved flow: audit middleware + integrity checks.
++- Failure manifestation: tampering undetected.
++- Fixtures/mocks: signed log fixture with intentional modification.
++
++### Phase 3: End-to-End Tests (Real Workflow Safety)
++
++`backend/tests/harness_e2e/test_full_run_happy_path_with_human_approval.py`
++- Scenario: complete run from `POST /api/harness/run` to approval to finalized artifacts.
++- Why critical: validates core user journey and system wiring.
++- Involved routes/services: run/approve/status endpoints, orchestrator, DB, queue.
++- Failure manifestation: workflow stalls, status mismatch, missing artifacts.
++- Fixtures/mocks: standard request fixture, mocked model/tool outputs.
++
++`backend/tests/harness_e2e/test_prompt_injection_exfiltration_blocked.py`
++- Scenario: adversarial prompt requests secrets/file exfiltration.
++- Why critical: direct security breach vector in AI-heavy automation.
++- Involved flow: input filters, prompt guardrails, tool policy layer.
++- Failure manifestation: secret/tool exfiltration succeeds.
++- Fixtures/mocks: red-team prompt corpus.
++
++`backend/tests/harness_e2e/test_dependency_outage_graceful_degradation.py`
++- Scenario: model provider outage during active run.
++- Why critical: must fail safely with clear recoverable state.
++- Involved flow: provider client, retry/circuit breaker, run finalizer.
++- Failure manifestation: hung run, inconsistent final status.
++- Fixtures/mocks: outage injector, recovery timeout config.
++
++`backend/tests/harness_e2e/test_partial_failure_rollback_integrity.py`
++- Scenario: one step fails after prior steps wrote state.
++- Why critical: prevents persistent inconsistent state.
++- Involved flow: orchestrator step transaction boundaries + compensating actions.
++- Failure manifestation: stale/contradictory records after rollback.
++- Fixtures/mocks: step failure trigger at controlled point.
++
++`backend/tests/harness_e2e/test_replay_attack_idempotency_enforced.py`
++- Scenario: attacker replays signed request payload.
++- Why critical: duplicate/unauthorized re-execution.
++- Involved flow: request signature validation + idempotency store.
++- Failure manifestation: replayed request accepted/executed.
++- Fixtures/mocks: captured signed request replay fixture.
++
++### Phase 4: Stress/Chaos Tests (Reliability Under Pressure)
++
++`backend/tests/harness_stress/test_high_concurrency_run_submission_race_conditions.py`
++- Scenario: burst of concurrent run requests for same project/user.
++- Why critical: lock contention, duplicate runs, queue collapse.
++- Involved flow: API ingress, idempotency, queue producer, DB transactions.
++- Failure manifestation: duplicate runs, deadlocks, high error rate.
++- Fixtures/mocks: load generator, contention telemetry hooks.
++
++`backend/tests/harness_stress/test_long_running_worker_memory_growth.py`
++- Scenario: sustained processing over long duration.
++- Why critical: memory leaks cause worker crashes and retry storms.
++- Involved flow: worker execution loop + provider streaming client.
++- Failure manifestation: monotonic memory growth beyond threshold.
++- Fixtures/mocks: long-sequence workload fixture.
++
++`backend/tests/harness_stress/test_token_budget_exhaustion_safe_failure.py`
++- Scenario: oversized prompt/context drives token overrun.
++- Why critical: runaway cost and provider hard-fail.
++- Involved flow: token estimator + budget guard middleware.
++- Failure manifestation: request executes despite budget breach.
++- Fixtures/mocks: oversized context fixtures.
++
++`backend/tests/harness_stress/test_provider_latency_spike_backpressure.py`
++- Scenario: upstream latency spikes + partial packet loss.
++- Why critical: queue backlog and SLA collapse.
++- Involved flow: async workers, queue consumer concurrency controls.
++- Failure manifestation: no backpressure, uncontrolled queue growth.
++- Fixtures/mocks: latency/packet-loss fault injector.
++
++`backend/tests/harness_stress/test_db_contention_and_recovery.py`
++- Scenario: lock-heavy DB workload while runs are active.
++- Why critical: transaction failures can corrupt state.
++- Involved flow: repositories + transaction retry policy (Junk DB at `backend/database/connect.py`).
++- Failure manifestation: partial commits, unrecoverable run state.
++- Fixtures/mocks: lock contention scenarios, retry telemetry.
++
++## Security Regression Set (Must Always Run in PR Gate)
++- Authn/Authz bypass attempts across all harness endpoints.
++- Tenant isolation checks in retrieval, artifacts, status APIs.
++- Secret leakage checks in logs, traces, and returned artifacts.
++- Tool sandbox escape/path traversal checks.
++- Audit tamper detection checks.
++
++## CI/CD Gating Strategy
++- Tier 0 (every commit): deterministic unit critical set.
++- Tier 1 (every PR): Tier 0 + integration critical + security regression set + e2e smoke.
++- Tier 2 (nightly): full integration/e2e + stress/chaos + mutation tests on policy modules.
++- Tier 3 (pre-release): rollback/disaster drills + full security + performance SLO validation.
++
++## Exit Criteria (Suite Readiness)
++- No critical/high findings in security regression set.
++- 0 failing tests in Tier 1.
++- Flake rate under agreed threshold (example: <1% over 7 days).
++- Stress tests meet SLO/error-budget targets.
++- All high-risk components mapped to at least one destructive-path test.
+
+
+thinking
+**Preparing execution summary output**
+codex
+The strategic plan is written. I’m now creating the required `execution_summary.md` with changed files, key decisions, and validation checks, then I’ll return the direct prompt output to you.
+
+thinking
+**Considering file existence validation**
+exec
+"C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -Command "Get-Content -Path '.claude/reasoning/test-plans.md' | Measure-Object -Line -Word -Character" in C:\Users\422mi\skillsexec
+"C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -Command "Test-Path 'claude/reports/recursive_self_improvement/harness-engineering-ai-testing-suite/runs/20260220_193304/execution_summary.md'" in C:\Users\422mi\skills succeeded in 240ms:
+False
+ succeeded in 266ms:
+
+Lines Words Characters Property
+----- ----- ---------- --------
+  204  1557      13368         
+
+
+file update:
+diff --git a/.claude/reasoning/test-plans.md b/.claude/reasoning/test-plans.md
+new file mode 100644
+index 0000000000000000000000000000000000000000..d00643dddf8b409ebae6ffc943cf2be4495be492
+--- /dev/null
++++ b/.claude/reasoning/test-plans.md
+@@ -0,0 +1,240 @@
++# Harness Engineering AI Testing Suite Plan
++
++## Goal
++Build a robust, security-first, AI-aware testing suite that catches system-breaking failures before merge/release, with explicit protection against state corruption, unsafe automation, data leakage, and orchestration regressions.
++
++## Assumed Harness Components (for targeting tests)
++- `POST /api/harness/run` (start task)
++- `POST /api/harness/approve` (human gate)
++- `GET /api/harness/runs/{id}` (status/artifacts)
++- Orchestrator/service layer (prompt assembly, model routing, tool execution, retries)
++- Worker/queue layer (async execution, retries, dead-letter)
++- Audit/log middleware
++- DB writes for runs, steps, approvals, artifacts (use Junk DB at `backend/database/connect.py`)
++
++## Exact Build Steps
++1. Define failure budgets and release gates.
++2. Freeze a deterministic test baseline (`temperature=0`, fixed seeds, mocked clock, stable fixtures).
++3. Create dedicated test envs: `unit`, `integration`, `e2e`, `stress`, each isolated and reproducible.
++4. Enforce secret-safe test plumbing (never real keys, synthetic secrets only, log scrubbing enabled).
++5. Add hermetic provider mocks for LLM/tool vendors and fault injectors (timeouts, malformed payloads, 5xx, slow streams).
++6. Build fixture factories for runs/steps/approvals/artifacts with valid and adversarial variants.
++7. Add contract tests for every internal boundary (API schema, orchestrator-tool contracts, queue message schema).
++8. Implement critical unit tests first (policy, prompt assembly, state transitions, idempotency, redaction).
++9. Implement integration tests for cross-component breakpoints (API->service->DB->queue->worker).
++10. Implement adversarial e2e tests (prompt injection, exfiltration attempts, unsafe tool requests, partial-failure rollback).
++11. Implement concurrency/race tests (duplicate deliveries, simultaneous approvals, lock contention, replay attacks).
++12. Add chaos and stress tests (provider outage/latency spikes, queue lag, DB contention, large payload saturation).
++13. Add security regression tests mapped to threat model (authz bypass, tenant isolation, audit tampering, PII leakage).
++14. Wire CI gates by risk tier:
++15. PR gate: lint + unit critical + integration critical + smoke e2e.
++16. Nightly gate: full integration + full e2e + stress/chaos.
++17. Release gate: security regressions + rollback drills + disaster recovery checks.
++18. Add observability assertions in tests (metrics/log traces validated, not just HTTP codes).
++19. Add mutation testing for policy/guardrail modules to ensure tests actually catch logic tampering.
++20. Set flake budget and quarantine policy, then continuously harden flaky tests until below threshold.
++
++## Test Plan by Phase
++
++### Phase 1: Unit Tests (Critical Logic and Stateful Operations)
++
++`backend/tests/harness_orchestrator/test_prompt_template_injection_guard.py`
++- Scenario: User input attempts prompt-template escape and hidden-system-instruction override.
++- Why critical: Could disable safety controls and execute unsafe automation.
++- Involved logic: prompt builder/orchestrator guardrail functions.
++- Failure manifestation: Model receives unsafe/system-overridden prompt.
++- Fixtures/mocks: adversarial prompt fixtures, expected sanitized prompt snapshot.
++
++`backend/tests/harness_orchestrator/test_model_router_policy_bypass.py`
++- Scenario: Request attempts to force disallowed model/tool via crafted params.
++- Why critical: Security and cost controls bypass.
++- Involved logic: routing policy evaluator.
++- Failure manifestation: router selects forbidden model/tool.
++- Fixtures/mocks: allowed/denied policy matrix fixtures.
++
++`backend/tests/harness_orchestrator/test_tool_call_path_traversal_block.py`
++- Scenario: Tool args include path traversal (`../`, absolute paths).
++- Why critical: File exfiltration or workspace tampering.
++- Involved logic: tool arg validator/sandbox adapter.
++- Failure manifestation: unauthorized file access allowed.
++- Fixtures/mocks: malicious tool-arg payloads.
++
++`backend/tests/harness_security/test_secret_redaction_on_logs.py`
++- Scenario: Model output contains key-like tokens and connection strings.
++- Why critical: Credential leakage via logs/telemetry.
++- Involved logic: audit/log middleware + redaction utility.
++- Failure manifestation: secrets appear in stored logs.
++- Fixtures/mocks: synthetic secret corpus.
++
++`backend/tests/harness_state/test_run_state_machine_invalid_transition.py`
++- Scenario: Transition `FAILED -> RUNNING` or duplicate `APPROVED`.
++- Why critical: Corrupt state and inconsistent downstream behavior.
++- Involved logic: run state machine.
++- Failure manifestation: illegal transition accepted.
++- Fixtures/mocks: state transition table fixture.
++
++`backend/tests/harness_state/test_idempotency_duplicate_run_submission.py`
++- Scenario: Same idempotency key submitted concurrently.
++- Why critical: duplicate execution and duplicate writes.
++- Involved logic: request dedupe + run creation.
++- Failure manifestation: >1 run created for same logical request.
++- Fixtures/mocks: concurrent request harness, shared key.
++
++`backend/tests/harness_resilience/test_retry_backoff_circuit_breaker.py`
++- Scenario: upstream provider continuously fails then recovers.
++- Why critical: retry storm, cascading failures, cost explosion.
++- Involved logic: retry policy + circuit breaker.
++- Failure manifestation: unbounded retries or no recovery.
++- Fixtures/mocks: provider failure/recovery simulator.
++
++`backend/tests/harness_policy/test_allow_deny_precedence.py`
++- Scenario: conflicting policy rules exist for same action.
++- Why critical: authorization ambiguity can allow unsafe execution.
++- Involved logic: policy resolution engine.
++- Failure manifestation: `allow` wins over explicit `deny`.
++- Fixtures/mocks: overlapping policy fixtures.
++
++### Phase 2: Integration Tests (Cross-Component Contract Breakpoints)
++
++`backend/tests/harness_api/test_run_endpoint_authz_rate_limit_integration.py`
++- Scenario: unauthenticated/over-limit caller hits `POST /api/harness/run`.
++- Why critical: abuse and unauthorized execution risk.
++- Involved routes/middleware: auth middleware, rate limiter, run controller.
++- Failure manifestation: request accepted when it should be blocked.
++- Fixtures/mocks: auth token variants, burst traffic generator.
++
++`backend/tests/harness_integration/test_api_to_orchestrator_to_db_atomicity.py`
++- Scenario: DB write fails after orchestration starts.
++- Why critical: orphaned worker tasks and unrecoverable partial state.
++- Involved flow: controller -> orchestrator -> run repository.
++- Failure manifestation: task executes without persisted run record.
++- Fixtures/mocks: DB failure injector (Junk DB via `backend/database/connect.py`).
++
++`backend/tests/harness_integration/test_queue_retry_dead_letter_no_duplicate_side_effects.py`
++- Scenario: message retries then dead-letters after max attempts.
++- Why critical: duplicate side effects and data corruption.
++- Involved flow: queue producer/consumer + persistence.
++- Failure manifestation: repeated writes/actions across retries.
++- Fixtures/mocks: queue emulator, retry counters.
++
++`backend/tests/harness_integration/test_provider_failover_guardrails_preserved.py`
++- Scenario: primary model fails; fallback model used.
++- Why critical: failover must not disable policy filters.
++- Involved flow: model client abstraction + guardrail middleware.
++- Failure manifestation: fallback path skips validation/redaction.
++- Fixtures/mocks: provider A outage + provider B fallback response.
++
++`backend/tests/harness_integration/test_retrieval_prompt_assembly_tenant_isolation.py`
++- Scenario: retrieval returns mixed-tenant context.
++- Why critical: cross-tenant data exposure.
++- Involved flow: retrieval service + prompt assembly.
++- Failure manifestation: wrong-tenant docs in final prompt.
++- Fixtures/mocks: multi-tenant fixture dataset.
++
++`backend/tests/harness_integration/test_artifact_writer_atomic_commit_and_rollback.py`
++- Scenario: artifact write partially succeeds then fails.
++- Why critical: corrupted artifacts and inconsistent run status.
++- Involved flow: artifact service + run finalizer.
++- Failure manifestation: run marked success with incomplete artifacts.
++- Fixtures/mocks: filesystem/object-store partial failure injector.
++
++`backend/tests/harness_integration/test_audit_log_tamper_evidence.py`
++- Scenario: modified historical audit entry.
++- Why critical: compliance and incident forensics failure.
++- Involved flow: audit middleware + integrity checks.
++- Failure manifestation: tampering undetected.
++- Fixtures/mocks: signed log fixture with intentional modification.
++
++### Phase 3: End-to-End Tests (Real Workflow Safety)
++
++`backend/tests/harness_e2e/test_full_run_happy_path_with_human_approval.py`
++- Scenario: complete run from `POST /api/harness/run` to approval to finalized artifacts.
++- Why critical: validates core user journey and system wiring.
++- Involved routes/services: run/approve/status endpoints, orchestrator, DB, queue.
++- Failure manifestation: workflow stalls, status mismatch, missing artifacts.
++- Fixtures/mocks: standard request fixture, mocked model/tool outputs.
++
++`backend/tests/harness_e2e/test_prompt_injection_exfiltration_blocked.py`
++- Scenario: adversarial prompt requests secrets/file exfiltration.
++- Why critical: direct security breach vector in AI-heavy automation.
++- Involved flow: input filters, prompt guardrails, tool policy layer.
++- Failure manifestation: secret/tool exfiltration succeeds.
++- Fixtures/mocks: red-team prompt corpus.
++
++`backend/tests/harness_e2e/test_dependency_outage_graceful_degradation.py`
++- Scenario: model provider outage during active run.
++- Why critical: must fail safely with clear recoverable state.
++- Involved flow: provider client, retry/circuit breaker, run finalizer.
++- Failure manifestation: hung run, inconsistent final status.
++- Fixtures/mocks: outage injector, recovery timeout config.
++
++`backend/tests/harness_e2e/test_partial_failure_rollback_integrity.py`
++- Scenario: one step fails after prior steps wrote state.
++- Why critical: prevents persistent inconsistent state.
++- Involved flow: orchestrator step transaction boundaries + compensating actions.
++- Failure manifestation: stale/contradictory records after rollback.
++- Fixtures/mocks: step failure trigger at controlled point.
++
++`backend/tests/harness_e2e/test_replay_attack_idempotency_enforced.py`
++- Scenario: attacker replays signed request payload.
++- Why critical: duplicate/unauthorized re-execution.
++- Involved flow: request signature validation + idempotency store.
++- Failure manifestation: replayed request accepted/executed.
++- Fixtures/mocks: captured signed request replay fixture.
++
++### Phase 4: Stress/Chaos Tests (Reliability Under Pressure)
++
++`backend/tests/harness_stress/test_high_concurrency_run_submission_race_conditions.py`
++- Scenario: burst of concurrent run requests for same project/user.
++- Why critical: lock contention, duplicate runs, queue collapse.
++- Involved flow: API ingress, idempotency, queue producer, DB transactions.
++- Failure manifestation: duplicate runs, deadlocks, high error rate.
++- Fixtures/mocks: load generator, contention telemetry hooks.
++
++`backend/tests/harness_stress/test_long_running_worker_memory_growth.py`
++- Scenario: sustained processing over long duration.
++- Why critical: memory leaks cause worker crashes and retry storms.
++- Involved flow: worker execution loop + provider streaming client.
++- Failure manifestation: monotonic memory growth beyond threshold.
++- Fixtures/mocks: long-sequence workload fixture.
++
++`backend/tests/harness_stress/test_token_budget_exhaustion_safe_failure.py`
++- Scenario: oversized prompt/context drives token overrun.
++- Why critical: runaway cost and provider hard-fail.
++- Involved flow: token estimator + budget guard middleware.
++- Failure manifestation: request executes despite budget breach.
++- Fixtures/mocks: oversized context fixtures.
++
++`backend/tests/harness_stress/test_provider_latency_spike_backpressure.py`
++- Scenario: upstream latency spikes + partial packet loss.
++- Why critical: queue backlog and SLA collapse.
++- Involved flow: async workers, queue consumer concurrency controls.
++- Failure manifestation: no backpressure, uncontrolled queue growth.
++- Fixtures/mocks: latency/packet-loss fault injector.
++
++`backend/tests/harness_stress/test_db_contention_and_recovery.py`
++- Scenario: lock-heavy DB workload while runs are active.
++- Why critical: transaction failures can corrupt state.
++- Involved flow: repositories + transaction retry policy (Junk DB at `backend/database/connect.py`).
++- Failure manifestation: partial commits, unrecoverable run state.
++- Fixtures/mocks: lock contention scenarios, retry telemetry.
++
++## Security Regression Set (Must Always Run in PR Gate)
++- Authn/Authz bypass attempts across all harness endpoints.
++- Tenant isolation checks in retrieval, artifacts, status APIs.
++- Secret leakage checks in logs, traces, and returned artifacts.
++- Tool sandbox escape/path traversal checks.
++- Audit tamper detection checks.
++
++## CI/CD Gating Strategy
++- Tier 0 (every commit): deterministic unit critical set.
++- Tier 1 (every PR): Tier 0 + integration critical + security regression set + e2e smoke.
++- Tier 2 (nightly): full integration/e2e + stress/chaos + mutation tests on policy modules.
++- Tier 3 (pre-release): rollback/disaster drills + full security + performance SLO validation.
++
++## Exit Criteria (Suite Readiness)
++- No critical/high findings in security regression set.
++- 0 failing tests in Tier 1.
++- Flake rate under agreed threshold (example: <1% over 7 days).
++- Stress tests meet SLO/error-budget targets.
++- All high-risk components mapped to at least one destructive-path test.
+
+
+thinking
+**Creating summary and patching**
+file update
+A C:\Users\422mi\skills\claude/reports/recursive_self_improvement/harness-engineering-ai-testing-suite/runs/20260220_193304/execution_summary.md
+# Execution Summary
+
+## Files Changed
+- `.claude/reasoning/test-plans.md`
+- `claude/reports/recursive_self_improvement/harness-engineering-ai-testing-suite/runs/20260220_193304/execution_summary.md`
+
+## Key Decisions
+- Used the `testing-quality-tester` workflow because the request is a testing-strategy task.
+- Produced a risk-first, phase-based testing plan (unit, integration, e2e, stress/chaos) focused on system-breaking failures, security, and reliability rather than superficial checks.
+- Included exact implementation steps and concrete test targets with required file-path patterns (`backend/tests/...`) and dependencies.
+- Added explicit safeguards for AI-heavy automation risks: prompt injection, exfiltration, policy bypass, idempotency, replay attacks, tenant isolation, and failover safety.
+- Included CI/CD risk-tier gates and release-readiness exit criteria to prevent regressions from reaching production.
+
+## Validation Performed
+- Confirmed source context was loaded from:
+  - `claude/reports/recursive_self_improvement/harness-engineering-ai-testing-suite/runs/20260220_193304/report.txt`
+  - `claude/reports/recursive_self_improvement/harness-engineering-ai-testing-suite/runs/20260220_193304/prompt_improvements.md`
+  - `C:/Users/422mi/.codex/skills/testing-quality-tester/SKILL.md`
+- Verified the plan artifact exists and is populated (`.claude/reasoning/test-plans.md`, 204 lines).
+- Verified this execution summary file path exists after write.
+apply_patch(auto_approved=true) exited 0 in 147ms:
+Success. Updated the following files:
+A claude/reports/recursive_self_improvement/harness-engineering-ai-testing-suite/runs/20260220_193304/execution_summary.md
+file update:
+diff --git a/.claude/reasoning/test-plans.md b/.claude/reasoning/test-plans.md
+new file mode 100644
+index 0000000000000000000000000000000000000000..d00643dddf8b409ebae6ffc943cf2be4495be492
+--- /dev/null
++++ b/.claude/reasoning/test-plans.md
+@@ -0,0 +1,240 @@
++# Harness Engineering AI Testing Suite Plan
++
++## Goal
++Build a robust, security-first, AI-aware testing suite that catches system-breaking failures before merge/release, with explicit protection against state corruption, unsafe automation, data leakage, and orchestration regressions.
++
++## Assumed Harness Components (for targeting tests)
++- `POST /api/harness/run` (start task)
++- `POST /api/harness/approve` (human gate)
++- `GET /api/harness/runs/{id}` (status/artifacts)
++- Orchestrator/service layer (prompt assembly, model routing, tool execution, retries)
++- Worker/queue layer (async execution, retries, dead-letter)
++- Audit/log middleware
++- DB writes for runs, steps, approvals, artifacts (use Junk DB at `backend/database/connect.py`)
++
++## Exact Build Steps
++1. Define failure budgets and release gates.
++2. Freeze a deterministic test baseline (`temperature=0`, fixed seeds, mocked clock, stable fixtures).
++3. Create dedicated test envs: `unit`, `integration`, `e2e`, `stress`, each isolated and reproducible.
++4. Enforce secret-safe test plumbing (never real keys, synthetic secrets only, log scrubbing enabled).
++5. Add hermetic provider mocks for LLM/tool vendors and fault injectors (timeouts, malformed payloads, 5xx, slow streams).
++6. Build fixture factories for runs/steps/approvals/artifacts with valid and adversarial variants.
++7. Add contract tests for every internal boundary (API schema, orchestrator-tool contracts, queue message schema).
++8. Implement critical unit tests first (policy, prompt assembly, state transitions, idempotency, redaction).
++9. Implement integration tests for cross-component breakpoints (API->service->DB->queue->worker).
++10. Implement adversarial e2e tests (prompt injection, exfiltration attempts, unsafe tool requests, partial-failure rollback).
++11. Implement concurrency/race tests (duplicate deliveries, simultaneous approvals, lock contention, replay attacks).
++12. Add chaos and stress tests (provider outage/latency spikes, queue lag, DB contention, large payload saturation).
++13. Add security regression tests mapped to threat model (authz bypass, tenant isolation, audit tampering, PII leakage).
++14. Wire CI gates by risk tier:
++15. PR gate: lint + unit critical + integration critical + smoke e2e.
++16. Nightly gate: full integration + full e2e + stress/chaos.
++17. Release gate: security regressions + rollback drills + disaster recovery checks.
++18. Add observability assertions in tests (metrics/log traces validated, not just HTTP codes).
++19. Add mutation testing for policy/guardrail modules to ensure tests actually catch logic tampering.
++20. Set flake budget and quarantine policy, then continuously harden flaky tests until below threshold.
++
++## Test Plan by Phase
++
++### Phase 1: Unit Tests (Critical Logic and Stateful Operations)
++
++`backend/tests/harness_orchestrator/test_prompt_template_injection_guard.py`
++- Scenario: User input attempts prompt-template escape and hidden-system-instruction override.
++- Why critical: Could disable safety controls and execute unsafe automation.
++- Involved logic: prompt builder/orchestrator guardrail functions.
++- Failure manifestation: Model receives unsafe/system-overridden prompt.
++- Fixtures/mocks: adversarial prompt fixtures, expected sanitized prompt snapshot.
++
++`backend/tests/harness_orchestrator/test_model_router_policy_bypass.py`
++- Scenario: Request attempts to force disallowed model/tool via crafted params.
++- Why critical: Security and cost controls bypass.
++- Involved logic: routing policy evaluator.
++- Failure manifestation: router selects forbidden model/tool.
++- Fixtures/mocks: allowed/denied policy matrix fixtures.
++
++`backend/tests/harness_orchestrator/test_tool_call_path_traversal_block.py`
++- Scenario: Tool args include path traversal (`../`, absolute paths).
++- Why critical: File exfiltration or workspace tampering.
++- Involved logic: tool arg validator/sandbox adapter.
++- Failure manifestation: unauthorized file access allowed.
++- Fixtures/mocks: malicious tool-arg payloads.
++
++`backend/tests/harness_security/test_secret_redaction_on_logs.py`
++- Scenario: Model output contains key-like tokens and connection strings.
++- Why critical: Credential leakage via logs/telemetry.
++- Involved logic: audit/log middleware + redaction utility.
++- Failure manifestation: secrets appear in stored logs.
++- Fixtures/mocks: synthetic secret corpus.
++
++`backend/tests/harness_state/test_run_state_machine_invalid_transition.py`
++- Scenario: Transition `FAILED -> RUNNING` or duplicate `APPROVED`.
++- Why critical: Corrupt state and inconsistent downstream behavior.
++- Involved logic: run state machine.
++- Failure manifestation: illegal transition accepted.
++- Fixtures/mocks: state transition table fixture.
++
++`backend/tests/harness_state/test_idempotency_duplicate_run_submission.py`
++- Scenario: Same idempotency key submitted concurrently.
++- Why critical: duplicate execution and duplicate writes.
++- Involved logic: request dedupe + run creation.
++- Failure manifestation: >1 run created for same logical request.
++- Fixtures/mocks: concurrent request harness, shared key.
++
++`backend/tests/harness_resilience/test_retry_backoff_circuit_breaker.py`
++- Scenario: upstream provider continuously fails then recovers.
++- Why critical: retry storm, cascading failures, cost explosion.
++- Involved logic: retry policy + circuit breaker.
++- Failure manifestation: unbounded retries or no recovery.
++- Fixtures/mocks: provider failure/recovery simulator.
++
++`backend/tests/harness_policy/test_allow_deny_precedence.py`
++- Scenario: conflicting policy rules exist for same action.
++- Why critical: authorization ambiguity can allow unsafe execution.
++- Involved logic: policy resolution engine.
++- Failure manifestation: `allow` wins over explicit `deny`.
++- Fixtures/mocks: overlapping policy fixtures.
++
++### Phase 2: Integration Tests (Cross-Component Contract Breakpoints)
++
++`backend/tests/harness_api/test_run_endpoint_authz_rate_limit_integration.py`
++- Scenario: unauthenticated/over-limit caller hits `POST /api/harness/run`.
++- Why critical: abuse and unauthorized execution risk.
++- Involved routes/middleware: auth middleware, rate limiter, run controller.
++- Failure manifestation: request accepted when it should be blocked.
++- Fixtures/mocks: auth token variants, burst traffic generator.
++
++`backend/tests/harness_integration/test_api_to_orchestrator_to_db_atomicity.py`
++- Scenario: DB write fails after orchestration starts.
++- Why critical: orphaned worker tasks and unrecoverable partial state.
++- Involved flow: controller -> orchestrator -> run repository.
++- Failure manifestation: task executes without persisted run record.
++- Fixtures/mocks: DB failure injector (Junk DB via `backend/database/connect.py`).
++
++`backend/tests/harness_integration/test_queue_retry_dead_letter_no_duplicate_side_effects.py`
++- Scenario: message retries then dead-letters after max attempts.
++- Why critical: duplicate side effects and data corruption.
++- Involved flow: queue producer/consumer + persistence.
++- Failure manifestation: repeated writes/actions across retries.
++- Fixtures/mocks: queue emulator, retry counters.
++
++`backend/tests/harness_integration/test_provider_failover_guardrails_preserved.py`
++- Scenario: primary model fails; fallback model used.
++- Why critical: failover must not disable policy filters.
++- Involved flow: model client abstraction + guardrail middleware.
++- Failure manifestation: fallback path skips validation/redaction.
++- Fixtures/mocks: provider A outage + provider B fallback response.
++
++`backend/tests/harness_integration/test_retrieval_prompt_assembly_tenant_isolation.py`
++- Scenario: retrieval returns mixed-tenant context.
++- Why critical: cross-tenant data exposure.
++- Involved flow: retrieval service + prompt assembly.
++- Failure manifestation: wrong-tenant docs in final prompt.
++- Fixtures/mocks: multi-tenant fixture dataset.
++
++`backend/tests/harness_integration/test_artifact_writer_atomic_commit_and_rollback.py`
++- Scenario: artifact write partially succeeds then fails.
++- Why critical: corrupted artifacts and inconsistent run status.
++- Involved flow: artifact service + run finalizer.
++- Failure manifestation: run marked success with incomplete artifacts.
++- Fixtures/mocks: filesystem/object-store partial failure injector.
++
++`backend/tests/harness_integration/test_audit_log_tamper_evidence.py`
++- Scenario: modified historical audit entry.
++- Why critical: compliance and incident forensics failure.
++- Involved flow: audit middleware + integrity checks.
++- Failure manifestation: tampering undetected.
++- Fixtures/mocks: signed log fixture with intentional modification.
++
++### Phase 3: End-to-End Tests (Real Workflow Safety)
++
++`backend/tests/harness_e2e/test_full_run_happy_path_with_human_approval.py`
++- Scenario: complete run from `POST /api/harness/run` to approval to finalized artifacts.
++- Why critical: validates core user journey and system wiring.
++- Involved routes/services: run/approve/status endpoints, orchestrator, DB, queue.
++- Failure manifestation: workflow stalls, status mismatch, missing artifacts.
++- Fixtures/mocks: standard request fixture, mocked model/tool outputs.
++
++`backend/tests/harness_e2e/test_prompt_injection_exfiltration_blocked.py`
++- Scenario: adversarial prompt requests secrets/file exfiltration.
++- Why critical: direct security breach vector in AI-heavy automation.
++- Involved flow: input filters, prompt guardrails, tool policy layer.
++- Failure manifestation: secret/tool exfiltration succeeds.
++- Fixtures/mocks: red-team prompt corpus.
++
++`backend/tests/harness_e2e/test_dependency_outage_graceful_degradation.py`
++- Scenario: model provider outage during active run.
++- Why critical: must fail safely with clear recoverable state.
++- Involved flow: provider client, retry/circuit breaker, run finalizer.
++- Failure manifestation: hung run, inconsistent final status.
++- Fixtures/mocks: outage injector, recovery timeout config.
++
++`backend/tests/harness_e2e/test_partial_failure_rollback_integrity.py`
++- Scenario: one step fails after prior steps wrote state.
++- Why critical: prevents persistent inconsistent state.
++- Involved flow: orchestrator step transaction boundaries + compensating actions.
++- Failure manifestation: stale/contradictory records after rollback.
++- Fixtures/mocks: step failure trigger at controlled point.
++
++`backend/tests/harness_e2e/test_replay_attack_idempotency_enforced.py`
++- Scenario: attacker replays signed request payload.
++- Why critical: duplicate/unauthorized re-execution.
++- Involved flow: request signature validation + idempotency store.
++- Failure manifestation: replayed request accepted/executed.
++- Fixtures/mocks: captured signed request replay fixture.
++
++### Phase 4: Stress/Chaos Tests (Reliability Under Pressure)
++
++`backend/tests/harness_stress/test_high_concurrency_run_submission_race_conditions.py`
++- Scenario: burst of concurrent run requests for same project/user.
++- Why critical: lock contention, duplicate runs, queue collapse.
++- Involved flow: API ingress, idempotency, queue producer, DB transactions.
++- Failure manifestation: duplicate runs, deadlocks, high error rate.
++- Fixtures/mocks: load generator, contention telemetry hooks.
++
++`backend/tests/harness_stress/test_long_running_worker_memory_growth.py`
++- Scenario: sustained processing over long duration.
++- Why critical: memory leaks cause worker crashes and retry storms.
++- Involved flow: worker execution loop + provider streaming client.
++- Failure manifestation: monotonic memory growth beyond threshold.
++- Fixtures/mocks: long-sequence workload fixture.
++
++`backend/tests/harness_stress/test_token_budget_exhaustion_safe_failure.py`
++- Scenario: oversized prompt/context drives token overrun.
++- Why critical: runaway cost and provider hard-fail.
++- Involved flow: token estimator + budget guard middleware.
++- Failure manifestation: request executes despite budget breach.
++- Fixtures/mocks: oversized context fixtures.
++
++`backend/tests/harness_stress/test_provider_latency_spike_backpressure.py`
++- Scenario: upstream latency spikes + partial packet loss.
++- Why critical: queue backlog and SLA collapse.
++- Involved flow: async workers, queue consumer concurrency controls.
++- Failure manifestation: no backpressure, uncontrolled queue growth.
++- Fixtures/mocks: latency/packet-loss fault injector.
++
++`backend/tests/harness_stress/test_db_contention_and_recovery.py`
++- Scenario: lock-heavy DB workload while runs are active.
++- Why critical: transaction failures can corrupt state.
++- Involved flow: repositories + transaction retry policy (Junk DB at `backend/database/connect.py`).
++- Failure manifestation: partial commits, unrecoverable run state.
++- Fixtures/mocks: lock contention scenarios, retry telemetry.
++
++## Security Regression Set (Must Always Run in PR Gate)
++- Authn/Authz bypass attempts across all harness endpoints.
++- Tenant isolation checks in retrieval, artifacts, status APIs.
++- Secret leakage checks in logs, traces, and returned artifacts.
++- Tool sandbox escape/path traversal checks.
++- Audit tamper detection checks.
++
++## CI/CD Gating Strategy
++- Tier 0 (every commit): deterministic unit critical set.
++- Tier 1 (every PR): Tier 0 + integration critical + security regression set + e2e smoke.
++- Tier 2 (nightly): full integration/e2e + stress/chaos + mutation tests on policy modules.
++- Tier 3 (pre-release): rollback/disaster drills + full security + performance SLO validation.
++
++## Exit Criteria (Suite Readiness)
++- No critical/high findings in security regression set.
++- 0 failing tests in Tier 1.
++- Flake rate under agreed threshold (example: <1% over 7 days).
++- Stress tests meet SLO/error-budget targets.
++- All high-risk components mapped to at least one destructive-path test.
+diff --git a/claude/reports/recursive_self_improvement/harness-engineering-ai-testing-suite/runs/20260220_193304/execution_summary.md b/claude/reports/recursive_self_improvement/harness-engineering-ai-testing-suite/runs/20260220_193304/execution_summary.md
+new file mode 100644
+index 0000000000000000000000000000000000000000..d31e4c99471dcc812eb220c61ad94b5f64df121a
+--- /dev/null
++++ b/claude/reports/recursive_self_improvement/harness-engineering-ai-testing-suite/runs/20260220_193304/execution_summary.md
+@@ -0,0 +1,20 @@
++# Execution Summary
++
++## Files Changed
++- `.claude/reasoning/test-plans.md`
++- `claude/reports/recursive_self_improvement/harness-engineering-ai-testing-suite/runs/20260220_193304/execution_summary.md`
++
++## Key Decisions
++- Used the `testing-quality-tester` workflow because the request is a testing-strategy task.
++- Produced a risk-first, phase-based testing plan (unit, integration, e2e, stress/chaos) focused on system-breaking failures, security, and reliability rather than superficial checks.
++- Included exact implementation steps and concrete test targets with required file-path patterns (`backend/tests/...`) and dependencies.
++- Added explicit safeguards for AI-heavy automation risks: prompt injection, exfiltration, policy bypass, idempotency, replay attacks, tenant isolation, and failover safety.
++- Included CI/CD risk-tier gates and release-readiness exit criteria to prevent regressions from reaching production.
++
++## Validation Performed
++- Confirmed source context was loaded from:
++  - `claude/reports/recursive_self_improvement/harness-engineering-ai-testing-suite/runs/20260220_193304/report.txt`
++  - `claude/reports/recursive_self_improvement/harness-engineering-ai-testing-suite/runs/20260220_193304/prompt_improvements.md`
++  - `C:/Users/422mi/.codex/skills/testing-quality-tester/SKILL.md`
++- Verified the plan artifact exists and is populated (`.claude/reasoning/test-plans.md`, 204 lines).
++- Verified this execution summary file path exists after write.
+
+file update:
+diff --git a/.claude/reasoning/test-plans.md b/.claude/reasoning/test-plans.md
+new file mode 100644
+index 0000000000000000000000000000000000000000..d00643dddf8b409ebae6ffc943cf2be4495be492
+--- /dev/null
++++ b/.claude/reasoning/test-plans.md
+@@ -0,0 +1,240 @@
++# Harness Engineering AI Testing Suite Plan
++
++## Goal
++Build a robust, security-first, AI-aware testing suite that catches system-breaking failures before merge/release, with explicit protection against state corruption, unsafe automation, data leakage, and orchestration regressions.
++
++## Assumed Harness Components (for targeting tests)
++- `POST /api/harness/run` (start task)
++- `POST /api/harness/approve` (human gate)
++- `GET /api/harness/runs/{id}` (status/artifacts)
++- Orchestrator/service layer (prompt assembly, model routing, tool execution, retries)
++- Worker/queue layer (async execution, retries, dead-letter)
++- Audit/log middleware
++- DB writes for runs, steps, approvals, artifacts (use Junk DB at `backend/database/connect.py`)
++
++## Exact Build Steps
++1. Define failure budgets and release gates.
++2. Freeze a deterministic test baseline (`temperature=0`, fixed seeds, mocked clock, stable fixtures).
++3. Create dedicated test envs: `unit`, `integration`, `e2e`, `stress`, each isolated and reproducible.
++4. Enforce secret-safe test plumbing (never real keys, synthetic secrets only, log scrubbing enabled).
++5. Add hermetic provider mocks for LLM/tool vendors and fault injectors (timeouts, malformed payloads, 5xx, slow streams).
++6. Build fixture factories for runs/steps/approvals/artifacts with valid and adversarial variants.
++7. Add contract tests for every internal boundary (API schema, orchestrator-tool contracts, queue message schema).
++8. Implement critical unit tests first (policy, prompt assembly, state transitions, idempotency, redaction).
++9. Implement integration tests for cross-component breakpoints (API->service->DB->queue->worker).
++10. Implement adversarial e2e tests (prompt injection, exfiltration attempts, unsafe tool requests, partial-failure rollback).
++11. Implement concurrency/race tests (duplicate deliveries, simultaneous approvals, lock contention, replay attacks).
++12. Add chaos and stress tests (provider outage/latency spikes, queue lag, DB contention, large payload saturation).
++13. Add security regression tests mapped to threat model (authz bypass, tenant isolation, audit tampering, PII leakage).
++14. Wire CI gates by risk tier:
++15. PR gate: lint + unit critical + integration critical + smoke e2e.
++16. Nightly gate: full integration + full e2e + stress/chaos.
++17. Release gate: security regressions + rollback drills + disaster recovery checks.
++18. Add observability assertions in tests (metrics/log traces validated, not just HTTP codes).
++19. Add mutation testing for policy/guardrail modules to ensure tests actually catch logic tampering.
++20. Set flake budget and quarantine policy, then continuously harden flaky tests until below threshold.
++
++## Test Plan by Phase
++
++### Phase 1: Unit Tests (Critical Logic and Stateful Operations)
++
++`backend/tests/harness_orchestrator/test_prompt_template_injection_guard.py`
++- Scenario: User input attempts prompt-template escape and hidden-system-instruction override.
++- Why critical: Could disable safety controls and execute unsafe automation.
++- Involved logic: prompt builder/orchestrator guardrail functions.
++- Failure manifestation: Model receives unsafe/system-overridden prompt.
++- Fixtures/mocks: adversarial prompt fixtures, expected sanitized prompt snapshot.
++
++`backend/tests/harness_orchestrator/test_model_router_policy_bypass.py`
++- Scenario: Request attempts to force disallowed model/tool via crafted params.
++- Why critical: Security and cost controls bypass.
++- Involved logic: routing policy evaluator.
++- Failure manifestation: router selects forbidden model/tool.
++- Fixtures/mocks: allowed/denied policy matrix fixtures.
++
++`backend/tests/harness_orchestrator/test_tool_call_path_traversal_block.py`
++- Scenario: Tool args include path traversal (`../`, absolute paths).
++- Why critical: File exfiltration or workspace tampering.
++- Involved logic: tool arg validator/sandbox adapter.
++- Failure manifestation: unauthorized file access allowed.
++- Fixtures/mocks: malicious tool-arg payloads.
++
++`backend/tests/harness_security/test_secret_redaction_on_logs.py`
++- Scenario: Model output contains key-like tokens and connection strings.
++- Why critical: Credential leakage via logs/telemetry.
++- Involved logic: audit/log middleware + redaction utility.
++- Failure manifestation: secrets appear in stored logs.
++- Fixtures/mocks: synthetic secret corpus.
++
++`backend/tests/harness_state/test_run_state_machine_invalid_transition.py`
++- Scenario: Transition `FAILED -> RUNNING` or duplicate `APPROVED`.
++- Why critical: Corrupt state and inconsistent downstream behavior.
++- Involved logic: run state machine.
++- Failure manifestation: illegal transition accepted.
++- Fixtures/mocks: state transition table fixture.
++
++`backend/tests/harness_state/test_idempotency_duplicate_run_submission.py`
++- Scenario: Same idempotency key submitted concurrently.
++- Why critical: duplicate execution and duplicate writes.
++- Involved logic: request dedupe + run creation.
++- Failure manifestation: >1 run created for same logical request.
++- Fixtures/mocks: concurrent request harness, shared key.
++
++`backend/tests/harness_resilience/test_retry_backoff_circuit_breaker.py`
++- Scenario: upstream provider continuously fails then recovers.
++- Why critical: retry storm, cascading failures, cost explosion.
++- Involved logic: retry policy + circuit breaker.
++- Failure manifestation: unbounded retries or no recovery.
++- Fixtures/mocks: provider failure/recovery simulator.
++
++`backend/tests/harness_policy/test_allow_deny_precedence.py`
++- Scenario: conflicting policy rules exist for same action.
++- Why critical: authorization ambiguity can allow unsafe execution.
++- Involved logic: policy resolution engine.
++- Failure manifestation: `allow` wins over explicit `deny`.
++- Fixtures/mocks: overlapping policy fixtures.
++
++### Phase 2: Integration Tests (Cross-Component Contract Breakpoints)
++
++`backend/tests/harness_api/test_run_endpoint_authz_rate_limit_integration.py`
++- Scenario: unauthenticated/over-limit caller hits `POST /api/harness/run`.
++- Why critical: abuse and unauthorized execution risk.
++- Involved routes/middleware: auth middleware, rate limiter, run controller.
++- Failure manifestation: request accepted when it should be blocked.
++- Fixtures/mocks: auth token variants, burst traffic generator.
++
++`backend/tests/harness_integration/test_api_to_orchestrator_to_db_atomicity.py`
++- Scenario: DB write fails after orchestration starts.
++- Why critical: orphaned worker tasks and unrecoverable partial state.
++- Involved flow: controller -> orchestrator -> run repository.
++- Failure manifestation: task executes without persisted run record.
++- Fixtures/mocks: DB failure injector (Junk DB via `backend/database/connect.py`).
++
++`backend/tests/harness_integration/test_queue_retry_dead_letter_no_duplicate_side_effects.py`
++- Scenario: message retries then dead-letters after max attempts.
++- Why critical: duplicate side effects and data corruption.
++- Involved flow: queue producer/consumer + persistence.
++- Failure manifestation: repeated writes/actions across retries.
++- Fixtures/mocks: queue emulator, retry counters.
++
++`backend/tests/harness_integration/test_provider_failover_guardrails_preserved.py`
++- Scenario: primary model fails; fallback model used.
++- Why critical: failover must not disable policy filters.
++- Involved flow: model client abstraction + guardrail middleware.
++- Failure manifestation: fallback path skips validation/redaction.
++- Fixtures/mocks: provider A outage + provider B fallback response.
++
++`backend/tests/harness_integration/test_retrieval_prompt_assembly_tenant_isolation.py`
++- Scenario: retrieval returns mixed-tenant context.
++- Why critical: cross-tenant data exposure.
++- Involved flow: retrieval service + prompt assembly.
++- Failure manifestation: wrong-tenant docs in final prompt.
++- Fixtures/mocks: multi-tenant fixture dataset.
++
++`backend/tests/harness_integration/test_artifact_writer_atomic_commit_and_rollback.py`
++- Scenario: artifact write partially succeeds then fails.
++- Why critical: corrupted artifacts and inconsistent run status.
++- Involved flow: artifact service + run finalizer.
++- Failure manifestation: run marked success with incomplete artifacts.
++- Fixtures/mocks: filesystem/object-store partial failure injector.
++
++`backend/tests/harness_integration/test_audit_log_tamper_evidence.py`
++- Scenario: modified historical audit entry.
++- Why critical: compliance and incident forensics failure.
++- Involved flow: audit middleware + integrity checks.
++- Failure manifestation: tampering undetected.
++- Fixtures/mocks: signed log fixture with intentional modification.
++
++### Phase 3: End-to-End Tests (Real Workflow Safety)
++
++`backend/tests/harness_e2e/test_full_run_happy_path_with_human_approval.py`
++- Scenario: complete run from `POST /api/harness/run` to approval to finalized artifacts.
++- Why critical: validates core user journey and system wiring.
++- Involved routes/services: run/approve/status endpoints, orchestrator, DB, queue.
++- Failure manifestation: workflow stalls, status mismatch, missing artifacts.
++- Fixtures/mocks: standard request fixture, mocked model/tool outputs.
++
++`backend/tests/harness_e2e/test_prompt_injection_exfiltration_blocked.py`
++- Scenario: adversarial prompt requests secrets/file exfiltration.
++- Why critical: direct security breach vector in AI-heavy automation.
++- Involved flow: input filters, prompt guardrails, tool policy layer.
++- Failure manifestation: secret/tool exfiltration succeeds.
++- Fixtures/mocks: red-team prompt corpus.
++
++`backend/tests/harness_e2e/test_dependency_outage_graceful_degradation.py`
++- Scenario: model provider outage during active run.
++- Why critical: must fail safely with clear recoverable state.
++- Involved flow: provider client, retry/circuit breaker, run finalizer.
++- Failure manifestation: hung run, inconsistent final status.
++- Fixtures/mocks: outage injector, recovery timeout config.
++
++`backend/tests/harness_e2e/test_partial_failure_rollback_integrity.py`
++- Scenario: one step fails after prior steps wrote state.
++- Why critical: prevents persistent inconsistent state.
++- Involved flow: orchestrator step transaction boundaries + compensating actions.
++- Failure manifestation: stale/contradictory records after rollback.
++- Fixtures/mocks: step failure trigger at controlled point.
++
++`backend/tests/harness_e2e/test_replay_attack_idempotency_enforced.py`
++- Scenario: attacker replays signed request payload.
++- Why critical: duplicate/unauthorized re-execution.
++- Involved flow: request signature validation + idempotency store.
++- Failure manifestation: replayed request accepted/executed.
++- Fixtures/mocks: captured signed request replay fixture.
++
++### Phase 4: Stress/Chaos Tests (Reliability Under Pressure)
++
++`backend/tests/harness_stress/test_high_concurrency_run_submission_race_conditions.py`
++- Scenario: burst of concurrent run requests for same project/user.
++- Why critical: lock contention, duplicate runs, queue collapse.
++- Involved flow: API ingress, idempotency, queue producer, DB transactions.
++- Failure manifestation: duplicate runs, deadlocks, high error rate.
++- Fixtures/mocks: load generator, contention telemetry hooks.
++
++`backend/tests/harness_stress/test_long_running_worker_memory_growth.py`
++- Scenario: sustained processing over long duration.
++- Why critical: memory leaks cause worker crashes and retry storms.
++- Involved flow: worker execution loop + provider streaming client.
++- Failure manifestation: monotonic memory growth beyond threshold.
++- Fixtures/mocks: long-sequence workload fixture.
++
++`backend/tests/harness_stress/test_token_budget_exhaustion_safe_failure.py`
++- Scenario: oversized prompt/context drives token overrun.
++- Why critical: runaway cost and provider hard-fail.
++- Involved flow: token estimator + budget guard middleware.
++- Failure manifestation: request executes despite budget breach.
++- Fixtures/mocks: oversized context fixtures.
++
++`backend/tests/harness_stress/test_provider_latency_spike_backpressure.py`
++- Scenario: upstream latency spikes + partial packet loss.
++- Why critical: queue backlog and SLA collapse.
++- Involved flow: async workers, queue consumer concurrency controls.
++- Failure manifestation: no backpressure, uncontrolled queue growth.
++- Fixtures/mocks: latency/packet-loss fault injector.
++
++`backend/tests/harness_stress/test_db_contention_and_recovery.py`
++- Scenario: lock-heavy DB workload while runs are active.
++- Why critical: transaction failures can corrupt state.
++- Involved flow: repositories + transaction retry policy (Junk DB at `backend/database/connect.py`).
++- Failure manifestation: partial commits, unrecoverable run state.
++- Fixtures/mocks: lock contention scenarios, retry telemetry.
++
++## Security Regression Set (Must Always Run in PR Gate)
++- Authn/Authz bypass attempts across all harness endpoints.
++- Tenant isolation checks in retrieval, artifacts, status APIs.
++- Secret leakage checks in logs, traces, and returned artifacts.
++- Tool sandbox escape/path traversal checks.
++- Audit tamper detection checks.
++
++## CI/CD Gating Strategy
++- Tier 0 (every commit): deterministic unit critical set.
++- Tier 1 (every PR): Tier 0 + integration critical + security regression set + e2e smoke.
++- Tier 2 (nightly): full integration/e2e + stress/chaos + mutation tests on policy modules.
++- Tier 3 (pre-release): rollback/disaster drills + full security + performance SLO validation.
++
++## Exit Criteria (Suite Readiness)
++- No critical/high findings in security regression set.
++- 0 failing tests in Tier 1.
++- Flake rate under agreed threshold (example: <1% over 7 days).
++- Stress tests meet SLO/error-budget targets.
++- All high-risk components mapped to at least one destructive-path test.
+diff --git a/claude/reports/recursive_self_improvement/harness-engineering-ai-testing-suite/runs/20260220_193304/execution_summary.md b/claude/reports/recursive_self_improvement/harness-engineering-ai-testing-suite/runs/20260220_193304/execution_summary.md
+new file mode 100644
+index 0000000000000000000000000000000000000000..d31e4c99471dcc812eb220c61ad94b5f64df121a
+--- /dev/null
++++ b/claude/reports/recursive_self_improvement/harness-engineering-ai-testing-suite/runs/20260220_193304/execution_summary.md
+@@ -0,0 +1,20 @@
++# Execution Summary
++
++## Files Changed
++- `.claude/reasoning/test-plans.md`
++- `claude/reports/recursive_self_improvement/harness-engineering-ai-testing-suite/runs/20260220_193304/execution_summary.md`
++
++## Key Decisions
++- Used the `testing-quality-tester` workflow because the request is a testing-strategy task.
++- Produced a risk-first, phase-based testing plan (unit, integration, e2e, stress/chaos) focused on system-breaking failures, security, and reliability rather than superficial checks.
++- Included exact implementation steps and concrete test targets with required file-path patterns (`backend/tests/...`) and dependencies.
++- Added explicit safeguards for AI-heavy automation risks: prompt injection, exfiltration, policy bypass, idempotency, replay attacks, tenant isolation, and failover safety.
++- Included CI/CD risk-tier gates and release-readiness exit criteria to prevent regressions from reaching production.
++
++## Validation Performed
++- Confirmed source context was loaded from:
++  - `claude/reports/recursive_self_improvement/harness-engineering-ai-testing-suite/runs/20260220_193304/report.txt`
++  - `claude/reports/recursive_self_improvement/harness-engineering-ai-testing-suite/runs/20260220_193304/prompt_improvements.md`
++  - `C:/Users/422mi/.codex/skills/testing-quality-tester/SKILL.md`
++- Verified the plan artifact exists and is populated (`.claude/reasoning/test-plans.md`, 204 lines).
++- Verified this execution summary file path exists after write.
+
+
+thinking
+**Planning test and status checks**
+exec
+"C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -Command "Test-Path 'claude/reports/recursive_self_improvement/harness-engineering-ai-testing-suite/runs/20260220_193304/execution_summary.md'" in C:\Users\422mi\skillsexec
+"C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -Command 'git status --short' in C:\Users\422mi\skills succeeded in 220ms:
+ M design.md
+?? .claude/
+?? claude/reports/recursive_self_improvement/harness-engineering-ai-testing-suite/runs/20260220_193304/
+ succeeded in 230ms:
+True
+file update:
+diff --git a/.claude/reasoning/test-plans.md b/.claude/reasoning/test-plans.md
+new file mode 100644
+index 0000000000000000000000000000000000000000..d00643dddf8b409ebae6ffc943cf2be4495be492
+--- /dev/null
++++ b/.claude/reasoning/test-plans.md
+@@ -0,0 +1,240 @@
++# Harness Engineering AI Testing Suite Plan
++
++## Goal
++Build a robust, security-first, AI-aware testing suite that catches system-breaking failures before merge/release, with explicit protection against state corruption, unsafe automation, data leakage, and orchestration regressions.
++
++## Assumed Harness Components (for targeting tests)
++- `POST /api/harness/run` (start task)
++- `POST /api/harness/approve` (human gate)
++- `GET /api/harness/runs/{id}` (status/artifacts)
++- Orchestrator/service layer (prompt assembly, model routing, tool execution, retries)
++- Worker/queue layer (async execution, retries, dead-letter)
++- Audit/log middleware
++- DB writes for runs, steps, approvals, artifacts (use Junk DB at `backend/database/connect.py`)
++
++## Exact Build Steps
++1. Define failure budgets and release gates.
++2. Freeze a deterministic test baseline (`temperature=0`, fixed seeds, mocked clock, stable fixtures).
++3. Create dedicated test envs: `unit`, `integration`, `e2e`, `stress`, each isolated and reproducible.
++4. Enforce secret-safe test plumbing (never real keys, synthetic secrets only, log scrubbing enabled).
++5. Add hermetic provider mocks for LLM/tool vendors and fault injectors (timeouts, malformed payloads, 5xx, slow streams).
++6. Build fixture factories for runs/steps/approvals/artifacts with valid and adversarial variants.
++7. Add contract tests for every internal boundary (API schema, orchestrator-tool contracts, queue message schema).
++8. Implement critical unit tests first (policy, prompt assembly, state transitions, idempotency, redaction).
++9. Implement integration tests for cross-component breakpoints (API->service->DB->queue->worker).
++10. Implement adversarial e2e tests (prompt injection, exfiltration attempts, unsafe tool requests, partial-failure rollback).
++11. Implement concurrency/race tests (duplicate deliveries, simultaneous approvals, lock contention, replay attacks).
++12. Add chaos and stress tests (provider outage/latency spikes, queue lag, DB contention, large payload saturation).
++13. Add security regression tests mapped to threat model (authz bypass, tenant isolation, audit tampering, PII leakage).
++14. Wire CI gates by risk tier:
++15. PR gate: lint + unit critical + integration critical + smoke e2e.
++16. Nightly gate: full integration + full e2e + stress/chaos.
++17. Release gate: security regressions + rollback drills + disaster recovery checks.
++18. Add observability assertions in tests (metrics/log traces validated, not just HTTP codes).
++19. Add mutation testing for policy/guardrail modules to ensure tests actually catch logic tampering.
++20. Set flake budget and quarantine policy, then continuously harden flaky tests until below threshold.
++
++## Test Plan by Phase
++
++### Phase 1: Unit Tests (Critical Logic and Stateful Operations)
++
++`backend/tests/harness_orchestrator/test_prompt_template_injection_guard.py`
++- Scenario: User input attempts prompt-template escape and hidden-system-instruction override.
++- Why critical: Could disable safety controls and execute unsafe automation.
++- Involved logic: prompt builder/orchestrator guardrail functions.
++- Failure manifestation: Model receives unsafe/system-overridden prompt.
++- Fixtures/mocks: adversarial prompt fixtures, expected sanitized prompt snapshot.
++
++`backend/tests/harness_orchestrator/test_model_router_policy_bypass.py`
++- Scenario: Request attempts to force disallowed model/tool via crafted params.
++- Why critical: Security and cost controls bypass.
++- Involved logic: routing policy evaluator.
++- Failure manifestation: router selects forbidden model/tool.
++- Fixtures/mocks: allowed/denied policy matrix fixtures.
++
++`backend/tests/harness_orchestrator/test_tool_call_path_traversal_block.py`
++- Scenario: Tool args include path traversal (`../`, absolute paths).
++- Why critical: File exfiltration or workspace tampering.
++- Involved logic: tool arg validator/sandbox adapter.
++- Failure manifestation: unauthorized file access allowed.
++- Fixtures/mocks: malicious tool-arg payloads.
++
++`backend/tests/harness_security/test_secret_redaction_on_logs.py`
++- Scenario: Model output contains key-like tokens and connection strings.
++- Why critical: Credential leakage via logs/telemetry.
++- Involved logic: audit/log middleware + redaction utility.
++- Failure manifestation: secrets appear in stored logs.
++- Fixtures/mocks: synthetic secret corpus.
++
++`backend/tests/harness_state/test_run_state_machine_invalid_transition.py`
++- Scenario: Transition `FAILED -> RUNNING` or duplicate `APPROVED`.
++- Why critical: Corrupt state and inconsistent downstream behavior.
++- Involved logic: run state machine.
++- Failure manifestation: illegal transition accepted.
++- Fixtures/mocks: state transition table fixture.
++
++`backend/tests/harness_state/test_idempotency_duplicate_run_submission.py`
++- Scenario: Same idempotency key submitted concurrently.
++- Why critical: duplicate execution and duplicate writes.
++- Involved logic: request dedupe + run creation.
++- Failure manifestation: >1 run created for same logical request.
++- Fixtures/mocks: concurrent request harness, shared key.
++
++`backend/tests/harness_resilience/test_retry_backoff_circuit_breaker.py`
++- Scenario: upstream provider continuously fails then recovers.
++- Why critical: retry storm, cascading failures, cost explosion.
++- Involved logic: retry policy + circuit breaker.
++- Failure manifestation: unbounded retries or no recovery.
++- Fixtures/mocks: provider failure/recovery simulator.
++
++`backend/tests/harness_policy/test_allow_deny_precedence.py`
++- Scenario: conflicting policy rules exist for same action.
++- Why critical: authorization ambiguity can allow unsafe execution.
++- Involved logic: policy resolution engine.
++- Failure manifestation: `allow` wins over explicit `deny`.
++- Fixtures/mocks: overlapping policy fixtures.
++
++### Phase 2: Integration Tests (Cross-Component Contract Breakpoints)
++
++`backend/tests/harness_api/test_run_endpoint_authz_rate_limit_integration.py`
++- Scenario: unauthenticated/over-limit caller hits `POST /api/harness/run`.
++- Why critical: abuse and unauthorized execution risk.
++- Involved routes/middleware: auth middleware, rate limiter, run controller.
++- Failure manifestation: request accepted when it should be blocked.
++- Fixtures/mocks: auth token variants, burst traffic generator.
++
++`backend/tests/harness_integration/test_api_to_orchestrator_to_db_atomicity.py`
++- Scenario: DB write fails after orchestration starts.
++- Why critical: orphaned worker tasks and unrecoverable partial state.
++- Involved flow: controller -> orchestrator -> run repository.
++- Failure manifestation: task executes without persisted run record.
++- Fixtures/mocks: DB failure injector (Junk DB via `backend/database/connect.py`).
++
++`backend/tests/harness_integration/test_queue_retry_dead_letter_no_duplicate_side_effects.py`
++- Scenario: message retries then dead-letters after max attempts.
++- Why critical: duplicate side effects and data corruption.
++- Involved flow: queue producer/consumer + persistence.
++- Failure manifestation: repeated writes/actions across retries.
++- Fixtures/mocks: queue emulator, retry counters.
++
++`backend/tests/harness_integration/test_provider_failover_guardrails_preserved.py`
++- Scenario: primary model fails; fallback model used.
++- Why critical: failover must not disable policy filters.
++- Involved flow: model client abstraction + guardrail middleware.
++- Failure manifestation: fallback path skips validation/redaction.
++- Fixtures/mocks: provider A outage + provider B fallback response.
++
++`backend/tests/harness_integration/test_retrieval_prompt_assembly_tenant_isolation.py`
++- Scenario: retrieval returns mixed-tenant context.
++- Why critical: cross-tenant data exposure.
++- Involved flow: retrieval service + prompt assembly.
++- Failure manifestation: wrong-tenant docs in final prompt.
++- Fixtures/mocks: multi-tenant fixture dataset.
++
++`backend/tests/harness_integration/test_artifact_writer_atomic_commit_and_rollback.py`
++- Scenario: artifact write partially succeeds then fails.
++- Why critical: corrupted artifacts and inconsistent run status.
++- Involved flow: artifact service + run finalizer.
++- Failure manifestation: run marked success with incomplete artifacts.
++- Fixtures/mocks: filesystem/object-store partial failure injector.
++
++`backend/tests/harness_integration/test_audit_log_tamper_evidence.py`
++- Scenario: modified historical audit entry.
++- Why critical: compliance and incident forensics failure.
++- Involved flow: audit middleware + integrity checks.
++- Failure manifestation: tampering undetected.
++- Fixtures/mocks: signed log fixture with intentional modification.
++
++### Phase 3: End-to-End Tests (Real Workflow Safety)
++
++`backend/tests/harness_e2e/test_full_run_happy_path_with_human_approval.py`
++- Scenario: complete run from `POST /api/harness/run` to approval to finalized artifacts.
++- Why critical: validates core user journey and system wiring.
++- Involved routes/services: run/approve/status endpoints, orchestrator, DB, queue.
++- Failure manifestation: workflow stalls, status mismatch, missing artifacts.
++- Fixtures/mocks: standard request fixture, mocked model/tool outputs.
++
++`backend/tests/harness_e2e/test_prompt_injection_exfiltration_blocked.py`
++- Scenario: adversarial prompt requests secrets/file exfiltration.
++- Why critical: direct security breach vector in AI-heavy automation.
++- Involved flow: input filters, prompt guardrails, tool policy layer.
++- Failure manifestation: secret/tool exfiltration succeeds.
++- Fixtures/mocks: red-team prompt corpus.
++
++`backend/tests/harness_e2e/test_dependency_outage_graceful_degradation.py`
++- Scenario: model provider outage during active run.
++- Why critical: must fail safely with clear recoverable state.
++- Involved flow: provider client, retry/circuit breaker, run finalizer.
++- Failure manifestation: hung run, inconsistent final status.
++- Fixtures/mocks: outage injector, recovery timeout config.
++
++`backend/tests/harness_e2e/test_partial_failure_rollback_integrity.py`
++- Scenario: one step fails after prior steps wrote state.
++- Why critical: prevents persistent inconsistent state.
++- Involved flow: orchestrator step transaction boundaries + compensating actions.
++- Failure manifestation: stale/contradictory records after rollback.
++- Fixtures/mocks: step failure trigger at controlled point.
++
++`backend/tests/harness_e2e/test_replay_attack_idempotency_enforced.py`
++- Scenario: attacker replays signed request payload.
++- Why critical: duplicate/unauthorized re-execution.
++- Involved flow: request signature validation + idempotency store.
++- Failure manifestation: replayed request accepted/executed.
++- Fixtures/mocks: captured signed request replay fixture.
++
++### Phase 4: Stress/Chaos Tests (Reliability Under Pressure)
++
++`backend/tests/harness_stress/test_high_concurrency_run_submission_race_conditions.py`
++- Scenario: burst of concurrent run requests for same project/user.
++- Why critical: lock contention, duplicate runs, queue collapse.
++- Involved flow: API ingress, idempotency, queue producer, DB transactions.
++- Failure manifestation: duplicate runs, deadlocks, high error rate.
++- Fixtures/mocks: load generator, contention telemetry hooks.
++
++`backend/tests/harness_stress/test_long_running_worker_memory_growth.py`
++- Scenario: sustained processing over long duration.
++- Why critical: memory leaks cause worker crashes and retry storms.
++- Involved flow: worker execution loop + provider streaming client.
++- Failure manifestation: monotonic memory growth beyond threshold.
++- Fixtures/mocks: long-sequence workload fixture.
++
++`backend/tests/harness_stress/test_token_budget_exhaustion_safe_failure.py`
++- Scenario: oversized prompt/context drives token overrun.
++- Why critical: runaway cost and provider hard-fail.
++- Involved flow: token estimator + budget guard middleware.
++- Failure manifestation: request executes despite budget breach.
++- Fixtures/mocks: oversized context fixtures.
++
++`backend/tests/harness_stress/test_provider_latency_spike_backpressure.py`
++- Scenario: upstream latency spikes + partial packet loss.
++- Why critical: queue backlog and SLA collapse.
++- Involved flow: async workers, queue consumer concurrency controls.
++- Failure manifestation: no backpressure, uncontrolled queue growth.
++- Fixtures/mocks: latency/packet-loss fault injector.
++
++`backend/tests/harness_stress/test_db_contention_and_recovery.py`
++- Scenario: lock-heavy DB workload while runs are active.
++- Why critical: transaction failures can corrupt state.
++- Involved flow: repositories + transaction retry policy (Junk DB at `backend/database/connect.py`).
++- Failure manifestation: partial commits, unrecoverable run state.
++- Fixtures/mocks: lock contention scenarios, retry telemetry.
++
++## Security Regression Set (Must Always Run in PR Gate)
++- Authn/Authz bypass attempts across all harness endpoints.
++- Tenant isolation checks in retrieval, artifacts, status APIs.
++- Secret leakage checks in logs, traces, and returned artifacts.
++- Tool sandbox escape/path traversal checks.
++- Audit tamper detection checks.
++
++## CI/CD Gating Strategy
++- Tier 0 (every commit): deterministic unit critical set.
++- Tier 1 (every PR): Tier 0 + integration critical + security regression set + e2e smoke.
++- Tier 2 (nightly): full integration/e2e + stress/chaos + mutation tests on policy modules.
++- Tier 3 (pre-release): rollback/disaster drills + full security + performance SLO validation.
++
++## Exit Criteria (Suite Readiness)
++- No critical/high findings in security regression set.
++- 0 failing tests in Tier 1.
++- Flake rate under agreed threshold (example: <1% over 7 days).
++- Stress tests meet SLO/error-budget targets.
++- All high-risk components mapped to at least one destructive-path test.
+diff --git a/claude/reports/recursive_self_improvement/harness-engineering-ai-testing-suite/runs/20260220_193304/execution_summary.md b/claude/reports/recursive_self_improvement/harness-engineering-ai-testing-suite/runs/20260220_193304/execution_summary.md
+new file mode 100644
+index 0000000000000000000000000000000000000000..d31e4c99471dcc812eb220c61ad94b5f64df121a
+--- /dev/null
++++ b/claude/reports/recursive_self_improvement/harness-engineering-ai-testing-suite/runs/20260220_193304/execution_summary.md
+@@ -0,0 +1,20 @@
++# Execution Summary
++
++## Files Changed
++- `.claude/reasoning/test-plans.md`
++- `claude/reports/recursive_self_improvement/harness-engineering-ai-testing-suite/runs/20260220_193304/execution_summary.md`
++
++## Key Decisions
++- Used the `testing-quality-tester` workflow because the request is a testing-strategy task.
++- Produced a risk-first, phase-based testing plan (unit, integration, e2e, stress/chaos) focused on system-breaking failures, security, and reliability rather than superficial checks.
++- Included exact implementation steps and concrete test targets with required file-path patterns (`backend/tests/...`) and dependencies.
++- Added explicit safeguards for AI-heavy automation risks: prompt injection, exfiltration, policy bypass, idempotency, replay attacks, tenant isolation, and failover safety.
++- Included CI/CD risk-tier gates and release-readiness exit criteria to prevent regressions from reaching production.
++
++## Validation Performed
++- Confirmed source context was loaded from:
++  - `claude/reports/recursive_self_improvement/harness-engineering-ai-testing-suite/runs/20260220_193304/report.txt`
++  - `claude/reports/recursive_self_improvement/harness-engineering-ai-testing-suite/runs/20260220_193304/prompt_improvements.md`
++  - `C:/Users/422mi/.codex/skills/testing-quality-tester/SKILL.md`
++- Verified the plan artifact exists and is populated (`.claude/reasoning/test-plans.md`, 204 lines).
++- Verified this execution summary file path exists after write.
+
+
+thinking
+**Providing concise final execution steps**
+codex
+1. Define the reliability and security outcomes first: what failures are unacceptable (unsafe tool execution, data leakage, corrupted state, silent regressions), and your release-blocking criteria.
+2. Freeze deterministic test defaults for AI paths: `temperature=0`, fixed seeds, mocked clock, pinned fixtures, and stable provider stubs.
+3. Create isolated test tiers: `unit`, `integration`, `e2e`, `stress/chaos`, each with separate configs and data lifecycles.
+4. Use synthetic-only secrets and enforce log redaction checks so tests never expose real credentials.
+5. Build fault-injection mocks for LLM/tool providers: timeouts, malformed outputs, 5xx, latency spikes, partial streams.
+6. Create fixture factories for normal and adversarial inputs (prompt injection, replay payloads, oversized context, policy-conflict requests).
+7. Add strict contract tests at boundaries: API schemas, queue message schema, orchestrator-tool interface, model client interface.
+8. Implement critical unit tests first for: policy resolution, prompt guardrails, idempotency, state-machine transitions, retry/circuit-breaker behavior, redaction.
+9. Implement integration tests for cross-component breakpoints: API -> orchestrator -> DB atomicity, queue retry/dead-letter behavior, failover preserving guardrails, tenant isolation.
+10. Implement adversarial e2e workflows: prompt injection blocked, exfiltration blocked, partial-failure rollback integrity, replay attack rejection.
+11. Add concurrency/race tests: duplicate submissions, simultaneous approvals, lock contention, duplicate delivery handling.
+12. Add stress/chaos tests: sustained load, token-budget exhaustion, provider outage/latency, DB contention and recovery.
+13. Add permanent security regression tests: authz bypass attempts, sandbox escape/path traversal, audit-log tamper detection, PII/secret leakage.
+14. Make CI gates risk-tiered:
+15. PR gate: critical unit + critical integration + security regressions + e2e smoke.
+16. Nightly gate: full integration/e2e + stress/chaos + mutation tests on safety/policy logic.
+17. Release gate: rollback drills, disaster recovery checks, full security suite, SLO/error-budget validation.
+18. Require observability assertions in tests (status + logs + traces + metrics), not just response codes.
+19. Track and reduce flakiness with a strict flake budget and quarantine policy.
+20. Enforce exit criteria before rollout: zero critical security failures, stable Tier-1 pass rate, stress SLOs met, and every high-risk component covered by at least one destructive-path test.
+
+Detailed plan artifact is in `.claude/reasoning/test-plans.md`.  
+Execution summary was written to `claude/reports/recursive_self_improvement/harness-engineering-ai-testing-suite/runs/20260220_193304/execution_summary.md`.
+file update:
+diff --git a/.claude/reasoning/test-plans.md b/.claude/reasoning/test-plans.md
+new file mode 100644
+index 0000000000000000000000000000000000000000..d00643dddf8b409ebae6ffc943cf2be4495be492
+--- /dev/null
++++ b/.claude/reasoning/test-plans.md
+@@ -0,0 +1,240 @@
++# Harness Engineering AI Testing Suite Plan
++
++## Goal
++Build a robust, security-first, AI-aware testing suite that catches system-breaking failures before merge/release, with explicit protection against state corruption, unsafe automation, data leakage, and orchestration regressions.
++
++## Assumed Harness Components (for targeting tests)
++- `POST /api/harness/run` (start task)
++- `POST /api/harness/approve` (human gate)
++- `GET /api/harness/runs/{id}` (status/artifacts)
++- Orchestrator/service layer (prompt assembly, model routing, tool execution, retries)
++- Worker/queue layer (async execution, retries, dead-letter)
++- Audit/log middleware
++- DB writes for runs, steps, approvals, artifacts (use Junk DB at `backend/database/connect.py`)
++
++## Exact Build Steps
++1. Define failure budgets and release gates.
++2. Freeze a deterministic test baseline (`temperature=0`, fixed seeds, mocked clock, stable fixtures).
++3. Create dedicated test envs: `unit`, `integration`, `e2e`, `stress`, each isolated and reproducible.
++4. Enforce secret-safe test plumbing (never real keys, synthetic secrets only, log scrubbing enabled).
++5. Add hermetic provider mocks for LLM/tool vendors and fault injectors (timeouts, malformed payloads, 5xx, slow streams).
++6. Build fixture factories for runs/steps/approvals/artifacts with valid and adversarial variants.
++7. Add contract tests for every internal boundary (API schema, orchestrator-tool contracts, queue message schema).
++8. Implement critical unit tests first (policy, prompt assembly, state transitions, idempotency, redaction).
++9. Implement integration tests for cross-component breakpoints (API->service->DB->queue->worker).
++10. Implement adversarial e2e tests (prompt injection, exfiltration attempts, unsafe tool requests, partial-failure rollback).
++11. Implement concurrency/race tests (duplicate deliveries, simultaneous approvals, lock contention, replay attacks).
++12. Add chaos and stress tests (provider outage/latency spikes, queue lag, DB contention, large payload saturation).
++13. Add security regression tests mapped to threat model (authz bypass, tenant isolation, audit tampering, PII leakage).
++14. Wire CI gates by risk tier:
++15. PR gate: lint + unit critical + integration critical + smoke e2e.
++16. Nightly gate: full integration + full e2e + stress/chaos.
++17. Release gate: security regressions + rollback drills + disaster recovery checks.
++18. Add observability assertions in tests (metrics/log traces validated, not just HTTP codes).
++19. Add mutation testing for policy/guardrail modules to ensure tests actually catch logic tampering.
++20. Set flake budget and quarantine policy, then continuously harden flaky tests until below threshold.
++
++## Test Plan by Phase
++
++### Phase 1: Unit Tests (Critical Logic and Stateful Operations)
++
++`backend/tests/harness_orchestrator/test_prompt_template_injection_guard.py`
++- Scenario: User input attempts prompt-template escape and hidden-system-instruction override.
++- Why critical: Could disable safety controls and execute unsafe automation.
++- Involved logic: prompt builder/orchestrator guardrail functions.
++- Failure manifestation: Model receives unsafe/system-overridden prompt.
++- Fixtures/mocks: adversarial prompt fixtures, expected sanitized prompt snapshot.
++
++`backend/tests/harness_orchestrator/test_model_router_policy_bypass.py`
++- Scenario: Request attempts to force disallowed model/tool via crafted params.
++- Why critical: Security and cost controls bypass.
++- Involved logic: routing policy evaluator.
++- Failure manifestation: router selects forbidden model/tool.
++- Fixtures/mocks: allowed/denied policy matrix fixtures.
++
++`backend/tests/harness_orchestrator/test_tool_call_path_traversal_block.py`
++- Scenario: Tool args include path traversal (`../`, absolute paths).
++- Why critical: File exfiltration or workspace tampering.
++- Involved logic: tool arg validator/sandbox adapter.
++- Failure manifestation: unauthorized file access allowed.
++- Fixtures/mocks: malicious tool-arg payloads.
++
++`backend/tests/harness_security/test_secret_redaction_on_logs.py`
++- Scenario: Model output contains key-like tokens and connection strings.
++- Why critical: Credential leakage via logs/telemetry.
++- Involved logic: audit/log middleware + redaction utility.
++- Failure manifestation: secrets appear in stored logs.
++- Fixtures/mocks: synthetic secret corpus.
++
++`backend/tests/harness_state/test_run_state_machine_invalid_transition.py`
++- Scenario: Transition `FAILED -> RUNNING` or duplicate `APPROVED`.
++- Why critical: Corrupt state and inconsistent downstream behavior.
++- Involved logic: run state machine.
++- Failure manifestation: illegal transition accepted.
++- Fixtures/mocks: state transition table fixture.
++
++`backend/tests/harness_state/test_idempotency_duplicate_run_submission.py`
++- Scenario: Same idempotency key submitted concurrently.
++- Why critical: duplicate execution and duplicate writes.
++- Involved logic: request dedupe + run creation.
++- Failure manifestation: >1 run created for same logical request.
++- Fixtures/mocks: concurrent request harness, shared key.
++
++`backend/tests/harness_resilience/test_retry_backoff_circuit_breaker.py`
++- Scenario: upstream provider continuously fails then recovers.
++- Why critical: retry storm, cascading failures, cost explosion.
++- Involved logic: retry policy + circuit breaker.
++- Failure manifestation: unbounded retries or no recovery.
++- Fixtures/mocks: provider failure/recovery simulator.
++
++`backend/tests/harness_policy/test_allow_deny_precedence.py`
++- Scenario: conflicting policy rules exist for same action.
++- Why critical: authorization ambiguity can allow unsafe execution.
++- Involved logic: policy resolution engine.
++- Failure manifestation: `allow` wins over explicit `deny`.
++- Fixtures/mocks: overlapping policy fixtures.
++
++### Phase 2: Integration Tests (Cross-Component Contract Breakpoints)
++
++`backend/tests/harness_api/test_run_endpoint_authz_rate_limit_integration.py`
++- Scenario: unauthenticated/over-limit caller hits `POST /api/harness/run`.
++- Why critical: abuse and unauthorized execution risk.
++- Involved routes/middleware: auth middleware, rate limiter, run controller.
++- Failure manifestation: request accepted when it should be blocked.
++- Fixtures/mocks: auth token variants, burst traffic generator.
++
++`backend/tests/harness_integration/test_api_to_orchestrator_to_db_atomicity.py`
++- Scenario: DB write fails after orchestration starts.
++- Why critical: orphaned worker tasks and unrecoverable partial state.
++- Involved flow: controller -> orchestrator -> run repository.
++- Failure manifestation: task executes without persisted run record.
++- Fixtures/mocks: DB failure injector (Junk DB via `backend/database/connect.py`).
++
++`backend/tests/harness_integration/test_queue_retry_dead_letter_no_duplicate_side_effects.py`
++- Scenario: message retries then dead-letters after max attempts.
++- Why critical: duplicate side effects and data corruption.
++- Involved flow: queue producer/consumer + persistence.
++- Failure manifestation: repeated writes/actions across retries.
++- Fixtures/mocks: queue emulator, retry counters.
++
++`backend/tests/harness_integration/test_provider_failover_guardrails_preserved.py`
++- Scenario: primary model fails; fallback model used.
++- Why critical: failover must not disable policy filters.
++- Involved flow: model client abstraction + guardrail middleware.
++- Failure manifestation: fallback path skips validation/redaction.
++- Fixtures/mocks: provider A outage + provider B fallback response.
++
++`backend/tests/harness_integration/test_retrieval_prompt_assembly_tenant_isolation.py`
++- Scenario: retrieval returns mixed-tenant context.
++- Why critical: cross-tenant data exposure.
++- Involved flow: retrieval service + prompt assembly.
++- Failure manifestation: wrong-tenant docs in final prompt.
++- Fixtures/mocks: multi-tenant fixture dataset.
++
++`backend/tests/harness_integration/test_artifact_writer_atomic_commit_and_rollback.py`
++- Scenario: artifact write partially succeeds then fails.
++- Why critical: corrupted artifacts and inconsistent run status.
++- Involved flow: artifact service + run finalizer.
++- Failure manifestation: run marked success with incomplete artifacts.
++- Fixtures/mocks: filesystem/object-store partial failure injector.
++
++`backend/tests/harness_integration/test_audit_log_tamper_evidence.py`
++- Scenario: modified historical audit entry.
++- Why critical: compliance and incident forensics failure.
++- Involved flow: audit middleware + integrity checks.
++- Failure manifestation: tampering undetected.
++- Fixtures/mocks: signed log fixture with intentional modification.
++
++### Phase 3: End-to-End Tests (Real Workflow Safety)
++
++`backend/tests/harness_e2e/test_full_run_happy_path_with_human_approval.py`
++- Scenario: complete run from `POST /api/harness/run` to approval to finalized artifacts.
++- Why critical: validates core user journey and system wiring.
++- Involved routes/services: run/approve/status endpoints, orchestrator, DB, queue.
++- Failure manifestation: workflow stalls, status mismatch, missing artifacts.
++- Fixtures/mocks: standard request fixture, mocked model/tool outputs.
++
++`backend/tests/harness_e2e/test_prompt_injection_exfiltration_blocked.py`
++- Scenario: adversarial prompt requests secrets/file exfiltration.
++- Why critical: direct security breach vector in AI-heavy automation.
++- Involved flow: input filters, prompt guardrails, tool policy layer.
++- Failure manifestation: secret/tool exfiltration succeeds.
++- Fixtures/mocks: red-team prompt corpus.
++
++`backend/tests/harness_e2e/test_dependency_outage_graceful_degradation.py`
++- Scenario: model provider outage during active run.
++- Why critical: must fail safely with clear recoverable state.
++- Involved flow: provider client, retry/circuit breaker, run finalizer.
++- Failure manifestation: hung run, inconsistent final status.
++- Fixtures/mocks: outage injector, recovery timeout config.
++
++`backend/tests/harness_e2e/test_partial_failure_rollback_integrity.py`
++- Scenario: one step fails after prior steps wrote state.
++- Why critical: prevents persistent inconsistent state.
++- Involved flow: orchestrator step transaction boundaries + compensating actions.
++- Failure manifestation: stale/contradictory records after rollback.
++- Fixtures/mocks: step failure trigger at controlled point.
++
++`backend/tests/harness_e2e/test_replay_attack_idempotency_enforced.py`
++- Scenario: attacker replays signed request payload.
++- Why critical: duplicate/unauthorized re-execution.
++- Involved flow: request signature validation + idempotency store.
++- Failure manifestation: replayed request accepted/executed.
++- Fixtures/mocks: captured signed request replay fixture.
++
++### Phase 4: Stress/Chaos Tests (Reliability Under Pressure)
++
++`backend/tests/harness_stress/test_high_concurrency_run_submission_race_conditions.py`
++- Scenario: burst of concurrent run requests for same project/user.
++- Why critical: lock contention, duplicate runs, queue collapse.
++- Involved flow: API ingress, idempotency, queue producer, DB transactions.
++- Failure manifestation: duplicate runs, deadlocks, high error rate.
++- Fixtures/mocks: load generator, contention telemetry hooks.
++
++`backend/tests/harness_stress/test_long_running_worker_memory_growth.py`
++- Scenario: sustained processing over long duration.
++- Why critical: memory leaks cause worker crashes and retry storms.
++- Involved flow: worker execution loop + provider streaming client.
++- Failure manifestation: monotonic memory growth beyond threshold.
++- Fixtures/mocks: long-sequence workload fixture.
++
++`backend/tests/harness_stress/test_token_budget_exhaustion_safe_failure.py`
++- Scenario: oversized prompt/context drives token overrun.
++- Why critical: runaway cost and provider hard-fail.
++- Involved flow: token estimator + budget guard middleware.
++- Failure manifestation: request executes despite budget breach.
++- Fixtures/mocks: oversized context fixtures.
++
++`backend/tests/harness_stress/test_provider_latency_spike_backpressure.py`
++- Scenario: upstream latency spikes + partial packet loss.
++- Why critical: queue backlog and SLA collapse.
++- Involved flow: async workers, queue consumer concurrency controls.
++- Failure manifestation: no backpressure, uncontrolled queue growth.
++- Fixtures/mocks: latency/packet-loss fault injector.
++
++`backend/tests/harness_stress/test_db_contention_and_recovery.py`
++- Scenario: lock-heavy DB workload while runs are active.
++- Why critical: transaction failures can corrupt state.
++- Involved flow: repositories + transaction retry policy (Junk DB at `backend/database/connect.py`).
++- Failure manifestation: partial commits, unrecoverable run state.
++- Fixtures/mocks: lock contention scenarios, retry telemetry.
++
++## Security Regression Set (Must Always Run in PR Gate)
++- Authn/Authz bypass attempts across all harness endpoints.
++- Tenant isolation checks in retrieval, artifacts, status APIs.
++- Secret leakage checks in logs, traces, and returned artifacts.
++- Tool sandbox escape/path traversal checks.
++- Audit tamper detection checks.
++
++## CI/CD Gating Strategy
++- Tier 0 (every commit): deterministic unit critical set.
++- Tier 1 (every PR): Tier 0 + integration critical + security regression set + e2e smoke.
++- Tier 2 (nightly): full integration/e2e + stress/chaos + mutation tests on policy modules.
++- Tier 3 (pre-release): rollback/disaster drills + full security + performance SLO validation.
++
++## Exit Criteria (Suite Readiness)
++- No critical/high findings in security regression set.
++- 0 failing tests in Tier 1.
++- Flake rate under agreed threshold (example: <1% over 7 days).
++- Stress tests meet SLO/error-budget targets.
++- All high-risk components mapped to at least one destructive-path test.
+diff --git a/claude/reports/recursive_self_improvement/harness-engineering-ai-testing-suite/runs/20260220_193304/execution_summary.md b/claude/reports/recursive_self_improvement/harness-engineering-ai-testing-suite/runs/20260220_193304/execution_summary.md
+new file mode 100644
+index 0000000000000000000000000000000000000000..d31e4c99471dcc812eb220c61ad94b5f64df121a
+--- /dev/null
++++ b/claude/reports/recursive_self_improvement/harness-engineering-ai-testing-suite/runs/20260220_193304/execution_summary.md
+@@ -0,0 +1,20 @@
++# Execution Summary
++
++## Files Changed
++- `.claude/reasoning/test-plans.md`
++- `claude/reports/recursive_self_improvement/harness-engineering-ai-testing-suite/runs/20260220_193304/execution_summary.md`
++
++## Key Decisions
++- Used the `testing-quality-tester` workflow because the request is a testing-strategy task.
++- Produced a risk-first, phase-based testing plan (unit, integration, e2e, stress/chaos) focused on system-breaking failures, security, and reliability rather than superficial checks.
++- Included exact implementation steps and concrete test targets with required file-path patterns (`backend/tests/...`) and dependencies.
++- Added explicit safeguards for AI-heavy automation risks: prompt injection, exfiltration, policy bypass, idempotency, replay attacks, tenant isolation, and failover safety.
++- Included CI/CD risk-tier gates and release-readiness exit criteria to prevent regressions from reaching production.
++
++## Validation Performed
++- Confirmed source context was loaded from:
++  - `claude/reports/recursive_self_improvement/harness-engineering-ai-testing-suite/runs/20260220_193304/report.txt`
++  - `claude/reports/recursive_self_improvement/harness-engineering-ai-testing-suite/runs/20260220_193304/prompt_improvements.md`
++  - `C:/Users/422mi/.codex/skills/testing-quality-tester/SKILL.md`
++- Verified the plan artifact exists and is populated (`.claude/reasoning/test-plans.md`, 204 lines).
++- Verified this execution summary file path exists after write.
+
+tokens used
+24,312
+1. Define the reliability and security outcomes first: what failures are unacceptable (unsafe tool execution, data leakage, corrupted state, silent regressions), and your release-blocking criteria.
+2. Freeze deterministic test defaults for AI paths: `temperature=0`, fixed seeds, mocked clock, pinned fixtures, and stable provider stubs.
+3. Create isolated test tiers: `unit`, `integration`, `e2e`, `stress/chaos`, each with separate configs and data lifecycles.
+4. Use synthetic-only secrets and enforce log redaction checks so tests never expose real credentials.
+5. Build fault-injection mocks for LLM/tool providers: timeouts, malformed outputs, 5xx, latency spikes, partial streams.
+6. Create fixture factories for normal and adversarial inputs (prompt injection, replay payloads, oversized context, policy-conflict requests).
+7. Add strict contract tests at boundaries: API schemas, queue message schema, orchestrator-tool interface, model client interface.
+8. Implement critical unit tests first for: policy resolution, prompt guardrails, idempotency, state-machine transitions, retry/circuit-breaker behavior, redaction.
+9. Implement integration tests for cross-component breakpoints: API -> orchestrator -> DB atomicity, queue retry/dead-letter behavior, failover preserving guardrails, tenant isolation.
+10. Implement adversarial e2e workflows: prompt injection blocked, exfiltration blocked, partial-failure rollback integrity, replay attack rejection.
+11. Add concurrency/race tests: duplicate submissions, simultaneous approvals, lock contention, duplicate delivery handling.
+12. Add stress/chaos tests: sustained load, token-budget exhaustion, provider outage/latency, DB contention and recovery.
+13. Add permanent security regression tests: authz bypass attempts, sandbox escape/path traversal, audit-log tamper detection, PII/secret leakage.
+14. Make CI gates risk-tiered:
+15. PR gate: critical unit + critical integration + security regressions + e2e smoke.
+16. Nightly gate: full integration/e2e + stress/chaos + mutation tests on safety/policy logic.
+17. Release gate: rollback drills, disaster recovery checks, full security suite, SLO/error-budget validation.
+18. Require observability assertions in tests (status + logs + traces + metrics), not just response codes.
+19. Track and reduce flakiness with a strict flake budget and quarantine policy.
+20. Enforce exit criteria before rollout: zero critical security failures, stable Tier-1 pass rate, stress SLOs met, and every high-risk component covered by at least one destructive-path test.
+
+Detailed plan artifact is in `.claude/reasoning/test-plans.md`.  
+Execution summary was written to `claude/reports/recursive_self_improvement/harness-engineering-ai-testing-suite/runs/20260220_193304/execution_summary.md`.

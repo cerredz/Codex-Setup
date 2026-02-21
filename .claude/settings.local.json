@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(command -v:*)",
+      "Bash(bash claude/scripts/recursive_self_improvement.sh --task \"I want to set up a comprehensive testing suite for things inside of the world of harness engineering. Basically I want to decompose the exact steps I need to take to generate a very robust and secure testing suite for using AI inside of projects and making sure nothing in my codebase breaks. The thing that I am trying to explore is developing a far more extensive test suite than regular because we''re using AI so much to automate things.\" --task-name \"harness-engineering-ai-testing-suite\" --improvement-rounds 4)"
+    ]
+  }
+}

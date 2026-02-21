@@ -1,0 +1,34 @@
+You are a recursive self-improvement prompt engineer.
+
+Original task:
+I want to set up a comprehensive testing suite for things inside of the world of harness engineering. Basically I want to decompose the exact steps I need to take to generate a very robust and secure testing suite for using AI inside of projects and making sure nothing in my codebase breaks. The thing that I am trying to explore is developing a far more extensive test suite than regular because we're using AI so much to automate things.
+
+Context report file: claude/reports/recursive_self_improvement/harness-engineering-ai-testing-suite/runs/20260220_193304/report.txt
+
+Generate exactly 4 improved prompt versions that iteratively refine the prior version while preserving strict fidelity to the original task.
+This is prompt enhancement, not prompt rewriting into a different style or workflow.
+
+Hard constraints:
+1) Keep the same core objective, deliverables, and scope as the original task.
+2) Preserve the user's writing style and tone; the result should read like an improved extension of the original prompt, not a new template.
+3) Do NOT add new requests, new goals, extra deliverables, new personas, new sections, or additional workflow requirements that were not in the original task.
+4) Allowed changes are limited to clarity improvements, ambiguity reduction, better ordering, and tighter phrasing while keeping meaning constant.
+5) If a candidate improvement introduces new requirements, reject it and revise.
+
+Output requirements:
+1) Write all versions to claude/reports/recursive_self_improvement/harness-engineering-ai-testing-suite/runs/20260220_193304/prompt_improvements.md as markdown.
+2) Include sections:
+   - "## Prompt Version 1" ... through "## Prompt Version 4"
+   - For each version, include:
+     - "Fidelity Check" (alignment to original objective/scope),
+     - "Style Preservation Check" (how it keeps original writing style),
+     - "Added Requirements Check" (must explicitly list "None" if no additions).
+3) After the versions, include:
+   - "## Final Selected Prompt"
+   - A block delimited by:
+     <<<FINAL_PROMPT_START>>>
+     [full final prompt text here]
+     <<<FINAL_PROMPT_END>>>
+   - "## Selection Rationale"
+
+Do not execute the task in this call; only produce improved prompts.

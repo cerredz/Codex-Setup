@@ -249,6 +249,9 @@ Hard constraints:
 3) Do NOT add new requests, new goals, extra deliverables, new personas, new sections, or additional workflow requirements that were not in the original task.
 4) Allowed changes are limited to clarity improvements, ambiguity reduction, better ordering, and tighter phrasing while keeping meaning constant.
 5) If a candidate improvement introduces new requirements, reject it and revise.
+6) Do NOT answer, solve, or partially solve the task in any prompt version. This call is only about rewriting the prompt text.
+7) Do NOT include code solutions, implementation steps, final recommendations, or completed outputs for the task itself.
+8) Each prompt version must be written as a direct user-style prompt draft, not as an assistant response explaining what you did.
 
 Output requirements:
 1) Write all versions to $improvements_path as markdown.
@@ -266,7 +269,7 @@ Output requirements:
      <<<FINAL_PROMPT_END>>>
    - "## Selection Rationale"
 
-Do not execute the task in this call; only produce improved prompts.
+Do not execute, answer, or solve the task in this call; only produce improved prompt drafts.
 EOF
 
 echo "Run folder: $run_dir"
