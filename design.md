@@ -64,3 +64,5 @@ First script that I want to create:
     - user then has to answer the questions
 - second llm call is to read in the task/prompt, read in the questions, read in the answers, and then create a plan for implementing the task in a decomposed fassion (save to file)
 - third llm call should receive original task/prompt, questions, answers, and decomposed plan and should implement the solution 
+
+8) recursive self improvement prompting
