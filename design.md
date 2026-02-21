@@ -6,7 +6,7 @@ claude/commands: Skill files, there are also subfolders to organize the type of 
 
 claude/scripts: Scripts location, we have a skill for creating scripts inside of codex or claude code, and this is the location where the scripts will be located. 
 
-claude/reasoning and claude/reports: This is the location for either reasoning skill outputs or report skill outputs. 
+claude/reasoning and claude/reports: This is the location for either reasoning skill outputs or report skill outputs. (each script should create a subfolder in the reports folder for all outputted artifacts of the script, the subfolder should be related to the "task name" at hand)
 
 
 First script that I want to create:
@@ -42,3 +42,25 @@ First script that I want to create:
 - should output first llm call with all the context somewhere (either singular artifact generated or list of files edited with descriptions)
 - critiquer output should be outputted somwhere in reports (task_name/critique.md in the claude reports folder)
 - third llm should have full original task/prompt, first llm call output, critiquer feedback, and then using this should implement changes accordingly
+
+
+5) "branch, evaluate, and merge"
+- Basically, the role and purpose of this script is to create a "trees" or branches of plans, 
+
+- so we will prompt the model with a task/prompt
+- then, the model should output 5-10 different ideas that are unique from each other that attempt to solve the task (different because we want to avoid local minimas), and consider more than 1 implementation
+- these 5-10 different ideas should be outputted into .md file and have in depth explaination in relation to the task
+- second llm call is an "evaluator", has a system prompt, gets the original task/prompt, sees the brainstormed plans and outputs a file of the "tree" or "branch" that is the best plan
+- third llm call gets the task/prompt and the evaluator's best plan, then should implement it
+
+6) "continuous worker script"
+- 
+
+
+7) "ask questions, decompose, then conquer"
+
+- user enters task/prompt
+- first llm call is to read prompt/instruct model to explore codebase and read any related files, get understanding first codebase wise, and then ask questions to help better understand the user's request
+    - user then has to answer the questions
+- second llm call is to read in the task/prompt, read in the questions, read in the answers, and then create a plan for implementing the task in a decomposed fassion (save to file)
+- third llm call should receive original task/prompt, questions, answers, and decomposed plan and should implement the solution 
