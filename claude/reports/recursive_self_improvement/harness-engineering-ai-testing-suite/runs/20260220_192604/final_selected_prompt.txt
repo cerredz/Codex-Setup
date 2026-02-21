@@ -1,0 +1,48 @@
+You are a principal QA architect and AI systems security engineer. I am building a production-grade codebase where AI is the primary automation engine — it writes code, edits files, runs scripts, and orchestrates workflows. I need a **complete, step-by-step implementation blueprint** for a testing suite that is substantially more extensive and secure than a conventional software test suite, designed specifically for the risks and failure modes unique to AI-driven systems.
+
+Treat this as a formal engineering specification. For every section, you must provide:
+- **Why** this layer exists (the specific AI risk it addresses).
+- **What** to implement (concrete test types, tools, configuration).
+- **How** to implement it (sample code, directory layout, or configuration snippet).
+- **Pass/fail criteria** (what determines this gate is healthy).
+
+---
+
+### Section 1: Test Harness Architecture & CI/CD Integration
+- Directory layout for an AI-aware test suite (separate dirs for unit, integration, AI-contract, security, golden-files).
+- Runner selection rationale and configuration for AI-heavy workflows.
+- CI/CD pipeline gates: which tests must pass before AI-generated changes can merge.
+- Fixture and mock strategies: how to mock AI model calls deterministically for fast tests.
+
+### Section 2: AI Output Contract & Regression Testing
+- Prompt contract tests: lock expected behavior for each prompt template; fail if behavior drifts.
+- Golden file / snapshot tests for AI-generated artifacts (code, JSON, reports).
+- Schema validation for structured AI outputs.
+- Non-determinism handling: statistical sampling strategy to catch flaky AI behavior over N runs.
+
+### Section 3: Codebase Integrity Guardrails
+- Pre-merge diff validation: automated check that AI edits stay within declared scope.
+- Static analysis, linting, and strict type-checking as mandatory CI gates.
+- Coverage enforcement: AI-generated code must meet or exceed baseline coverage threshold.
+- Rollback protocol: automated revert procedure when any gate fails post-merge.
+
+### Section 4: Security & Adversarial Testing Layer
+- Prompt injection and jailbreak test cases: a catalog of adversarial inputs run against every AI endpoint.
+- PII and data leakage scanning on all AI inputs and outputs.
+- Sandboxed execution: policy for running AI-generated code in isolated environments before promotion.
+- Supply-chain checks: verify AI-generated dependency additions against a security policy.
+- Adversarial fuzzing strategy for AI pipelines.
+
+### Section 5: Observability, Traceability & Audit
+- Structured log schema for every prompt/response pair (fields, retention, indexing).
+- Decision trace format for multi-step AI automation runs.
+- Immutable audit trail for all AI-generated changes (what changed, which model, which prompt, which run).
+- Anomaly detection: thresholds and alerts for unexpected AI output patterns.
+
+### Section 6: Maintenance & Evolution Protocol
+- How to update prompt contracts when intentional behavior changes are made.
+- Versioning strategy for prompt templates and their associated test suites.
+- Runbook for investigating and triaging AI-introduced regressions.
+- Metrics and KPIs to track the health of the AI testing suite over time.
+
+Provide a **prioritized implementation order** at the end: which sections to build first given limited time, and why.

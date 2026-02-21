@@ -241,13 +241,23 @@ $TASK
 Context report file: $report_path
 
 Generate exactly $IMPROVEMENT_ROUNDS improved prompt versions that iteratively refine the prior version while preserving strict fidelity to the original task.
-Do not drift scope, do not change the user's objective, and do not introduce unrelated goals. Improvements should focus on clarity, structure, constraints, and execution quality.
+This is prompt enhancement, not prompt rewriting into a different style or workflow.
+
+Hard constraints:
+1) Keep the same core objective, deliverables, and scope as the original task.
+2) Preserve the user's writing style and tone; the result should read like an improved extension of the original prompt, not a new template.
+3) Do NOT add new requests, new goals, extra deliverables, new personas, new sections, or additional workflow requirements that were not in the original task.
+4) Allowed changes are limited to clarity improvements, ambiguity reduction, better ordering, and tighter phrasing while keeping meaning constant.
+5) If a candidate improvement introduces new requirements, reject it and revise.
 
 Output requirements:
 1) Write all versions to $improvements_path as markdown.
 2) Include sections:
    - "## Prompt Version 1" ... through "## Prompt Version $IMPROVEMENT_ROUNDS"
-   - For each version, include a short "Fidelity Check" proving it stays aligned with the original task.
+   - For each version, include:
+     - "Fidelity Check" (alignment to original objective/scope),
+     - "Style Preservation Check" (how it keeps original writing style),
+     - "Added Requirements Check" (must explicitly list "None" if no additions).
 3) After the versions, include:
    - "## Final Selected Prompt"
    - A block delimited by:
@@ -303,16 +313,17 @@ if [[ ! -s "$final_prompt_path" ]]; then
 fi
 
 cat > "$call2_prompt_path" <<EOF
+Execute the final selected prompt below exactly as written.
+Do not add extra goals, constraints, structure, personas, or side requests beyond the prompt itself.
+
+<<<FINAL_PROMPT_TO_EXECUTE>>>
 $(cat "$final_prompt_path")
+<<<END_FINAL_PROMPT_TO_EXECUTE>>>
 
-Original task:
-$TASK
+Available context report (task + skill-file context): $report_path
+Prompt improvement provenance (reference only): $improvements_path
 
-Use this report as required context, including any skill-file context: $report_path.
-Use this prompt-improvement provenance file for reference: $improvements_path.
-
-Execute the task now.
-When complete, write a concise execution summary to $execution_summary_path including files changed, key decisions, and validation performed.
+After completing execution, write a concise execution summary to $execution_summary_path including files changed, key decisions, and validation performed.
 EOF
 
 echo "Call 2/2: execute final selected prompt"
