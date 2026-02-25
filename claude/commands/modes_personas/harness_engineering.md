@@ -95,5 +95,6 @@ error correction:
 
 
 
-
 - note, in all of these examples be are scaffolding and building systems that will let us automate things that we would usually prompt for, we are essentially building a system that uses more compute for your tasks in a way where you would have had to manually use that compute
+
+CRITICAL NOTE ON DISTILLATION QUALITY: The hardest and most important part of this entire system is not the architecture or orchestration — it is the quality of the initial distillation. A vague architecture doc or poorly written executive prompt does not just fail to help; it actively misleads agents at scale, and the garbage-in problem is amplified, not reduced, when running 50 subagents off a bad prompt.
