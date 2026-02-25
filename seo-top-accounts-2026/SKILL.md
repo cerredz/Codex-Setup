@@ -1,0 +1,3403 @@
+﻿---
+name: seo-top-accounts-2026
+description: Comprehensive operating intelligence for the top 14 SEO accounts to follow in 2026. Use when building SEO monitoring systems, translating SEO/X discourse into experiments, triaging core update volatility, evaluating AI-search claims, planning international/enterprise SEO execution, or converting social insights into reproducible ranking and revenue outcomes.
+---
+
+# SEO Signal Intelligence: Top 14 Accounts (2026)
+
+Use this skill as an operations layer, not as a personality feed.
+
+## Workflow
+1. Read `references/research-report-2026-02-24.md` before making strategic recommendations.
+2. Classify every social claim into one of four claim types: ranking, indexing, AI-visibility, or business-impact.
+3. Assign reliability and risk scores before implementation.
+4. Convert promising claims into short-cycle experiments with explicit stop conditions.
+5. Record wins/losses to avoid repeated folklore-driven decisions.
+
+## Non-Negotiable Guardrails
+- Treat anecdotal wins as candidate hypotheses, never universal truths.
+- Never deploy high-risk tactics to core brand properties without legal and policy review.
+- Separate update reaction from update diagnosis; ship only after evidence.
+- Preserve baseline measurement windows before and after every major change.
+- Use business metrics (qualified traffic, conversion rate, revenue) as final arbitration.
+
+## Atomic Playbook Library
+The sections below intentionally provide a large volume of atomic actions for retrieval and execution.
+
+## 1. Aleyda Solis (@aleyda)
+
+Primary focus: international SEO, technical SEO audits, practical execution checklists.
+Signal rationale: Reliable for global SEO architecture, hreflang realities, and execution frameworks that teams can operationalize quickly.
+Reference links:
+- https://www.twstalker.com/aleyda
+- https://www.aleydasolis.com/en/about/
+- https://learningseo.io/
+- https://seofomo.co/
+Core themes:
+- International SEO governance
+- Technical crawling/indexation hygiene
+- Checklists and implementation playbooks
+- AI-search adaptation with practical framing
+Execution defaults:
+- Use this account as a hypothesis generator, not a final authority.
+- If a claim is novel, require one low-risk pilot and one replication before broad rollout.
+- If a claim conflicts with Search Central guidance, document the conflict explicitly and downgrade confidence.
+- Convert social claims into issue tickets with owner, metric target, and expiration date.
+
+### Measurement Priorities
+- [aleyda-measure-001] Track impressions, clicks, CTR, qualified sessions, conversion rate, and revenue per landing page.
+- [aleyda-measure-002] Track query-cluster volatility by intent class and by URL template.
+- [aleyda-measure-003] Track indexation ratio: indexed URLs divided by submitted canonical URLs.
+- [aleyda-measure-004] Track internal-link depth and click-distance for money pages.
+- [aleyda-measure-005] Track AI-surface citation frequency where measurable.
+- [aleyda-measure-006] Track content decay windows and refresh impact lag.
+- [aleyda-measure-007] Track cannibalization risk with near-duplicate intent clusters.
+- [aleyda-measure-008] Track share-of-voice for high-value non-brand queries.
+- [aleyda-measure-009] Track anomaly lead time between ranking changes and business outcomes.
+- [aleyda-measure-010] Track assisted-conversion contribution from organic entry pages.
+
+### Atomic Action Cards
+- [aleyda-card-0001] When a broad core update rolls out and you are using signal from @aleyda, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [aleyda-card-0002] When a broad core update rolls out and you are using signal from @aleyda, instrument query clusters by intent and device before touching templates.
+- [aleyda-card-0003] When a broad core update rolls out and you are using signal from @aleyda, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [aleyda-card-0004] When a broad core update rolls out and you are using signal from @aleyda, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [aleyda-card-0005] When a broad core update rolls out and you are using signal from @aleyda, set a rollback threshold before release and enforce it without exception.
+- [aleyda-card-0006] When a broad core update rolls out and you are using signal from @aleyda, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [aleyda-card-0007] When a broad core update rolls out and you are using signal from @aleyda, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [aleyda-card-0008] When a broad core update rolls out and you are using signal from @aleyda, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [aleyda-card-0009] When a broad core update rolls out and you are using signal from @aleyda, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [aleyda-card-0010] When a broad core update rolls out and you are using signal from @aleyda, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [aleyda-card-0011] When a niche-specific ranking shock appears and you are using signal from @aleyda, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [aleyda-card-0012] When a niche-specific ranking shock appears and you are using signal from @aleyda, instrument query clusters by intent and device before touching templates.
+- [aleyda-card-0013] When a niche-specific ranking shock appears and you are using signal from @aleyda, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [aleyda-card-0014] When a niche-specific ranking shock appears and you are using signal from @aleyda, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [aleyda-card-0015] When a niche-specific ranking shock appears and you are using signal from @aleyda, set a rollback threshold before release and enforce it without exception.
+- [aleyda-card-0016] When a niche-specific ranking shock appears and you are using signal from @aleyda, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [aleyda-card-0017] When a niche-specific ranking shock appears and you are using signal from @aleyda, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [aleyda-card-0018] When a niche-specific ranking shock appears and you are using signal from @aleyda, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [aleyda-card-0019] When a niche-specific ranking shock appears and you are using signal from @aleyda, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [aleyda-card-0020] When a niche-specific ranking shock appears and you are using signal from @aleyda, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [aleyda-card-0021] When AI Overviews or answer engines reduce clicks and you are using signal from @aleyda, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [aleyda-card-0022] When AI Overviews or answer engines reduce clicks and you are using signal from @aleyda, instrument query clusters by intent and device before touching templates.
+- [aleyda-card-0023] When AI Overviews or answer engines reduce clicks and you are using signal from @aleyda, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [aleyda-card-0024] When AI Overviews or answer engines reduce clicks and you are using signal from @aleyda, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [aleyda-card-0025] When AI Overviews or answer engines reduce clicks and you are using signal from @aleyda, set a rollback threshold before release and enforce it without exception.
+- [aleyda-card-0026] When AI Overviews or answer engines reduce clicks and you are using signal from @aleyda, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [aleyda-card-0027] When AI Overviews or answer engines reduce clicks and you are using signal from @aleyda, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [aleyda-card-0028] When AI Overviews or answer engines reduce clicks and you are using signal from @aleyda, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [aleyda-card-0029] When AI Overviews or answer engines reduce clicks and you are using signal from @aleyda, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [aleyda-card-0030] When AI Overviews or answer engines reduce clicks and you are using signal from @aleyda, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [aleyda-card-0031] When crawl budget becomes constrained on large templates and you are using signal from @aleyda, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [aleyda-card-0032] When crawl budget becomes constrained on large templates and you are using signal from @aleyda, instrument query clusters by intent and device before touching templates.
+- [aleyda-card-0033] When crawl budget becomes constrained on large templates and you are using signal from @aleyda, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [aleyda-card-0034] When crawl budget becomes constrained on large templates and you are using signal from @aleyda, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [aleyda-card-0035] When crawl budget becomes constrained on large templates and you are using signal from @aleyda, set a rollback threshold before release and enforce it without exception.
+- [aleyda-card-0036] When crawl budget becomes constrained on large templates and you are using signal from @aleyda, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [aleyda-card-0037] When crawl budget becomes constrained on large templates and you are using signal from @aleyda, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [aleyda-card-0038] When crawl budget becomes constrained on large templates and you are using signal from @aleyda, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [aleyda-card-0039] When crawl budget becomes constrained on large templates and you are using signal from @aleyda, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [aleyda-card-0040] When crawl budget becomes constrained on large templates and you are using signal from @aleyda, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [aleyda-card-0041] When indexation mismatches appear between sitemap and search and you are using signal from @aleyda, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [aleyda-card-0042] When indexation mismatches appear between sitemap and search and you are using signal from @aleyda, instrument query clusters by intent and device before touching templates.
+- [aleyda-card-0043] When indexation mismatches appear between sitemap and search and you are using signal from @aleyda, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [aleyda-card-0044] When indexation mismatches appear between sitemap and search and you are using signal from @aleyda, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [aleyda-card-0045] When indexation mismatches appear between sitemap and search and you are using signal from @aleyda, set a rollback threshold before release and enforce it without exception.
+- [aleyda-card-0046] When indexation mismatches appear between sitemap and search and you are using signal from @aleyda, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [aleyda-card-0047] When indexation mismatches appear between sitemap and search and you are using signal from @aleyda, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [aleyda-card-0048] When indexation mismatches appear between sitemap and search and you are using signal from @aleyda, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [aleyda-card-0049] When indexation mismatches appear between sitemap and search and you are using signal from @aleyda, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [aleyda-card-0050] When indexation mismatches appear between sitemap and search and you are using signal from @aleyda, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [aleyda-card-0051] When internal-link architecture underperforms and you are using signal from @aleyda, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [aleyda-card-0052] When internal-link architecture underperforms and you are using signal from @aleyda, instrument query clusters by intent and device before touching templates.
+- [aleyda-card-0053] When internal-link architecture underperforms and you are using signal from @aleyda, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [aleyda-card-0054] When internal-link architecture underperforms and you are using signal from @aleyda, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [aleyda-card-0055] When internal-link architecture underperforms and you are using signal from @aleyda, set a rollback threshold before release and enforce it without exception.
+- [aleyda-card-0056] When internal-link architecture underperforms and you are using signal from @aleyda, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [aleyda-card-0057] When internal-link architecture underperforms and you are using signal from @aleyda, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [aleyda-card-0058] When internal-link architecture underperforms and you are using signal from @aleyda, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [aleyda-card-0059] When internal-link architecture underperforms and you are using signal from @aleyda, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [aleyda-card-0060] When internal-link architecture underperforms and you are using signal from @aleyda, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [aleyda-card-0061] When entity disambiguation issues dilute topical authority and you are using signal from @aleyda, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [aleyda-card-0062] When entity disambiguation issues dilute topical authority and you are using signal from @aleyda, instrument query clusters by intent and device before touching templates.
+- [aleyda-card-0063] When entity disambiguation issues dilute topical authority and you are using signal from @aleyda, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [aleyda-card-0064] When entity disambiguation issues dilute topical authority and you are using signal from @aleyda, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [aleyda-card-0065] When entity disambiguation issues dilute topical authority and you are using signal from @aleyda, set a rollback threshold before release and enforce it without exception.
+- [aleyda-card-0066] When entity disambiguation issues dilute topical authority and you are using signal from @aleyda, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [aleyda-card-0067] When entity disambiguation issues dilute topical authority and you are using signal from @aleyda, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [aleyda-card-0068] When entity disambiguation issues dilute topical authority and you are using signal from @aleyda, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [aleyda-card-0069] When entity disambiguation issues dilute topical authority and you are using signal from @aleyda, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [aleyda-card-0070] When entity disambiguation issues dilute topical authority and you are using signal from @aleyda, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [aleyda-card-0071] When large-scale content refresh decisions are needed and you are using signal from @aleyda, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [aleyda-card-0072] When large-scale content refresh decisions are needed and you are using signal from @aleyda, instrument query clusters by intent and device before touching templates.
+- [aleyda-card-0073] When large-scale content refresh decisions are needed and you are using signal from @aleyda, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [aleyda-card-0074] When large-scale content refresh decisions are needed and you are using signal from @aleyda, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [aleyda-card-0075] When large-scale content refresh decisions are needed and you are using signal from @aleyda, set a rollback threshold before release and enforce it without exception.
+- [aleyda-card-0076] When large-scale content refresh decisions are needed and you are using signal from @aleyda, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [aleyda-card-0077] When large-scale content refresh decisions are needed and you are using signal from @aleyda, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [aleyda-card-0078] When large-scale content refresh decisions are needed and you are using signal from @aleyda, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [aleyda-card-0079] When large-scale content refresh decisions are needed and you are using signal from @aleyda, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [aleyda-card-0080] When large-scale content refresh decisions are needed and you are using signal from @aleyda, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [aleyda-card-0081] When brand trust signals appear weak for YMYL queries and you are using signal from @aleyda, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [aleyda-card-0082] When brand trust signals appear weak for YMYL queries and you are using signal from @aleyda, instrument query clusters by intent and device before touching templates.
+- [aleyda-card-0083] When brand trust signals appear weak for YMYL queries and you are using signal from @aleyda, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [aleyda-card-0084] When brand trust signals appear weak for YMYL queries and you are using signal from @aleyda, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [aleyda-card-0085] When brand trust signals appear weak for YMYL queries and you are using signal from @aleyda, set a rollback threshold before release and enforce it without exception.
+- [aleyda-card-0086] When brand trust signals appear weak for YMYL queries and you are using signal from @aleyda, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [aleyda-card-0087] When brand trust signals appear weak for YMYL queries and you are using signal from @aleyda, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [aleyda-card-0088] When brand trust signals appear weak for YMYL queries and you are using signal from @aleyda, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [aleyda-card-0089] When brand trust signals appear weak for YMYL queries and you are using signal from @aleyda, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [aleyda-card-0090] When brand trust signals appear weak for YMYL queries and you are using signal from @aleyda, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [aleyda-card-0091] When affiliate pages rank but do not convert and you are using signal from @aleyda, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [aleyda-card-0092] When affiliate pages rank but do not convert and you are using signal from @aleyda, instrument query clusters by intent and device before touching templates.
+- [aleyda-card-0093] When affiliate pages rank but do not convert and you are using signal from @aleyda, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [aleyda-card-0094] When affiliate pages rank but do not convert and you are using signal from @aleyda, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [aleyda-card-0095] When affiliate pages rank but do not convert and you are using signal from @aleyda, set a rollback threshold before release and enforce it without exception.
+- [aleyda-card-0096] When affiliate pages rank but do not convert and you are using signal from @aleyda, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [aleyda-card-0097] When affiliate pages rank but do not convert and you are using signal from @aleyda, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [aleyda-card-0098] When affiliate pages rank but do not convert and you are using signal from @aleyda, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [aleyda-card-0099] When affiliate pages rank but do not convert and you are using signal from @aleyda, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [aleyda-card-0100] When affiliate pages rank but do not convert and you are using signal from @aleyda, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [aleyda-card-0101] When SERP features crowd out classic blue-link traffic and you are using signal from @aleyda, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [aleyda-card-0102] When SERP features crowd out classic blue-link traffic and you are using signal from @aleyda, instrument query clusters by intent and device before touching templates.
+- [aleyda-card-0103] When SERP features crowd out classic blue-link traffic and you are using signal from @aleyda, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [aleyda-card-0104] When SERP features crowd out classic blue-link traffic and you are using signal from @aleyda, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [aleyda-card-0105] When SERP features crowd out classic blue-link traffic and you are using signal from @aleyda, set a rollback threshold before release and enforce it without exception.
+- [aleyda-card-0106] When SERP features crowd out classic blue-link traffic and you are using signal from @aleyda, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [aleyda-card-0107] When SERP features crowd out classic blue-link traffic and you are using signal from @aleyda, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [aleyda-card-0108] When SERP features crowd out classic blue-link traffic and you are using signal from @aleyda, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [aleyda-card-0109] When SERP features crowd out classic blue-link traffic and you are using signal from @aleyda, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [aleyda-card-0110] When SERP features crowd out classic blue-link traffic and you are using signal from @aleyda, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [aleyda-card-0111] When new backlink opportunities spike but risk is unclear and you are using signal from @aleyda, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [aleyda-card-0112] When new backlink opportunities spike but risk is unclear and you are using signal from @aleyda, instrument query clusters by intent and device before touching templates.
+- [aleyda-card-0113] When new backlink opportunities spike but risk is unclear and you are using signal from @aleyda, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [aleyda-card-0114] When new backlink opportunities spike but risk is unclear and you are using signal from @aleyda, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [aleyda-card-0115] When new backlink opportunities spike but risk is unclear and you are using signal from @aleyda, set a rollback threshold before release and enforce it without exception.
+- [aleyda-card-0116] When new backlink opportunities spike but risk is unclear and you are using signal from @aleyda, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [aleyda-card-0117] When new backlink opportunities spike but risk is unclear and you are using signal from @aleyda, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [aleyda-card-0118] When new backlink opportunities spike but risk is unclear and you are using signal from @aleyda, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [aleyda-card-0119] When new backlink opportunities spike but risk is unclear and you are using signal from @aleyda, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [aleyda-card-0120] When new backlink opportunities spike but risk is unclear and you are using signal from @aleyda, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [aleyda-card-0121] When programmatic SEO expansions are proposed and you are using signal from @aleyda, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [aleyda-card-0122] When programmatic SEO expansions are proposed and you are using signal from @aleyda, instrument query clusters by intent and device before touching templates.
+- [aleyda-card-0123] When programmatic SEO expansions are proposed and you are using signal from @aleyda, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [aleyda-card-0124] When programmatic SEO expansions are proposed and you are using signal from @aleyda, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [aleyda-card-0125] When programmatic SEO expansions are proposed and you are using signal from @aleyda, set a rollback threshold before release and enforce it without exception.
+- [aleyda-card-0126] When programmatic SEO expansions are proposed and you are using signal from @aleyda, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [aleyda-card-0127] When programmatic SEO expansions are proposed and you are using signal from @aleyda, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [aleyda-card-0128] When programmatic SEO expansions are proposed and you are using signal from @aleyda, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [aleyda-card-0129] When programmatic SEO expansions are proposed and you are using signal from @aleyda, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [aleyda-card-0130] When programmatic SEO expansions are proposed and you are using signal from @aleyda, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [aleyda-card-0131] When international rollout introduces hreflang complexity and you are using signal from @aleyda, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [aleyda-card-0132] When international rollout introduces hreflang complexity and you are using signal from @aleyda, instrument query clusters by intent and device before touching templates.
+- [aleyda-card-0133] When international rollout introduces hreflang complexity and you are using signal from @aleyda, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [aleyda-card-0134] When international rollout introduces hreflang complexity and you are using signal from @aleyda, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [aleyda-card-0135] When international rollout introduces hreflang complexity and you are using signal from @aleyda, set a rollback threshold before release and enforce it without exception.
+- [aleyda-card-0136] When international rollout introduces hreflang complexity and you are using signal from @aleyda, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [aleyda-card-0137] When international rollout introduces hreflang complexity and you are using signal from @aleyda, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [aleyda-card-0138] When international rollout introduces hreflang complexity and you are using signal from @aleyda, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [aleyda-card-0139] When international rollout introduces hreflang complexity and you are using signal from @aleyda, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [aleyda-card-0140] When international rollout introduces hreflang complexity and you are using signal from @aleyda, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [aleyda-card-0141] When new AI-search referral channels appear and you are using signal from @aleyda, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [aleyda-card-0142] When new AI-search referral channels appear and you are using signal from @aleyda, instrument query clusters by intent and device before touching templates.
+- [aleyda-card-0143] When new AI-search referral channels appear and you are using signal from @aleyda, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [aleyda-card-0144] When new AI-search referral channels appear and you are using signal from @aleyda, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [aleyda-card-0145] When new AI-search referral channels appear and you are using signal from @aleyda, set a rollback threshold before release and enforce it without exception.
+- [aleyda-card-0146] When new AI-search referral channels appear and you are using signal from @aleyda, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [aleyda-card-0147] When new AI-search referral channels appear and you are using signal from @aleyda, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [aleyda-card-0148] When new AI-search referral channels appear and you are using signal from @aleyda, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [aleyda-card-0149] When new AI-search referral channels appear and you are using signal from @aleyda, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [aleyda-card-0150] When new AI-search referral channels appear and you are using signal from @aleyda, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [aleyda-card-0151] When stakeholders demand instant recovery plans and you are using signal from @aleyda, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [aleyda-card-0152] When stakeholders demand instant recovery plans and you are using signal from @aleyda, instrument query clusters by intent and device before touching templates.
+- [aleyda-card-0153] When stakeholders demand instant recovery plans and you are using signal from @aleyda, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [aleyda-card-0154] When stakeholders demand instant recovery plans and you are using signal from @aleyda, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [aleyda-card-0155] When stakeholders demand instant recovery plans and you are using signal from @aleyda, set a rollback threshold before release and enforce it without exception.
+- [aleyda-card-0156] When stakeholders demand instant recovery plans and you are using signal from @aleyda, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [aleyda-card-0157] When stakeholders demand instant recovery plans and you are using signal from @aleyda, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [aleyda-card-0158] When stakeholders demand instant recovery plans and you are using signal from @aleyda, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [aleyda-card-0159] When stakeholders demand instant recovery plans and you are using signal from @aleyda, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [aleyda-card-0160] When stakeholders demand instant recovery plans and you are using signal from @aleyda, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [aleyda-card-0161] When technical debt blocks roadmap velocity and you are using signal from @aleyda, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [aleyda-card-0162] When technical debt blocks roadmap velocity and you are using signal from @aleyda, instrument query clusters by intent and device before touching templates.
+- [aleyda-card-0163] When technical debt blocks roadmap velocity and you are using signal from @aleyda, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [aleyda-card-0164] When technical debt blocks roadmap velocity and you are using signal from @aleyda, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [aleyda-card-0165] When technical debt blocks roadmap velocity and you are using signal from @aleyda, set a rollback threshold before release and enforce it without exception.
+- [aleyda-card-0166] When technical debt blocks roadmap velocity and you are using signal from @aleyda, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [aleyda-card-0167] When technical debt blocks roadmap velocity and you are using signal from @aleyda, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [aleyda-card-0168] When technical debt blocks roadmap velocity and you are using signal from @aleyda, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [aleyda-card-0169] When technical debt blocks roadmap velocity and you are using signal from @aleyda, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [aleyda-card-0170] When technical debt blocks roadmap velocity and you are using signal from @aleyda, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [aleyda-card-0171] When competitors gain visibility with uncertain methods and you are using signal from @aleyda, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [aleyda-card-0172] When competitors gain visibility with uncertain methods and you are using signal from @aleyda, instrument query clusters by intent and device before touching templates.
+- [aleyda-card-0173] When competitors gain visibility with uncertain methods and you are using signal from @aleyda, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [aleyda-card-0174] When competitors gain visibility with uncertain methods and you are using signal from @aleyda, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [aleyda-card-0175] When competitors gain visibility with uncertain methods and you are using signal from @aleyda, set a rollback threshold before release and enforce it without exception.
+- [aleyda-card-0176] When competitors gain visibility with uncertain methods and you are using signal from @aleyda, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [aleyda-card-0177] When competitors gain visibility with uncertain methods and you are using signal from @aleyda, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [aleyda-card-0178] When competitors gain visibility with uncertain methods and you are using signal from @aleyda, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [aleyda-card-0179] When competitors gain visibility with uncertain methods and you are using signal from @aleyda, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [aleyda-card-0180] When competitors gain visibility with uncertain methods and you are using signal from @aleyda, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [aleyda-card-0181] When search intent shifts after product-category changes and you are using signal from @aleyda, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [aleyda-card-0182] When search intent shifts after product-category changes and you are using signal from @aleyda, instrument query clusters by intent and device before touching templates.
+- [aleyda-card-0183] When search intent shifts after product-category changes and you are using signal from @aleyda, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [aleyda-card-0184] When search intent shifts after product-category changes and you are using signal from @aleyda, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [aleyda-card-0185] When search intent shifts after product-category changes and you are using signal from @aleyda, set a rollback threshold before release and enforce it without exception.
+- [aleyda-card-0186] When search intent shifts after product-category changes and you are using signal from @aleyda, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [aleyda-card-0187] When search intent shifts after product-category changes and you are using signal from @aleyda, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [aleyda-card-0188] When search intent shifts after product-category changes and you are using signal from @aleyda, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [aleyda-card-0189] When search intent shifts after product-category changes and you are using signal from @aleyda, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [aleyda-card-0190] When search intent shifts after product-category changes and you are using signal from @aleyda, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [aleyda-card-0191] When analytics attribution masks true SEO impact and you are using signal from @aleyda, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [aleyda-card-0192] When analytics attribution masks true SEO impact and you are using signal from @aleyda, instrument query clusters by intent and device before touching templates.
+- [aleyda-card-0193] When analytics attribution masks true SEO impact and you are using signal from @aleyda, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [aleyda-card-0194] When analytics attribution masks true SEO impact and you are using signal from @aleyda, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [aleyda-card-0195] When analytics attribution masks true SEO impact and you are using signal from @aleyda, set a rollback threshold before release and enforce it without exception.
+- [aleyda-card-0196] When analytics attribution masks true SEO impact and you are using signal from @aleyda, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [aleyda-card-0197] When analytics attribution masks true SEO impact and you are using signal from @aleyda, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [aleyda-card-0198] When analytics attribution masks true SEO impact and you are using signal from @aleyda, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [aleyda-card-0199] When analytics attribution masks true SEO impact and you are using signal from @aleyda, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [aleyda-card-0200] When analytics attribution masks true SEO impact and you are using signal from @aleyda, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+
+### Fast Decision Rules
+- [aleyda-rule-001] If evidence is anecdotal and upside is low, skip implementation.
+- [aleyda-rule-002] If evidence is mixed and risk is high, run only in sandbox properties.
+- [aleyda-rule-003] If business impact is unmeasurable, deprioritize until instrumentation is fixed.
+- [aleyda-rule-004] If a tactic wins on traffic but loses on conversion quality, revert or redesign.
+- [aleyda-rule-005] If guidance aligns with multiple trusted sources, increase confidence tier.
+
+## 2. Charles Floate (@Charles_SEO)
+
+Primary focus: aggressive link strategies, parasite SEO, affiliate growth under high competition.
+Signal rationale: Useful for understanding edge tactics, distribution hacks, and practical monetization pressure tests.
+Reference links:
+- https://www.twstalker.com/Charles_SEO
+- https://charlesfloatetraining.com/
+- https://parasiteseo.com/about/
+Core themes:
+- Parasite SEO mechanics
+- Link velocity and risk tradeoffs
+- Affiliate positioning in volatile SERPs
+- Execution over theory
+Execution defaults:
+- Use this account as a hypothesis generator, not a final authority.
+- If a claim is novel, require one low-risk pilot and one replication before broad rollout.
+- If a claim conflicts with Search Central guidance, document the conflict explicitly and downgrade confidence.
+- Convert social claims into issue tickets with owner, metric target, and expiration date.
+
+### Measurement Priorities
+- [Charles_SEO-measure-001] Track impressions, clicks, CTR, qualified sessions, conversion rate, and revenue per landing page.
+- [Charles_SEO-measure-002] Track query-cluster volatility by intent class and by URL template.
+- [Charles_SEO-measure-003] Track indexation ratio: indexed URLs divided by submitted canonical URLs.
+- [Charles_SEO-measure-004] Track internal-link depth and click-distance for money pages.
+- [Charles_SEO-measure-005] Track AI-surface citation frequency where measurable.
+- [Charles_SEO-measure-006] Track content decay windows and refresh impact lag.
+- [Charles_SEO-measure-007] Track cannibalization risk with near-duplicate intent clusters.
+- [Charles_SEO-measure-008] Track share-of-voice for high-value non-brand queries.
+- [Charles_SEO-measure-009] Track anomaly lead time between ranking changes and business outcomes.
+- [Charles_SEO-measure-010] Track assisted-conversion contribution from organic entry pages.
+
+### Atomic Action Cards
+- [Charles_SEO-card-0001] When a broad core update rolls out and you are using signal from @Charles_SEO, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [Charles_SEO-card-0002] When a broad core update rolls out and you are using signal from @Charles_SEO, instrument query clusters by intent and device before touching templates.
+- [Charles_SEO-card-0003] When a broad core update rolls out and you are using signal from @Charles_SEO, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [Charles_SEO-card-0004] When a broad core update rolls out and you are using signal from @Charles_SEO, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [Charles_SEO-card-0005] When a broad core update rolls out and you are using signal from @Charles_SEO, set a rollback threshold before release and enforce it without exception.
+- [Charles_SEO-card-0006] When a broad core update rolls out and you are using signal from @Charles_SEO, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [Charles_SEO-card-0007] When a broad core update rolls out and you are using signal from @Charles_SEO, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [Charles_SEO-card-0008] When a broad core update rolls out and you are using signal from @Charles_SEO, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [Charles_SEO-card-0009] When a broad core update rolls out and you are using signal from @Charles_SEO, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [Charles_SEO-card-0010] When a broad core update rolls out and you are using signal from @Charles_SEO, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [Charles_SEO-card-0011] When a niche-specific ranking shock appears and you are using signal from @Charles_SEO, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [Charles_SEO-card-0012] When a niche-specific ranking shock appears and you are using signal from @Charles_SEO, instrument query clusters by intent and device before touching templates.
+- [Charles_SEO-card-0013] When a niche-specific ranking shock appears and you are using signal from @Charles_SEO, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [Charles_SEO-card-0014] When a niche-specific ranking shock appears and you are using signal from @Charles_SEO, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [Charles_SEO-card-0015] When a niche-specific ranking shock appears and you are using signal from @Charles_SEO, set a rollback threshold before release and enforce it without exception.
+- [Charles_SEO-card-0016] When a niche-specific ranking shock appears and you are using signal from @Charles_SEO, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [Charles_SEO-card-0017] When a niche-specific ranking shock appears and you are using signal from @Charles_SEO, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [Charles_SEO-card-0018] When a niche-specific ranking shock appears and you are using signal from @Charles_SEO, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [Charles_SEO-card-0019] When a niche-specific ranking shock appears and you are using signal from @Charles_SEO, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [Charles_SEO-card-0020] When a niche-specific ranking shock appears and you are using signal from @Charles_SEO, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [Charles_SEO-card-0021] When AI Overviews or answer engines reduce clicks and you are using signal from @Charles_SEO, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [Charles_SEO-card-0022] When AI Overviews or answer engines reduce clicks and you are using signal from @Charles_SEO, instrument query clusters by intent and device before touching templates.
+- [Charles_SEO-card-0023] When AI Overviews or answer engines reduce clicks and you are using signal from @Charles_SEO, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [Charles_SEO-card-0024] When AI Overviews or answer engines reduce clicks and you are using signal from @Charles_SEO, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [Charles_SEO-card-0025] When AI Overviews or answer engines reduce clicks and you are using signal from @Charles_SEO, set a rollback threshold before release and enforce it without exception.
+- [Charles_SEO-card-0026] When AI Overviews or answer engines reduce clicks and you are using signal from @Charles_SEO, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [Charles_SEO-card-0027] When AI Overviews or answer engines reduce clicks and you are using signal from @Charles_SEO, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [Charles_SEO-card-0028] When AI Overviews or answer engines reduce clicks and you are using signal from @Charles_SEO, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [Charles_SEO-card-0029] When AI Overviews or answer engines reduce clicks and you are using signal from @Charles_SEO, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [Charles_SEO-card-0030] When AI Overviews or answer engines reduce clicks and you are using signal from @Charles_SEO, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [Charles_SEO-card-0031] When crawl budget becomes constrained on large templates and you are using signal from @Charles_SEO, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [Charles_SEO-card-0032] When crawl budget becomes constrained on large templates and you are using signal from @Charles_SEO, instrument query clusters by intent and device before touching templates.
+- [Charles_SEO-card-0033] When crawl budget becomes constrained on large templates and you are using signal from @Charles_SEO, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [Charles_SEO-card-0034] When crawl budget becomes constrained on large templates and you are using signal from @Charles_SEO, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [Charles_SEO-card-0035] When crawl budget becomes constrained on large templates and you are using signal from @Charles_SEO, set a rollback threshold before release and enforce it without exception.
+- [Charles_SEO-card-0036] When crawl budget becomes constrained on large templates and you are using signal from @Charles_SEO, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [Charles_SEO-card-0037] When crawl budget becomes constrained on large templates and you are using signal from @Charles_SEO, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [Charles_SEO-card-0038] When crawl budget becomes constrained on large templates and you are using signal from @Charles_SEO, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [Charles_SEO-card-0039] When crawl budget becomes constrained on large templates and you are using signal from @Charles_SEO, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [Charles_SEO-card-0040] When crawl budget becomes constrained on large templates and you are using signal from @Charles_SEO, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [Charles_SEO-card-0041] When indexation mismatches appear between sitemap and search and you are using signal from @Charles_SEO, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [Charles_SEO-card-0042] When indexation mismatches appear between sitemap and search and you are using signal from @Charles_SEO, instrument query clusters by intent and device before touching templates.
+- [Charles_SEO-card-0043] When indexation mismatches appear between sitemap and search and you are using signal from @Charles_SEO, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [Charles_SEO-card-0044] When indexation mismatches appear between sitemap and search and you are using signal from @Charles_SEO, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [Charles_SEO-card-0045] When indexation mismatches appear between sitemap and search and you are using signal from @Charles_SEO, set a rollback threshold before release and enforce it without exception.
+- [Charles_SEO-card-0046] When indexation mismatches appear between sitemap and search and you are using signal from @Charles_SEO, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [Charles_SEO-card-0047] When indexation mismatches appear between sitemap and search and you are using signal from @Charles_SEO, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [Charles_SEO-card-0048] When indexation mismatches appear between sitemap and search and you are using signal from @Charles_SEO, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [Charles_SEO-card-0049] When indexation mismatches appear between sitemap and search and you are using signal from @Charles_SEO, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [Charles_SEO-card-0050] When indexation mismatches appear between sitemap and search and you are using signal from @Charles_SEO, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [Charles_SEO-card-0051] When internal-link architecture underperforms and you are using signal from @Charles_SEO, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [Charles_SEO-card-0052] When internal-link architecture underperforms and you are using signal from @Charles_SEO, instrument query clusters by intent and device before touching templates.
+- [Charles_SEO-card-0053] When internal-link architecture underperforms and you are using signal from @Charles_SEO, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [Charles_SEO-card-0054] When internal-link architecture underperforms and you are using signal from @Charles_SEO, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [Charles_SEO-card-0055] When internal-link architecture underperforms and you are using signal from @Charles_SEO, set a rollback threshold before release and enforce it without exception.
+- [Charles_SEO-card-0056] When internal-link architecture underperforms and you are using signal from @Charles_SEO, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [Charles_SEO-card-0057] When internal-link architecture underperforms and you are using signal from @Charles_SEO, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [Charles_SEO-card-0058] When internal-link architecture underperforms and you are using signal from @Charles_SEO, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [Charles_SEO-card-0059] When internal-link architecture underperforms and you are using signal from @Charles_SEO, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [Charles_SEO-card-0060] When internal-link architecture underperforms and you are using signal from @Charles_SEO, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [Charles_SEO-card-0061] When entity disambiguation issues dilute topical authority and you are using signal from @Charles_SEO, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [Charles_SEO-card-0062] When entity disambiguation issues dilute topical authority and you are using signal from @Charles_SEO, instrument query clusters by intent and device before touching templates.
+- [Charles_SEO-card-0063] When entity disambiguation issues dilute topical authority and you are using signal from @Charles_SEO, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [Charles_SEO-card-0064] When entity disambiguation issues dilute topical authority and you are using signal from @Charles_SEO, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [Charles_SEO-card-0065] When entity disambiguation issues dilute topical authority and you are using signal from @Charles_SEO, set a rollback threshold before release and enforce it without exception.
+- [Charles_SEO-card-0066] When entity disambiguation issues dilute topical authority and you are using signal from @Charles_SEO, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [Charles_SEO-card-0067] When entity disambiguation issues dilute topical authority and you are using signal from @Charles_SEO, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [Charles_SEO-card-0068] When entity disambiguation issues dilute topical authority and you are using signal from @Charles_SEO, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [Charles_SEO-card-0069] When entity disambiguation issues dilute topical authority and you are using signal from @Charles_SEO, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [Charles_SEO-card-0070] When entity disambiguation issues dilute topical authority and you are using signal from @Charles_SEO, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [Charles_SEO-card-0071] When large-scale content refresh decisions are needed and you are using signal from @Charles_SEO, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [Charles_SEO-card-0072] When large-scale content refresh decisions are needed and you are using signal from @Charles_SEO, instrument query clusters by intent and device before touching templates.
+- [Charles_SEO-card-0073] When large-scale content refresh decisions are needed and you are using signal from @Charles_SEO, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [Charles_SEO-card-0074] When large-scale content refresh decisions are needed and you are using signal from @Charles_SEO, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [Charles_SEO-card-0075] When large-scale content refresh decisions are needed and you are using signal from @Charles_SEO, set a rollback threshold before release and enforce it without exception.
+- [Charles_SEO-card-0076] When large-scale content refresh decisions are needed and you are using signal from @Charles_SEO, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [Charles_SEO-card-0077] When large-scale content refresh decisions are needed and you are using signal from @Charles_SEO, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [Charles_SEO-card-0078] When large-scale content refresh decisions are needed and you are using signal from @Charles_SEO, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [Charles_SEO-card-0079] When large-scale content refresh decisions are needed and you are using signal from @Charles_SEO, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [Charles_SEO-card-0080] When large-scale content refresh decisions are needed and you are using signal from @Charles_SEO, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [Charles_SEO-card-0081] When brand trust signals appear weak for YMYL queries and you are using signal from @Charles_SEO, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [Charles_SEO-card-0082] When brand trust signals appear weak for YMYL queries and you are using signal from @Charles_SEO, instrument query clusters by intent and device before touching templates.
+- [Charles_SEO-card-0083] When brand trust signals appear weak for YMYL queries and you are using signal from @Charles_SEO, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [Charles_SEO-card-0084] When brand trust signals appear weak for YMYL queries and you are using signal from @Charles_SEO, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [Charles_SEO-card-0085] When brand trust signals appear weak for YMYL queries and you are using signal from @Charles_SEO, set a rollback threshold before release and enforce it without exception.
+- [Charles_SEO-card-0086] When brand trust signals appear weak for YMYL queries and you are using signal from @Charles_SEO, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [Charles_SEO-card-0087] When brand trust signals appear weak for YMYL queries and you are using signal from @Charles_SEO, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [Charles_SEO-card-0088] When brand trust signals appear weak for YMYL queries and you are using signal from @Charles_SEO, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [Charles_SEO-card-0089] When brand trust signals appear weak for YMYL queries and you are using signal from @Charles_SEO, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [Charles_SEO-card-0090] When brand trust signals appear weak for YMYL queries and you are using signal from @Charles_SEO, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [Charles_SEO-card-0091] When affiliate pages rank but do not convert and you are using signal from @Charles_SEO, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [Charles_SEO-card-0092] When affiliate pages rank but do not convert and you are using signal from @Charles_SEO, instrument query clusters by intent and device before touching templates.
+- [Charles_SEO-card-0093] When affiliate pages rank but do not convert and you are using signal from @Charles_SEO, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [Charles_SEO-card-0094] When affiliate pages rank but do not convert and you are using signal from @Charles_SEO, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [Charles_SEO-card-0095] When affiliate pages rank but do not convert and you are using signal from @Charles_SEO, set a rollback threshold before release and enforce it without exception.
+- [Charles_SEO-card-0096] When affiliate pages rank but do not convert and you are using signal from @Charles_SEO, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [Charles_SEO-card-0097] When affiliate pages rank but do not convert and you are using signal from @Charles_SEO, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [Charles_SEO-card-0098] When affiliate pages rank but do not convert and you are using signal from @Charles_SEO, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [Charles_SEO-card-0099] When affiliate pages rank but do not convert and you are using signal from @Charles_SEO, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [Charles_SEO-card-0100] When affiliate pages rank but do not convert and you are using signal from @Charles_SEO, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [Charles_SEO-card-0101] When SERP features crowd out classic blue-link traffic and you are using signal from @Charles_SEO, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [Charles_SEO-card-0102] When SERP features crowd out classic blue-link traffic and you are using signal from @Charles_SEO, instrument query clusters by intent and device before touching templates.
+- [Charles_SEO-card-0103] When SERP features crowd out classic blue-link traffic and you are using signal from @Charles_SEO, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [Charles_SEO-card-0104] When SERP features crowd out classic blue-link traffic and you are using signal from @Charles_SEO, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [Charles_SEO-card-0105] When SERP features crowd out classic blue-link traffic and you are using signal from @Charles_SEO, set a rollback threshold before release and enforce it without exception.
+- [Charles_SEO-card-0106] When SERP features crowd out classic blue-link traffic and you are using signal from @Charles_SEO, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [Charles_SEO-card-0107] When SERP features crowd out classic blue-link traffic and you are using signal from @Charles_SEO, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [Charles_SEO-card-0108] When SERP features crowd out classic blue-link traffic and you are using signal from @Charles_SEO, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [Charles_SEO-card-0109] When SERP features crowd out classic blue-link traffic and you are using signal from @Charles_SEO, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [Charles_SEO-card-0110] When SERP features crowd out classic blue-link traffic and you are using signal from @Charles_SEO, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [Charles_SEO-card-0111] When new backlink opportunities spike but risk is unclear and you are using signal from @Charles_SEO, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [Charles_SEO-card-0112] When new backlink opportunities spike but risk is unclear and you are using signal from @Charles_SEO, instrument query clusters by intent and device before touching templates.
+- [Charles_SEO-card-0113] When new backlink opportunities spike but risk is unclear and you are using signal from @Charles_SEO, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [Charles_SEO-card-0114] When new backlink opportunities spike but risk is unclear and you are using signal from @Charles_SEO, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [Charles_SEO-card-0115] When new backlink opportunities spike but risk is unclear and you are using signal from @Charles_SEO, set a rollback threshold before release and enforce it without exception.
+- [Charles_SEO-card-0116] When new backlink opportunities spike but risk is unclear and you are using signal from @Charles_SEO, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [Charles_SEO-card-0117] When new backlink opportunities spike but risk is unclear and you are using signal from @Charles_SEO, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [Charles_SEO-card-0118] When new backlink opportunities spike but risk is unclear and you are using signal from @Charles_SEO, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [Charles_SEO-card-0119] When new backlink opportunities spike but risk is unclear and you are using signal from @Charles_SEO, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [Charles_SEO-card-0120] When new backlink opportunities spike but risk is unclear and you are using signal from @Charles_SEO, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [Charles_SEO-card-0121] When programmatic SEO expansions are proposed and you are using signal from @Charles_SEO, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [Charles_SEO-card-0122] When programmatic SEO expansions are proposed and you are using signal from @Charles_SEO, instrument query clusters by intent and device before touching templates.
+- [Charles_SEO-card-0123] When programmatic SEO expansions are proposed and you are using signal from @Charles_SEO, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [Charles_SEO-card-0124] When programmatic SEO expansions are proposed and you are using signal from @Charles_SEO, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [Charles_SEO-card-0125] When programmatic SEO expansions are proposed and you are using signal from @Charles_SEO, set a rollback threshold before release and enforce it without exception.
+- [Charles_SEO-card-0126] When programmatic SEO expansions are proposed and you are using signal from @Charles_SEO, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [Charles_SEO-card-0127] When programmatic SEO expansions are proposed and you are using signal from @Charles_SEO, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [Charles_SEO-card-0128] When programmatic SEO expansions are proposed and you are using signal from @Charles_SEO, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [Charles_SEO-card-0129] When programmatic SEO expansions are proposed and you are using signal from @Charles_SEO, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [Charles_SEO-card-0130] When programmatic SEO expansions are proposed and you are using signal from @Charles_SEO, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [Charles_SEO-card-0131] When international rollout introduces hreflang complexity and you are using signal from @Charles_SEO, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [Charles_SEO-card-0132] When international rollout introduces hreflang complexity and you are using signal from @Charles_SEO, instrument query clusters by intent and device before touching templates.
+- [Charles_SEO-card-0133] When international rollout introduces hreflang complexity and you are using signal from @Charles_SEO, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [Charles_SEO-card-0134] When international rollout introduces hreflang complexity and you are using signal from @Charles_SEO, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [Charles_SEO-card-0135] When international rollout introduces hreflang complexity and you are using signal from @Charles_SEO, set a rollback threshold before release and enforce it without exception.
+- [Charles_SEO-card-0136] When international rollout introduces hreflang complexity and you are using signal from @Charles_SEO, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [Charles_SEO-card-0137] When international rollout introduces hreflang complexity and you are using signal from @Charles_SEO, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [Charles_SEO-card-0138] When international rollout introduces hreflang complexity and you are using signal from @Charles_SEO, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [Charles_SEO-card-0139] When international rollout introduces hreflang complexity and you are using signal from @Charles_SEO, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [Charles_SEO-card-0140] When international rollout introduces hreflang complexity and you are using signal from @Charles_SEO, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [Charles_SEO-card-0141] When new AI-search referral channels appear and you are using signal from @Charles_SEO, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [Charles_SEO-card-0142] When new AI-search referral channels appear and you are using signal from @Charles_SEO, instrument query clusters by intent and device before touching templates.
+- [Charles_SEO-card-0143] When new AI-search referral channels appear and you are using signal from @Charles_SEO, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [Charles_SEO-card-0144] When new AI-search referral channels appear and you are using signal from @Charles_SEO, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [Charles_SEO-card-0145] When new AI-search referral channels appear and you are using signal from @Charles_SEO, set a rollback threshold before release and enforce it without exception.
+- [Charles_SEO-card-0146] When new AI-search referral channels appear and you are using signal from @Charles_SEO, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [Charles_SEO-card-0147] When new AI-search referral channels appear and you are using signal from @Charles_SEO, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [Charles_SEO-card-0148] When new AI-search referral channels appear and you are using signal from @Charles_SEO, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [Charles_SEO-card-0149] When new AI-search referral channels appear and you are using signal from @Charles_SEO, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [Charles_SEO-card-0150] When new AI-search referral channels appear and you are using signal from @Charles_SEO, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [Charles_SEO-card-0151] When stakeholders demand instant recovery plans and you are using signal from @Charles_SEO, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [Charles_SEO-card-0152] When stakeholders demand instant recovery plans and you are using signal from @Charles_SEO, instrument query clusters by intent and device before touching templates.
+- [Charles_SEO-card-0153] When stakeholders demand instant recovery plans and you are using signal from @Charles_SEO, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [Charles_SEO-card-0154] When stakeholders demand instant recovery plans and you are using signal from @Charles_SEO, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [Charles_SEO-card-0155] When stakeholders demand instant recovery plans and you are using signal from @Charles_SEO, set a rollback threshold before release and enforce it without exception.
+- [Charles_SEO-card-0156] When stakeholders demand instant recovery plans and you are using signal from @Charles_SEO, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [Charles_SEO-card-0157] When stakeholders demand instant recovery plans and you are using signal from @Charles_SEO, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [Charles_SEO-card-0158] When stakeholders demand instant recovery plans and you are using signal from @Charles_SEO, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [Charles_SEO-card-0159] When stakeholders demand instant recovery plans and you are using signal from @Charles_SEO, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [Charles_SEO-card-0160] When stakeholders demand instant recovery plans and you are using signal from @Charles_SEO, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [Charles_SEO-card-0161] When technical debt blocks roadmap velocity and you are using signal from @Charles_SEO, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [Charles_SEO-card-0162] When technical debt blocks roadmap velocity and you are using signal from @Charles_SEO, instrument query clusters by intent and device before touching templates.
+- [Charles_SEO-card-0163] When technical debt blocks roadmap velocity and you are using signal from @Charles_SEO, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [Charles_SEO-card-0164] When technical debt blocks roadmap velocity and you are using signal from @Charles_SEO, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [Charles_SEO-card-0165] When technical debt blocks roadmap velocity and you are using signal from @Charles_SEO, set a rollback threshold before release and enforce it without exception.
+- [Charles_SEO-card-0166] When technical debt blocks roadmap velocity and you are using signal from @Charles_SEO, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [Charles_SEO-card-0167] When technical debt blocks roadmap velocity and you are using signal from @Charles_SEO, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [Charles_SEO-card-0168] When technical debt blocks roadmap velocity and you are using signal from @Charles_SEO, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [Charles_SEO-card-0169] When technical debt blocks roadmap velocity and you are using signal from @Charles_SEO, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [Charles_SEO-card-0170] When technical debt blocks roadmap velocity and you are using signal from @Charles_SEO, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [Charles_SEO-card-0171] When competitors gain visibility with uncertain methods and you are using signal from @Charles_SEO, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [Charles_SEO-card-0172] When competitors gain visibility with uncertain methods and you are using signal from @Charles_SEO, instrument query clusters by intent and device before touching templates.
+- [Charles_SEO-card-0173] When competitors gain visibility with uncertain methods and you are using signal from @Charles_SEO, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [Charles_SEO-card-0174] When competitors gain visibility with uncertain methods and you are using signal from @Charles_SEO, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [Charles_SEO-card-0175] When competitors gain visibility with uncertain methods and you are using signal from @Charles_SEO, set a rollback threshold before release and enforce it without exception.
+- [Charles_SEO-card-0176] When competitors gain visibility with uncertain methods and you are using signal from @Charles_SEO, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [Charles_SEO-card-0177] When competitors gain visibility with uncertain methods and you are using signal from @Charles_SEO, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [Charles_SEO-card-0178] When competitors gain visibility with uncertain methods and you are using signal from @Charles_SEO, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [Charles_SEO-card-0179] When competitors gain visibility with uncertain methods and you are using signal from @Charles_SEO, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [Charles_SEO-card-0180] When competitors gain visibility with uncertain methods and you are using signal from @Charles_SEO, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [Charles_SEO-card-0181] When search intent shifts after product-category changes and you are using signal from @Charles_SEO, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [Charles_SEO-card-0182] When search intent shifts after product-category changes and you are using signal from @Charles_SEO, instrument query clusters by intent and device before touching templates.
+- [Charles_SEO-card-0183] When search intent shifts after product-category changes and you are using signal from @Charles_SEO, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [Charles_SEO-card-0184] When search intent shifts after product-category changes and you are using signal from @Charles_SEO, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [Charles_SEO-card-0185] When search intent shifts after product-category changes and you are using signal from @Charles_SEO, set a rollback threshold before release and enforce it without exception.
+- [Charles_SEO-card-0186] When search intent shifts after product-category changes and you are using signal from @Charles_SEO, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [Charles_SEO-card-0187] When search intent shifts after product-category changes and you are using signal from @Charles_SEO, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [Charles_SEO-card-0188] When search intent shifts after product-category changes and you are using signal from @Charles_SEO, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [Charles_SEO-card-0189] When search intent shifts after product-category changes and you are using signal from @Charles_SEO, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [Charles_SEO-card-0190] When search intent shifts after product-category changes and you are using signal from @Charles_SEO, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [Charles_SEO-card-0191] When analytics attribution masks true SEO impact and you are using signal from @Charles_SEO, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [Charles_SEO-card-0192] When analytics attribution masks true SEO impact and you are using signal from @Charles_SEO, instrument query clusters by intent and device before touching templates.
+- [Charles_SEO-card-0193] When analytics attribution masks true SEO impact and you are using signal from @Charles_SEO, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [Charles_SEO-card-0194] When analytics attribution masks true SEO impact and you are using signal from @Charles_SEO, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [Charles_SEO-card-0195] When analytics attribution masks true SEO impact and you are using signal from @Charles_SEO, set a rollback threshold before release and enforce it without exception.
+- [Charles_SEO-card-0196] When analytics attribution masks true SEO impact and you are using signal from @Charles_SEO, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [Charles_SEO-card-0197] When analytics attribution masks true SEO impact and you are using signal from @Charles_SEO, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [Charles_SEO-card-0198] When analytics attribution masks true SEO impact and you are using signal from @Charles_SEO, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [Charles_SEO-card-0199] When analytics attribution masks true SEO impact and you are using signal from @Charles_SEO, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [Charles_SEO-card-0200] When analytics attribution masks true SEO impact and you are using signal from @Charles_SEO, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+
+### Fast Decision Rules
+- [Charles_SEO-rule-001] If evidence is anecdotal and upside is low, skip implementation.
+- [Charles_SEO-rule-002] If evidence is mixed and risk is high, run only in sandbox properties.
+- [Charles_SEO-rule-003] If business impact is unmeasurable, deprioritize until instrumentation is fixed.
+- [Charles_SEO-rule-004] If a tactic wins on traffic but loses on conversion quality, revert or redesign.
+- [Charles_SEO-rule-005] If guidance aligns with multiple trusted sources, increase confidence tier.
+
+## 3. Cyrus Shepard (@CyrusShepard)
+
+Primary focus: experiment-led SEO, internal linking systems, ranking-factor clarity.
+Signal rationale: High-signal because he pairs explanatory frameworks with reproducible experiments and interpretable takeaways.
+Reference links:
+- https://www.twstalker.com/CyrusShepard
+- https://zyppy.com/author/cyrus-shepard/
+- https://zyppy.com/seo/internal-links-seo/
+Core themes:
+- Internal link architecture
+- Search experiment design
+- Separating causal vs correlational SEO claims
+- Prioritization by measurable impact
+Execution defaults:
+- Use this account as a hypothesis generator, not a final authority.
+- If a claim is novel, require one low-risk pilot and one replication before broad rollout.
+- If a claim conflicts with Search Central guidance, document the conflict explicitly and downgrade confidence.
+- Convert social claims into issue tickets with owner, metric target, and expiration date.
+
+### Measurement Priorities
+- [CyrusShepard-measure-001] Track impressions, clicks, CTR, qualified sessions, conversion rate, and revenue per landing page.
+- [CyrusShepard-measure-002] Track query-cluster volatility by intent class and by URL template.
+- [CyrusShepard-measure-003] Track indexation ratio: indexed URLs divided by submitted canonical URLs.
+- [CyrusShepard-measure-004] Track internal-link depth and click-distance for money pages.
+- [CyrusShepard-measure-005] Track AI-surface citation frequency where measurable.
+- [CyrusShepard-measure-006] Track content decay windows and refresh impact lag.
+- [CyrusShepard-measure-007] Track cannibalization risk with near-duplicate intent clusters.
+- [CyrusShepard-measure-008] Track share-of-voice for high-value non-brand queries.
+- [CyrusShepard-measure-009] Track anomaly lead time between ranking changes and business outcomes.
+- [CyrusShepard-measure-010] Track assisted-conversion contribution from organic entry pages.
+
+### Atomic Action Cards
+- [CyrusShepard-card-0001] When a broad core update rolls out and you are using signal from @CyrusShepard, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [CyrusShepard-card-0002] When a broad core update rolls out and you are using signal from @CyrusShepard, instrument query clusters by intent and device before touching templates.
+- [CyrusShepard-card-0003] When a broad core update rolls out and you are using signal from @CyrusShepard, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [CyrusShepard-card-0004] When a broad core update rolls out and you are using signal from @CyrusShepard, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [CyrusShepard-card-0005] When a broad core update rolls out and you are using signal from @CyrusShepard, set a rollback threshold before release and enforce it without exception.
+- [CyrusShepard-card-0006] When a broad core update rolls out and you are using signal from @CyrusShepard, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [CyrusShepard-card-0007] When a broad core update rolls out and you are using signal from @CyrusShepard, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [CyrusShepard-card-0008] When a broad core update rolls out and you are using signal from @CyrusShepard, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [CyrusShepard-card-0009] When a broad core update rolls out and you are using signal from @CyrusShepard, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [CyrusShepard-card-0010] When a broad core update rolls out and you are using signal from @CyrusShepard, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [CyrusShepard-card-0011] When a niche-specific ranking shock appears and you are using signal from @CyrusShepard, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [CyrusShepard-card-0012] When a niche-specific ranking shock appears and you are using signal from @CyrusShepard, instrument query clusters by intent and device before touching templates.
+- [CyrusShepard-card-0013] When a niche-specific ranking shock appears and you are using signal from @CyrusShepard, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [CyrusShepard-card-0014] When a niche-specific ranking shock appears and you are using signal from @CyrusShepard, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [CyrusShepard-card-0015] When a niche-specific ranking shock appears and you are using signal from @CyrusShepard, set a rollback threshold before release and enforce it without exception.
+- [CyrusShepard-card-0016] When a niche-specific ranking shock appears and you are using signal from @CyrusShepard, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [CyrusShepard-card-0017] When a niche-specific ranking shock appears and you are using signal from @CyrusShepard, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [CyrusShepard-card-0018] When a niche-specific ranking shock appears and you are using signal from @CyrusShepard, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [CyrusShepard-card-0019] When a niche-specific ranking shock appears and you are using signal from @CyrusShepard, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [CyrusShepard-card-0020] When a niche-specific ranking shock appears and you are using signal from @CyrusShepard, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [CyrusShepard-card-0021] When AI Overviews or answer engines reduce clicks and you are using signal from @CyrusShepard, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [CyrusShepard-card-0022] When AI Overviews or answer engines reduce clicks and you are using signal from @CyrusShepard, instrument query clusters by intent and device before touching templates.
+- [CyrusShepard-card-0023] When AI Overviews or answer engines reduce clicks and you are using signal from @CyrusShepard, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [CyrusShepard-card-0024] When AI Overviews or answer engines reduce clicks and you are using signal from @CyrusShepard, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [CyrusShepard-card-0025] When AI Overviews or answer engines reduce clicks and you are using signal from @CyrusShepard, set a rollback threshold before release and enforce it without exception.
+- [CyrusShepard-card-0026] When AI Overviews or answer engines reduce clicks and you are using signal from @CyrusShepard, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [CyrusShepard-card-0027] When AI Overviews or answer engines reduce clicks and you are using signal from @CyrusShepard, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [CyrusShepard-card-0028] When AI Overviews or answer engines reduce clicks and you are using signal from @CyrusShepard, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [CyrusShepard-card-0029] When AI Overviews or answer engines reduce clicks and you are using signal from @CyrusShepard, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [CyrusShepard-card-0030] When AI Overviews or answer engines reduce clicks and you are using signal from @CyrusShepard, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [CyrusShepard-card-0031] When crawl budget becomes constrained on large templates and you are using signal from @CyrusShepard, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [CyrusShepard-card-0032] When crawl budget becomes constrained on large templates and you are using signal from @CyrusShepard, instrument query clusters by intent and device before touching templates.
+- [CyrusShepard-card-0033] When crawl budget becomes constrained on large templates and you are using signal from @CyrusShepard, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [CyrusShepard-card-0034] When crawl budget becomes constrained on large templates and you are using signal from @CyrusShepard, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [CyrusShepard-card-0035] When crawl budget becomes constrained on large templates and you are using signal from @CyrusShepard, set a rollback threshold before release and enforce it without exception.
+- [CyrusShepard-card-0036] When crawl budget becomes constrained on large templates and you are using signal from @CyrusShepard, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [CyrusShepard-card-0037] When crawl budget becomes constrained on large templates and you are using signal from @CyrusShepard, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [CyrusShepard-card-0038] When crawl budget becomes constrained on large templates and you are using signal from @CyrusShepard, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [CyrusShepard-card-0039] When crawl budget becomes constrained on large templates and you are using signal from @CyrusShepard, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [CyrusShepard-card-0040] When crawl budget becomes constrained on large templates and you are using signal from @CyrusShepard, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [CyrusShepard-card-0041] When indexation mismatches appear between sitemap and search and you are using signal from @CyrusShepard, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [CyrusShepard-card-0042] When indexation mismatches appear between sitemap and search and you are using signal from @CyrusShepard, instrument query clusters by intent and device before touching templates.
+- [CyrusShepard-card-0043] When indexation mismatches appear between sitemap and search and you are using signal from @CyrusShepard, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [CyrusShepard-card-0044] When indexation mismatches appear between sitemap and search and you are using signal from @CyrusShepard, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [CyrusShepard-card-0045] When indexation mismatches appear between sitemap and search and you are using signal from @CyrusShepard, set a rollback threshold before release and enforce it without exception.
+- [CyrusShepard-card-0046] When indexation mismatches appear between sitemap and search and you are using signal from @CyrusShepard, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [CyrusShepard-card-0047] When indexation mismatches appear between sitemap and search and you are using signal from @CyrusShepard, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [CyrusShepard-card-0048] When indexation mismatches appear between sitemap and search and you are using signal from @CyrusShepard, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [CyrusShepard-card-0049] When indexation mismatches appear between sitemap and search and you are using signal from @CyrusShepard, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [CyrusShepard-card-0050] When indexation mismatches appear between sitemap and search and you are using signal from @CyrusShepard, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [CyrusShepard-card-0051] When internal-link architecture underperforms and you are using signal from @CyrusShepard, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [CyrusShepard-card-0052] When internal-link architecture underperforms and you are using signal from @CyrusShepard, instrument query clusters by intent and device before touching templates.
+- [CyrusShepard-card-0053] When internal-link architecture underperforms and you are using signal from @CyrusShepard, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [CyrusShepard-card-0054] When internal-link architecture underperforms and you are using signal from @CyrusShepard, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [CyrusShepard-card-0055] When internal-link architecture underperforms and you are using signal from @CyrusShepard, set a rollback threshold before release and enforce it without exception.
+- [CyrusShepard-card-0056] When internal-link architecture underperforms and you are using signal from @CyrusShepard, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [CyrusShepard-card-0057] When internal-link architecture underperforms and you are using signal from @CyrusShepard, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [CyrusShepard-card-0058] When internal-link architecture underperforms and you are using signal from @CyrusShepard, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [CyrusShepard-card-0059] When internal-link architecture underperforms and you are using signal from @CyrusShepard, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [CyrusShepard-card-0060] When internal-link architecture underperforms and you are using signal from @CyrusShepard, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [CyrusShepard-card-0061] When entity disambiguation issues dilute topical authority and you are using signal from @CyrusShepard, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [CyrusShepard-card-0062] When entity disambiguation issues dilute topical authority and you are using signal from @CyrusShepard, instrument query clusters by intent and device before touching templates.
+- [CyrusShepard-card-0063] When entity disambiguation issues dilute topical authority and you are using signal from @CyrusShepard, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [CyrusShepard-card-0064] When entity disambiguation issues dilute topical authority and you are using signal from @CyrusShepard, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [CyrusShepard-card-0065] When entity disambiguation issues dilute topical authority and you are using signal from @CyrusShepard, set a rollback threshold before release and enforce it without exception.
+- [CyrusShepard-card-0066] When entity disambiguation issues dilute topical authority and you are using signal from @CyrusShepard, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [CyrusShepard-card-0067] When entity disambiguation issues dilute topical authority and you are using signal from @CyrusShepard, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [CyrusShepard-card-0068] When entity disambiguation issues dilute topical authority and you are using signal from @CyrusShepard, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [CyrusShepard-card-0069] When entity disambiguation issues dilute topical authority and you are using signal from @CyrusShepard, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [CyrusShepard-card-0070] When entity disambiguation issues dilute topical authority and you are using signal from @CyrusShepard, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [CyrusShepard-card-0071] When large-scale content refresh decisions are needed and you are using signal from @CyrusShepard, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [CyrusShepard-card-0072] When large-scale content refresh decisions are needed and you are using signal from @CyrusShepard, instrument query clusters by intent and device before touching templates.
+- [CyrusShepard-card-0073] When large-scale content refresh decisions are needed and you are using signal from @CyrusShepard, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [CyrusShepard-card-0074] When large-scale content refresh decisions are needed and you are using signal from @CyrusShepard, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [CyrusShepard-card-0075] When large-scale content refresh decisions are needed and you are using signal from @CyrusShepard, set a rollback threshold before release and enforce it without exception.
+- [CyrusShepard-card-0076] When large-scale content refresh decisions are needed and you are using signal from @CyrusShepard, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [CyrusShepard-card-0077] When large-scale content refresh decisions are needed and you are using signal from @CyrusShepard, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [CyrusShepard-card-0078] When large-scale content refresh decisions are needed and you are using signal from @CyrusShepard, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [CyrusShepard-card-0079] When large-scale content refresh decisions are needed and you are using signal from @CyrusShepard, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [CyrusShepard-card-0080] When large-scale content refresh decisions are needed and you are using signal from @CyrusShepard, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [CyrusShepard-card-0081] When brand trust signals appear weak for YMYL queries and you are using signal from @CyrusShepard, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [CyrusShepard-card-0082] When brand trust signals appear weak for YMYL queries and you are using signal from @CyrusShepard, instrument query clusters by intent and device before touching templates.
+- [CyrusShepard-card-0083] When brand trust signals appear weak for YMYL queries and you are using signal from @CyrusShepard, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [CyrusShepard-card-0084] When brand trust signals appear weak for YMYL queries and you are using signal from @CyrusShepard, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [CyrusShepard-card-0085] When brand trust signals appear weak for YMYL queries and you are using signal from @CyrusShepard, set a rollback threshold before release and enforce it without exception.
+- [CyrusShepard-card-0086] When brand trust signals appear weak for YMYL queries and you are using signal from @CyrusShepard, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [CyrusShepard-card-0087] When brand trust signals appear weak for YMYL queries and you are using signal from @CyrusShepard, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [CyrusShepard-card-0088] When brand trust signals appear weak for YMYL queries and you are using signal from @CyrusShepard, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [CyrusShepard-card-0089] When brand trust signals appear weak for YMYL queries and you are using signal from @CyrusShepard, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [CyrusShepard-card-0090] When brand trust signals appear weak for YMYL queries and you are using signal from @CyrusShepard, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [CyrusShepard-card-0091] When affiliate pages rank but do not convert and you are using signal from @CyrusShepard, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [CyrusShepard-card-0092] When affiliate pages rank but do not convert and you are using signal from @CyrusShepard, instrument query clusters by intent and device before touching templates.
+- [CyrusShepard-card-0093] When affiliate pages rank but do not convert and you are using signal from @CyrusShepard, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [CyrusShepard-card-0094] When affiliate pages rank but do not convert and you are using signal from @CyrusShepard, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [CyrusShepard-card-0095] When affiliate pages rank but do not convert and you are using signal from @CyrusShepard, set a rollback threshold before release and enforce it without exception.
+- [CyrusShepard-card-0096] When affiliate pages rank but do not convert and you are using signal from @CyrusShepard, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [CyrusShepard-card-0097] When affiliate pages rank but do not convert and you are using signal from @CyrusShepard, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [CyrusShepard-card-0098] When affiliate pages rank but do not convert and you are using signal from @CyrusShepard, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [CyrusShepard-card-0099] When affiliate pages rank but do not convert and you are using signal from @CyrusShepard, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [CyrusShepard-card-0100] When affiliate pages rank but do not convert and you are using signal from @CyrusShepard, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [CyrusShepard-card-0101] When SERP features crowd out classic blue-link traffic and you are using signal from @CyrusShepard, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [CyrusShepard-card-0102] When SERP features crowd out classic blue-link traffic and you are using signal from @CyrusShepard, instrument query clusters by intent and device before touching templates.
+- [CyrusShepard-card-0103] When SERP features crowd out classic blue-link traffic and you are using signal from @CyrusShepard, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [CyrusShepard-card-0104] When SERP features crowd out classic blue-link traffic and you are using signal from @CyrusShepard, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [CyrusShepard-card-0105] When SERP features crowd out classic blue-link traffic and you are using signal from @CyrusShepard, set a rollback threshold before release and enforce it without exception.
+- [CyrusShepard-card-0106] When SERP features crowd out classic blue-link traffic and you are using signal from @CyrusShepard, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [CyrusShepard-card-0107] When SERP features crowd out classic blue-link traffic and you are using signal from @CyrusShepard, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [CyrusShepard-card-0108] When SERP features crowd out classic blue-link traffic and you are using signal from @CyrusShepard, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [CyrusShepard-card-0109] When SERP features crowd out classic blue-link traffic and you are using signal from @CyrusShepard, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [CyrusShepard-card-0110] When SERP features crowd out classic blue-link traffic and you are using signal from @CyrusShepard, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [CyrusShepard-card-0111] When new backlink opportunities spike but risk is unclear and you are using signal from @CyrusShepard, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [CyrusShepard-card-0112] When new backlink opportunities spike but risk is unclear and you are using signal from @CyrusShepard, instrument query clusters by intent and device before touching templates.
+- [CyrusShepard-card-0113] When new backlink opportunities spike but risk is unclear and you are using signal from @CyrusShepard, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [CyrusShepard-card-0114] When new backlink opportunities spike but risk is unclear and you are using signal from @CyrusShepard, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [CyrusShepard-card-0115] When new backlink opportunities spike but risk is unclear and you are using signal from @CyrusShepard, set a rollback threshold before release and enforce it without exception.
+- [CyrusShepard-card-0116] When new backlink opportunities spike but risk is unclear and you are using signal from @CyrusShepard, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [CyrusShepard-card-0117] When new backlink opportunities spike but risk is unclear and you are using signal from @CyrusShepard, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [CyrusShepard-card-0118] When new backlink opportunities spike but risk is unclear and you are using signal from @CyrusShepard, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [CyrusShepard-card-0119] When new backlink opportunities spike but risk is unclear and you are using signal from @CyrusShepard, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [CyrusShepard-card-0120] When new backlink opportunities spike but risk is unclear and you are using signal from @CyrusShepard, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [CyrusShepard-card-0121] When programmatic SEO expansions are proposed and you are using signal from @CyrusShepard, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [CyrusShepard-card-0122] When programmatic SEO expansions are proposed and you are using signal from @CyrusShepard, instrument query clusters by intent and device before touching templates.
+- [CyrusShepard-card-0123] When programmatic SEO expansions are proposed and you are using signal from @CyrusShepard, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [CyrusShepard-card-0124] When programmatic SEO expansions are proposed and you are using signal from @CyrusShepard, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [CyrusShepard-card-0125] When programmatic SEO expansions are proposed and you are using signal from @CyrusShepard, set a rollback threshold before release and enforce it without exception.
+- [CyrusShepard-card-0126] When programmatic SEO expansions are proposed and you are using signal from @CyrusShepard, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [CyrusShepard-card-0127] When programmatic SEO expansions are proposed and you are using signal from @CyrusShepard, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [CyrusShepard-card-0128] When programmatic SEO expansions are proposed and you are using signal from @CyrusShepard, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [CyrusShepard-card-0129] When programmatic SEO expansions are proposed and you are using signal from @CyrusShepard, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [CyrusShepard-card-0130] When programmatic SEO expansions are proposed and you are using signal from @CyrusShepard, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [CyrusShepard-card-0131] When international rollout introduces hreflang complexity and you are using signal from @CyrusShepard, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [CyrusShepard-card-0132] When international rollout introduces hreflang complexity and you are using signal from @CyrusShepard, instrument query clusters by intent and device before touching templates.
+- [CyrusShepard-card-0133] When international rollout introduces hreflang complexity and you are using signal from @CyrusShepard, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [CyrusShepard-card-0134] When international rollout introduces hreflang complexity and you are using signal from @CyrusShepard, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [CyrusShepard-card-0135] When international rollout introduces hreflang complexity and you are using signal from @CyrusShepard, set a rollback threshold before release and enforce it without exception.
+- [CyrusShepard-card-0136] When international rollout introduces hreflang complexity and you are using signal from @CyrusShepard, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [CyrusShepard-card-0137] When international rollout introduces hreflang complexity and you are using signal from @CyrusShepard, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [CyrusShepard-card-0138] When international rollout introduces hreflang complexity and you are using signal from @CyrusShepard, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [CyrusShepard-card-0139] When international rollout introduces hreflang complexity and you are using signal from @CyrusShepard, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [CyrusShepard-card-0140] When international rollout introduces hreflang complexity and you are using signal from @CyrusShepard, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [CyrusShepard-card-0141] When new AI-search referral channels appear and you are using signal from @CyrusShepard, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [CyrusShepard-card-0142] When new AI-search referral channels appear and you are using signal from @CyrusShepard, instrument query clusters by intent and device before touching templates.
+- [CyrusShepard-card-0143] When new AI-search referral channels appear and you are using signal from @CyrusShepard, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [CyrusShepard-card-0144] When new AI-search referral channels appear and you are using signal from @CyrusShepard, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [CyrusShepard-card-0145] When new AI-search referral channels appear and you are using signal from @CyrusShepard, set a rollback threshold before release and enforce it without exception.
+- [CyrusShepard-card-0146] When new AI-search referral channels appear and you are using signal from @CyrusShepard, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [CyrusShepard-card-0147] When new AI-search referral channels appear and you are using signal from @CyrusShepard, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [CyrusShepard-card-0148] When new AI-search referral channels appear and you are using signal from @CyrusShepard, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [CyrusShepard-card-0149] When new AI-search referral channels appear and you are using signal from @CyrusShepard, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [CyrusShepard-card-0150] When new AI-search referral channels appear and you are using signal from @CyrusShepard, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [CyrusShepard-card-0151] When stakeholders demand instant recovery plans and you are using signal from @CyrusShepard, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [CyrusShepard-card-0152] When stakeholders demand instant recovery plans and you are using signal from @CyrusShepard, instrument query clusters by intent and device before touching templates.
+- [CyrusShepard-card-0153] When stakeholders demand instant recovery plans and you are using signal from @CyrusShepard, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [CyrusShepard-card-0154] When stakeholders demand instant recovery plans and you are using signal from @CyrusShepard, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [CyrusShepard-card-0155] When stakeholders demand instant recovery plans and you are using signal from @CyrusShepard, set a rollback threshold before release and enforce it without exception.
+- [CyrusShepard-card-0156] When stakeholders demand instant recovery plans and you are using signal from @CyrusShepard, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [CyrusShepard-card-0157] When stakeholders demand instant recovery plans and you are using signal from @CyrusShepard, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [CyrusShepard-card-0158] When stakeholders demand instant recovery plans and you are using signal from @CyrusShepard, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [CyrusShepard-card-0159] When stakeholders demand instant recovery plans and you are using signal from @CyrusShepard, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [CyrusShepard-card-0160] When stakeholders demand instant recovery plans and you are using signal from @CyrusShepard, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [CyrusShepard-card-0161] When technical debt blocks roadmap velocity and you are using signal from @CyrusShepard, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [CyrusShepard-card-0162] When technical debt blocks roadmap velocity and you are using signal from @CyrusShepard, instrument query clusters by intent and device before touching templates.
+- [CyrusShepard-card-0163] When technical debt blocks roadmap velocity and you are using signal from @CyrusShepard, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [CyrusShepard-card-0164] When technical debt blocks roadmap velocity and you are using signal from @CyrusShepard, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [CyrusShepard-card-0165] When technical debt blocks roadmap velocity and you are using signal from @CyrusShepard, set a rollback threshold before release and enforce it without exception.
+- [CyrusShepard-card-0166] When technical debt blocks roadmap velocity and you are using signal from @CyrusShepard, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [CyrusShepard-card-0167] When technical debt blocks roadmap velocity and you are using signal from @CyrusShepard, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [CyrusShepard-card-0168] When technical debt blocks roadmap velocity and you are using signal from @CyrusShepard, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [CyrusShepard-card-0169] When technical debt blocks roadmap velocity and you are using signal from @CyrusShepard, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [CyrusShepard-card-0170] When technical debt blocks roadmap velocity and you are using signal from @CyrusShepard, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [CyrusShepard-card-0171] When competitors gain visibility with uncertain methods and you are using signal from @CyrusShepard, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [CyrusShepard-card-0172] When competitors gain visibility with uncertain methods and you are using signal from @CyrusShepard, instrument query clusters by intent and device before touching templates.
+- [CyrusShepard-card-0173] When competitors gain visibility with uncertain methods and you are using signal from @CyrusShepard, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [CyrusShepard-card-0174] When competitors gain visibility with uncertain methods and you are using signal from @CyrusShepard, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [CyrusShepard-card-0175] When competitors gain visibility with uncertain methods and you are using signal from @CyrusShepard, set a rollback threshold before release and enforce it without exception.
+- [CyrusShepard-card-0176] When competitors gain visibility with uncertain methods and you are using signal from @CyrusShepard, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [CyrusShepard-card-0177] When competitors gain visibility with uncertain methods and you are using signal from @CyrusShepard, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [CyrusShepard-card-0178] When competitors gain visibility with uncertain methods and you are using signal from @CyrusShepard, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [CyrusShepard-card-0179] When competitors gain visibility with uncertain methods and you are using signal from @CyrusShepard, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [CyrusShepard-card-0180] When competitors gain visibility with uncertain methods and you are using signal from @CyrusShepard, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [CyrusShepard-card-0181] When search intent shifts after product-category changes and you are using signal from @CyrusShepard, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [CyrusShepard-card-0182] When search intent shifts after product-category changes and you are using signal from @CyrusShepard, instrument query clusters by intent and device before touching templates.
+- [CyrusShepard-card-0183] When search intent shifts after product-category changes and you are using signal from @CyrusShepard, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [CyrusShepard-card-0184] When search intent shifts after product-category changes and you are using signal from @CyrusShepard, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [CyrusShepard-card-0185] When search intent shifts after product-category changes and you are using signal from @CyrusShepard, set a rollback threshold before release and enforce it without exception.
+- [CyrusShepard-card-0186] When search intent shifts after product-category changes and you are using signal from @CyrusShepard, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [CyrusShepard-card-0187] When search intent shifts after product-category changes and you are using signal from @CyrusShepard, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [CyrusShepard-card-0188] When search intent shifts after product-category changes and you are using signal from @CyrusShepard, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [CyrusShepard-card-0189] When search intent shifts after product-category changes and you are using signal from @CyrusShepard, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [CyrusShepard-card-0190] When search intent shifts after product-category changes and you are using signal from @CyrusShepard, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [CyrusShepard-card-0191] When analytics attribution masks true SEO impact and you are using signal from @CyrusShepard, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [CyrusShepard-card-0192] When analytics attribution masks true SEO impact and you are using signal from @CyrusShepard, instrument query clusters by intent and device before touching templates.
+- [CyrusShepard-card-0193] When analytics attribution masks true SEO impact and you are using signal from @CyrusShepard, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [CyrusShepard-card-0194] When analytics attribution masks true SEO impact and you are using signal from @CyrusShepard, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [CyrusShepard-card-0195] When analytics attribution masks true SEO impact and you are using signal from @CyrusShepard, set a rollback threshold before release and enforce it without exception.
+- [CyrusShepard-card-0196] When analytics attribution masks true SEO impact and you are using signal from @CyrusShepard, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [CyrusShepard-card-0197] When analytics attribution masks true SEO impact and you are using signal from @CyrusShepard, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [CyrusShepard-card-0198] When analytics attribution masks true SEO impact and you are using signal from @CyrusShepard, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [CyrusShepard-card-0199] When analytics attribution masks true SEO impact and you are using signal from @CyrusShepard, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [CyrusShepard-card-0200] When analytics attribution masks true SEO impact and you are using signal from @CyrusShepard, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+
+### Fast Decision Rules
+- [CyrusShepard-rule-001] If evidence is anecdotal and upside is low, skip implementation.
+- [CyrusShepard-rule-002] If evidence is mixed and risk is high, run only in sandbox properties.
+- [CyrusShepard-rule-003] If business impact is unmeasurable, deprioritize until instrumentation is fixed.
+- [CyrusShepard-rule-004] If a tactic wins on traffic but loses on conversion quality, revert or redesign.
+- [CyrusShepard-rule-005] If guidance aligns with multiple trusted sources, increase confidence tier.
+
+## 4. Dixon Jones (@Dixon_Jones)
+
+Primary focus: entity-first SEO, semantic relevance, knowledge graph thinking.
+Signal rationale: Strong for modern retrieval understanding where entities, relationships, and topical graphs matter more than keyword repetition.
+Reference links:
+- https://dixonjones.com/
+- https://inlinks.com/about/
+- https://inlinks.com/blog/
+Core themes:
+- Entity modeling in SEO
+- Semantic relevance design
+- Knowledge graph strategy
+- Topical graph and context expansion
+Execution defaults:
+- Use this account as a hypothesis generator, not a final authority.
+- If a claim is novel, require one low-risk pilot and one replication before broad rollout.
+- If a claim conflicts with Search Central guidance, document the conflict explicitly and downgrade confidence.
+- Convert social claims into issue tickets with owner, metric target, and expiration date.
+
+### Measurement Priorities
+- [Dixon_Jones-measure-001] Track impressions, clicks, CTR, qualified sessions, conversion rate, and revenue per landing page.
+- [Dixon_Jones-measure-002] Track query-cluster volatility by intent class and by URL template.
+- [Dixon_Jones-measure-003] Track indexation ratio: indexed URLs divided by submitted canonical URLs.
+- [Dixon_Jones-measure-004] Track internal-link depth and click-distance for money pages.
+- [Dixon_Jones-measure-005] Track AI-surface citation frequency where measurable.
+- [Dixon_Jones-measure-006] Track content decay windows and refresh impact lag.
+- [Dixon_Jones-measure-007] Track cannibalization risk with near-duplicate intent clusters.
+- [Dixon_Jones-measure-008] Track share-of-voice for high-value non-brand queries.
+- [Dixon_Jones-measure-009] Track anomaly lead time between ranking changes and business outcomes.
+- [Dixon_Jones-measure-010] Track assisted-conversion contribution from organic entry pages.
+
+### Atomic Action Cards
+- [Dixon_Jones-card-0001] When a broad core update rolls out and you are using signal from @Dixon_Jones, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [Dixon_Jones-card-0002] When a broad core update rolls out and you are using signal from @Dixon_Jones, instrument query clusters by intent and device before touching templates.
+- [Dixon_Jones-card-0003] When a broad core update rolls out and you are using signal from @Dixon_Jones, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [Dixon_Jones-card-0004] When a broad core update rolls out and you are using signal from @Dixon_Jones, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [Dixon_Jones-card-0005] When a broad core update rolls out and you are using signal from @Dixon_Jones, set a rollback threshold before release and enforce it without exception.
+- [Dixon_Jones-card-0006] When a broad core update rolls out and you are using signal from @Dixon_Jones, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [Dixon_Jones-card-0007] When a broad core update rolls out and you are using signal from @Dixon_Jones, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [Dixon_Jones-card-0008] When a broad core update rolls out and you are using signal from @Dixon_Jones, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [Dixon_Jones-card-0009] When a broad core update rolls out and you are using signal from @Dixon_Jones, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [Dixon_Jones-card-0010] When a broad core update rolls out and you are using signal from @Dixon_Jones, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [Dixon_Jones-card-0011] When a niche-specific ranking shock appears and you are using signal from @Dixon_Jones, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [Dixon_Jones-card-0012] When a niche-specific ranking shock appears and you are using signal from @Dixon_Jones, instrument query clusters by intent and device before touching templates.
+- [Dixon_Jones-card-0013] When a niche-specific ranking shock appears and you are using signal from @Dixon_Jones, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [Dixon_Jones-card-0014] When a niche-specific ranking shock appears and you are using signal from @Dixon_Jones, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [Dixon_Jones-card-0015] When a niche-specific ranking shock appears and you are using signal from @Dixon_Jones, set a rollback threshold before release and enforce it without exception.
+- [Dixon_Jones-card-0016] When a niche-specific ranking shock appears and you are using signal from @Dixon_Jones, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [Dixon_Jones-card-0017] When a niche-specific ranking shock appears and you are using signal from @Dixon_Jones, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [Dixon_Jones-card-0018] When a niche-specific ranking shock appears and you are using signal from @Dixon_Jones, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [Dixon_Jones-card-0019] When a niche-specific ranking shock appears and you are using signal from @Dixon_Jones, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [Dixon_Jones-card-0020] When a niche-specific ranking shock appears and you are using signal from @Dixon_Jones, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [Dixon_Jones-card-0021] When AI Overviews or answer engines reduce clicks and you are using signal from @Dixon_Jones, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [Dixon_Jones-card-0022] When AI Overviews or answer engines reduce clicks and you are using signal from @Dixon_Jones, instrument query clusters by intent and device before touching templates.
+- [Dixon_Jones-card-0023] When AI Overviews or answer engines reduce clicks and you are using signal from @Dixon_Jones, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [Dixon_Jones-card-0024] When AI Overviews or answer engines reduce clicks and you are using signal from @Dixon_Jones, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [Dixon_Jones-card-0025] When AI Overviews or answer engines reduce clicks and you are using signal from @Dixon_Jones, set a rollback threshold before release and enforce it without exception.
+- [Dixon_Jones-card-0026] When AI Overviews or answer engines reduce clicks and you are using signal from @Dixon_Jones, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [Dixon_Jones-card-0027] When AI Overviews or answer engines reduce clicks and you are using signal from @Dixon_Jones, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [Dixon_Jones-card-0028] When AI Overviews or answer engines reduce clicks and you are using signal from @Dixon_Jones, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [Dixon_Jones-card-0029] When AI Overviews or answer engines reduce clicks and you are using signal from @Dixon_Jones, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [Dixon_Jones-card-0030] When AI Overviews or answer engines reduce clicks and you are using signal from @Dixon_Jones, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [Dixon_Jones-card-0031] When crawl budget becomes constrained on large templates and you are using signal from @Dixon_Jones, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [Dixon_Jones-card-0032] When crawl budget becomes constrained on large templates and you are using signal from @Dixon_Jones, instrument query clusters by intent and device before touching templates.
+- [Dixon_Jones-card-0033] When crawl budget becomes constrained on large templates and you are using signal from @Dixon_Jones, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [Dixon_Jones-card-0034] When crawl budget becomes constrained on large templates and you are using signal from @Dixon_Jones, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [Dixon_Jones-card-0035] When crawl budget becomes constrained on large templates and you are using signal from @Dixon_Jones, set a rollback threshold before release and enforce it without exception.
+- [Dixon_Jones-card-0036] When crawl budget becomes constrained on large templates and you are using signal from @Dixon_Jones, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [Dixon_Jones-card-0037] When crawl budget becomes constrained on large templates and you are using signal from @Dixon_Jones, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [Dixon_Jones-card-0038] When crawl budget becomes constrained on large templates and you are using signal from @Dixon_Jones, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [Dixon_Jones-card-0039] When crawl budget becomes constrained on large templates and you are using signal from @Dixon_Jones, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [Dixon_Jones-card-0040] When crawl budget becomes constrained on large templates and you are using signal from @Dixon_Jones, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [Dixon_Jones-card-0041] When indexation mismatches appear between sitemap and search and you are using signal from @Dixon_Jones, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [Dixon_Jones-card-0042] When indexation mismatches appear between sitemap and search and you are using signal from @Dixon_Jones, instrument query clusters by intent and device before touching templates.
+- [Dixon_Jones-card-0043] When indexation mismatches appear between sitemap and search and you are using signal from @Dixon_Jones, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [Dixon_Jones-card-0044] When indexation mismatches appear between sitemap and search and you are using signal from @Dixon_Jones, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [Dixon_Jones-card-0045] When indexation mismatches appear between sitemap and search and you are using signal from @Dixon_Jones, set a rollback threshold before release and enforce it without exception.
+- [Dixon_Jones-card-0046] When indexation mismatches appear between sitemap and search and you are using signal from @Dixon_Jones, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [Dixon_Jones-card-0047] When indexation mismatches appear between sitemap and search and you are using signal from @Dixon_Jones, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [Dixon_Jones-card-0048] When indexation mismatches appear between sitemap and search and you are using signal from @Dixon_Jones, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [Dixon_Jones-card-0049] When indexation mismatches appear between sitemap and search and you are using signal from @Dixon_Jones, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [Dixon_Jones-card-0050] When indexation mismatches appear between sitemap and search and you are using signal from @Dixon_Jones, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [Dixon_Jones-card-0051] When internal-link architecture underperforms and you are using signal from @Dixon_Jones, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [Dixon_Jones-card-0052] When internal-link architecture underperforms and you are using signal from @Dixon_Jones, instrument query clusters by intent and device before touching templates.
+- [Dixon_Jones-card-0053] When internal-link architecture underperforms and you are using signal from @Dixon_Jones, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [Dixon_Jones-card-0054] When internal-link architecture underperforms and you are using signal from @Dixon_Jones, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [Dixon_Jones-card-0055] When internal-link architecture underperforms and you are using signal from @Dixon_Jones, set a rollback threshold before release and enforce it without exception.
+- [Dixon_Jones-card-0056] When internal-link architecture underperforms and you are using signal from @Dixon_Jones, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [Dixon_Jones-card-0057] When internal-link architecture underperforms and you are using signal from @Dixon_Jones, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [Dixon_Jones-card-0058] When internal-link architecture underperforms and you are using signal from @Dixon_Jones, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [Dixon_Jones-card-0059] When internal-link architecture underperforms and you are using signal from @Dixon_Jones, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [Dixon_Jones-card-0060] When internal-link architecture underperforms and you are using signal from @Dixon_Jones, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [Dixon_Jones-card-0061] When entity disambiguation issues dilute topical authority and you are using signal from @Dixon_Jones, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [Dixon_Jones-card-0062] When entity disambiguation issues dilute topical authority and you are using signal from @Dixon_Jones, instrument query clusters by intent and device before touching templates.
+- [Dixon_Jones-card-0063] When entity disambiguation issues dilute topical authority and you are using signal from @Dixon_Jones, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [Dixon_Jones-card-0064] When entity disambiguation issues dilute topical authority and you are using signal from @Dixon_Jones, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [Dixon_Jones-card-0065] When entity disambiguation issues dilute topical authority and you are using signal from @Dixon_Jones, set a rollback threshold before release and enforce it without exception.
+- [Dixon_Jones-card-0066] When entity disambiguation issues dilute topical authority and you are using signal from @Dixon_Jones, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [Dixon_Jones-card-0067] When entity disambiguation issues dilute topical authority and you are using signal from @Dixon_Jones, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [Dixon_Jones-card-0068] When entity disambiguation issues dilute topical authority and you are using signal from @Dixon_Jones, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [Dixon_Jones-card-0069] When entity disambiguation issues dilute topical authority and you are using signal from @Dixon_Jones, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [Dixon_Jones-card-0070] When entity disambiguation issues dilute topical authority and you are using signal from @Dixon_Jones, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [Dixon_Jones-card-0071] When large-scale content refresh decisions are needed and you are using signal from @Dixon_Jones, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [Dixon_Jones-card-0072] When large-scale content refresh decisions are needed and you are using signal from @Dixon_Jones, instrument query clusters by intent and device before touching templates.
+- [Dixon_Jones-card-0073] When large-scale content refresh decisions are needed and you are using signal from @Dixon_Jones, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [Dixon_Jones-card-0074] When large-scale content refresh decisions are needed and you are using signal from @Dixon_Jones, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [Dixon_Jones-card-0075] When large-scale content refresh decisions are needed and you are using signal from @Dixon_Jones, set a rollback threshold before release and enforce it without exception.
+- [Dixon_Jones-card-0076] When large-scale content refresh decisions are needed and you are using signal from @Dixon_Jones, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [Dixon_Jones-card-0077] When large-scale content refresh decisions are needed and you are using signal from @Dixon_Jones, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [Dixon_Jones-card-0078] When large-scale content refresh decisions are needed and you are using signal from @Dixon_Jones, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [Dixon_Jones-card-0079] When large-scale content refresh decisions are needed and you are using signal from @Dixon_Jones, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [Dixon_Jones-card-0080] When large-scale content refresh decisions are needed and you are using signal from @Dixon_Jones, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [Dixon_Jones-card-0081] When brand trust signals appear weak for YMYL queries and you are using signal from @Dixon_Jones, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [Dixon_Jones-card-0082] When brand trust signals appear weak for YMYL queries and you are using signal from @Dixon_Jones, instrument query clusters by intent and device before touching templates.
+- [Dixon_Jones-card-0083] When brand trust signals appear weak for YMYL queries and you are using signal from @Dixon_Jones, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [Dixon_Jones-card-0084] When brand trust signals appear weak for YMYL queries and you are using signal from @Dixon_Jones, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [Dixon_Jones-card-0085] When brand trust signals appear weak for YMYL queries and you are using signal from @Dixon_Jones, set a rollback threshold before release and enforce it without exception.
+- [Dixon_Jones-card-0086] When brand trust signals appear weak for YMYL queries and you are using signal from @Dixon_Jones, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [Dixon_Jones-card-0087] When brand trust signals appear weak for YMYL queries and you are using signal from @Dixon_Jones, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [Dixon_Jones-card-0088] When brand trust signals appear weak for YMYL queries and you are using signal from @Dixon_Jones, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [Dixon_Jones-card-0089] When brand trust signals appear weak for YMYL queries and you are using signal from @Dixon_Jones, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [Dixon_Jones-card-0090] When brand trust signals appear weak for YMYL queries and you are using signal from @Dixon_Jones, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [Dixon_Jones-card-0091] When affiliate pages rank but do not convert and you are using signal from @Dixon_Jones, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [Dixon_Jones-card-0092] When affiliate pages rank but do not convert and you are using signal from @Dixon_Jones, instrument query clusters by intent and device before touching templates.
+- [Dixon_Jones-card-0093] When affiliate pages rank but do not convert and you are using signal from @Dixon_Jones, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [Dixon_Jones-card-0094] When affiliate pages rank but do not convert and you are using signal from @Dixon_Jones, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [Dixon_Jones-card-0095] When affiliate pages rank but do not convert and you are using signal from @Dixon_Jones, set a rollback threshold before release and enforce it without exception.
+- [Dixon_Jones-card-0096] When affiliate pages rank but do not convert and you are using signal from @Dixon_Jones, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [Dixon_Jones-card-0097] When affiliate pages rank but do not convert and you are using signal from @Dixon_Jones, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [Dixon_Jones-card-0098] When affiliate pages rank but do not convert and you are using signal from @Dixon_Jones, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [Dixon_Jones-card-0099] When affiliate pages rank but do not convert and you are using signal from @Dixon_Jones, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [Dixon_Jones-card-0100] When affiliate pages rank but do not convert and you are using signal from @Dixon_Jones, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [Dixon_Jones-card-0101] When SERP features crowd out classic blue-link traffic and you are using signal from @Dixon_Jones, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [Dixon_Jones-card-0102] When SERP features crowd out classic blue-link traffic and you are using signal from @Dixon_Jones, instrument query clusters by intent and device before touching templates.
+- [Dixon_Jones-card-0103] When SERP features crowd out classic blue-link traffic and you are using signal from @Dixon_Jones, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [Dixon_Jones-card-0104] When SERP features crowd out classic blue-link traffic and you are using signal from @Dixon_Jones, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [Dixon_Jones-card-0105] When SERP features crowd out classic blue-link traffic and you are using signal from @Dixon_Jones, set a rollback threshold before release and enforce it without exception.
+- [Dixon_Jones-card-0106] When SERP features crowd out classic blue-link traffic and you are using signal from @Dixon_Jones, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [Dixon_Jones-card-0107] When SERP features crowd out classic blue-link traffic and you are using signal from @Dixon_Jones, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [Dixon_Jones-card-0108] When SERP features crowd out classic blue-link traffic and you are using signal from @Dixon_Jones, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [Dixon_Jones-card-0109] When SERP features crowd out classic blue-link traffic and you are using signal from @Dixon_Jones, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [Dixon_Jones-card-0110] When SERP features crowd out classic blue-link traffic and you are using signal from @Dixon_Jones, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [Dixon_Jones-card-0111] When new backlink opportunities spike but risk is unclear and you are using signal from @Dixon_Jones, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [Dixon_Jones-card-0112] When new backlink opportunities spike but risk is unclear and you are using signal from @Dixon_Jones, instrument query clusters by intent and device before touching templates.
+- [Dixon_Jones-card-0113] When new backlink opportunities spike but risk is unclear and you are using signal from @Dixon_Jones, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [Dixon_Jones-card-0114] When new backlink opportunities spike but risk is unclear and you are using signal from @Dixon_Jones, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [Dixon_Jones-card-0115] When new backlink opportunities spike but risk is unclear and you are using signal from @Dixon_Jones, set a rollback threshold before release and enforce it without exception.
+- [Dixon_Jones-card-0116] When new backlink opportunities spike but risk is unclear and you are using signal from @Dixon_Jones, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [Dixon_Jones-card-0117] When new backlink opportunities spike but risk is unclear and you are using signal from @Dixon_Jones, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [Dixon_Jones-card-0118] When new backlink opportunities spike but risk is unclear and you are using signal from @Dixon_Jones, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [Dixon_Jones-card-0119] When new backlink opportunities spike but risk is unclear and you are using signal from @Dixon_Jones, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [Dixon_Jones-card-0120] When new backlink opportunities spike but risk is unclear and you are using signal from @Dixon_Jones, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [Dixon_Jones-card-0121] When programmatic SEO expansions are proposed and you are using signal from @Dixon_Jones, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [Dixon_Jones-card-0122] When programmatic SEO expansions are proposed and you are using signal from @Dixon_Jones, instrument query clusters by intent and device before touching templates.
+- [Dixon_Jones-card-0123] When programmatic SEO expansions are proposed and you are using signal from @Dixon_Jones, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [Dixon_Jones-card-0124] When programmatic SEO expansions are proposed and you are using signal from @Dixon_Jones, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [Dixon_Jones-card-0125] When programmatic SEO expansions are proposed and you are using signal from @Dixon_Jones, set a rollback threshold before release and enforce it without exception.
+- [Dixon_Jones-card-0126] When programmatic SEO expansions are proposed and you are using signal from @Dixon_Jones, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [Dixon_Jones-card-0127] When programmatic SEO expansions are proposed and you are using signal from @Dixon_Jones, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [Dixon_Jones-card-0128] When programmatic SEO expansions are proposed and you are using signal from @Dixon_Jones, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [Dixon_Jones-card-0129] When programmatic SEO expansions are proposed and you are using signal from @Dixon_Jones, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [Dixon_Jones-card-0130] When programmatic SEO expansions are proposed and you are using signal from @Dixon_Jones, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [Dixon_Jones-card-0131] When international rollout introduces hreflang complexity and you are using signal from @Dixon_Jones, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [Dixon_Jones-card-0132] When international rollout introduces hreflang complexity and you are using signal from @Dixon_Jones, instrument query clusters by intent and device before touching templates.
+- [Dixon_Jones-card-0133] When international rollout introduces hreflang complexity and you are using signal from @Dixon_Jones, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [Dixon_Jones-card-0134] When international rollout introduces hreflang complexity and you are using signal from @Dixon_Jones, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [Dixon_Jones-card-0135] When international rollout introduces hreflang complexity and you are using signal from @Dixon_Jones, set a rollback threshold before release and enforce it without exception.
+- [Dixon_Jones-card-0136] When international rollout introduces hreflang complexity and you are using signal from @Dixon_Jones, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [Dixon_Jones-card-0137] When international rollout introduces hreflang complexity and you are using signal from @Dixon_Jones, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [Dixon_Jones-card-0138] When international rollout introduces hreflang complexity and you are using signal from @Dixon_Jones, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [Dixon_Jones-card-0139] When international rollout introduces hreflang complexity and you are using signal from @Dixon_Jones, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [Dixon_Jones-card-0140] When international rollout introduces hreflang complexity and you are using signal from @Dixon_Jones, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [Dixon_Jones-card-0141] When new AI-search referral channels appear and you are using signal from @Dixon_Jones, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [Dixon_Jones-card-0142] When new AI-search referral channels appear and you are using signal from @Dixon_Jones, instrument query clusters by intent and device before touching templates.
+- [Dixon_Jones-card-0143] When new AI-search referral channels appear and you are using signal from @Dixon_Jones, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [Dixon_Jones-card-0144] When new AI-search referral channels appear and you are using signal from @Dixon_Jones, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [Dixon_Jones-card-0145] When new AI-search referral channels appear and you are using signal from @Dixon_Jones, set a rollback threshold before release and enforce it without exception.
+- [Dixon_Jones-card-0146] When new AI-search referral channels appear and you are using signal from @Dixon_Jones, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [Dixon_Jones-card-0147] When new AI-search referral channels appear and you are using signal from @Dixon_Jones, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [Dixon_Jones-card-0148] When new AI-search referral channels appear and you are using signal from @Dixon_Jones, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [Dixon_Jones-card-0149] When new AI-search referral channels appear and you are using signal from @Dixon_Jones, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [Dixon_Jones-card-0150] When new AI-search referral channels appear and you are using signal from @Dixon_Jones, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [Dixon_Jones-card-0151] When stakeholders demand instant recovery plans and you are using signal from @Dixon_Jones, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [Dixon_Jones-card-0152] When stakeholders demand instant recovery plans and you are using signal from @Dixon_Jones, instrument query clusters by intent and device before touching templates.
+- [Dixon_Jones-card-0153] When stakeholders demand instant recovery plans and you are using signal from @Dixon_Jones, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [Dixon_Jones-card-0154] When stakeholders demand instant recovery plans and you are using signal from @Dixon_Jones, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [Dixon_Jones-card-0155] When stakeholders demand instant recovery plans and you are using signal from @Dixon_Jones, set a rollback threshold before release and enforce it without exception.
+- [Dixon_Jones-card-0156] When stakeholders demand instant recovery plans and you are using signal from @Dixon_Jones, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [Dixon_Jones-card-0157] When stakeholders demand instant recovery plans and you are using signal from @Dixon_Jones, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [Dixon_Jones-card-0158] When stakeholders demand instant recovery plans and you are using signal from @Dixon_Jones, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [Dixon_Jones-card-0159] When stakeholders demand instant recovery plans and you are using signal from @Dixon_Jones, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [Dixon_Jones-card-0160] When stakeholders demand instant recovery plans and you are using signal from @Dixon_Jones, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [Dixon_Jones-card-0161] When technical debt blocks roadmap velocity and you are using signal from @Dixon_Jones, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [Dixon_Jones-card-0162] When technical debt blocks roadmap velocity and you are using signal from @Dixon_Jones, instrument query clusters by intent and device before touching templates.
+- [Dixon_Jones-card-0163] When technical debt blocks roadmap velocity and you are using signal from @Dixon_Jones, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [Dixon_Jones-card-0164] When technical debt blocks roadmap velocity and you are using signal from @Dixon_Jones, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [Dixon_Jones-card-0165] When technical debt blocks roadmap velocity and you are using signal from @Dixon_Jones, set a rollback threshold before release and enforce it without exception.
+- [Dixon_Jones-card-0166] When technical debt blocks roadmap velocity and you are using signal from @Dixon_Jones, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [Dixon_Jones-card-0167] When technical debt blocks roadmap velocity and you are using signal from @Dixon_Jones, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [Dixon_Jones-card-0168] When technical debt blocks roadmap velocity and you are using signal from @Dixon_Jones, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [Dixon_Jones-card-0169] When technical debt blocks roadmap velocity and you are using signal from @Dixon_Jones, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [Dixon_Jones-card-0170] When technical debt blocks roadmap velocity and you are using signal from @Dixon_Jones, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [Dixon_Jones-card-0171] When competitors gain visibility with uncertain methods and you are using signal from @Dixon_Jones, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [Dixon_Jones-card-0172] When competitors gain visibility with uncertain methods and you are using signal from @Dixon_Jones, instrument query clusters by intent and device before touching templates.
+- [Dixon_Jones-card-0173] When competitors gain visibility with uncertain methods and you are using signal from @Dixon_Jones, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [Dixon_Jones-card-0174] When competitors gain visibility with uncertain methods and you are using signal from @Dixon_Jones, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [Dixon_Jones-card-0175] When competitors gain visibility with uncertain methods and you are using signal from @Dixon_Jones, set a rollback threshold before release and enforce it without exception.
+- [Dixon_Jones-card-0176] When competitors gain visibility with uncertain methods and you are using signal from @Dixon_Jones, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [Dixon_Jones-card-0177] When competitors gain visibility with uncertain methods and you are using signal from @Dixon_Jones, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [Dixon_Jones-card-0178] When competitors gain visibility with uncertain methods and you are using signal from @Dixon_Jones, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [Dixon_Jones-card-0179] When competitors gain visibility with uncertain methods and you are using signal from @Dixon_Jones, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [Dixon_Jones-card-0180] When competitors gain visibility with uncertain methods and you are using signal from @Dixon_Jones, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [Dixon_Jones-card-0181] When search intent shifts after product-category changes and you are using signal from @Dixon_Jones, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [Dixon_Jones-card-0182] When search intent shifts after product-category changes and you are using signal from @Dixon_Jones, instrument query clusters by intent and device before touching templates.
+- [Dixon_Jones-card-0183] When search intent shifts after product-category changes and you are using signal from @Dixon_Jones, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [Dixon_Jones-card-0184] When search intent shifts after product-category changes and you are using signal from @Dixon_Jones, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [Dixon_Jones-card-0185] When search intent shifts after product-category changes and you are using signal from @Dixon_Jones, set a rollback threshold before release and enforce it without exception.
+- [Dixon_Jones-card-0186] When search intent shifts after product-category changes and you are using signal from @Dixon_Jones, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [Dixon_Jones-card-0187] When search intent shifts after product-category changes and you are using signal from @Dixon_Jones, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [Dixon_Jones-card-0188] When search intent shifts after product-category changes and you are using signal from @Dixon_Jones, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [Dixon_Jones-card-0189] When search intent shifts after product-category changes and you are using signal from @Dixon_Jones, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [Dixon_Jones-card-0190] When search intent shifts after product-category changes and you are using signal from @Dixon_Jones, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [Dixon_Jones-card-0191] When analytics attribution masks true SEO impact and you are using signal from @Dixon_Jones, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [Dixon_Jones-card-0192] When analytics attribution masks true SEO impact and you are using signal from @Dixon_Jones, instrument query clusters by intent and device before touching templates.
+- [Dixon_Jones-card-0193] When analytics attribution masks true SEO impact and you are using signal from @Dixon_Jones, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [Dixon_Jones-card-0194] When analytics attribution masks true SEO impact and you are using signal from @Dixon_Jones, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [Dixon_Jones-card-0195] When analytics attribution masks true SEO impact and you are using signal from @Dixon_Jones, set a rollback threshold before release and enforce it without exception.
+- [Dixon_Jones-card-0196] When analytics attribution masks true SEO impact and you are using signal from @Dixon_Jones, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [Dixon_Jones-card-0197] When analytics attribution masks true SEO impact and you are using signal from @Dixon_Jones, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [Dixon_Jones-card-0198] When analytics attribution masks true SEO impact and you are using signal from @Dixon_Jones, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [Dixon_Jones-card-0199] When analytics attribution masks true SEO impact and you are using signal from @Dixon_Jones, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [Dixon_Jones-card-0200] When analytics attribution masks true SEO impact and you are using signal from @Dixon_Jones, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+
+### Fast Decision Rules
+- [Dixon_Jones-rule-001] If evidence is anecdotal and upside is low, skip implementation.
+- [Dixon_Jones-rule-002] If evidence is mixed and risk is high, run only in sandbox properties.
+- [Dixon_Jones-rule-003] If business impact is unmeasurable, deprioritize until instrumentation is fixed.
+- [Dixon_Jones-rule-004] If a tactic wins on traffic but loses on conversion quality, revert or redesign.
+- [Dixon_Jones-rule-005] If guidance aligns with multiple trusted sources, increase confidence tier.
+
+## 5. Glenn Gabe (@glenngabe)
+
+Primary focus: forensic update analysis, traffic drop diagnostics, recovery patterns.
+Signal rationale: One of the most evidence-driven voices for interpreting broad core update impacts with concrete postmortems.
+Reference links:
+- https://www.twstalker.com/glenngabe
+- https://www.gsqi.com/marketing-blog/
+- https://www.gsqi.com/about/
+Core themes:
+- Core update impact mapping
+- Forensic analytics for traffic drops
+- Recovery sequencing
+- AI Overviews and volatility interpretation
+Execution defaults:
+- Use this account as a hypothesis generator, not a final authority.
+- If a claim is novel, require one low-risk pilot and one replication before broad rollout.
+- If a claim conflicts with Search Central guidance, document the conflict explicitly and downgrade confidence.
+- Convert social claims into issue tickets with owner, metric target, and expiration date.
+
+### Measurement Priorities
+- [glenngabe-measure-001] Track impressions, clicks, CTR, qualified sessions, conversion rate, and revenue per landing page.
+- [glenngabe-measure-002] Track query-cluster volatility by intent class and by URL template.
+- [glenngabe-measure-003] Track indexation ratio: indexed URLs divided by submitted canonical URLs.
+- [glenngabe-measure-004] Track internal-link depth and click-distance for money pages.
+- [glenngabe-measure-005] Track AI-surface citation frequency where measurable.
+- [glenngabe-measure-006] Track content decay windows and refresh impact lag.
+- [glenngabe-measure-007] Track cannibalization risk with near-duplicate intent clusters.
+- [glenngabe-measure-008] Track share-of-voice for high-value non-brand queries.
+- [glenngabe-measure-009] Track anomaly lead time between ranking changes and business outcomes.
+- [glenngabe-measure-010] Track assisted-conversion contribution from organic entry pages.
+
+### Atomic Action Cards
+- [glenngabe-card-0001] When a broad core update rolls out and you are using signal from @glenngabe, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [glenngabe-card-0002] When a broad core update rolls out and you are using signal from @glenngabe, instrument query clusters by intent and device before touching templates.
+- [glenngabe-card-0003] When a broad core update rolls out and you are using signal from @glenngabe, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [glenngabe-card-0004] When a broad core update rolls out and you are using signal from @glenngabe, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [glenngabe-card-0005] When a broad core update rolls out and you are using signal from @glenngabe, set a rollback threshold before release and enforce it without exception.
+- [glenngabe-card-0006] When a broad core update rolls out and you are using signal from @glenngabe, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [glenngabe-card-0007] When a broad core update rolls out and you are using signal from @glenngabe, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [glenngabe-card-0008] When a broad core update rolls out and you are using signal from @glenngabe, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [glenngabe-card-0009] When a broad core update rolls out and you are using signal from @glenngabe, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [glenngabe-card-0010] When a broad core update rolls out and you are using signal from @glenngabe, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [glenngabe-card-0011] When a niche-specific ranking shock appears and you are using signal from @glenngabe, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [glenngabe-card-0012] When a niche-specific ranking shock appears and you are using signal from @glenngabe, instrument query clusters by intent and device before touching templates.
+- [glenngabe-card-0013] When a niche-specific ranking shock appears and you are using signal from @glenngabe, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [glenngabe-card-0014] When a niche-specific ranking shock appears and you are using signal from @glenngabe, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [glenngabe-card-0015] When a niche-specific ranking shock appears and you are using signal from @glenngabe, set a rollback threshold before release and enforce it without exception.
+- [glenngabe-card-0016] When a niche-specific ranking shock appears and you are using signal from @glenngabe, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [glenngabe-card-0017] When a niche-specific ranking shock appears and you are using signal from @glenngabe, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [glenngabe-card-0018] When a niche-specific ranking shock appears and you are using signal from @glenngabe, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [glenngabe-card-0019] When a niche-specific ranking shock appears and you are using signal from @glenngabe, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [glenngabe-card-0020] When a niche-specific ranking shock appears and you are using signal from @glenngabe, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [glenngabe-card-0021] When AI Overviews or answer engines reduce clicks and you are using signal from @glenngabe, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [glenngabe-card-0022] When AI Overviews or answer engines reduce clicks and you are using signal from @glenngabe, instrument query clusters by intent and device before touching templates.
+- [glenngabe-card-0023] When AI Overviews or answer engines reduce clicks and you are using signal from @glenngabe, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [glenngabe-card-0024] When AI Overviews or answer engines reduce clicks and you are using signal from @glenngabe, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [glenngabe-card-0025] When AI Overviews or answer engines reduce clicks and you are using signal from @glenngabe, set a rollback threshold before release and enforce it without exception.
+- [glenngabe-card-0026] When AI Overviews or answer engines reduce clicks and you are using signal from @glenngabe, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [glenngabe-card-0027] When AI Overviews or answer engines reduce clicks and you are using signal from @glenngabe, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [glenngabe-card-0028] When AI Overviews or answer engines reduce clicks and you are using signal from @glenngabe, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [glenngabe-card-0029] When AI Overviews or answer engines reduce clicks and you are using signal from @glenngabe, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [glenngabe-card-0030] When AI Overviews or answer engines reduce clicks and you are using signal from @glenngabe, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [glenngabe-card-0031] When crawl budget becomes constrained on large templates and you are using signal from @glenngabe, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [glenngabe-card-0032] When crawl budget becomes constrained on large templates and you are using signal from @glenngabe, instrument query clusters by intent and device before touching templates.
+- [glenngabe-card-0033] When crawl budget becomes constrained on large templates and you are using signal from @glenngabe, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [glenngabe-card-0034] When crawl budget becomes constrained on large templates and you are using signal from @glenngabe, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [glenngabe-card-0035] When crawl budget becomes constrained on large templates and you are using signal from @glenngabe, set a rollback threshold before release and enforce it without exception.
+- [glenngabe-card-0036] When crawl budget becomes constrained on large templates and you are using signal from @glenngabe, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [glenngabe-card-0037] When crawl budget becomes constrained on large templates and you are using signal from @glenngabe, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [glenngabe-card-0038] When crawl budget becomes constrained on large templates and you are using signal from @glenngabe, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [glenngabe-card-0039] When crawl budget becomes constrained on large templates and you are using signal from @glenngabe, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [glenngabe-card-0040] When crawl budget becomes constrained on large templates and you are using signal from @glenngabe, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [glenngabe-card-0041] When indexation mismatches appear between sitemap and search and you are using signal from @glenngabe, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [glenngabe-card-0042] When indexation mismatches appear between sitemap and search and you are using signal from @glenngabe, instrument query clusters by intent and device before touching templates.
+- [glenngabe-card-0043] When indexation mismatches appear between sitemap and search and you are using signal from @glenngabe, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [glenngabe-card-0044] When indexation mismatches appear between sitemap and search and you are using signal from @glenngabe, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [glenngabe-card-0045] When indexation mismatches appear between sitemap and search and you are using signal from @glenngabe, set a rollback threshold before release and enforce it without exception.
+- [glenngabe-card-0046] When indexation mismatches appear between sitemap and search and you are using signal from @glenngabe, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [glenngabe-card-0047] When indexation mismatches appear between sitemap and search and you are using signal from @glenngabe, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [glenngabe-card-0048] When indexation mismatches appear between sitemap and search and you are using signal from @glenngabe, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [glenngabe-card-0049] When indexation mismatches appear between sitemap and search and you are using signal from @glenngabe, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [glenngabe-card-0050] When indexation mismatches appear between sitemap and search and you are using signal from @glenngabe, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [glenngabe-card-0051] When internal-link architecture underperforms and you are using signal from @glenngabe, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [glenngabe-card-0052] When internal-link architecture underperforms and you are using signal from @glenngabe, instrument query clusters by intent and device before touching templates.
+- [glenngabe-card-0053] When internal-link architecture underperforms and you are using signal from @glenngabe, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [glenngabe-card-0054] When internal-link architecture underperforms and you are using signal from @glenngabe, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [glenngabe-card-0055] When internal-link architecture underperforms and you are using signal from @glenngabe, set a rollback threshold before release and enforce it without exception.
+- [glenngabe-card-0056] When internal-link architecture underperforms and you are using signal from @glenngabe, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [glenngabe-card-0057] When internal-link architecture underperforms and you are using signal from @glenngabe, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [glenngabe-card-0058] When internal-link architecture underperforms and you are using signal from @glenngabe, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [glenngabe-card-0059] When internal-link architecture underperforms and you are using signal from @glenngabe, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [glenngabe-card-0060] When internal-link architecture underperforms and you are using signal from @glenngabe, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [glenngabe-card-0061] When entity disambiguation issues dilute topical authority and you are using signal from @glenngabe, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [glenngabe-card-0062] When entity disambiguation issues dilute topical authority and you are using signal from @glenngabe, instrument query clusters by intent and device before touching templates.
+- [glenngabe-card-0063] When entity disambiguation issues dilute topical authority and you are using signal from @glenngabe, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [glenngabe-card-0064] When entity disambiguation issues dilute topical authority and you are using signal from @glenngabe, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [glenngabe-card-0065] When entity disambiguation issues dilute topical authority and you are using signal from @glenngabe, set a rollback threshold before release and enforce it without exception.
+- [glenngabe-card-0066] When entity disambiguation issues dilute topical authority and you are using signal from @glenngabe, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [glenngabe-card-0067] When entity disambiguation issues dilute topical authority and you are using signal from @glenngabe, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [glenngabe-card-0068] When entity disambiguation issues dilute topical authority and you are using signal from @glenngabe, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [glenngabe-card-0069] When entity disambiguation issues dilute topical authority and you are using signal from @glenngabe, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [glenngabe-card-0070] When entity disambiguation issues dilute topical authority and you are using signal from @glenngabe, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [glenngabe-card-0071] When large-scale content refresh decisions are needed and you are using signal from @glenngabe, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [glenngabe-card-0072] When large-scale content refresh decisions are needed and you are using signal from @glenngabe, instrument query clusters by intent and device before touching templates.
+- [glenngabe-card-0073] When large-scale content refresh decisions are needed and you are using signal from @glenngabe, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [glenngabe-card-0074] When large-scale content refresh decisions are needed and you are using signal from @glenngabe, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [glenngabe-card-0075] When large-scale content refresh decisions are needed and you are using signal from @glenngabe, set a rollback threshold before release and enforce it without exception.
+- [glenngabe-card-0076] When large-scale content refresh decisions are needed and you are using signal from @glenngabe, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [glenngabe-card-0077] When large-scale content refresh decisions are needed and you are using signal from @glenngabe, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [glenngabe-card-0078] When large-scale content refresh decisions are needed and you are using signal from @glenngabe, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [glenngabe-card-0079] When large-scale content refresh decisions are needed and you are using signal from @glenngabe, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [glenngabe-card-0080] When large-scale content refresh decisions are needed and you are using signal from @glenngabe, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [glenngabe-card-0081] When brand trust signals appear weak for YMYL queries and you are using signal from @glenngabe, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [glenngabe-card-0082] When brand trust signals appear weak for YMYL queries and you are using signal from @glenngabe, instrument query clusters by intent and device before touching templates.
+- [glenngabe-card-0083] When brand trust signals appear weak for YMYL queries and you are using signal from @glenngabe, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [glenngabe-card-0084] When brand trust signals appear weak for YMYL queries and you are using signal from @glenngabe, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [glenngabe-card-0085] When brand trust signals appear weak for YMYL queries and you are using signal from @glenngabe, set a rollback threshold before release and enforce it without exception.
+- [glenngabe-card-0086] When brand trust signals appear weak for YMYL queries and you are using signal from @glenngabe, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [glenngabe-card-0087] When brand trust signals appear weak for YMYL queries and you are using signal from @glenngabe, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [glenngabe-card-0088] When brand trust signals appear weak for YMYL queries and you are using signal from @glenngabe, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [glenngabe-card-0089] When brand trust signals appear weak for YMYL queries and you are using signal from @glenngabe, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [glenngabe-card-0090] When brand trust signals appear weak for YMYL queries and you are using signal from @glenngabe, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [glenngabe-card-0091] When affiliate pages rank but do not convert and you are using signal from @glenngabe, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [glenngabe-card-0092] When affiliate pages rank but do not convert and you are using signal from @glenngabe, instrument query clusters by intent and device before touching templates.
+- [glenngabe-card-0093] When affiliate pages rank but do not convert and you are using signal from @glenngabe, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [glenngabe-card-0094] When affiliate pages rank but do not convert and you are using signal from @glenngabe, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [glenngabe-card-0095] When affiliate pages rank but do not convert and you are using signal from @glenngabe, set a rollback threshold before release and enforce it without exception.
+- [glenngabe-card-0096] When affiliate pages rank but do not convert and you are using signal from @glenngabe, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [glenngabe-card-0097] When affiliate pages rank but do not convert and you are using signal from @glenngabe, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [glenngabe-card-0098] When affiliate pages rank but do not convert and you are using signal from @glenngabe, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [glenngabe-card-0099] When affiliate pages rank but do not convert and you are using signal from @glenngabe, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [glenngabe-card-0100] When affiliate pages rank but do not convert and you are using signal from @glenngabe, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [glenngabe-card-0101] When SERP features crowd out classic blue-link traffic and you are using signal from @glenngabe, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [glenngabe-card-0102] When SERP features crowd out classic blue-link traffic and you are using signal from @glenngabe, instrument query clusters by intent and device before touching templates.
+- [glenngabe-card-0103] When SERP features crowd out classic blue-link traffic and you are using signal from @glenngabe, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [glenngabe-card-0104] When SERP features crowd out classic blue-link traffic and you are using signal from @glenngabe, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [glenngabe-card-0105] When SERP features crowd out classic blue-link traffic and you are using signal from @glenngabe, set a rollback threshold before release and enforce it without exception.
+- [glenngabe-card-0106] When SERP features crowd out classic blue-link traffic and you are using signal from @glenngabe, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [glenngabe-card-0107] When SERP features crowd out classic blue-link traffic and you are using signal from @glenngabe, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [glenngabe-card-0108] When SERP features crowd out classic blue-link traffic and you are using signal from @glenngabe, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [glenngabe-card-0109] When SERP features crowd out classic blue-link traffic and you are using signal from @glenngabe, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [glenngabe-card-0110] When SERP features crowd out classic blue-link traffic and you are using signal from @glenngabe, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [glenngabe-card-0111] When new backlink opportunities spike but risk is unclear and you are using signal from @glenngabe, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [glenngabe-card-0112] When new backlink opportunities spike but risk is unclear and you are using signal from @glenngabe, instrument query clusters by intent and device before touching templates.
+- [glenngabe-card-0113] When new backlink opportunities spike but risk is unclear and you are using signal from @glenngabe, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [glenngabe-card-0114] When new backlink opportunities spike but risk is unclear and you are using signal from @glenngabe, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [glenngabe-card-0115] When new backlink opportunities spike but risk is unclear and you are using signal from @glenngabe, set a rollback threshold before release and enforce it without exception.
+- [glenngabe-card-0116] When new backlink opportunities spike but risk is unclear and you are using signal from @glenngabe, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [glenngabe-card-0117] When new backlink opportunities spike but risk is unclear and you are using signal from @glenngabe, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [glenngabe-card-0118] When new backlink opportunities spike but risk is unclear and you are using signal from @glenngabe, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [glenngabe-card-0119] When new backlink opportunities spike but risk is unclear and you are using signal from @glenngabe, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [glenngabe-card-0120] When new backlink opportunities spike but risk is unclear and you are using signal from @glenngabe, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [glenngabe-card-0121] When programmatic SEO expansions are proposed and you are using signal from @glenngabe, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [glenngabe-card-0122] When programmatic SEO expansions are proposed and you are using signal from @glenngabe, instrument query clusters by intent and device before touching templates.
+- [glenngabe-card-0123] When programmatic SEO expansions are proposed and you are using signal from @glenngabe, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [glenngabe-card-0124] When programmatic SEO expansions are proposed and you are using signal from @glenngabe, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [glenngabe-card-0125] When programmatic SEO expansions are proposed and you are using signal from @glenngabe, set a rollback threshold before release and enforce it without exception.
+- [glenngabe-card-0126] When programmatic SEO expansions are proposed and you are using signal from @glenngabe, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [glenngabe-card-0127] When programmatic SEO expansions are proposed and you are using signal from @glenngabe, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [glenngabe-card-0128] When programmatic SEO expansions are proposed and you are using signal from @glenngabe, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [glenngabe-card-0129] When programmatic SEO expansions are proposed and you are using signal from @glenngabe, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [glenngabe-card-0130] When programmatic SEO expansions are proposed and you are using signal from @glenngabe, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [glenngabe-card-0131] When international rollout introduces hreflang complexity and you are using signal from @glenngabe, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [glenngabe-card-0132] When international rollout introduces hreflang complexity and you are using signal from @glenngabe, instrument query clusters by intent and device before touching templates.
+- [glenngabe-card-0133] When international rollout introduces hreflang complexity and you are using signal from @glenngabe, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [glenngabe-card-0134] When international rollout introduces hreflang complexity and you are using signal from @glenngabe, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [glenngabe-card-0135] When international rollout introduces hreflang complexity and you are using signal from @glenngabe, set a rollback threshold before release and enforce it without exception.
+- [glenngabe-card-0136] When international rollout introduces hreflang complexity and you are using signal from @glenngabe, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [glenngabe-card-0137] When international rollout introduces hreflang complexity and you are using signal from @glenngabe, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [glenngabe-card-0138] When international rollout introduces hreflang complexity and you are using signal from @glenngabe, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [glenngabe-card-0139] When international rollout introduces hreflang complexity and you are using signal from @glenngabe, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [glenngabe-card-0140] When international rollout introduces hreflang complexity and you are using signal from @glenngabe, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [glenngabe-card-0141] When new AI-search referral channels appear and you are using signal from @glenngabe, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [glenngabe-card-0142] When new AI-search referral channels appear and you are using signal from @glenngabe, instrument query clusters by intent and device before touching templates.
+- [glenngabe-card-0143] When new AI-search referral channels appear and you are using signal from @glenngabe, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [glenngabe-card-0144] When new AI-search referral channels appear and you are using signal from @glenngabe, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [glenngabe-card-0145] When new AI-search referral channels appear and you are using signal from @glenngabe, set a rollback threshold before release and enforce it without exception.
+- [glenngabe-card-0146] When new AI-search referral channels appear and you are using signal from @glenngabe, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [glenngabe-card-0147] When new AI-search referral channels appear and you are using signal from @glenngabe, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [glenngabe-card-0148] When new AI-search referral channels appear and you are using signal from @glenngabe, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [glenngabe-card-0149] When new AI-search referral channels appear and you are using signal from @glenngabe, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [glenngabe-card-0150] When new AI-search referral channels appear and you are using signal from @glenngabe, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [glenngabe-card-0151] When stakeholders demand instant recovery plans and you are using signal from @glenngabe, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [glenngabe-card-0152] When stakeholders demand instant recovery plans and you are using signal from @glenngabe, instrument query clusters by intent and device before touching templates.
+- [glenngabe-card-0153] When stakeholders demand instant recovery plans and you are using signal from @glenngabe, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [glenngabe-card-0154] When stakeholders demand instant recovery plans and you are using signal from @glenngabe, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [glenngabe-card-0155] When stakeholders demand instant recovery plans and you are using signal from @glenngabe, set a rollback threshold before release and enforce it without exception.
+- [glenngabe-card-0156] When stakeholders demand instant recovery plans and you are using signal from @glenngabe, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [glenngabe-card-0157] When stakeholders demand instant recovery plans and you are using signal from @glenngabe, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [glenngabe-card-0158] When stakeholders demand instant recovery plans and you are using signal from @glenngabe, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [glenngabe-card-0159] When stakeholders demand instant recovery plans and you are using signal from @glenngabe, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [glenngabe-card-0160] When stakeholders demand instant recovery plans and you are using signal from @glenngabe, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [glenngabe-card-0161] When technical debt blocks roadmap velocity and you are using signal from @glenngabe, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [glenngabe-card-0162] When technical debt blocks roadmap velocity and you are using signal from @glenngabe, instrument query clusters by intent and device before touching templates.
+- [glenngabe-card-0163] When technical debt blocks roadmap velocity and you are using signal from @glenngabe, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [glenngabe-card-0164] When technical debt blocks roadmap velocity and you are using signal from @glenngabe, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [glenngabe-card-0165] When technical debt blocks roadmap velocity and you are using signal from @glenngabe, set a rollback threshold before release and enforce it without exception.
+- [glenngabe-card-0166] When technical debt blocks roadmap velocity and you are using signal from @glenngabe, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [glenngabe-card-0167] When technical debt blocks roadmap velocity and you are using signal from @glenngabe, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [glenngabe-card-0168] When technical debt blocks roadmap velocity and you are using signal from @glenngabe, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [glenngabe-card-0169] When technical debt blocks roadmap velocity and you are using signal from @glenngabe, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [glenngabe-card-0170] When technical debt blocks roadmap velocity and you are using signal from @glenngabe, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [glenngabe-card-0171] When competitors gain visibility with uncertain methods and you are using signal from @glenngabe, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [glenngabe-card-0172] When competitors gain visibility with uncertain methods and you are using signal from @glenngabe, instrument query clusters by intent and device before touching templates.
+- [glenngabe-card-0173] When competitors gain visibility with uncertain methods and you are using signal from @glenngabe, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [glenngabe-card-0174] When competitors gain visibility with uncertain methods and you are using signal from @glenngabe, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [glenngabe-card-0175] When competitors gain visibility with uncertain methods and you are using signal from @glenngabe, set a rollback threshold before release and enforce it without exception.
+- [glenngabe-card-0176] When competitors gain visibility with uncertain methods and you are using signal from @glenngabe, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [glenngabe-card-0177] When competitors gain visibility with uncertain methods and you are using signal from @glenngabe, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [glenngabe-card-0178] When competitors gain visibility with uncertain methods and you are using signal from @glenngabe, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [glenngabe-card-0179] When competitors gain visibility with uncertain methods and you are using signal from @glenngabe, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [glenngabe-card-0180] When competitors gain visibility with uncertain methods and you are using signal from @glenngabe, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [glenngabe-card-0181] When search intent shifts after product-category changes and you are using signal from @glenngabe, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [glenngabe-card-0182] When search intent shifts after product-category changes and you are using signal from @glenngabe, instrument query clusters by intent and device before touching templates.
+- [glenngabe-card-0183] When search intent shifts after product-category changes and you are using signal from @glenngabe, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [glenngabe-card-0184] When search intent shifts after product-category changes and you are using signal from @glenngabe, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [glenngabe-card-0185] When search intent shifts after product-category changes and you are using signal from @glenngabe, set a rollback threshold before release and enforce it without exception.
+- [glenngabe-card-0186] When search intent shifts after product-category changes and you are using signal from @glenngabe, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [glenngabe-card-0187] When search intent shifts after product-category changes and you are using signal from @glenngabe, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [glenngabe-card-0188] When search intent shifts after product-category changes and you are using signal from @glenngabe, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [glenngabe-card-0189] When search intent shifts after product-category changes and you are using signal from @glenngabe, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [glenngabe-card-0190] When search intent shifts after product-category changes and you are using signal from @glenngabe, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [glenngabe-card-0191] When analytics attribution masks true SEO impact and you are using signal from @glenngabe, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [glenngabe-card-0192] When analytics attribution masks true SEO impact and you are using signal from @glenngabe, instrument query clusters by intent and device before touching templates.
+- [glenngabe-card-0193] When analytics attribution masks true SEO impact and you are using signal from @glenngabe, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [glenngabe-card-0194] When analytics attribution masks true SEO impact and you are using signal from @glenngabe, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [glenngabe-card-0195] When analytics attribution masks true SEO impact and you are using signal from @glenngabe, set a rollback threshold before release and enforce it without exception.
+- [glenngabe-card-0196] When analytics attribution masks true SEO impact and you are using signal from @glenngabe, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [glenngabe-card-0197] When analytics attribution masks true SEO impact and you are using signal from @glenngabe, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [glenngabe-card-0198] When analytics attribution masks true SEO impact and you are using signal from @glenngabe, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [glenngabe-card-0199] When analytics attribution masks true SEO impact and you are using signal from @glenngabe, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [glenngabe-card-0200] When analytics attribution masks true SEO impact and you are using signal from @glenngabe, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+
+### Fast Decision Rules
+- [glenngabe-rule-001] If evidence is anecdotal and upside is low, skip implementation.
+- [glenngabe-rule-002] If evidence is mixed and risk is high, run only in sandbox properties.
+- [glenngabe-rule-003] If business impact is unmeasurable, deprioritize until instrumentation is fixed.
+- [glenngabe-rule-004] If a tactic wins on traffic but loses on conversion quality, revert or redesign.
+- [glenngabe-rule-005] If guidance aligns with multiple trusted sources, increase confidence tier.
+
+## 6. Harpreet Chatha (@harpreetchatha_)
+
+Primary focus: revenue-first SEO, AI search tests, practical workflows for outcomes.
+Signal rationale: Valuable for translating visibility activity into measurable pipeline/revenue objectives and AI-search realities.
+Reference links:
+- https://www.twstalker.com/harpreetchatha_
+- https://speakerdeck.com/harpreetseo
+Core themes:
+- Revenue over vanity traffic
+- AI-search visibility tests
+- B2B SEO execution playbooks
+- Commercial intent alignment
+Execution defaults:
+- Use this account as a hypothesis generator, not a final authority.
+- If a claim is novel, require one low-risk pilot and one replication before broad rollout.
+- If a claim conflicts with Search Central guidance, document the conflict explicitly and downgrade confidence.
+- Convert social claims into issue tickets with owner, metric target, and expiration date.
+
+### Measurement Priorities
+- [harpreetchatha_-measure-001] Track impressions, clicks, CTR, qualified sessions, conversion rate, and revenue per landing page.
+- [harpreetchatha_-measure-002] Track query-cluster volatility by intent class and by URL template.
+- [harpreetchatha_-measure-003] Track indexation ratio: indexed URLs divided by submitted canonical URLs.
+- [harpreetchatha_-measure-004] Track internal-link depth and click-distance for money pages.
+- [harpreetchatha_-measure-005] Track AI-surface citation frequency where measurable.
+- [harpreetchatha_-measure-006] Track content decay windows and refresh impact lag.
+- [harpreetchatha_-measure-007] Track cannibalization risk with near-duplicate intent clusters.
+- [harpreetchatha_-measure-008] Track share-of-voice for high-value non-brand queries.
+- [harpreetchatha_-measure-009] Track anomaly lead time between ranking changes and business outcomes.
+- [harpreetchatha_-measure-010] Track assisted-conversion contribution from organic entry pages.
+
+### Atomic Action Cards
+- [harpreetchatha_-card-0001] When a broad core update rolls out and you are using signal from @harpreetchatha_, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [harpreetchatha_-card-0002] When a broad core update rolls out and you are using signal from @harpreetchatha_, instrument query clusters by intent and device before touching templates.
+- [harpreetchatha_-card-0003] When a broad core update rolls out and you are using signal from @harpreetchatha_, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [harpreetchatha_-card-0004] When a broad core update rolls out and you are using signal from @harpreetchatha_, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [harpreetchatha_-card-0005] When a broad core update rolls out and you are using signal from @harpreetchatha_, set a rollback threshold before release and enforce it without exception.
+- [harpreetchatha_-card-0006] When a broad core update rolls out and you are using signal from @harpreetchatha_, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [harpreetchatha_-card-0007] When a broad core update rolls out and you are using signal from @harpreetchatha_, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [harpreetchatha_-card-0008] When a broad core update rolls out and you are using signal from @harpreetchatha_, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [harpreetchatha_-card-0009] When a broad core update rolls out and you are using signal from @harpreetchatha_, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [harpreetchatha_-card-0010] When a broad core update rolls out and you are using signal from @harpreetchatha_, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [harpreetchatha_-card-0011] When a niche-specific ranking shock appears and you are using signal from @harpreetchatha_, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [harpreetchatha_-card-0012] When a niche-specific ranking shock appears and you are using signal from @harpreetchatha_, instrument query clusters by intent and device before touching templates.
+- [harpreetchatha_-card-0013] When a niche-specific ranking shock appears and you are using signal from @harpreetchatha_, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [harpreetchatha_-card-0014] When a niche-specific ranking shock appears and you are using signal from @harpreetchatha_, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [harpreetchatha_-card-0015] When a niche-specific ranking shock appears and you are using signal from @harpreetchatha_, set a rollback threshold before release and enforce it without exception.
+- [harpreetchatha_-card-0016] When a niche-specific ranking shock appears and you are using signal from @harpreetchatha_, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [harpreetchatha_-card-0017] When a niche-specific ranking shock appears and you are using signal from @harpreetchatha_, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [harpreetchatha_-card-0018] When a niche-specific ranking shock appears and you are using signal from @harpreetchatha_, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [harpreetchatha_-card-0019] When a niche-specific ranking shock appears and you are using signal from @harpreetchatha_, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [harpreetchatha_-card-0020] When a niche-specific ranking shock appears and you are using signal from @harpreetchatha_, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [harpreetchatha_-card-0021] When AI Overviews or answer engines reduce clicks and you are using signal from @harpreetchatha_, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [harpreetchatha_-card-0022] When AI Overviews or answer engines reduce clicks and you are using signal from @harpreetchatha_, instrument query clusters by intent and device before touching templates.
+- [harpreetchatha_-card-0023] When AI Overviews or answer engines reduce clicks and you are using signal from @harpreetchatha_, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [harpreetchatha_-card-0024] When AI Overviews or answer engines reduce clicks and you are using signal from @harpreetchatha_, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [harpreetchatha_-card-0025] When AI Overviews or answer engines reduce clicks and you are using signal from @harpreetchatha_, set a rollback threshold before release and enforce it without exception.
+- [harpreetchatha_-card-0026] When AI Overviews or answer engines reduce clicks and you are using signal from @harpreetchatha_, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [harpreetchatha_-card-0027] When AI Overviews or answer engines reduce clicks and you are using signal from @harpreetchatha_, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [harpreetchatha_-card-0028] When AI Overviews or answer engines reduce clicks and you are using signal from @harpreetchatha_, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [harpreetchatha_-card-0029] When AI Overviews or answer engines reduce clicks and you are using signal from @harpreetchatha_, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [harpreetchatha_-card-0030] When AI Overviews or answer engines reduce clicks and you are using signal from @harpreetchatha_, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [harpreetchatha_-card-0031] When crawl budget becomes constrained on large templates and you are using signal from @harpreetchatha_, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [harpreetchatha_-card-0032] When crawl budget becomes constrained on large templates and you are using signal from @harpreetchatha_, instrument query clusters by intent and device before touching templates.
+- [harpreetchatha_-card-0033] When crawl budget becomes constrained on large templates and you are using signal from @harpreetchatha_, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [harpreetchatha_-card-0034] When crawl budget becomes constrained on large templates and you are using signal from @harpreetchatha_, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [harpreetchatha_-card-0035] When crawl budget becomes constrained on large templates and you are using signal from @harpreetchatha_, set a rollback threshold before release and enforce it without exception.
+- [harpreetchatha_-card-0036] When crawl budget becomes constrained on large templates and you are using signal from @harpreetchatha_, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [harpreetchatha_-card-0037] When crawl budget becomes constrained on large templates and you are using signal from @harpreetchatha_, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [harpreetchatha_-card-0038] When crawl budget becomes constrained on large templates and you are using signal from @harpreetchatha_, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [harpreetchatha_-card-0039] When crawl budget becomes constrained on large templates and you are using signal from @harpreetchatha_, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [harpreetchatha_-card-0040] When crawl budget becomes constrained on large templates and you are using signal from @harpreetchatha_, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [harpreetchatha_-card-0041] When indexation mismatches appear between sitemap and search and you are using signal from @harpreetchatha_, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [harpreetchatha_-card-0042] When indexation mismatches appear between sitemap and search and you are using signal from @harpreetchatha_, instrument query clusters by intent and device before touching templates.
+- [harpreetchatha_-card-0043] When indexation mismatches appear between sitemap and search and you are using signal from @harpreetchatha_, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [harpreetchatha_-card-0044] When indexation mismatches appear between sitemap and search and you are using signal from @harpreetchatha_, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [harpreetchatha_-card-0045] When indexation mismatches appear between sitemap and search and you are using signal from @harpreetchatha_, set a rollback threshold before release and enforce it without exception.
+- [harpreetchatha_-card-0046] When indexation mismatches appear between sitemap and search and you are using signal from @harpreetchatha_, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [harpreetchatha_-card-0047] When indexation mismatches appear between sitemap and search and you are using signal from @harpreetchatha_, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [harpreetchatha_-card-0048] When indexation mismatches appear between sitemap and search and you are using signal from @harpreetchatha_, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [harpreetchatha_-card-0049] When indexation mismatches appear between sitemap and search and you are using signal from @harpreetchatha_, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [harpreetchatha_-card-0050] When indexation mismatches appear between sitemap and search and you are using signal from @harpreetchatha_, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [harpreetchatha_-card-0051] When internal-link architecture underperforms and you are using signal from @harpreetchatha_, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [harpreetchatha_-card-0052] When internal-link architecture underperforms and you are using signal from @harpreetchatha_, instrument query clusters by intent and device before touching templates.
+- [harpreetchatha_-card-0053] When internal-link architecture underperforms and you are using signal from @harpreetchatha_, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [harpreetchatha_-card-0054] When internal-link architecture underperforms and you are using signal from @harpreetchatha_, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [harpreetchatha_-card-0055] When internal-link architecture underperforms and you are using signal from @harpreetchatha_, set a rollback threshold before release and enforce it without exception.
+- [harpreetchatha_-card-0056] When internal-link architecture underperforms and you are using signal from @harpreetchatha_, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [harpreetchatha_-card-0057] When internal-link architecture underperforms and you are using signal from @harpreetchatha_, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [harpreetchatha_-card-0058] When internal-link architecture underperforms and you are using signal from @harpreetchatha_, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [harpreetchatha_-card-0059] When internal-link architecture underperforms and you are using signal from @harpreetchatha_, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [harpreetchatha_-card-0060] When internal-link architecture underperforms and you are using signal from @harpreetchatha_, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [harpreetchatha_-card-0061] When entity disambiguation issues dilute topical authority and you are using signal from @harpreetchatha_, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [harpreetchatha_-card-0062] When entity disambiguation issues dilute topical authority and you are using signal from @harpreetchatha_, instrument query clusters by intent and device before touching templates.
+- [harpreetchatha_-card-0063] When entity disambiguation issues dilute topical authority and you are using signal from @harpreetchatha_, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [harpreetchatha_-card-0064] When entity disambiguation issues dilute topical authority and you are using signal from @harpreetchatha_, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [harpreetchatha_-card-0065] When entity disambiguation issues dilute topical authority and you are using signal from @harpreetchatha_, set a rollback threshold before release and enforce it without exception.
+- [harpreetchatha_-card-0066] When entity disambiguation issues dilute topical authority and you are using signal from @harpreetchatha_, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [harpreetchatha_-card-0067] When entity disambiguation issues dilute topical authority and you are using signal from @harpreetchatha_, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [harpreetchatha_-card-0068] When entity disambiguation issues dilute topical authority and you are using signal from @harpreetchatha_, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [harpreetchatha_-card-0069] When entity disambiguation issues dilute topical authority and you are using signal from @harpreetchatha_, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [harpreetchatha_-card-0070] When entity disambiguation issues dilute topical authority and you are using signal from @harpreetchatha_, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [harpreetchatha_-card-0071] When large-scale content refresh decisions are needed and you are using signal from @harpreetchatha_, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [harpreetchatha_-card-0072] When large-scale content refresh decisions are needed and you are using signal from @harpreetchatha_, instrument query clusters by intent and device before touching templates.
+- [harpreetchatha_-card-0073] When large-scale content refresh decisions are needed and you are using signal from @harpreetchatha_, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [harpreetchatha_-card-0074] When large-scale content refresh decisions are needed and you are using signal from @harpreetchatha_, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [harpreetchatha_-card-0075] When large-scale content refresh decisions are needed and you are using signal from @harpreetchatha_, set a rollback threshold before release and enforce it without exception.
+- [harpreetchatha_-card-0076] When large-scale content refresh decisions are needed and you are using signal from @harpreetchatha_, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [harpreetchatha_-card-0077] When large-scale content refresh decisions are needed and you are using signal from @harpreetchatha_, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [harpreetchatha_-card-0078] When large-scale content refresh decisions are needed and you are using signal from @harpreetchatha_, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [harpreetchatha_-card-0079] When large-scale content refresh decisions are needed and you are using signal from @harpreetchatha_, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [harpreetchatha_-card-0080] When large-scale content refresh decisions are needed and you are using signal from @harpreetchatha_, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [harpreetchatha_-card-0081] When brand trust signals appear weak for YMYL queries and you are using signal from @harpreetchatha_, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [harpreetchatha_-card-0082] When brand trust signals appear weak for YMYL queries and you are using signal from @harpreetchatha_, instrument query clusters by intent and device before touching templates.
+- [harpreetchatha_-card-0083] When brand trust signals appear weak for YMYL queries and you are using signal from @harpreetchatha_, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [harpreetchatha_-card-0084] When brand trust signals appear weak for YMYL queries and you are using signal from @harpreetchatha_, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [harpreetchatha_-card-0085] When brand trust signals appear weak for YMYL queries and you are using signal from @harpreetchatha_, set a rollback threshold before release and enforce it without exception.
+- [harpreetchatha_-card-0086] When brand trust signals appear weak for YMYL queries and you are using signal from @harpreetchatha_, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [harpreetchatha_-card-0087] When brand trust signals appear weak for YMYL queries and you are using signal from @harpreetchatha_, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [harpreetchatha_-card-0088] When brand trust signals appear weak for YMYL queries and you are using signal from @harpreetchatha_, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [harpreetchatha_-card-0089] When brand trust signals appear weak for YMYL queries and you are using signal from @harpreetchatha_, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [harpreetchatha_-card-0090] When brand trust signals appear weak for YMYL queries and you are using signal from @harpreetchatha_, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [harpreetchatha_-card-0091] When affiliate pages rank but do not convert and you are using signal from @harpreetchatha_, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [harpreetchatha_-card-0092] When affiliate pages rank but do not convert and you are using signal from @harpreetchatha_, instrument query clusters by intent and device before touching templates.
+- [harpreetchatha_-card-0093] When affiliate pages rank but do not convert and you are using signal from @harpreetchatha_, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [harpreetchatha_-card-0094] When affiliate pages rank but do not convert and you are using signal from @harpreetchatha_, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [harpreetchatha_-card-0095] When affiliate pages rank but do not convert and you are using signal from @harpreetchatha_, set a rollback threshold before release and enforce it without exception.
+- [harpreetchatha_-card-0096] When affiliate pages rank but do not convert and you are using signal from @harpreetchatha_, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [harpreetchatha_-card-0097] When affiliate pages rank but do not convert and you are using signal from @harpreetchatha_, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [harpreetchatha_-card-0098] When affiliate pages rank but do not convert and you are using signal from @harpreetchatha_, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [harpreetchatha_-card-0099] When affiliate pages rank but do not convert and you are using signal from @harpreetchatha_, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [harpreetchatha_-card-0100] When affiliate pages rank but do not convert and you are using signal from @harpreetchatha_, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [harpreetchatha_-card-0101] When SERP features crowd out classic blue-link traffic and you are using signal from @harpreetchatha_, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [harpreetchatha_-card-0102] When SERP features crowd out classic blue-link traffic and you are using signal from @harpreetchatha_, instrument query clusters by intent and device before touching templates.
+- [harpreetchatha_-card-0103] When SERP features crowd out classic blue-link traffic and you are using signal from @harpreetchatha_, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [harpreetchatha_-card-0104] When SERP features crowd out classic blue-link traffic and you are using signal from @harpreetchatha_, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [harpreetchatha_-card-0105] When SERP features crowd out classic blue-link traffic and you are using signal from @harpreetchatha_, set a rollback threshold before release and enforce it without exception.
+- [harpreetchatha_-card-0106] When SERP features crowd out classic blue-link traffic and you are using signal from @harpreetchatha_, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [harpreetchatha_-card-0107] When SERP features crowd out classic blue-link traffic and you are using signal from @harpreetchatha_, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [harpreetchatha_-card-0108] When SERP features crowd out classic blue-link traffic and you are using signal from @harpreetchatha_, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [harpreetchatha_-card-0109] When SERP features crowd out classic blue-link traffic and you are using signal from @harpreetchatha_, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [harpreetchatha_-card-0110] When SERP features crowd out classic blue-link traffic and you are using signal from @harpreetchatha_, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [harpreetchatha_-card-0111] When new backlink opportunities spike but risk is unclear and you are using signal from @harpreetchatha_, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [harpreetchatha_-card-0112] When new backlink opportunities spike but risk is unclear and you are using signal from @harpreetchatha_, instrument query clusters by intent and device before touching templates.
+- [harpreetchatha_-card-0113] When new backlink opportunities spike but risk is unclear and you are using signal from @harpreetchatha_, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [harpreetchatha_-card-0114] When new backlink opportunities spike but risk is unclear and you are using signal from @harpreetchatha_, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [harpreetchatha_-card-0115] When new backlink opportunities spike but risk is unclear and you are using signal from @harpreetchatha_, set a rollback threshold before release and enforce it without exception.
+- [harpreetchatha_-card-0116] When new backlink opportunities spike but risk is unclear and you are using signal from @harpreetchatha_, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [harpreetchatha_-card-0117] When new backlink opportunities spike but risk is unclear and you are using signal from @harpreetchatha_, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [harpreetchatha_-card-0118] When new backlink opportunities spike but risk is unclear and you are using signal from @harpreetchatha_, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [harpreetchatha_-card-0119] When new backlink opportunities spike but risk is unclear and you are using signal from @harpreetchatha_, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [harpreetchatha_-card-0120] When new backlink opportunities spike but risk is unclear and you are using signal from @harpreetchatha_, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [harpreetchatha_-card-0121] When programmatic SEO expansions are proposed and you are using signal from @harpreetchatha_, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [harpreetchatha_-card-0122] When programmatic SEO expansions are proposed and you are using signal from @harpreetchatha_, instrument query clusters by intent and device before touching templates.
+- [harpreetchatha_-card-0123] When programmatic SEO expansions are proposed and you are using signal from @harpreetchatha_, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [harpreetchatha_-card-0124] When programmatic SEO expansions are proposed and you are using signal from @harpreetchatha_, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [harpreetchatha_-card-0125] When programmatic SEO expansions are proposed and you are using signal from @harpreetchatha_, set a rollback threshold before release and enforce it without exception.
+- [harpreetchatha_-card-0126] When programmatic SEO expansions are proposed and you are using signal from @harpreetchatha_, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [harpreetchatha_-card-0127] When programmatic SEO expansions are proposed and you are using signal from @harpreetchatha_, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [harpreetchatha_-card-0128] When programmatic SEO expansions are proposed and you are using signal from @harpreetchatha_, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [harpreetchatha_-card-0129] When programmatic SEO expansions are proposed and you are using signal from @harpreetchatha_, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [harpreetchatha_-card-0130] When programmatic SEO expansions are proposed and you are using signal from @harpreetchatha_, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [harpreetchatha_-card-0131] When international rollout introduces hreflang complexity and you are using signal from @harpreetchatha_, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [harpreetchatha_-card-0132] When international rollout introduces hreflang complexity and you are using signal from @harpreetchatha_, instrument query clusters by intent and device before touching templates.
+- [harpreetchatha_-card-0133] When international rollout introduces hreflang complexity and you are using signal from @harpreetchatha_, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [harpreetchatha_-card-0134] When international rollout introduces hreflang complexity and you are using signal from @harpreetchatha_, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [harpreetchatha_-card-0135] When international rollout introduces hreflang complexity and you are using signal from @harpreetchatha_, set a rollback threshold before release and enforce it without exception.
+- [harpreetchatha_-card-0136] When international rollout introduces hreflang complexity and you are using signal from @harpreetchatha_, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [harpreetchatha_-card-0137] When international rollout introduces hreflang complexity and you are using signal from @harpreetchatha_, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [harpreetchatha_-card-0138] When international rollout introduces hreflang complexity and you are using signal from @harpreetchatha_, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [harpreetchatha_-card-0139] When international rollout introduces hreflang complexity and you are using signal from @harpreetchatha_, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [harpreetchatha_-card-0140] When international rollout introduces hreflang complexity and you are using signal from @harpreetchatha_, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [harpreetchatha_-card-0141] When new AI-search referral channels appear and you are using signal from @harpreetchatha_, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [harpreetchatha_-card-0142] When new AI-search referral channels appear and you are using signal from @harpreetchatha_, instrument query clusters by intent and device before touching templates.
+- [harpreetchatha_-card-0143] When new AI-search referral channels appear and you are using signal from @harpreetchatha_, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [harpreetchatha_-card-0144] When new AI-search referral channels appear and you are using signal from @harpreetchatha_, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [harpreetchatha_-card-0145] When new AI-search referral channels appear and you are using signal from @harpreetchatha_, set a rollback threshold before release and enforce it without exception.
+- [harpreetchatha_-card-0146] When new AI-search referral channels appear and you are using signal from @harpreetchatha_, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [harpreetchatha_-card-0147] When new AI-search referral channels appear and you are using signal from @harpreetchatha_, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [harpreetchatha_-card-0148] When new AI-search referral channels appear and you are using signal from @harpreetchatha_, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [harpreetchatha_-card-0149] When new AI-search referral channels appear and you are using signal from @harpreetchatha_, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [harpreetchatha_-card-0150] When new AI-search referral channels appear and you are using signal from @harpreetchatha_, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [harpreetchatha_-card-0151] When stakeholders demand instant recovery plans and you are using signal from @harpreetchatha_, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [harpreetchatha_-card-0152] When stakeholders demand instant recovery plans and you are using signal from @harpreetchatha_, instrument query clusters by intent and device before touching templates.
+- [harpreetchatha_-card-0153] When stakeholders demand instant recovery plans and you are using signal from @harpreetchatha_, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [harpreetchatha_-card-0154] When stakeholders demand instant recovery plans and you are using signal from @harpreetchatha_, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [harpreetchatha_-card-0155] When stakeholders demand instant recovery plans and you are using signal from @harpreetchatha_, set a rollback threshold before release and enforce it without exception.
+- [harpreetchatha_-card-0156] When stakeholders demand instant recovery plans and you are using signal from @harpreetchatha_, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [harpreetchatha_-card-0157] When stakeholders demand instant recovery plans and you are using signal from @harpreetchatha_, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [harpreetchatha_-card-0158] When stakeholders demand instant recovery plans and you are using signal from @harpreetchatha_, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [harpreetchatha_-card-0159] When stakeholders demand instant recovery plans and you are using signal from @harpreetchatha_, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [harpreetchatha_-card-0160] When stakeholders demand instant recovery plans and you are using signal from @harpreetchatha_, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [harpreetchatha_-card-0161] When technical debt blocks roadmap velocity and you are using signal from @harpreetchatha_, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [harpreetchatha_-card-0162] When technical debt blocks roadmap velocity and you are using signal from @harpreetchatha_, instrument query clusters by intent and device before touching templates.
+- [harpreetchatha_-card-0163] When technical debt blocks roadmap velocity and you are using signal from @harpreetchatha_, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [harpreetchatha_-card-0164] When technical debt blocks roadmap velocity and you are using signal from @harpreetchatha_, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [harpreetchatha_-card-0165] When technical debt blocks roadmap velocity and you are using signal from @harpreetchatha_, set a rollback threshold before release and enforce it without exception.
+- [harpreetchatha_-card-0166] When technical debt blocks roadmap velocity and you are using signal from @harpreetchatha_, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [harpreetchatha_-card-0167] When technical debt blocks roadmap velocity and you are using signal from @harpreetchatha_, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [harpreetchatha_-card-0168] When technical debt blocks roadmap velocity and you are using signal from @harpreetchatha_, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [harpreetchatha_-card-0169] When technical debt blocks roadmap velocity and you are using signal from @harpreetchatha_, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [harpreetchatha_-card-0170] When technical debt blocks roadmap velocity and you are using signal from @harpreetchatha_, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [harpreetchatha_-card-0171] When competitors gain visibility with uncertain methods and you are using signal from @harpreetchatha_, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [harpreetchatha_-card-0172] When competitors gain visibility with uncertain methods and you are using signal from @harpreetchatha_, instrument query clusters by intent and device before touching templates.
+- [harpreetchatha_-card-0173] When competitors gain visibility with uncertain methods and you are using signal from @harpreetchatha_, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [harpreetchatha_-card-0174] When competitors gain visibility with uncertain methods and you are using signal from @harpreetchatha_, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [harpreetchatha_-card-0175] When competitors gain visibility with uncertain methods and you are using signal from @harpreetchatha_, set a rollback threshold before release and enforce it without exception.
+- [harpreetchatha_-card-0176] When competitors gain visibility with uncertain methods and you are using signal from @harpreetchatha_, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [harpreetchatha_-card-0177] When competitors gain visibility with uncertain methods and you are using signal from @harpreetchatha_, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [harpreetchatha_-card-0178] When competitors gain visibility with uncertain methods and you are using signal from @harpreetchatha_, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [harpreetchatha_-card-0179] When competitors gain visibility with uncertain methods and you are using signal from @harpreetchatha_, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [harpreetchatha_-card-0180] When competitors gain visibility with uncertain methods and you are using signal from @harpreetchatha_, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [harpreetchatha_-card-0181] When search intent shifts after product-category changes and you are using signal from @harpreetchatha_, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [harpreetchatha_-card-0182] When search intent shifts after product-category changes and you are using signal from @harpreetchatha_, instrument query clusters by intent and device before touching templates.
+- [harpreetchatha_-card-0183] When search intent shifts after product-category changes and you are using signal from @harpreetchatha_, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [harpreetchatha_-card-0184] When search intent shifts after product-category changes and you are using signal from @harpreetchatha_, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [harpreetchatha_-card-0185] When search intent shifts after product-category changes and you are using signal from @harpreetchatha_, set a rollback threshold before release and enforce it without exception.
+- [harpreetchatha_-card-0186] When search intent shifts after product-category changes and you are using signal from @harpreetchatha_, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [harpreetchatha_-card-0187] When search intent shifts after product-category changes and you are using signal from @harpreetchatha_, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [harpreetchatha_-card-0188] When search intent shifts after product-category changes and you are using signal from @harpreetchatha_, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [harpreetchatha_-card-0189] When search intent shifts after product-category changes and you are using signal from @harpreetchatha_, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [harpreetchatha_-card-0190] When search intent shifts after product-category changes and you are using signal from @harpreetchatha_, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [harpreetchatha_-card-0191] When analytics attribution masks true SEO impact and you are using signal from @harpreetchatha_, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [harpreetchatha_-card-0192] When analytics attribution masks true SEO impact and you are using signal from @harpreetchatha_, instrument query clusters by intent and device before touching templates.
+- [harpreetchatha_-card-0193] When analytics attribution masks true SEO impact and you are using signal from @harpreetchatha_, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [harpreetchatha_-card-0194] When analytics attribution masks true SEO impact and you are using signal from @harpreetchatha_, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [harpreetchatha_-card-0195] When analytics attribution masks true SEO impact and you are using signal from @harpreetchatha_, set a rollback threshold before release and enforce it without exception.
+- [harpreetchatha_-card-0196] When analytics attribution masks true SEO impact and you are using signal from @harpreetchatha_, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [harpreetchatha_-card-0197] When analytics attribution masks true SEO impact and you are using signal from @harpreetchatha_, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [harpreetchatha_-card-0198] When analytics attribution masks true SEO impact and you are using signal from @harpreetchatha_, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [harpreetchatha_-card-0199] When analytics attribution masks true SEO impact and you are using signal from @harpreetchatha_, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [harpreetchatha_-card-0200] When analytics attribution masks true SEO impact and you are using signal from @harpreetchatha_, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+
+### Fast Decision Rules
+- [harpreetchatha_-rule-001] If evidence is anecdotal and upside is low, skip implementation.
+- [harpreetchatha_-rule-002] If evidence is mixed and risk is high, run only in sandbox properties.
+- [harpreetchatha_-rule-003] If business impact is unmeasurable, deprioritize until instrumentation is fixed.
+- [harpreetchatha_-rule-004] If a tactic wins on traffic but loses on conversion quality, revert or redesign.
+- [harpreetchatha_-rule-005] If guidance aligns with multiple trusted sources, increase confidence tier.
+
+## 7. John Mueller (@JohnMu)
+
+Primary focus: official Google Search guidance, nuance behind documentation, systems-level context.
+Signal rationale: Critical source for policy nuance, interpretation boundaries, and alignment with Search Central guidance.
+Reference links:
+- https://www.twstalker.com/JohnMu
+- https://developers.google.com/search/blog/authors/13-john-mueller
+- https://developers.google.com/search/blog/2026/02/discover-core-update
+Core themes:
+- Search Central guidance interpretation
+- Policy and documentation nuance
+- Quality systems context
+- Communicating uncertainty correctly
+Execution defaults:
+- Use this account as a hypothesis generator, not a final authority.
+- If a claim is novel, require one low-risk pilot and one replication before broad rollout.
+- If a claim conflicts with Search Central guidance, document the conflict explicitly and downgrade confidence.
+- Convert social claims into issue tickets with owner, metric target, and expiration date.
+
+### Measurement Priorities
+- [JohnMu-measure-001] Track impressions, clicks, CTR, qualified sessions, conversion rate, and revenue per landing page.
+- [JohnMu-measure-002] Track query-cluster volatility by intent class and by URL template.
+- [JohnMu-measure-003] Track indexation ratio: indexed URLs divided by submitted canonical URLs.
+- [JohnMu-measure-004] Track internal-link depth and click-distance for money pages.
+- [JohnMu-measure-005] Track AI-surface citation frequency where measurable.
+- [JohnMu-measure-006] Track content decay windows and refresh impact lag.
+- [JohnMu-measure-007] Track cannibalization risk with near-duplicate intent clusters.
+- [JohnMu-measure-008] Track share-of-voice for high-value non-brand queries.
+- [JohnMu-measure-009] Track anomaly lead time between ranking changes and business outcomes.
+- [JohnMu-measure-010] Track assisted-conversion contribution from organic entry pages.
+
+### Atomic Action Cards
+- [JohnMu-card-0001] When a broad core update rolls out and you are using signal from @JohnMu, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [JohnMu-card-0002] When a broad core update rolls out and you are using signal from @JohnMu, instrument query clusters by intent and device before touching templates.
+- [JohnMu-card-0003] When a broad core update rolls out and you are using signal from @JohnMu, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [JohnMu-card-0004] When a broad core update rolls out and you are using signal from @JohnMu, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [JohnMu-card-0005] When a broad core update rolls out and you are using signal from @JohnMu, set a rollback threshold before release and enforce it without exception.
+- [JohnMu-card-0006] When a broad core update rolls out and you are using signal from @JohnMu, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [JohnMu-card-0007] When a broad core update rolls out and you are using signal from @JohnMu, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [JohnMu-card-0008] When a broad core update rolls out and you are using signal from @JohnMu, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [JohnMu-card-0009] When a broad core update rolls out and you are using signal from @JohnMu, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [JohnMu-card-0010] When a broad core update rolls out and you are using signal from @JohnMu, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [JohnMu-card-0011] When a niche-specific ranking shock appears and you are using signal from @JohnMu, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [JohnMu-card-0012] When a niche-specific ranking shock appears and you are using signal from @JohnMu, instrument query clusters by intent and device before touching templates.
+- [JohnMu-card-0013] When a niche-specific ranking shock appears and you are using signal from @JohnMu, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [JohnMu-card-0014] When a niche-specific ranking shock appears and you are using signal from @JohnMu, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [JohnMu-card-0015] When a niche-specific ranking shock appears and you are using signal from @JohnMu, set a rollback threshold before release and enforce it without exception.
+- [JohnMu-card-0016] When a niche-specific ranking shock appears and you are using signal from @JohnMu, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [JohnMu-card-0017] When a niche-specific ranking shock appears and you are using signal from @JohnMu, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [JohnMu-card-0018] When a niche-specific ranking shock appears and you are using signal from @JohnMu, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [JohnMu-card-0019] When a niche-specific ranking shock appears and you are using signal from @JohnMu, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [JohnMu-card-0020] When a niche-specific ranking shock appears and you are using signal from @JohnMu, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [JohnMu-card-0021] When AI Overviews or answer engines reduce clicks and you are using signal from @JohnMu, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [JohnMu-card-0022] When AI Overviews or answer engines reduce clicks and you are using signal from @JohnMu, instrument query clusters by intent and device before touching templates.
+- [JohnMu-card-0023] When AI Overviews or answer engines reduce clicks and you are using signal from @JohnMu, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [JohnMu-card-0024] When AI Overviews or answer engines reduce clicks and you are using signal from @JohnMu, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [JohnMu-card-0025] When AI Overviews or answer engines reduce clicks and you are using signal from @JohnMu, set a rollback threshold before release and enforce it without exception.
+- [JohnMu-card-0026] When AI Overviews or answer engines reduce clicks and you are using signal from @JohnMu, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [JohnMu-card-0027] When AI Overviews or answer engines reduce clicks and you are using signal from @JohnMu, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [JohnMu-card-0028] When AI Overviews or answer engines reduce clicks and you are using signal from @JohnMu, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [JohnMu-card-0029] When AI Overviews or answer engines reduce clicks and you are using signal from @JohnMu, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [JohnMu-card-0030] When AI Overviews or answer engines reduce clicks and you are using signal from @JohnMu, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [JohnMu-card-0031] When crawl budget becomes constrained on large templates and you are using signal from @JohnMu, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [JohnMu-card-0032] When crawl budget becomes constrained on large templates and you are using signal from @JohnMu, instrument query clusters by intent and device before touching templates.
+- [JohnMu-card-0033] When crawl budget becomes constrained on large templates and you are using signal from @JohnMu, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [JohnMu-card-0034] When crawl budget becomes constrained on large templates and you are using signal from @JohnMu, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [JohnMu-card-0035] When crawl budget becomes constrained on large templates and you are using signal from @JohnMu, set a rollback threshold before release and enforce it without exception.
+- [JohnMu-card-0036] When crawl budget becomes constrained on large templates and you are using signal from @JohnMu, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [JohnMu-card-0037] When crawl budget becomes constrained on large templates and you are using signal from @JohnMu, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [JohnMu-card-0038] When crawl budget becomes constrained on large templates and you are using signal from @JohnMu, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [JohnMu-card-0039] When crawl budget becomes constrained on large templates and you are using signal from @JohnMu, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [JohnMu-card-0040] When crawl budget becomes constrained on large templates and you are using signal from @JohnMu, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [JohnMu-card-0041] When indexation mismatches appear between sitemap and search and you are using signal from @JohnMu, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [JohnMu-card-0042] When indexation mismatches appear between sitemap and search and you are using signal from @JohnMu, instrument query clusters by intent and device before touching templates.
+- [JohnMu-card-0043] When indexation mismatches appear between sitemap and search and you are using signal from @JohnMu, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [JohnMu-card-0044] When indexation mismatches appear between sitemap and search and you are using signal from @JohnMu, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [JohnMu-card-0045] When indexation mismatches appear between sitemap and search and you are using signal from @JohnMu, set a rollback threshold before release and enforce it without exception.
+- [JohnMu-card-0046] When indexation mismatches appear between sitemap and search and you are using signal from @JohnMu, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [JohnMu-card-0047] When indexation mismatches appear between sitemap and search and you are using signal from @JohnMu, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [JohnMu-card-0048] When indexation mismatches appear between sitemap and search and you are using signal from @JohnMu, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [JohnMu-card-0049] When indexation mismatches appear between sitemap and search and you are using signal from @JohnMu, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [JohnMu-card-0050] When indexation mismatches appear between sitemap and search and you are using signal from @JohnMu, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [JohnMu-card-0051] When internal-link architecture underperforms and you are using signal from @JohnMu, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [JohnMu-card-0052] When internal-link architecture underperforms and you are using signal from @JohnMu, instrument query clusters by intent and device before touching templates.
+- [JohnMu-card-0053] When internal-link architecture underperforms and you are using signal from @JohnMu, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [JohnMu-card-0054] When internal-link architecture underperforms and you are using signal from @JohnMu, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [JohnMu-card-0055] When internal-link architecture underperforms and you are using signal from @JohnMu, set a rollback threshold before release and enforce it without exception.
+- [JohnMu-card-0056] When internal-link architecture underperforms and you are using signal from @JohnMu, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [JohnMu-card-0057] When internal-link architecture underperforms and you are using signal from @JohnMu, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [JohnMu-card-0058] When internal-link architecture underperforms and you are using signal from @JohnMu, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [JohnMu-card-0059] When internal-link architecture underperforms and you are using signal from @JohnMu, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [JohnMu-card-0060] When internal-link architecture underperforms and you are using signal from @JohnMu, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [JohnMu-card-0061] When entity disambiguation issues dilute topical authority and you are using signal from @JohnMu, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [JohnMu-card-0062] When entity disambiguation issues dilute topical authority and you are using signal from @JohnMu, instrument query clusters by intent and device before touching templates.
+- [JohnMu-card-0063] When entity disambiguation issues dilute topical authority and you are using signal from @JohnMu, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [JohnMu-card-0064] When entity disambiguation issues dilute topical authority and you are using signal from @JohnMu, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [JohnMu-card-0065] When entity disambiguation issues dilute topical authority and you are using signal from @JohnMu, set a rollback threshold before release and enforce it without exception.
+- [JohnMu-card-0066] When entity disambiguation issues dilute topical authority and you are using signal from @JohnMu, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [JohnMu-card-0067] When entity disambiguation issues dilute topical authority and you are using signal from @JohnMu, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [JohnMu-card-0068] When entity disambiguation issues dilute topical authority and you are using signal from @JohnMu, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [JohnMu-card-0069] When entity disambiguation issues dilute topical authority and you are using signal from @JohnMu, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [JohnMu-card-0070] When entity disambiguation issues dilute topical authority and you are using signal from @JohnMu, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [JohnMu-card-0071] When large-scale content refresh decisions are needed and you are using signal from @JohnMu, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [JohnMu-card-0072] When large-scale content refresh decisions are needed and you are using signal from @JohnMu, instrument query clusters by intent and device before touching templates.
+- [JohnMu-card-0073] When large-scale content refresh decisions are needed and you are using signal from @JohnMu, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [JohnMu-card-0074] When large-scale content refresh decisions are needed and you are using signal from @JohnMu, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [JohnMu-card-0075] When large-scale content refresh decisions are needed and you are using signal from @JohnMu, set a rollback threshold before release and enforce it without exception.
+- [JohnMu-card-0076] When large-scale content refresh decisions are needed and you are using signal from @JohnMu, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [JohnMu-card-0077] When large-scale content refresh decisions are needed and you are using signal from @JohnMu, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [JohnMu-card-0078] When large-scale content refresh decisions are needed and you are using signal from @JohnMu, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [JohnMu-card-0079] When large-scale content refresh decisions are needed and you are using signal from @JohnMu, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [JohnMu-card-0080] When large-scale content refresh decisions are needed and you are using signal from @JohnMu, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [JohnMu-card-0081] When brand trust signals appear weak for YMYL queries and you are using signal from @JohnMu, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [JohnMu-card-0082] When brand trust signals appear weak for YMYL queries and you are using signal from @JohnMu, instrument query clusters by intent and device before touching templates.
+- [JohnMu-card-0083] When brand trust signals appear weak for YMYL queries and you are using signal from @JohnMu, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [JohnMu-card-0084] When brand trust signals appear weak for YMYL queries and you are using signal from @JohnMu, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [JohnMu-card-0085] When brand trust signals appear weak for YMYL queries and you are using signal from @JohnMu, set a rollback threshold before release and enforce it without exception.
+- [JohnMu-card-0086] When brand trust signals appear weak for YMYL queries and you are using signal from @JohnMu, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [JohnMu-card-0087] When brand trust signals appear weak for YMYL queries and you are using signal from @JohnMu, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [JohnMu-card-0088] When brand trust signals appear weak for YMYL queries and you are using signal from @JohnMu, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [JohnMu-card-0089] When brand trust signals appear weak for YMYL queries and you are using signal from @JohnMu, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [JohnMu-card-0090] When brand trust signals appear weak for YMYL queries and you are using signal from @JohnMu, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [JohnMu-card-0091] When affiliate pages rank but do not convert and you are using signal from @JohnMu, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [JohnMu-card-0092] When affiliate pages rank but do not convert and you are using signal from @JohnMu, instrument query clusters by intent and device before touching templates.
+- [JohnMu-card-0093] When affiliate pages rank but do not convert and you are using signal from @JohnMu, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [JohnMu-card-0094] When affiliate pages rank but do not convert and you are using signal from @JohnMu, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [JohnMu-card-0095] When affiliate pages rank but do not convert and you are using signal from @JohnMu, set a rollback threshold before release and enforce it without exception.
+- [JohnMu-card-0096] When affiliate pages rank but do not convert and you are using signal from @JohnMu, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [JohnMu-card-0097] When affiliate pages rank but do not convert and you are using signal from @JohnMu, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [JohnMu-card-0098] When affiliate pages rank but do not convert and you are using signal from @JohnMu, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [JohnMu-card-0099] When affiliate pages rank but do not convert and you are using signal from @JohnMu, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [JohnMu-card-0100] When affiliate pages rank but do not convert and you are using signal from @JohnMu, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [JohnMu-card-0101] When SERP features crowd out classic blue-link traffic and you are using signal from @JohnMu, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [JohnMu-card-0102] When SERP features crowd out classic blue-link traffic and you are using signal from @JohnMu, instrument query clusters by intent and device before touching templates.
+- [JohnMu-card-0103] When SERP features crowd out classic blue-link traffic and you are using signal from @JohnMu, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [JohnMu-card-0104] When SERP features crowd out classic blue-link traffic and you are using signal from @JohnMu, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [JohnMu-card-0105] When SERP features crowd out classic blue-link traffic and you are using signal from @JohnMu, set a rollback threshold before release and enforce it without exception.
+- [JohnMu-card-0106] When SERP features crowd out classic blue-link traffic and you are using signal from @JohnMu, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [JohnMu-card-0107] When SERP features crowd out classic blue-link traffic and you are using signal from @JohnMu, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [JohnMu-card-0108] When SERP features crowd out classic blue-link traffic and you are using signal from @JohnMu, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [JohnMu-card-0109] When SERP features crowd out classic blue-link traffic and you are using signal from @JohnMu, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [JohnMu-card-0110] When SERP features crowd out classic blue-link traffic and you are using signal from @JohnMu, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [JohnMu-card-0111] When new backlink opportunities spike but risk is unclear and you are using signal from @JohnMu, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [JohnMu-card-0112] When new backlink opportunities spike but risk is unclear and you are using signal from @JohnMu, instrument query clusters by intent and device before touching templates.
+- [JohnMu-card-0113] When new backlink opportunities spike but risk is unclear and you are using signal from @JohnMu, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [JohnMu-card-0114] When new backlink opportunities spike but risk is unclear and you are using signal from @JohnMu, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [JohnMu-card-0115] When new backlink opportunities spike but risk is unclear and you are using signal from @JohnMu, set a rollback threshold before release and enforce it without exception.
+- [JohnMu-card-0116] When new backlink opportunities spike but risk is unclear and you are using signal from @JohnMu, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [JohnMu-card-0117] When new backlink opportunities spike but risk is unclear and you are using signal from @JohnMu, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [JohnMu-card-0118] When new backlink opportunities spike but risk is unclear and you are using signal from @JohnMu, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [JohnMu-card-0119] When new backlink opportunities spike but risk is unclear and you are using signal from @JohnMu, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [JohnMu-card-0120] When new backlink opportunities spike but risk is unclear and you are using signal from @JohnMu, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [JohnMu-card-0121] When programmatic SEO expansions are proposed and you are using signal from @JohnMu, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [JohnMu-card-0122] When programmatic SEO expansions are proposed and you are using signal from @JohnMu, instrument query clusters by intent and device before touching templates.
+- [JohnMu-card-0123] When programmatic SEO expansions are proposed and you are using signal from @JohnMu, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [JohnMu-card-0124] When programmatic SEO expansions are proposed and you are using signal from @JohnMu, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [JohnMu-card-0125] When programmatic SEO expansions are proposed and you are using signal from @JohnMu, set a rollback threshold before release and enforce it without exception.
+- [JohnMu-card-0126] When programmatic SEO expansions are proposed and you are using signal from @JohnMu, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [JohnMu-card-0127] When programmatic SEO expansions are proposed and you are using signal from @JohnMu, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [JohnMu-card-0128] When programmatic SEO expansions are proposed and you are using signal from @JohnMu, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [JohnMu-card-0129] When programmatic SEO expansions are proposed and you are using signal from @JohnMu, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [JohnMu-card-0130] When programmatic SEO expansions are proposed and you are using signal from @JohnMu, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [JohnMu-card-0131] When international rollout introduces hreflang complexity and you are using signal from @JohnMu, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [JohnMu-card-0132] When international rollout introduces hreflang complexity and you are using signal from @JohnMu, instrument query clusters by intent and device before touching templates.
+- [JohnMu-card-0133] When international rollout introduces hreflang complexity and you are using signal from @JohnMu, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [JohnMu-card-0134] When international rollout introduces hreflang complexity and you are using signal from @JohnMu, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [JohnMu-card-0135] When international rollout introduces hreflang complexity and you are using signal from @JohnMu, set a rollback threshold before release and enforce it without exception.
+- [JohnMu-card-0136] When international rollout introduces hreflang complexity and you are using signal from @JohnMu, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [JohnMu-card-0137] When international rollout introduces hreflang complexity and you are using signal from @JohnMu, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [JohnMu-card-0138] When international rollout introduces hreflang complexity and you are using signal from @JohnMu, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [JohnMu-card-0139] When international rollout introduces hreflang complexity and you are using signal from @JohnMu, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [JohnMu-card-0140] When international rollout introduces hreflang complexity and you are using signal from @JohnMu, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [JohnMu-card-0141] When new AI-search referral channels appear and you are using signal from @JohnMu, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [JohnMu-card-0142] When new AI-search referral channels appear and you are using signal from @JohnMu, instrument query clusters by intent and device before touching templates.
+- [JohnMu-card-0143] When new AI-search referral channels appear and you are using signal from @JohnMu, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [JohnMu-card-0144] When new AI-search referral channels appear and you are using signal from @JohnMu, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [JohnMu-card-0145] When new AI-search referral channels appear and you are using signal from @JohnMu, set a rollback threshold before release and enforce it without exception.
+- [JohnMu-card-0146] When new AI-search referral channels appear and you are using signal from @JohnMu, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [JohnMu-card-0147] When new AI-search referral channels appear and you are using signal from @JohnMu, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [JohnMu-card-0148] When new AI-search referral channels appear and you are using signal from @JohnMu, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [JohnMu-card-0149] When new AI-search referral channels appear and you are using signal from @JohnMu, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [JohnMu-card-0150] When new AI-search referral channels appear and you are using signal from @JohnMu, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [JohnMu-card-0151] When stakeholders demand instant recovery plans and you are using signal from @JohnMu, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [JohnMu-card-0152] When stakeholders demand instant recovery plans and you are using signal from @JohnMu, instrument query clusters by intent and device before touching templates.
+- [JohnMu-card-0153] When stakeholders demand instant recovery plans and you are using signal from @JohnMu, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [JohnMu-card-0154] When stakeholders demand instant recovery plans and you are using signal from @JohnMu, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [JohnMu-card-0155] When stakeholders demand instant recovery plans and you are using signal from @JohnMu, set a rollback threshold before release and enforce it without exception.
+- [JohnMu-card-0156] When stakeholders demand instant recovery plans and you are using signal from @JohnMu, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [JohnMu-card-0157] When stakeholders demand instant recovery plans and you are using signal from @JohnMu, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [JohnMu-card-0158] When stakeholders demand instant recovery plans and you are using signal from @JohnMu, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [JohnMu-card-0159] When stakeholders demand instant recovery plans and you are using signal from @JohnMu, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [JohnMu-card-0160] When stakeholders demand instant recovery plans and you are using signal from @JohnMu, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [JohnMu-card-0161] When technical debt blocks roadmap velocity and you are using signal from @JohnMu, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [JohnMu-card-0162] When technical debt blocks roadmap velocity and you are using signal from @JohnMu, instrument query clusters by intent and device before touching templates.
+- [JohnMu-card-0163] When technical debt blocks roadmap velocity and you are using signal from @JohnMu, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [JohnMu-card-0164] When technical debt blocks roadmap velocity and you are using signal from @JohnMu, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [JohnMu-card-0165] When technical debt blocks roadmap velocity and you are using signal from @JohnMu, set a rollback threshold before release and enforce it without exception.
+- [JohnMu-card-0166] When technical debt blocks roadmap velocity and you are using signal from @JohnMu, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [JohnMu-card-0167] When technical debt blocks roadmap velocity and you are using signal from @JohnMu, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [JohnMu-card-0168] When technical debt blocks roadmap velocity and you are using signal from @JohnMu, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [JohnMu-card-0169] When technical debt blocks roadmap velocity and you are using signal from @JohnMu, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [JohnMu-card-0170] When technical debt blocks roadmap velocity and you are using signal from @JohnMu, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [JohnMu-card-0171] When competitors gain visibility with uncertain methods and you are using signal from @JohnMu, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [JohnMu-card-0172] When competitors gain visibility with uncertain methods and you are using signal from @JohnMu, instrument query clusters by intent and device before touching templates.
+- [JohnMu-card-0173] When competitors gain visibility with uncertain methods and you are using signal from @JohnMu, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [JohnMu-card-0174] When competitors gain visibility with uncertain methods and you are using signal from @JohnMu, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [JohnMu-card-0175] When competitors gain visibility with uncertain methods and you are using signal from @JohnMu, set a rollback threshold before release and enforce it without exception.
+- [JohnMu-card-0176] When competitors gain visibility with uncertain methods and you are using signal from @JohnMu, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [JohnMu-card-0177] When competitors gain visibility with uncertain methods and you are using signal from @JohnMu, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [JohnMu-card-0178] When competitors gain visibility with uncertain methods and you are using signal from @JohnMu, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [JohnMu-card-0179] When competitors gain visibility with uncertain methods and you are using signal from @JohnMu, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [JohnMu-card-0180] When competitors gain visibility with uncertain methods and you are using signal from @JohnMu, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [JohnMu-card-0181] When search intent shifts after product-category changes and you are using signal from @JohnMu, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [JohnMu-card-0182] When search intent shifts after product-category changes and you are using signal from @JohnMu, instrument query clusters by intent and device before touching templates.
+- [JohnMu-card-0183] When search intent shifts after product-category changes and you are using signal from @JohnMu, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [JohnMu-card-0184] When search intent shifts after product-category changes and you are using signal from @JohnMu, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [JohnMu-card-0185] When search intent shifts after product-category changes and you are using signal from @JohnMu, set a rollback threshold before release and enforce it without exception.
+- [JohnMu-card-0186] When search intent shifts after product-category changes and you are using signal from @JohnMu, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [JohnMu-card-0187] When search intent shifts after product-category changes and you are using signal from @JohnMu, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [JohnMu-card-0188] When search intent shifts after product-category changes and you are using signal from @JohnMu, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [JohnMu-card-0189] When search intent shifts after product-category changes and you are using signal from @JohnMu, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [JohnMu-card-0190] When search intent shifts after product-category changes and you are using signal from @JohnMu, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [JohnMu-card-0191] When analytics attribution masks true SEO impact and you are using signal from @JohnMu, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [JohnMu-card-0192] When analytics attribution masks true SEO impact and you are using signal from @JohnMu, instrument query clusters by intent and device before touching templates.
+- [JohnMu-card-0193] When analytics attribution masks true SEO impact and you are using signal from @JohnMu, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [JohnMu-card-0194] When analytics attribution masks true SEO impact and you are using signal from @JohnMu, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [JohnMu-card-0195] When analytics attribution masks true SEO impact and you are using signal from @JohnMu, set a rollback threshold before release and enforce it without exception.
+- [JohnMu-card-0196] When analytics attribution masks true SEO impact and you are using signal from @JohnMu, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [JohnMu-card-0197] When analytics attribution masks true SEO impact and you are using signal from @JohnMu, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [JohnMu-card-0198] When analytics attribution masks true SEO impact and you are using signal from @JohnMu, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [JohnMu-card-0199] When analytics attribution masks true SEO impact and you are using signal from @JohnMu, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [JohnMu-card-0200] When analytics attribution masks true SEO impact and you are using signal from @JohnMu, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+
+### Fast Decision Rules
+- [JohnMu-rule-001] If evidence is anecdotal and upside is low, skip implementation.
+- [JohnMu-rule-002] If evidence is mixed and risk is high, run only in sandbox properties.
+- [JohnMu-rule-003] If business impact is unmeasurable, deprioritize until instrumentation is fixed.
+- [JohnMu-rule-004] If a tactic wins on traffic but loses on conversion quality, revert or redesign.
+- [JohnMu-rule-005] If guidance aligns with multiple trusted sources, increase confidence tier.
+
+## 8. Kasra Dash (@Kasra_Dash)
+
+Primary focus: aggressive experimentation, AI search visibility, competitive-niche scaling.
+Signal rationale: High-signal for operators who need test loops in hostile SERP environments with strong commercial pressure.
+Reference links:
+- https://www.twstalker.com/Kasra_Dash
+- https://www.masterminders.com/
+- https://myseo.app/
+Core themes:
+- Aggressive SEO test loops
+- AI visibility operations
+- Competitive niche execution
+- Systematic experimentation cadence
+Execution defaults:
+- Use this account as a hypothesis generator, not a final authority.
+- If a claim is novel, require one low-risk pilot and one replication before broad rollout.
+- If a claim conflicts with Search Central guidance, document the conflict explicitly and downgrade confidence.
+- Convert social claims into issue tickets with owner, metric target, and expiration date.
+
+### Measurement Priorities
+- [Kasra_Dash-measure-001] Track impressions, clicks, CTR, qualified sessions, conversion rate, and revenue per landing page.
+- [Kasra_Dash-measure-002] Track query-cluster volatility by intent class and by URL template.
+- [Kasra_Dash-measure-003] Track indexation ratio: indexed URLs divided by submitted canonical URLs.
+- [Kasra_Dash-measure-004] Track internal-link depth and click-distance for money pages.
+- [Kasra_Dash-measure-005] Track AI-surface citation frequency where measurable.
+- [Kasra_Dash-measure-006] Track content decay windows and refresh impact lag.
+- [Kasra_Dash-measure-007] Track cannibalization risk with near-duplicate intent clusters.
+- [Kasra_Dash-measure-008] Track share-of-voice for high-value non-brand queries.
+- [Kasra_Dash-measure-009] Track anomaly lead time between ranking changes and business outcomes.
+- [Kasra_Dash-measure-010] Track assisted-conversion contribution from organic entry pages.
+
+### Atomic Action Cards
+- [Kasra_Dash-card-0001] When a broad core update rolls out and you are using signal from @Kasra_Dash, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [Kasra_Dash-card-0002] When a broad core update rolls out and you are using signal from @Kasra_Dash, instrument query clusters by intent and device before touching templates.
+- [Kasra_Dash-card-0003] When a broad core update rolls out and you are using signal from @Kasra_Dash, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [Kasra_Dash-card-0004] When a broad core update rolls out and you are using signal from @Kasra_Dash, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [Kasra_Dash-card-0005] When a broad core update rolls out and you are using signal from @Kasra_Dash, set a rollback threshold before release and enforce it without exception.
+- [Kasra_Dash-card-0006] When a broad core update rolls out and you are using signal from @Kasra_Dash, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [Kasra_Dash-card-0007] When a broad core update rolls out and you are using signal from @Kasra_Dash, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [Kasra_Dash-card-0008] When a broad core update rolls out and you are using signal from @Kasra_Dash, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [Kasra_Dash-card-0009] When a broad core update rolls out and you are using signal from @Kasra_Dash, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [Kasra_Dash-card-0010] When a broad core update rolls out and you are using signal from @Kasra_Dash, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [Kasra_Dash-card-0011] When a niche-specific ranking shock appears and you are using signal from @Kasra_Dash, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [Kasra_Dash-card-0012] When a niche-specific ranking shock appears and you are using signal from @Kasra_Dash, instrument query clusters by intent and device before touching templates.
+- [Kasra_Dash-card-0013] When a niche-specific ranking shock appears and you are using signal from @Kasra_Dash, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [Kasra_Dash-card-0014] When a niche-specific ranking shock appears and you are using signal from @Kasra_Dash, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [Kasra_Dash-card-0015] When a niche-specific ranking shock appears and you are using signal from @Kasra_Dash, set a rollback threshold before release and enforce it without exception.
+- [Kasra_Dash-card-0016] When a niche-specific ranking shock appears and you are using signal from @Kasra_Dash, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [Kasra_Dash-card-0017] When a niche-specific ranking shock appears and you are using signal from @Kasra_Dash, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [Kasra_Dash-card-0018] When a niche-specific ranking shock appears and you are using signal from @Kasra_Dash, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [Kasra_Dash-card-0019] When a niche-specific ranking shock appears and you are using signal from @Kasra_Dash, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [Kasra_Dash-card-0020] When a niche-specific ranking shock appears and you are using signal from @Kasra_Dash, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [Kasra_Dash-card-0021] When AI Overviews or answer engines reduce clicks and you are using signal from @Kasra_Dash, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [Kasra_Dash-card-0022] When AI Overviews or answer engines reduce clicks and you are using signal from @Kasra_Dash, instrument query clusters by intent and device before touching templates.
+- [Kasra_Dash-card-0023] When AI Overviews or answer engines reduce clicks and you are using signal from @Kasra_Dash, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [Kasra_Dash-card-0024] When AI Overviews or answer engines reduce clicks and you are using signal from @Kasra_Dash, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [Kasra_Dash-card-0025] When AI Overviews or answer engines reduce clicks and you are using signal from @Kasra_Dash, set a rollback threshold before release and enforce it without exception.
+- [Kasra_Dash-card-0026] When AI Overviews or answer engines reduce clicks and you are using signal from @Kasra_Dash, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [Kasra_Dash-card-0027] When AI Overviews or answer engines reduce clicks and you are using signal from @Kasra_Dash, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [Kasra_Dash-card-0028] When AI Overviews or answer engines reduce clicks and you are using signal from @Kasra_Dash, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [Kasra_Dash-card-0029] When AI Overviews or answer engines reduce clicks and you are using signal from @Kasra_Dash, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [Kasra_Dash-card-0030] When AI Overviews or answer engines reduce clicks and you are using signal from @Kasra_Dash, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [Kasra_Dash-card-0031] When crawl budget becomes constrained on large templates and you are using signal from @Kasra_Dash, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [Kasra_Dash-card-0032] When crawl budget becomes constrained on large templates and you are using signal from @Kasra_Dash, instrument query clusters by intent and device before touching templates.
+- [Kasra_Dash-card-0033] When crawl budget becomes constrained on large templates and you are using signal from @Kasra_Dash, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [Kasra_Dash-card-0034] When crawl budget becomes constrained on large templates and you are using signal from @Kasra_Dash, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [Kasra_Dash-card-0035] When crawl budget becomes constrained on large templates and you are using signal from @Kasra_Dash, set a rollback threshold before release and enforce it without exception.
+- [Kasra_Dash-card-0036] When crawl budget becomes constrained on large templates and you are using signal from @Kasra_Dash, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [Kasra_Dash-card-0037] When crawl budget becomes constrained on large templates and you are using signal from @Kasra_Dash, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [Kasra_Dash-card-0038] When crawl budget becomes constrained on large templates and you are using signal from @Kasra_Dash, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [Kasra_Dash-card-0039] When crawl budget becomes constrained on large templates and you are using signal from @Kasra_Dash, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [Kasra_Dash-card-0040] When crawl budget becomes constrained on large templates and you are using signal from @Kasra_Dash, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [Kasra_Dash-card-0041] When indexation mismatches appear between sitemap and search and you are using signal from @Kasra_Dash, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [Kasra_Dash-card-0042] When indexation mismatches appear between sitemap and search and you are using signal from @Kasra_Dash, instrument query clusters by intent and device before touching templates.
+- [Kasra_Dash-card-0043] When indexation mismatches appear between sitemap and search and you are using signal from @Kasra_Dash, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [Kasra_Dash-card-0044] When indexation mismatches appear between sitemap and search and you are using signal from @Kasra_Dash, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [Kasra_Dash-card-0045] When indexation mismatches appear between sitemap and search and you are using signal from @Kasra_Dash, set a rollback threshold before release and enforce it without exception.
+- [Kasra_Dash-card-0046] When indexation mismatches appear between sitemap and search and you are using signal from @Kasra_Dash, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [Kasra_Dash-card-0047] When indexation mismatches appear between sitemap and search and you are using signal from @Kasra_Dash, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [Kasra_Dash-card-0048] When indexation mismatches appear between sitemap and search and you are using signal from @Kasra_Dash, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [Kasra_Dash-card-0049] When indexation mismatches appear between sitemap and search and you are using signal from @Kasra_Dash, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [Kasra_Dash-card-0050] When indexation mismatches appear between sitemap and search and you are using signal from @Kasra_Dash, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [Kasra_Dash-card-0051] When internal-link architecture underperforms and you are using signal from @Kasra_Dash, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [Kasra_Dash-card-0052] When internal-link architecture underperforms and you are using signal from @Kasra_Dash, instrument query clusters by intent and device before touching templates.
+- [Kasra_Dash-card-0053] When internal-link architecture underperforms and you are using signal from @Kasra_Dash, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [Kasra_Dash-card-0054] When internal-link architecture underperforms and you are using signal from @Kasra_Dash, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [Kasra_Dash-card-0055] When internal-link architecture underperforms and you are using signal from @Kasra_Dash, set a rollback threshold before release and enforce it without exception.
+- [Kasra_Dash-card-0056] When internal-link architecture underperforms and you are using signal from @Kasra_Dash, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [Kasra_Dash-card-0057] When internal-link architecture underperforms and you are using signal from @Kasra_Dash, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [Kasra_Dash-card-0058] When internal-link architecture underperforms and you are using signal from @Kasra_Dash, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [Kasra_Dash-card-0059] When internal-link architecture underperforms and you are using signal from @Kasra_Dash, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [Kasra_Dash-card-0060] When internal-link architecture underperforms and you are using signal from @Kasra_Dash, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [Kasra_Dash-card-0061] When entity disambiguation issues dilute topical authority and you are using signal from @Kasra_Dash, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [Kasra_Dash-card-0062] When entity disambiguation issues dilute topical authority and you are using signal from @Kasra_Dash, instrument query clusters by intent and device before touching templates.
+- [Kasra_Dash-card-0063] When entity disambiguation issues dilute topical authority and you are using signal from @Kasra_Dash, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [Kasra_Dash-card-0064] When entity disambiguation issues dilute topical authority and you are using signal from @Kasra_Dash, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [Kasra_Dash-card-0065] When entity disambiguation issues dilute topical authority and you are using signal from @Kasra_Dash, set a rollback threshold before release and enforce it without exception.
+- [Kasra_Dash-card-0066] When entity disambiguation issues dilute topical authority and you are using signal from @Kasra_Dash, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [Kasra_Dash-card-0067] When entity disambiguation issues dilute topical authority and you are using signal from @Kasra_Dash, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [Kasra_Dash-card-0068] When entity disambiguation issues dilute topical authority and you are using signal from @Kasra_Dash, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [Kasra_Dash-card-0069] When entity disambiguation issues dilute topical authority and you are using signal from @Kasra_Dash, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [Kasra_Dash-card-0070] When entity disambiguation issues dilute topical authority and you are using signal from @Kasra_Dash, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [Kasra_Dash-card-0071] When large-scale content refresh decisions are needed and you are using signal from @Kasra_Dash, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [Kasra_Dash-card-0072] When large-scale content refresh decisions are needed and you are using signal from @Kasra_Dash, instrument query clusters by intent and device before touching templates.
+- [Kasra_Dash-card-0073] When large-scale content refresh decisions are needed and you are using signal from @Kasra_Dash, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [Kasra_Dash-card-0074] When large-scale content refresh decisions are needed and you are using signal from @Kasra_Dash, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [Kasra_Dash-card-0075] When large-scale content refresh decisions are needed and you are using signal from @Kasra_Dash, set a rollback threshold before release and enforce it without exception.
+- [Kasra_Dash-card-0076] When large-scale content refresh decisions are needed and you are using signal from @Kasra_Dash, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [Kasra_Dash-card-0077] When large-scale content refresh decisions are needed and you are using signal from @Kasra_Dash, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [Kasra_Dash-card-0078] When large-scale content refresh decisions are needed and you are using signal from @Kasra_Dash, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [Kasra_Dash-card-0079] When large-scale content refresh decisions are needed and you are using signal from @Kasra_Dash, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [Kasra_Dash-card-0080] When large-scale content refresh decisions are needed and you are using signal from @Kasra_Dash, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [Kasra_Dash-card-0081] When brand trust signals appear weak for YMYL queries and you are using signal from @Kasra_Dash, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [Kasra_Dash-card-0082] When brand trust signals appear weak for YMYL queries and you are using signal from @Kasra_Dash, instrument query clusters by intent and device before touching templates.
+- [Kasra_Dash-card-0083] When brand trust signals appear weak for YMYL queries and you are using signal from @Kasra_Dash, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [Kasra_Dash-card-0084] When brand trust signals appear weak for YMYL queries and you are using signal from @Kasra_Dash, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [Kasra_Dash-card-0085] When brand trust signals appear weak for YMYL queries and you are using signal from @Kasra_Dash, set a rollback threshold before release and enforce it without exception.
+- [Kasra_Dash-card-0086] When brand trust signals appear weak for YMYL queries and you are using signal from @Kasra_Dash, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [Kasra_Dash-card-0087] When brand trust signals appear weak for YMYL queries and you are using signal from @Kasra_Dash, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [Kasra_Dash-card-0088] When brand trust signals appear weak for YMYL queries and you are using signal from @Kasra_Dash, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [Kasra_Dash-card-0089] When brand trust signals appear weak for YMYL queries and you are using signal from @Kasra_Dash, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [Kasra_Dash-card-0090] When brand trust signals appear weak for YMYL queries and you are using signal from @Kasra_Dash, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [Kasra_Dash-card-0091] When affiliate pages rank but do not convert and you are using signal from @Kasra_Dash, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [Kasra_Dash-card-0092] When affiliate pages rank but do not convert and you are using signal from @Kasra_Dash, instrument query clusters by intent and device before touching templates.
+- [Kasra_Dash-card-0093] When affiliate pages rank but do not convert and you are using signal from @Kasra_Dash, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [Kasra_Dash-card-0094] When affiliate pages rank but do not convert and you are using signal from @Kasra_Dash, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [Kasra_Dash-card-0095] When affiliate pages rank but do not convert and you are using signal from @Kasra_Dash, set a rollback threshold before release and enforce it without exception.
+- [Kasra_Dash-card-0096] When affiliate pages rank but do not convert and you are using signal from @Kasra_Dash, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [Kasra_Dash-card-0097] When affiliate pages rank but do not convert and you are using signal from @Kasra_Dash, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [Kasra_Dash-card-0098] When affiliate pages rank but do not convert and you are using signal from @Kasra_Dash, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [Kasra_Dash-card-0099] When affiliate pages rank but do not convert and you are using signal from @Kasra_Dash, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [Kasra_Dash-card-0100] When affiliate pages rank but do not convert and you are using signal from @Kasra_Dash, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [Kasra_Dash-card-0101] When SERP features crowd out classic blue-link traffic and you are using signal from @Kasra_Dash, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [Kasra_Dash-card-0102] When SERP features crowd out classic blue-link traffic and you are using signal from @Kasra_Dash, instrument query clusters by intent and device before touching templates.
+- [Kasra_Dash-card-0103] When SERP features crowd out classic blue-link traffic and you are using signal from @Kasra_Dash, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [Kasra_Dash-card-0104] When SERP features crowd out classic blue-link traffic and you are using signal from @Kasra_Dash, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [Kasra_Dash-card-0105] When SERP features crowd out classic blue-link traffic and you are using signal from @Kasra_Dash, set a rollback threshold before release and enforce it without exception.
+- [Kasra_Dash-card-0106] When SERP features crowd out classic blue-link traffic and you are using signal from @Kasra_Dash, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [Kasra_Dash-card-0107] When SERP features crowd out classic blue-link traffic and you are using signal from @Kasra_Dash, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [Kasra_Dash-card-0108] When SERP features crowd out classic blue-link traffic and you are using signal from @Kasra_Dash, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [Kasra_Dash-card-0109] When SERP features crowd out classic blue-link traffic and you are using signal from @Kasra_Dash, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [Kasra_Dash-card-0110] When SERP features crowd out classic blue-link traffic and you are using signal from @Kasra_Dash, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [Kasra_Dash-card-0111] When new backlink opportunities spike but risk is unclear and you are using signal from @Kasra_Dash, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [Kasra_Dash-card-0112] When new backlink opportunities spike but risk is unclear and you are using signal from @Kasra_Dash, instrument query clusters by intent and device before touching templates.
+- [Kasra_Dash-card-0113] When new backlink opportunities spike but risk is unclear and you are using signal from @Kasra_Dash, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [Kasra_Dash-card-0114] When new backlink opportunities spike but risk is unclear and you are using signal from @Kasra_Dash, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [Kasra_Dash-card-0115] When new backlink opportunities spike but risk is unclear and you are using signal from @Kasra_Dash, set a rollback threshold before release and enforce it without exception.
+- [Kasra_Dash-card-0116] When new backlink opportunities spike but risk is unclear and you are using signal from @Kasra_Dash, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [Kasra_Dash-card-0117] When new backlink opportunities spike but risk is unclear and you are using signal from @Kasra_Dash, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [Kasra_Dash-card-0118] When new backlink opportunities spike but risk is unclear and you are using signal from @Kasra_Dash, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [Kasra_Dash-card-0119] When new backlink opportunities spike but risk is unclear and you are using signal from @Kasra_Dash, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [Kasra_Dash-card-0120] When new backlink opportunities spike but risk is unclear and you are using signal from @Kasra_Dash, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [Kasra_Dash-card-0121] When programmatic SEO expansions are proposed and you are using signal from @Kasra_Dash, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [Kasra_Dash-card-0122] When programmatic SEO expansions are proposed and you are using signal from @Kasra_Dash, instrument query clusters by intent and device before touching templates.
+- [Kasra_Dash-card-0123] When programmatic SEO expansions are proposed and you are using signal from @Kasra_Dash, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [Kasra_Dash-card-0124] When programmatic SEO expansions are proposed and you are using signal from @Kasra_Dash, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [Kasra_Dash-card-0125] When programmatic SEO expansions are proposed and you are using signal from @Kasra_Dash, set a rollback threshold before release and enforce it without exception.
+- [Kasra_Dash-card-0126] When programmatic SEO expansions are proposed and you are using signal from @Kasra_Dash, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [Kasra_Dash-card-0127] When programmatic SEO expansions are proposed and you are using signal from @Kasra_Dash, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [Kasra_Dash-card-0128] When programmatic SEO expansions are proposed and you are using signal from @Kasra_Dash, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [Kasra_Dash-card-0129] When programmatic SEO expansions are proposed and you are using signal from @Kasra_Dash, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [Kasra_Dash-card-0130] When programmatic SEO expansions are proposed and you are using signal from @Kasra_Dash, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [Kasra_Dash-card-0131] When international rollout introduces hreflang complexity and you are using signal from @Kasra_Dash, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [Kasra_Dash-card-0132] When international rollout introduces hreflang complexity and you are using signal from @Kasra_Dash, instrument query clusters by intent and device before touching templates.
+- [Kasra_Dash-card-0133] When international rollout introduces hreflang complexity and you are using signal from @Kasra_Dash, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [Kasra_Dash-card-0134] When international rollout introduces hreflang complexity and you are using signal from @Kasra_Dash, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [Kasra_Dash-card-0135] When international rollout introduces hreflang complexity and you are using signal from @Kasra_Dash, set a rollback threshold before release and enforce it without exception.
+- [Kasra_Dash-card-0136] When international rollout introduces hreflang complexity and you are using signal from @Kasra_Dash, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [Kasra_Dash-card-0137] When international rollout introduces hreflang complexity and you are using signal from @Kasra_Dash, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [Kasra_Dash-card-0138] When international rollout introduces hreflang complexity and you are using signal from @Kasra_Dash, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [Kasra_Dash-card-0139] When international rollout introduces hreflang complexity and you are using signal from @Kasra_Dash, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [Kasra_Dash-card-0140] When international rollout introduces hreflang complexity and you are using signal from @Kasra_Dash, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [Kasra_Dash-card-0141] When new AI-search referral channels appear and you are using signal from @Kasra_Dash, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [Kasra_Dash-card-0142] When new AI-search referral channels appear and you are using signal from @Kasra_Dash, instrument query clusters by intent and device before touching templates.
+- [Kasra_Dash-card-0143] When new AI-search referral channels appear and you are using signal from @Kasra_Dash, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [Kasra_Dash-card-0144] When new AI-search referral channels appear and you are using signal from @Kasra_Dash, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [Kasra_Dash-card-0145] When new AI-search referral channels appear and you are using signal from @Kasra_Dash, set a rollback threshold before release and enforce it without exception.
+- [Kasra_Dash-card-0146] When new AI-search referral channels appear and you are using signal from @Kasra_Dash, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [Kasra_Dash-card-0147] When new AI-search referral channels appear and you are using signal from @Kasra_Dash, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [Kasra_Dash-card-0148] When new AI-search referral channels appear and you are using signal from @Kasra_Dash, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [Kasra_Dash-card-0149] When new AI-search referral channels appear and you are using signal from @Kasra_Dash, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [Kasra_Dash-card-0150] When new AI-search referral channels appear and you are using signal from @Kasra_Dash, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [Kasra_Dash-card-0151] When stakeholders demand instant recovery plans and you are using signal from @Kasra_Dash, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [Kasra_Dash-card-0152] When stakeholders demand instant recovery plans and you are using signal from @Kasra_Dash, instrument query clusters by intent and device before touching templates.
+- [Kasra_Dash-card-0153] When stakeholders demand instant recovery plans and you are using signal from @Kasra_Dash, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [Kasra_Dash-card-0154] When stakeholders demand instant recovery plans and you are using signal from @Kasra_Dash, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [Kasra_Dash-card-0155] When stakeholders demand instant recovery plans and you are using signal from @Kasra_Dash, set a rollback threshold before release and enforce it without exception.
+- [Kasra_Dash-card-0156] When stakeholders demand instant recovery plans and you are using signal from @Kasra_Dash, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [Kasra_Dash-card-0157] When stakeholders demand instant recovery plans and you are using signal from @Kasra_Dash, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [Kasra_Dash-card-0158] When stakeholders demand instant recovery plans and you are using signal from @Kasra_Dash, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [Kasra_Dash-card-0159] When stakeholders demand instant recovery plans and you are using signal from @Kasra_Dash, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [Kasra_Dash-card-0160] When stakeholders demand instant recovery plans and you are using signal from @Kasra_Dash, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [Kasra_Dash-card-0161] When technical debt blocks roadmap velocity and you are using signal from @Kasra_Dash, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [Kasra_Dash-card-0162] When technical debt blocks roadmap velocity and you are using signal from @Kasra_Dash, instrument query clusters by intent and device before touching templates.
+- [Kasra_Dash-card-0163] When technical debt blocks roadmap velocity and you are using signal from @Kasra_Dash, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [Kasra_Dash-card-0164] When technical debt blocks roadmap velocity and you are using signal from @Kasra_Dash, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [Kasra_Dash-card-0165] When technical debt blocks roadmap velocity and you are using signal from @Kasra_Dash, set a rollback threshold before release and enforce it without exception.
+- [Kasra_Dash-card-0166] When technical debt blocks roadmap velocity and you are using signal from @Kasra_Dash, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [Kasra_Dash-card-0167] When technical debt blocks roadmap velocity and you are using signal from @Kasra_Dash, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [Kasra_Dash-card-0168] When technical debt blocks roadmap velocity and you are using signal from @Kasra_Dash, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [Kasra_Dash-card-0169] When technical debt blocks roadmap velocity and you are using signal from @Kasra_Dash, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [Kasra_Dash-card-0170] When technical debt blocks roadmap velocity and you are using signal from @Kasra_Dash, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [Kasra_Dash-card-0171] When competitors gain visibility with uncertain methods and you are using signal from @Kasra_Dash, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [Kasra_Dash-card-0172] When competitors gain visibility with uncertain methods and you are using signal from @Kasra_Dash, instrument query clusters by intent and device before touching templates.
+- [Kasra_Dash-card-0173] When competitors gain visibility with uncertain methods and you are using signal from @Kasra_Dash, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [Kasra_Dash-card-0174] When competitors gain visibility with uncertain methods and you are using signal from @Kasra_Dash, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [Kasra_Dash-card-0175] When competitors gain visibility with uncertain methods and you are using signal from @Kasra_Dash, set a rollback threshold before release and enforce it without exception.
+- [Kasra_Dash-card-0176] When competitors gain visibility with uncertain methods and you are using signal from @Kasra_Dash, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [Kasra_Dash-card-0177] When competitors gain visibility with uncertain methods and you are using signal from @Kasra_Dash, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [Kasra_Dash-card-0178] When competitors gain visibility with uncertain methods and you are using signal from @Kasra_Dash, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [Kasra_Dash-card-0179] When competitors gain visibility with uncertain methods and you are using signal from @Kasra_Dash, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [Kasra_Dash-card-0180] When competitors gain visibility with uncertain methods and you are using signal from @Kasra_Dash, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [Kasra_Dash-card-0181] When search intent shifts after product-category changes and you are using signal from @Kasra_Dash, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [Kasra_Dash-card-0182] When search intent shifts after product-category changes and you are using signal from @Kasra_Dash, instrument query clusters by intent and device before touching templates.
+- [Kasra_Dash-card-0183] When search intent shifts after product-category changes and you are using signal from @Kasra_Dash, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [Kasra_Dash-card-0184] When search intent shifts after product-category changes and you are using signal from @Kasra_Dash, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [Kasra_Dash-card-0185] When search intent shifts after product-category changes and you are using signal from @Kasra_Dash, set a rollback threshold before release and enforce it without exception.
+- [Kasra_Dash-card-0186] When search intent shifts after product-category changes and you are using signal from @Kasra_Dash, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [Kasra_Dash-card-0187] When search intent shifts after product-category changes and you are using signal from @Kasra_Dash, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [Kasra_Dash-card-0188] When search intent shifts after product-category changes and you are using signal from @Kasra_Dash, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [Kasra_Dash-card-0189] When search intent shifts after product-category changes and you are using signal from @Kasra_Dash, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [Kasra_Dash-card-0190] When search intent shifts after product-category changes and you are using signal from @Kasra_Dash, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [Kasra_Dash-card-0191] When analytics attribution masks true SEO impact and you are using signal from @Kasra_Dash, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [Kasra_Dash-card-0192] When analytics attribution masks true SEO impact and you are using signal from @Kasra_Dash, instrument query clusters by intent and device before touching templates.
+- [Kasra_Dash-card-0193] When analytics attribution masks true SEO impact and you are using signal from @Kasra_Dash, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [Kasra_Dash-card-0194] When analytics attribution masks true SEO impact and you are using signal from @Kasra_Dash, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [Kasra_Dash-card-0195] When analytics attribution masks true SEO impact and you are using signal from @Kasra_Dash, set a rollback threshold before release and enforce it without exception.
+- [Kasra_Dash-card-0196] When analytics attribution masks true SEO impact and you are using signal from @Kasra_Dash, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [Kasra_Dash-card-0197] When analytics attribution masks true SEO impact and you are using signal from @Kasra_Dash, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [Kasra_Dash-card-0198] When analytics attribution masks true SEO impact and you are using signal from @Kasra_Dash, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [Kasra_Dash-card-0199] When analytics attribution masks true SEO impact and you are using signal from @Kasra_Dash, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [Kasra_Dash-card-0200] When analytics attribution masks true SEO impact and you are using signal from @Kasra_Dash, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+
+### Fast Decision Rules
+- [Kasra_Dash-rule-001] If evidence is anecdotal and upside is low, skip implementation.
+- [Kasra_Dash-rule-002] If evidence is mixed and risk is high, run only in sandbox properties.
+- [Kasra_Dash-rule-003] If business impact is unmeasurable, deprioritize until instrumentation is fixed.
+- [Kasra_Dash-rule-004] If a tactic wins on traffic but loses on conversion quality, revert or redesign.
+- [Kasra_Dash-rule-005] If guidance aligns with multiple trusted sources, increase confidence tier.
+
+## 9. Lily Ray (@lilyraynyc)
+
+Primary focus: E-E-A-T, core update analysis, long-term visibility durability.
+Signal rationale: Reliable for quality-oriented interpretation of updates and sustainable authority-building strategy.
+Reference links:
+- https://www.twstalker.com/lilyraynyc
+- https://www.lilyray.nyc/
+- https://www.amsive.com/insights/author/lily-ray/
+Core themes:
+- E-E-A-T operations
+- Core update interpretation
+- Trust/authority architecture
+- Durable organic growth
+Execution defaults:
+- Use this account as a hypothesis generator, not a final authority.
+- If a claim is novel, require one low-risk pilot and one replication before broad rollout.
+- If a claim conflicts with Search Central guidance, document the conflict explicitly and downgrade confidence.
+- Convert social claims into issue tickets with owner, metric target, and expiration date.
+
+### Measurement Priorities
+- [lilyraynyc-measure-001] Track impressions, clicks, CTR, qualified sessions, conversion rate, and revenue per landing page.
+- [lilyraynyc-measure-002] Track query-cluster volatility by intent class and by URL template.
+- [lilyraynyc-measure-003] Track indexation ratio: indexed URLs divided by submitted canonical URLs.
+- [lilyraynyc-measure-004] Track internal-link depth and click-distance for money pages.
+- [lilyraynyc-measure-005] Track AI-surface citation frequency where measurable.
+- [lilyraynyc-measure-006] Track content decay windows and refresh impact lag.
+- [lilyraynyc-measure-007] Track cannibalization risk with near-duplicate intent clusters.
+- [lilyraynyc-measure-008] Track share-of-voice for high-value non-brand queries.
+- [lilyraynyc-measure-009] Track anomaly lead time between ranking changes and business outcomes.
+- [lilyraynyc-measure-010] Track assisted-conversion contribution from organic entry pages.
+
+### Atomic Action Cards
+- [lilyraynyc-card-0001] When a broad core update rolls out and you are using signal from @lilyraynyc, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [lilyraynyc-card-0002] When a broad core update rolls out and you are using signal from @lilyraynyc, instrument query clusters by intent and device before touching templates.
+- [lilyraynyc-card-0003] When a broad core update rolls out and you are using signal from @lilyraynyc, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [lilyraynyc-card-0004] When a broad core update rolls out and you are using signal from @lilyraynyc, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [lilyraynyc-card-0005] When a broad core update rolls out and you are using signal from @lilyraynyc, set a rollback threshold before release and enforce it without exception.
+- [lilyraynyc-card-0006] When a broad core update rolls out and you are using signal from @lilyraynyc, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [lilyraynyc-card-0007] When a broad core update rolls out and you are using signal from @lilyraynyc, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [lilyraynyc-card-0008] When a broad core update rolls out and you are using signal from @lilyraynyc, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [lilyraynyc-card-0009] When a broad core update rolls out and you are using signal from @lilyraynyc, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [lilyraynyc-card-0010] When a broad core update rolls out and you are using signal from @lilyraynyc, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [lilyraynyc-card-0011] When a niche-specific ranking shock appears and you are using signal from @lilyraynyc, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [lilyraynyc-card-0012] When a niche-specific ranking shock appears and you are using signal from @lilyraynyc, instrument query clusters by intent and device before touching templates.
+- [lilyraynyc-card-0013] When a niche-specific ranking shock appears and you are using signal from @lilyraynyc, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [lilyraynyc-card-0014] When a niche-specific ranking shock appears and you are using signal from @lilyraynyc, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [lilyraynyc-card-0015] When a niche-specific ranking shock appears and you are using signal from @lilyraynyc, set a rollback threshold before release and enforce it without exception.
+- [lilyraynyc-card-0016] When a niche-specific ranking shock appears and you are using signal from @lilyraynyc, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [lilyraynyc-card-0017] When a niche-specific ranking shock appears and you are using signal from @lilyraynyc, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [lilyraynyc-card-0018] When a niche-specific ranking shock appears and you are using signal from @lilyraynyc, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [lilyraynyc-card-0019] When a niche-specific ranking shock appears and you are using signal from @lilyraynyc, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [lilyraynyc-card-0020] When a niche-specific ranking shock appears and you are using signal from @lilyraynyc, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [lilyraynyc-card-0021] When AI Overviews or answer engines reduce clicks and you are using signal from @lilyraynyc, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [lilyraynyc-card-0022] When AI Overviews or answer engines reduce clicks and you are using signal from @lilyraynyc, instrument query clusters by intent and device before touching templates.
+- [lilyraynyc-card-0023] When AI Overviews or answer engines reduce clicks and you are using signal from @lilyraynyc, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [lilyraynyc-card-0024] When AI Overviews or answer engines reduce clicks and you are using signal from @lilyraynyc, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [lilyraynyc-card-0025] When AI Overviews or answer engines reduce clicks and you are using signal from @lilyraynyc, set a rollback threshold before release and enforce it without exception.
+- [lilyraynyc-card-0026] When AI Overviews or answer engines reduce clicks and you are using signal from @lilyraynyc, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [lilyraynyc-card-0027] When AI Overviews or answer engines reduce clicks and you are using signal from @lilyraynyc, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [lilyraynyc-card-0028] When AI Overviews or answer engines reduce clicks and you are using signal from @lilyraynyc, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [lilyraynyc-card-0029] When AI Overviews or answer engines reduce clicks and you are using signal from @lilyraynyc, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [lilyraynyc-card-0030] When AI Overviews or answer engines reduce clicks and you are using signal from @lilyraynyc, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [lilyraynyc-card-0031] When crawl budget becomes constrained on large templates and you are using signal from @lilyraynyc, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [lilyraynyc-card-0032] When crawl budget becomes constrained on large templates and you are using signal from @lilyraynyc, instrument query clusters by intent and device before touching templates.
+- [lilyraynyc-card-0033] When crawl budget becomes constrained on large templates and you are using signal from @lilyraynyc, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [lilyraynyc-card-0034] When crawl budget becomes constrained on large templates and you are using signal from @lilyraynyc, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [lilyraynyc-card-0035] When crawl budget becomes constrained on large templates and you are using signal from @lilyraynyc, set a rollback threshold before release and enforce it without exception.
+- [lilyraynyc-card-0036] When crawl budget becomes constrained on large templates and you are using signal from @lilyraynyc, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [lilyraynyc-card-0037] When crawl budget becomes constrained on large templates and you are using signal from @lilyraynyc, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [lilyraynyc-card-0038] When crawl budget becomes constrained on large templates and you are using signal from @lilyraynyc, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [lilyraynyc-card-0039] When crawl budget becomes constrained on large templates and you are using signal from @lilyraynyc, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [lilyraynyc-card-0040] When crawl budget becomes constrained on large templates and you are using signal from @lilyraynyc, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [lilyraynyc-card-0041] When indexation mismatches appear between sitemap and search and you are using signal from @lilyraynyc, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [lilyraynyc-card-0042] When indexation mismatches appear between sitemap and search and you are using signal from @lilyraynyc, instrument query clusters by intent and device before touching templates.
+- [lilyraynyc-card-0043] When indexation mismatches appear between sitemap and search and you are using signal from @lilyraynyc, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [lilyraynyc-card-0044] When indexation mismatches appear between sitemap and search and you are using signal from @lilyraynyc, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [lilyraynyc-card-0045] When indexation mismatches appear between sitemap and search and you are using signal from @lilyraynyc, set a rollback threshold before release and enforce it without exception.
+- [lilyraynyc-card-0046] When indexation mismatches appear between sitemap and search and you are using signal from @lilyraynyc, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [lilyraynyc-card-0047] When indexation mismatches appear between sitemap and search and you are using signal from @lilyraynyc, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [lilyraynyc-card-0048] When indexation mismatches appear between sitemap and search and you are using signal from @lilyraynyc, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [lilyraynyc-card-0049] When indexation mismatches appear between sitemap and search and you are using signal from @lilyraynyc, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [lilyraynyc-card-0050] When indexation mismatches appear between sitemap and search and you are using signal from @lilyraynyc, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [lilyraynyc-card-0051] When internal-link architecture underperforms and you are using signal from @lilyraynyc, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [lilyraynyc-card-0052] When internal-link architecture underperforms and you are using signal from @lilyraynyc, instrument query clusters by intent and device before touching templates.
+- [lilyraynyc-card-0053] When internal-link architecture underperforms and you are using signal from @lilyraynyc, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [lilyraynyc-card-0054] When internal-link architecture underperforms and you are using signal from @lilyraynyc, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [lilyraynyc-card-0055] When internal-link architecture underperforms and you are using signal from @lilyraynyc, set a rollback threshold before release and enforce it without exception.
+- [lilyraynyc-card-0056] When internal-link architecture underperforms and you are using signal from @lilyraynyc, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [lilyraynyc-card-0057] When internal-link architecture underperforms and you are using signal from @lilyraynyc, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [lilyraynyc-card-0058] When internal-link architecture underperforms and you are using signal from @lilyraynyc, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [lilyraynyc-card-0059] When internal-link architecture underperforms and you are using signal from @lilyraynyc, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [lilyraynyc-card-0060] When internal-link architecture underperforms and you are using signal from @lilyraynyc, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [lilyraynyc-card-0061] When entity disambiguation issues dilute topical authority and you are using signal from @lilyraynyc, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [lilyraynyc-card-0062] When entity disambiguation issues dilute topical authority and you are using signal from @lilyraynyc, instrument query clusters by intent and device before touching templates.
+- [lilyraynyc-card-0063] When entity disambiguation issues dilute topical authority and you are using signal from @lilyraynyc, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [lilyraynyc-card-0064] When entity disambiguation issues dilute topical authority and you are using signal from @lilyraynyc, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [lilyraynyc-card-0065] When entity disambiguation issues dilute topical authority and you are using signal from @lilyraynyc, set a rollback threshold before release and enforce it without exception.
+- [lilyraynyc-card-0066] When entity disambiguation issues dilute topical authority and you are using signal from @lilyraynyc, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [lilyraynyc-card-0067] When entity disambiguation issues dilute topical authority and you are using signal from @lilyraynyc, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [lilyraynyc-card-0068] When entity disambiguation issues dilute topical authority and you are using signal from @lilyraynyc, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [lilyraynyc-card-0069] When entity disambiguation issues dilute topical authority and you are using signal from @lilyraynyc, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [lilyraynyc-card-0070] When entity disambiguation issues dilute topical authority and you are using signal from @lilyraynyc, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [lilyraynyc-card-0071] When large-scale content refresh decisions are needed and you are using signal from @lilyraynyc, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [lilyraynyc-card-0072] When large-scale content refresh decisions are needed and you are using signal from @lilyraynyc, instrument query clusters by intent and device before touching templates.
+- [lilyraynyc-card-0073] When large-scale content refresh decisions are needed and you are using signal from @lilyraynyc, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [lilyraynyc-card-0074] When large-scale content refresh decisions are needed and you are using signal from @lilyraynyc, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [lilyraynyc-card-0075] When large-scale content refresh decisions are needed and you are using signal from @lilyraynyc, set a rollback threshold before release and enforce it without exception.
+- [lilyraynyc-card-0076] When large-scale content refresh decisions are needed and you are using signal from @lilyraynyc, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [lilyraynyc-card-0077] When large-scale content refresh decisions are needed and you are using signal from @lilyraynyc, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [lilyraynyc-card-0078] When large-scale content refresh decisions are needed and you are using signal from @lilyraynyc, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [lilyraynyc-card-0079] When large-scale content refresh decisions are needed and you are using signal from @lilyraynyc, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [lilyraynyc-card-0080] When large-scale content refresh decisions are needed and you are using signal from @lilyraynyc, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [lilyraynyc-card-0081] When brand trust signals appear weak for YMYL queries and you are using signal from @lilyraynyc, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [lilyraynyc-card-0082] When brand trust signals appear weak for YMYL queries and you are using signal from @lilyraynyc, instrument query clusters by intent and device before touching templates.
+- [lilyraynyc-card-0083] When brand trust signals appear weak for YMYL queries and you are using signal from @lilyraynyc, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [lilyraynyc-card-0084] When brand trust signals appear weak for YMYL queries and you are using signal from @lilyraynyc, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [lilyraynyc-card-0085] When brand trust signals appear weak for YMYL queries and you are using signal from @lilyraynyc, set a rollback threshold before release and enforce it without exception.
+- [lilyraynyc-card-0086] When brand trust signals appear weak for YMYL queries and you are using signal from @lilyraynyc, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [lilyraynyc-card-0087] When brand trust signals appear weak for YMYL queries and you are using signal from @lilyraynyc, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [lilyraynyc-card-0088] When brand trust signals appear weak for YMYL queries and you are using signal from @lilyraynyc, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [lilyraynyc-card-0089] When brand trust signals appear weak for YMYL queries and you are using signal from @lilyraynyc, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [lilyraynyc-card-0090] When brand trust signals appear weak for YMYL queries and you are using signal from @lilyraynyc, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [lilyraynyc-card-0091] When affiliate pages rank but do not convert and you are using signal from @lilyraynyc, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [lilyraynyc-card-0092] When affiliate pages rank but do not convert and you are using signal from @lilyraynyc, instrument query clusters by intent and device before touching templates.
+- [lilyraynyc-card-0093] When affiliate pages rank but do not convert and you are using signal from @lilyraynyc, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [lilyraynyc-card-0094] When affiliate pages rank but do not convert and you are using signal from @lilyraynyc, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [lilyraynyc-card-0095] When affiliate pages rank but do not convert and you are using signal from @lilyraynyc, set a rollback threshold before release and enforce it without exception.
+- [lilyraynyc-card-0096] When affiliate pages rank but do not convert and you are using signal from @lilyraynyc, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [lilyraynyc-card-0097] When affiliate pages rank but do not convert and you are using signal from @lilyraynyc, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [lilyraynyc-card-0098] When affiliate pages rank but do not convert and you are using signal from @lilyraynyc, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [lilyraynyc-card-0099] When affiliate pages rank but do not convert and you are using signal from @lilyraynyc, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [lilyraynyc-card-0100] When affiliate pages rank but do not convert and you are using signal from @lilyraynyc, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [lilyraynyc-card-0101] When SERP features crowd out classic blue-link traffic and you are using signal from @lilyraynyc, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [lilyraynyc-card-0102] When SERP features crowd out classic blue-link traffic and you are using signal from @lilyraynyc, instrument query clusters by intent and device before touching templates.
+- [lilyraynyc-card-0103] When SERP features crowd out classic blue-link traffic and you are using signal from @lilyraynyc, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [lilyraynyc-card-0104] When SERP features crowd out classic blue-link traffic and you are using signal from @lilyraynyc, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [lilyraynyc-card-0105] When SERP features crowd out classic blue-link traffic and you are using signal from @lilyraynyc, set a rollback threshold before release and enforce it without exception.
+- [lilyraynyc-card-0106] When SERP features crowd out classic blue-link traffic and you are using signal from @lilyraynyc, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [lilyraynyc-card-0107] When SERP features crowd out classic blue-link traffic and you are using signal from @lilyraynyc, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [lilyraynyc-card-0108] When SERP features crowd out classic blue-link traffic and you are using signal from @lilyraynyc, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [lilyraynyc-card-0109] When SERP features crowd out classic blue-link traffic and you are using signal from @lilyraynyc, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [lilyraynyc-card-0110] When SERP features crowd out classic blue-link traffic and you are using signal from @lilyraynyc, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [lilyraynyc-card-0111] When new backlink opportunities spike but risk is unclear and you are using signal from @lilyraynyc, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [lilyraynyc-card-0112] When new backlink opportunities spike but risk is unclear and you are using signal from @lilyraynyc, instrument query clusters by intent and device before touching templates.
+- [lilyraynyc-card-0113] When new backlink opportunities spike but risk is unclear and you are using signal from @lilyraynyc, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [lilyraynyc-card-0114] When new backlink opportunities spike but risk is unclear and you are using signal from @lilyraynyc, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [lilyraynyc-card-0115] When new backlink opportunities spike but risk is unclear and you are using signal from @lilyraynyc, set a rollback threshold before release and enforce it without exception.
+- [lilyraynyc-card-0116] When new backlink opportunities spike but risk is unclear and you are using signal from @lilyraynyc, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [lilyraynyc-card-0117] When new backlink opportunities spike but risk is unclear and you are using signal from @lilyraynyc, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [lilyraynyc-card-0118] When new backlink opportunities spike but risk is unclear and you are using signal from @lilyraynyc, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [lilyraynyc-card-0119] When new backlink opportunities spike but risk is unclear and you are using signal from @lilyraynyc, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [lilyraynyc-card-0120] When new backlink opportunities spike but risk is unclear and you are using signal from @lilyraynyc, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [lilyraynyc-card-0121] When programmatic SEO expansions are proposed and you are using signal from @lilyraynyc, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [lilyraynyc-card-0122] When programmatic SEO expansions are proposed and you are using signal from @lilyraynyc, instrument query clusters by intent and device before touching templates.
+- [lilyraynyc-card-0123] When programmatic SEO expansions are proposed and you are using signal from @lilyraynyc, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [lilyraynyc-card-0124] When programmatic SEO expansions are proposed and you are using signal from @lilyraynyc, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [lilyraynyc-card-0125] When programmatic SEO expansions are proposed and you are using signal from @lilyraynyc, set a rollback threshold before release and enforce it without exception.
+- [lilyraynyc-card-0126] When programmatic SEO expansions are proposed and you are using signal from @lilyraynyc, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [lilyraynyc-card-0127] When programmatic SEO expansions are proposed and you are using signal from @lilyraynyc, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [lilyraynyc-card-0128] When programmatic SEO expansions are proposed and you are using signal from @lilyraynyc, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [lilyraynyc-card-0129] When programmatic SEO expansions are proposed and you are using signal from @lilyraynyc, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [lilyraynyc-card-0130] When programmatic SEO expansions are proposed and you are using signal from @lilyraynyc, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [lilyraynyc-card-0131] When international rollout introduces hreflang complexity and you are using signal from @lilyraynyc, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [lilyraynyc-card-0132] When international rollout introduces hreflang complexity and you are using signal from @lilyraynyc, instrument query clusters by intent and device before touching templates.
+- [lilyraynyc-card-0133] When international rollout introduces hreflang complexity and you are using signal from @lilyraynyc, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [lilyraynyc-card-0134] When international rollout introduces hreflang complexity and you are using signal from @lilyraynyc, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [lilyraynyc-card-0135] When international rollout introduces hreflang complexity and you are using signal from @lilyraynyc, set a rollback threshold before release and enforce it without exception.
+- [lilyraynyc-card-0136] When international rollout introduces hreflang complexity and you are using signal from @lilyraynyc, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [lilyraynyc-card-0137] When international rollout introduces hreflang complexity and you are using signal from @lilyraynyc, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [lilyraynyc-card-0138] When international rollout introduces hreflang complexity and you are using signal from @lilyraynyc, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [lilyraynyc-card-0139] When international rollout introduces hreflang complexity and you are using signal from @lilyraynyc, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [lilyraynyc-card-0140] When international rollout introduces hreflang complexity and you are using signal from @lilyraynyc, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [lilyraynyc-card-0141] When new AI-search referral channels appear and you are using signal from @lilyraynyc, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [lilyraynyc-card-0142] When new AI-search referral channels appear and you are using signal from @lilyraynyc, instrument query clusters by intent and device before touching templates.
+- [lilyraynyc-card-0143] When new AI-search referral channels appear and you are using signal from @lilyraynyc, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [lilyraynyc-card-0144] When new AI-search referral channels appear and you are using signal from @lilyraynyc, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [lilyraynyc-card-0145] When new AI-search referral channels appear and you are using signal from @lilyraynyc, set a rollback threshold before release and enforce it without exception.
+- [lilyraynyc-card-0146] When new AI-search referral channels appear and you are using signal from @lilyraynyc, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [lilyraynyc-card-0147] When new AI-search referral channels appear and you are using signal from @lilyraynyc, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [lilyraynyc-card-0148] When new AI-search referral channels appear and you are using signal from @lilyraynyc, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [lilyraynyc-card-0149] When new AI-search referral channels appear and you are using signal from @lilyraynyc, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [lilyraynyc-card-0150] When new AI-search referral channels appear and you are using signal from @lilyraynyc, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [lilyraynyc-card-0151] When stakeholders demand instant recovery plans and you are using signal from @lilyraynyc, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [lilyraynyc-card-0152] When stakeholders demand instant recovery plans and you are using signal from @lilyraynyc, instrument query clusters by intent and device before touching templates.
+- [lilyraynyc-card-0153] When stakeholders demand instant recovery plans and you are using signal from @lilyraynyc, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [lilyraynyc-card-0154] When stakeholders demand instant recovery plans and you are using signal from @lilyraynyc, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [lilyraynyc-card-0155] When stakeholders demand instant recovery plans and you are using signal from @lilyraynyc, set a rollback threshold before release and enforce it without exception.
+- [lilyraynyc-card-0156] When stakeholders demand instant recovery plans and you are using signal from @lilyraynyc, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [lilyraynyc-card-0157] When stakeholders demand instant recovery plans and you are using signal from @lilyraynyc, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [lilyraynyc-card-0158] When stakeholders demand instant recovery plans and you are using signal from @lilyraynyc, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [lilyraynyc-card-0159] When stakeholders demand instant recovery plans and you are using signal from @lilyraynyc, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [lilyraynyc-card-0160] When stakeholders demand instant recovery plans and you are using signal from @lilyraynyc, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [lilyraynyc-card-0161] When technical debt blocks roadmap velocity and you are using signal from @lilyraynyc, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [lilyraynyc-card-0162] When technical debt blocks roadmap velocity and you are using signal from @lilyraynyc, instrument query clusters by intent and device before touching templates.
+- [lilyraynyc-card-0163] When technical debt blocks roadmap velocity and you are using signal from @lilyraynyc, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [lilyraynyc-card-0164] When technical debt blocks roadmap velocity and you are using signal from @lilyraynyc, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [lilyraynyc-card-0165] When technical debt blocks roadmap velocity and you are using signal from @lilyraynyc, set a rollback threshold before release and enforce it without exception.
+- [lilyraynyc-card-0166] When technical debt blocks roadmap velocity and you are using signal from @lilyraynyc, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [lilyraynyc-card-0167] When technical debt blocks roadmap velocity and you are using signal from @lilyraynyc, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [lilyraynyc-card-0168] When technical debt blocks roadmap velocity and you are using signal from @lilyraynyc, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [lilyraynyc-card-0169] When technical debt blocks roadmap velocity and you are using signal from @lilyraynyc, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [lilyraynyc-card-0170] When technical debt blocks roadmap velocity and you are using signal from @lilyraynyc, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [lilyraynyc-card-0171] When competitors gain visibility with uncertain methods and you are using signal from @lilyraynyc, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [lilyraynyc-card-0172] When competitors gain visibility with uncertain methods and you are using signal from @lilyraynyc, instrument query clusters by intent and device before touching templates.
+- [lilyraynyc-card-0173] When competitors gain visibility with uncertain methods and you are using signal from @lilyraynyc, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [lilyraynyc-card-0174] When competitors gain visibility with uncertain methods and you are using signal from @lilyraynyc, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [lilyraynyc-card-0175] When competitors gain visibility with uncertain methods and you are using signal from @lilyraynyc, set a rollback threshold before release and enforce it without exception.
+- [lilyraynyc-card-0176] When competitors gain visibility with uncertain methods and you are using signal from @lilyraynyc, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [lilyraynyc-card-0177] When competitors gain visibility with uncertain methods and you are using signal from @lilyraynyc, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [lilyraynyc-card-0178] When competitors gain visibility with uncertain methods and you are using signal from @lilyraynyc, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [lilyraynyc-card-0179] When competitors gain visibility with uncertain methods and you are using signal from @lilyraynyc, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [lilyraynyc-card-0180] When competitors gain visibility with uncertain methods and you are using signal from @lilyraynyc, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [lilyraynyc-card-0181] When search intent shifts after product-category changes and you are using signal from @lilyraynyc, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [lilyraynyc-card-0182] When search intent shifts after product-category changes and you are using signal from @lilyraynyc, instrument query clusters by intent and device before touching templates.
+- [lilyraynyc-card-0183] When search intent shifts after product-category changes and you are using signal from @lilyraynyc, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [lilyraynyc-card-0184] When search intent shifts after product-category changes and you are using signal from @lilyraynyc, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [lilyraynyc-card-0185] When search intent shifts after product-category changes and you are using signal from @lilyraynyc, set a rollback threshold before release and enforce it without exception.
+- [lilyraynyc-card-0186] When search intent shifts after product-category changes and you are using signal from @lilyraynyc, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [lilyraynyc-card-0187] When search intent shifts after product-category changes and you are using signal from @lilyraynyc, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [lilyraynyc-card-0188] When search intent shifts after product-category changes and you are using signal from @lilyraynyc, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [lilyraynyc-card-0189] When search intent shifts after product-category changes and you are using signal from @lilyraynyc, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [lilyraynyc-card-0190] When search intent shifts after product-category changes and you are using signal from @lilyraynyc, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [lilyraynyc-card-0191] When analytics attribution masks true SEO impact and you are using signal from @lilyraynyc, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [lilyraynyc-card-0192] When analytics attribution masks true SEO impact and you are using signal from @lilyraynyc, instrument query clusters by intent and device before touching templates.
+- [lilyraynyc-card-0193] When analytics attribution masks true SEO impact and you are using signal from @lilyraynyc, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [lilyraynyc-card-0194] When analytics attribution masks true SEO impact and you are using signal from @lilyraynyc, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [lilyraynyc-card-0195] When analytics attribution masks true SEO impact and you are using signal from @lilyraynyc, set a rollback threshold before release and enforce it without exception.
+- [lilyraynyc-card-0196] When analytics attribution masks true SEO impact and you are using signal from @lilyraynyc, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [lilyraynyc-card-0197] When analytics attribution masks true SEO impact and you are using signal from @lilyraynyc, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [lilyraynyc-card-0198] When analytics attribution masks true SEO impact and you are using signal from @lilyraynyc, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [lilyraynyc-card-0199] When analytics attribution masks true SEO impact and you are using signal from @lilyraynyc, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [lilyraynyc-card-0200] When analytics attribution masks true SEO impact and you are using signal from @lilyraynyc, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+
+### Fast Decision Rules
+- [lilyraynyc-rule-001] If evidence is anecdotal and upside is low, skip implementation.
+- [lilyraynyc-rule-002] If evidence is mixed and risk is high, run only in sandbox properties.
+- [lilyraynyc-rule-003] If business impact is unmeasurable, deprioritize until instrumentation is fixed.
+- [lilyraynyc-rule-004] If a tactic wins on traffic but loses on conversion quality, revert or redesign.
+- [lilyraynyc-rule-005] If guidance aligns with multiple trusted sources, increase confidence tier.
+
+## 10. Marie Haynes (@Marie_Haynes)
+
+Primary focus: Google systems deep dives, penalties, and evidence-based risk interpretation.
+Signal rationale: Strong for disciplined diagnostics during algorithm volatility and for avoiding speculative overreaction.
+Reference links:
+- https://www.twstalker.com/Marie_Haynes
+- https://www.mariehaynes.com/
+- https://www.mariehaynes.com/algo-updates/
+Core themes:
+- Penalty and quality diagnostics
+- Evidence-first algorithm interpretation
+- Google systems analysis
+- Calm incident-response style
+Execution defaults:
+- Use this account as a hypothesis generator, not a final authority.
+- If a claim is novel, require one low-risk pilot and one replication before broad rollout.
+- If a claim conflicts with Search Central guidance, document the conflict explicitly and downgrade confidence.
+- Convert social claims into issue tickets with owner, metric target, and expiration date.
+
+### Measurement Priorities
+- [Marie_Haynes-measure-001] Track impressions, clicks, CTR, qualified sessions, conversion rate, and revenue per landing page.
+- [Marie_Haynes-measure-002] Track query-cluster volatility by intent class and by URL template.
+- [Marie_Haynes-measure-003] Track indexation ratio: indexed URLs divided by submitted canonical URLs.
+- [Marie_Haynes-measure-004] Track internal-link depth and click-distance for money pages.
+- [Marie_Haynes-measure-005] Track AI-surface citation frequency where measurable.
+- [Marie_Haynes-measure-006] Track content decay windows and refresh impact lag.
+- [Marie_Haynes-measure-007] Track cannibalization risk with near-duplicate intent clusters.
+- [Marie_Haynes-measure-008] Track share-of-voice for high-value non-brand queries.
+- [Marie_Haynes-measure-009] Track anomaly lead time between ranking changes and business outcomes.
+- [Marie_Haynes-measure-010] Track assisted-conversion contribution from organic entry pages.
+
+### Atomic Action Cards
+- [Marie_Haynes-card-0001] When a broad core update rolls out and you are using signal from @Marie_Haynes, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [Marie_Haynes-card-0002] When a broad core update rolls out and you are using signal from @Marie_Haynes, instrument query clusters by intent and device before touching templates.
+- [Marie_Haynes-card-0003] When a broad core update rolls out and you are using signal from @Marie_Haynes, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [Marie_Haynes-card-0004] When a broad core update rolls out and you are using signal from @Marie_Haynes, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [Marie_Haynes-card-0005] When a broad core update rolls out and you are using signal from @Marie_Haynes, set a rollback threshold before release and enforce it without exception.
+- [Marie_Haynes-card-0006] When a broad core update rolls out and you are using signal from @Marie_Haynes, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [Marie_Haynes-card-0007] When a broad core update rolls out and you are using signal from @Marie_Haynes, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [Marie_Haynes-card-0008] When a broad core update rolls out and you are using signal from @Marie_Haynes, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [Marie_Haynes-card-0009] When a broad core update rolls out and you are using signal from @Marie_Haynes, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [Marie_Haynes-card-0010] When a broad core update rolls out and you are using signal from @Marie_Haynes, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [Marie_Haynes-card-0011] When a niche-specific ranking shock appears and you are using signal from @Marie_Haynes, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [Marie_Haynes-card-0012] When a niche-specific ranking shock appears and you are using signal from @Marie_Haynes, instrument query clusters by intent and device before touching templates.
+- [Marie_Haynes-card-0013] When a niche-specific ranking shock appears and you are using signal from @Marie_Haynes, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [Marie_Haynes-card-0014] When a niche-specific ranking shock appears and you are using signal from @Marie_Haynes, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [Marie_Haynes-card-0015] When a niche-specific ranking shock appears and you are using signal from @Marie_Haynes, set a rollback threshold before release and enforce it without exception.
+- [Marie_Haynes-card-0016] When a niche-specific ranking shock appears and you are using signal from @Marie_Haynes, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [Marie_Haynes-card-0017] When a niche-specific ranking shock appears and you are using signal from @Marie_Haynes, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [Marie_Haynes-card-0018] When a niche-specific ranking shock appears and you are using signal from @Marie_Haynes, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [Marie_Haynes-card-0019] When a niche-specific ranking shock appears and you are using signal from @Marie_Haynes, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [Marie_Haynes-card-0020] When a niche-specific ranking shock appears and you are using signal from @Marie_Haynes, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [Marie_Haynes-card-0021] When AI Overviews or answer engines reduce clicks and you are using signal from @Marie_Haynes, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [Marie_Haynes-card-0022] When AI Overviews or answer engines reduce clicks and you are using signal from @Marie_Haynes, instrument query clusters by intent and device before touching templates.
+- [Marie_Haynes-card-0023] When AI Overviews or answer engines reduce clicks and you are using signal from @Marie_Haynes, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [Marie_Haynes-card-0024] When AI Overviews or answer engines reduce clicks and you are using signal from @Marie_Haynes, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [Marie_Haynes-card-0025] When AI Overviews or answer engines reduce clicks and you are using signal from @Marie_Haynes, set a rollback threshold before release and enforce it without exception.
+- [Marie_Haynes-card-0026] When AI Overviews or answer engines reduce clicks and you are using signal from @Marie_Haynes, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [Marie_Haynes-card-0027] When AI Overviews or answer engines reduce clicks and you are using signal from @Marie_Haynes, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [Marie_Haynes-card-0028] When AI Overviews or answer engines reduce clicks and you are using signal from @Marie_Haynes, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [Marie_Haynes-card-0029] When AI Overviews or answer engines reduce clicks and you are using signal from @Marie_Haynes, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [Marie_Haynes-card-0030] When AI Overviews or answer engines reduce clicks and you are using signal from @Marie_Haynes, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [Marie_Haynes-card-0031] When crawl budget becomes constrained on large templates and you are using signal from @Marie_Haynes, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [Marie_Haynes-card-0032] When crawl budget becomes constrained on large templates and you are using signal from @Marie_Haynes, instrument query clusters by intent and device before touching templates.
+- [Marie_Haynes-card-0033] When crawl budget becomes constrained on large templates and you are using signal from @Marie_Haynes, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [Marie_Haynes-card-0034] When crawl budget becomes constrained on large templates and you are using signal from @Marie_Haynes, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [Marie_Haynes-card-0035] When crawl budget becomes constrained on large templates and you are using signal from @Marie_Haynes, set a rollback threshold before release and enforce it without exception.
+- [Marie_Haynes-card-0036] When crawl budget becomes constrained on large templates and you are using signal from @Marie_Haynes, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [Marie_Haynes-card-0037] When crawl budget becomes constrained on large templates and you are using signal from @Marie_Haynes, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [Marie_Haynes-card-0038] When crawl budget becomes constrained on large templates and you are using signal from @Marie_Haynes, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [Marie_Haynes-card-0039] When crawl budget becomes constrained on large templates and you are using signal from @Marie_Haynes, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [Marie_Haynes-card-0040] When crawl budget becomes constrained on large templates and you are using signal from @Marie_Haynes, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [Marie_Haynes-card-0041] When indexation mismatches appear between sitemap and search and you are using signal from @Marie_Haynes, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [Marie_Haynes-card-0042] When indexation mismatches appear between sitemap and search and you are using signal from @Marie_Haynes, instrument query clusters by intent and device before touching templates.
+- [Marie_Haynes-card-0043] When indexation mismatches appear between sitemap and search and you are using signal from @Marie_Haynes, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [Marie_Haynes-card-0044] When indexation mismatches appear between sitemap and search and you are using signal from @Marie_Haynes, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [Marie_Haynes-card-0045] When indexation mismatches appear between sitemap and search and you are using signal from @Marie_Haynes, set a rollback threshold before release and enforce it without exception.
+- [Marie_Haynes-card-0046] When indexation mismatches appear between sitemap and search and you are using signal from @Marie_Haynes, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [Marie_Haynes-card-0047] When indexation mismatches appear between sitemap and search and you are using signal from @Marie_Haynes, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [Marie_Haynes-card-0048] When indexation mismatches appear between sitemap and search and you are using signal from @Marie_Haynes, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [Marie_Haynes-card-0049] When indexation mismatches appear between sitemap and search and you are using signal from @Marie_Haynes, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [Marie_Haynes-card-0050] When indexation mismatches appear between sitemap and search and you are using signal from @Marie_Haynes, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [Marie_Haynes-card-0051] When internal-link architecture underperforms and you are using signal from @Marie_Haynes, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [Marie_Haynes-card-0052] When internal-link architecture underperforms and you are using signal from @Marie_Haynes, instrument query clusters by intent and device before touching templates.
+- [Marie_Haynes-card-0053] When internal-link architecture underperforms and you are using signal from @Marie_Haynes, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [Marie_Haynes-card-0054] When internal-link architecture underperforms and you are using signal from @Marie_Haynes, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [Marie_Haynes-card-0055] When internal-link architecture underperforms and you are using signal from @Marie_Haynes, set a rollback threshold before release and enforce it without exception.
+- [Marie_Haynes-card-0056] When internal-link architecture underperforms and you are using signal from @Marie_Haynes, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [Marie_Haynes-card-0057] When internal-link architecture underperforms and you are using signal from @Marie_Haynes, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [Marie_Haynes-card-0058] When internal-link architecture underperforms and you are using signal from @Marie_Haynes, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [Marie_Haynes-card-0059] When internal-link architecture underperforms and you are using signal from @Marie_Haynes, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [Marie_Haynes-card-0060] When internal-link architecture underperforms and you are using signal from @Marie_Haynes, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [Marie_Haynes-card-0061] When entity disambiguation issues dilute topical authority and you are using signal from @Marie_Haynes, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [Marie_Haynes-card-0062] When entity disambiguation issues dilute topical authority and you are using signal from @Marie_Haynes, instrument query clusters by intent and device before touching templates.
+- [Marie_Haynes-card-0063] When entity disambiguation issues dilute topical authority and you are using signal from @Marie_Haynes, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [Marie_Haynes-card-0064] When entity disambiguation issues dilute topical authority and you are using signal from @Marie_Haynes, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [Marie_Haynes-card-0065] When entity disambiguation issues dilute topical authority and you are using signal from @Marie_Haynes, set a rollback threshold before release and enforce it without exception.
+- [Marie_Haynes-card-0066] When entity disambiguation issues dilute topical authority and you are using signal from @Marie_Haynes, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [Marie_Haynes-card-0067] When entity disambiguation issues dilute topical authority and you are using signal from @Marie_Haynes, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [Marie_Haynes-card-0068] When entity disambiguation issues dilute topical authority and you are using signal from @Marie_Haynes, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [Marie_Haynes-card-0069] When entity disambiguation issues dilute topical authority and you are using signal from @Marie_Haynes, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [Marie_Haynes-card-0070] When entity disambiguation issues dilute topical authority and you are using signal from @Marie_Haynes, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [Marie_Haynes-card-0071] When large-scale content refresh decisions are needed and you are using signal from @Marie_Haynes, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [Marie_Haynes-card-0072] When large-scale content refresh decisions are needed and you are using signal from @Marie_Haynes, instrument query clusters by intent and device before touching templates.
+- [Marie_Haynes-card-0073] When large-scale content refresh decisions are needed and you are using signal from @Marie_Haynes, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [Marie_Haynes-card-0074] When large-scale content refresh decisions are needed and you are using signal from @Marie_Haynes, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [Marie_Haynes-card-0075] When large-scale content refresh decisions are needed and you are using signal from @Marie_Haynes, set a rollback threshold before release and enforce it without exception.
+- [Marie_Haynes-card-0076] When large-scale content refresh decisions are needed and you are using signal from @Marie_Haynes, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [Marie_Haynes-card-0077] When large-scale content refresh decisions are needed and you are using signal from @Marie_Haynes, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [Marie_Haynes-card-0078] When large-scale content refresh decisions are needed and you are using signal from @Marie_Haynes, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [Marie_Haynes-card-0079] When large-scale content refresh decisions are needed and you are using signal from @Marie_Haynes, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [Marie_Haynes-card-0080] When large-scale content refresh decisions are needed and you are using signal from @Marie_Haynes, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [Marie_Haynes-card-0081] When brand trust signals appear weak for YMYL queries and you are using signal from @Marie_Haynes, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [Marie_Haynes-card-0082] When brand trust signals appear weak for YMYL queries and you are using signal from @Marie_Haynes, instrument query clusters by intent and device before touching templates.
+- [Marie_Haynes-card-0083] When brand trust signals appear weak for YMYL queries and you are using signal from @Marie_Haynes, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [Marie_Haynes-card-0084] When brand trust signals appear weak for YMYL queries and you are using signal from @Marie_Haynes, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [Marie_Haynes-card-0085] When brand trust signals appear weak for YMYL queries and you are using signal from @Marie_Haynes, set a rollback threshold before release and enforce it without exception.
+- [Marie_Haynes-card-0086] When brand trust signals appear weak for YMYL queries and you are using signal from @Marie_Haynes, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [Marie_Haynes-card-0087] When brand trust signals appear weak for YMYL queries and you are using signal from @Marie_Haynes, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [Marie_Haynes-card-0088] When brand trust signals appear weak for YMYL queries and you are using signal from @Marie_Haynes, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [Marie_Haynes-card-0089] When brand trust signals appear weak for YMYL queries and you are using signal from @Marie_Haynes, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [Marie_Haynes-card-0090] When brand trust signals appear weak for YMYL queries and you are using signal from @Marie_Haynes, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [Marie_Haynes-card-0091] When affiliate pages rank but do not convert and you are using signal from @Marie_Haynes, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [Marie_Haynes-card-0092] When affiliate pages rank but do not convert and you are using signal from @Marie_Haynes, instrument query clusters by intent and device before touching templates.
+- [Marie_Haynes-card-0093] When affiliate pages rank but do not convert and you are using signal from @Marie_Haynes, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [Marie_Haynes-card-0094] When affiliate pages rank but do not convert and you are using signal from @Marie_Haynes, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [Marie_Haynes-card-0095] When affiliate pages rank but do not convert and you are using signal from @Marie_Haynes, set a rollback threshold before release and enforce it without exception.
+- [Marie_Haynes-card-0096] When affiliate pages rank but do not convert and you are using signal from @Marie_Haynes, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [Marie_Haynes-card-0097] When affiliate pages rank but do not convert and you are using signal from @Marie_Haynes, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [Marie_Haynes-card-0098] When affiliate pages rank but do not convert and you are using signal from @Marie_Haynes, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [Marie_Haynes-card-0099] When affiliate pages rank but do not convert and you are using signal from @Marie_Haynes, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [Marie_Haynes-card-0100] When affiliate pages rank but do not convert and you are using signal from @Marie_Haynes, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [Marie_Haynes-card-0101] When SERP features crowd out classic blue-link traffic and you are using signal from @Marie_Haynes, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [Marie_Haynes-card-0102] When SERP features crowd out classic blue-link traffic and you are using signal from @Marie_Haynes, instrument query clusters by intent and device before touching templates.
+- [Marie_Haynes-card-0103] When SERP features crowd out classic blue-link traffic and you are using signal from @Marie_Haynes, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [Marie_Haynes-card-0104] When SERP features crowd out classic blue-link traffic and you are using signal from @Marie_Haynes, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [Marie_Haynes-card-0105] When SERP features crowd out classic blue-link traffic and you are using signal from @Marie_Haynes, set a rollback threshold before release and enforce it without exception.
+- [Marie_Haynes-card-0106] When SERP features crowd out classic blue-link traffic and you are using signal from @Marie_Haynes, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [Marie_Haynes-card-0107] When SERP features crowd out classic blue-link traffic and you are using signal from @Marie_Haynes, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [Marie_Haynes-card-0108] When SERP features crowd out classic blue-link traffic and you are using signal from @Marie_Haynes, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [Marie_Haynes-card-0109] When SERP features crowd out classic blue-link traffic and you are using signal from @Marie_Haynes, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [Marie_Haynes-card-0110] When SERP features crowd out classic blue-link traffic and you are using signal from @Marie_Haynes, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [Marie_Haynes-card-0111] When new backlink opportunities spike but risk is unclear and you are using signal from @Marie_Haynes, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [Marie_Haynes-card-0112] When new backlink opportunities spike but risk is unclear and you are using signal from @Marie_Haynes, instrument query clusters by intent and device before touching templates.
+- [Marie_Haynes-card-0113] When new backlink opportunities spike but risk is unclear and you are using signal from @Marie_Haynes, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [Marie_Haynes-card-0114] When new backlink opportunities spike but risk is unclear and you are using signal from @Marie_Haynes, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [Marie_Haynes-card-0115] When new backlink opportunities spike but risk is unclear and you are using signal from @Marie_Haynes, set a rollback threshold before release and enforce it without exception.
+- [Marie_Haynes-card-0116] When new backlink opportunities spike but risk is unclear and you are using signal from @Marie_Haynes, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [Marie_Haynes-card-0117] When new backlink opportunities spike but risk is unclear and you are using signal from @Marie_Haynes, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [Marie_Haynes-card-0118] When new backlink opportunities spike but risk is unclear and you are using signal from @Marie_Haynes, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [Marie_Haynes-card-0119] When new backlink opportunities spike but risk is unclear and you are using signal from @Marie_Haynes, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [Marie_Haynes-card-0120] When new backlink opportunities spike but risk is unclear and you are using signal from @Marie_Haynes, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [Marie_Haynes-card-0121] When programmatic SEO expansions are proposed and you are using signal from @Marie_Haynes, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [Marie_Haynes-card-0122] When programmatic SEO expansions are proposed and you are using signal from @Marie_Haynes, instrument query clusters by intent and device before touching templates.
+- [Marie_Haynes-card-0123] When programmatic SEO expansions are proposed and you are using signal from @Marie_Haynes, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [Marie_Haynes-card-0124] When programmatic SEO expansions are proposed and you are using signal from @Marie_Haynes, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [Marie_Haynes-card-0125] When programmatic SEO expansions are proposed and you are using signal from @Marie_Haynes, set a rollback threshold before release and enforce it without exception.
+- [Marie_Haynes-card-0126] When programmatic SEO expansions are proposed and you are using signal from @Marie_Haynes, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [Marie_Haynes-card-0127] When programmatic SEO expansions are proposed and you are using signal from @Marie_Haynes, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [Marie_Haynes-card-0128] When programmatic SEO expansions are proposed and you are using signal from @Marie_Haynes, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [Marie_Haynes-card-0129] When programmatic SEO expansions are proposed and you are using signal from @Marie_Haynes, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [Marie_Haynes-card-0130] When programmatic SEO expansions are proposed and you are using signal from @Marie_Haynes, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [Marie_Haynes-card-0131] When international rollout introduces hreflang complexity and you are using signal from @Marie_Haynes, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [Marie_Haynes-card-0132] When international rollout introduces hreflang complexity and you are using signal from @Marie_Haynes, instrument query clusters by intent and device before touching templates.
+- [Marie_Haynes-card-0133] When international rollout introduces hreflang complexity and you are using signal from @Marie_Haynes, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [Marie_Haynes-card-0134] When international rollout introduces hreflang complexity and you are using signal from @Marie_Haynes, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [Marie_Haynes-card-0135] When international rollout introduces hreflang complexity and you are using signal from @Marie_Haynes, set a rollback threshold before release and enforce it without exception.
+- [Marie_Haynes-card-0136] When international rollout introduces hreflang complexity and you are using signal from @Marie_Haynes, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [Marie_Haynes-card-0137] When international rollout introduces hreflang complexity and you are using signal from @Marie_Haynes, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [Marie_Haynes-card-0138] When international rollout introduces hreflang complexity and you are using signal from @Marie_Haynes, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [Marie_Haynes-card-0139] When international rollout introduces hreflang complexity and you are using signal from @Marie_Haynes, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [Marie_Haynes-card-0140] When international rollout introduces hreflang complexity and you are using signal from @Marie_Haynes, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [Marie_Haynes-card-0141] When new AI-search referral channels appear and you are using signal from @Marie_Haynes, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [Marie_Haynes-card-0142] When new AI-search referral channels appear and you are using signal from @Marie_Haynes, instrument query clusters by intent and device before touching templates.
+- [Marie_Haynes-card-0143] When new AI-search referral channels appear and you are using signal from @Marie_Haynes, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [Marie_Haynes-card-0144] When new AI-search referral channels appear and you are using signal from @Marie_Haynes, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [Marie_Haynes-card-0145] When new AI-search referral channels appear and you are using signal from @Marie_Haynes, set a rollback threshold before release and enforce it without exception.
+- [Marie_Haynes-card-0146] When new AI-search referral channels appear and you are using signal from @Marie_Haynes, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [Marie_Haynes-card-0147] When new AI-search referral channels appear and you are using signal from @Marie_Haynes, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [Marie_Haynes-card-0148] When new AI-search referral channels appear and you are using signal from @Marie_Haynes, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [Marie_Haynes-card-0149] When new AI-search referral channels appear and you are using signal from @Marie_Haynes, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [Marie_Haynes-card-0150] When new AI-search referral channels appear and you are using signal from @Marie_Haynes, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [Marie_Haynes-card-0151] When stakeholders demand instant recovery plans and you are using signal from @Marie_Haynes, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [Marie_Haynes-card-0152] When stakeholders demand instant recovery plans and you are using signal from @Marie_Haynes, instrument query clusters by intent and device before touching templates.
+- [Marie_Haynes-card-0153] When stakeholders demand instant recovery plans and you are using signal from @Marie_Haynes, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [Marie_Haynes-card-0154] When stakeholders demand instant recovery plans and you are using signal from @Marie_Haynes, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [Marie_Haynes-card-0155] When stakeholders demand instant recovery plans and you are using signal from @Marie_Haynes, set a rollback threshold before release and enforce it without exception.
+- [Marie_Haynes-card-0156] When stakeholders demand instant recovery plans and you are using signal from @Marie_Haynes, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [Marie_Haynes-card-0157] When stakeholders demand instant recovery plans and you are using signal from @Marie_Haynes, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [Marie_Haynes-card-0158] When stakeholders demand instant recovery plans and you are using signal from @Marie_Haynes, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [Marie_Haynes-card-0159] When stakeholders demand instant recovery plans and you are using signal from @Marie_Haynes, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [Marie_Haynes-card-0160] When stakeholders demand instant recovery plans and you are using signal from @Marie_Haynes, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [Marie_Haynes-card-0161] When technical debt blocks roadmap velocity and you are using signal from @Marie_Haynes, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [Marie_Haynes-card-0162] When technical debt blocks roadmap velocity and you are using signal from @Marie_Haynes, instrument query clusters by intent and device before touching templates.
+- [Marie_Haynes-card-0163] When technical debt blocks roadmap velocity and you are using signal from @Marie_Haynes, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [Marie_Haynes-card-0164] When technical debt blocks roadmap velocity and you are using signal from @Marie_Haynes, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [Marie_Haynes-card-0165] When technical debt blocks roadmap velocity and you are using signal from @Marie_Haynes, set a rollback threshold before release and enforce it without exception.
+- [Marie_Haynes-card-0166] When technical debt blocks roadmap velocity and you are using signal from @Marie_Haynes, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [Marie_Haynes-card-0167] When technical debt blocks roadmap velocity and you are using signal from @Marie_Haynes, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [Marie_Haynes-card-0168] When technical debt blocks roadmap velocity and you are using signal from @Marie_Haynes, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [Marie_Haynes-card-0169] When technical debt blocks roadmap velocity and you are using signal from @Marie_Haynes, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [Marie_Haynes-card-0170] When technical debt blocks roadmap velocity and you are using signal from @Marie_Haynes, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [Marie_Haynes-card-0171] When competitors gain visibility with uncertain methods and you are using signal from @Marie_Haynes, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [Marie_Haynes-card-0172] When competitors gain visibility with uncertain methods and you are using signal from @Marie_Haynes, instrument query clusters by intent and device before touching templates.
+- [Marie_Haynes-card-0173] When competitors gain visibility with uncertain methods and you are using signal from @Marie_Haynes, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [Marie_Haynes-card-0174] When competitors gain visibility with uncertain methods and you are using signal from @Marie_Haynes, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [Marie_Haynes-card-0175] When competitors gain visibility with uncertain methods and you are using signal from @Marie_Haynes, set a rollback threshold before release and enforce it without exception.
+- [Marie_Haynes-card-0176] When competitors gain visibility with uncertain methods and you are using signal from @Marie_Haynes, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [Marie_Haynes-card-0177] When competitors gain visibility with uncertain methods and you are using signal from @Marie_Haynes, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [Marie_Haynes-card-0178] When competitors gain visibility with uncertain methods and you are using signal from @Marie_Haynes, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [Marie_Haynes-card-0179] When competitors gain visibility with uncertain methods and you are using signal from @Marie_Haynes, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [Marie_Haynes-card-0180] When competitors gain visibility with uncertain methods and you are using signal from @Marie_Haynes, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [Marie_Haynes-card-0181] When search intent shifts after product-category changes and you are using signal from @Marie_Haynes, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [Marie_Haynes-card-0182] When search intent shifts after product-category changes and you are using signal from @Marie_Haynes, instrument query clusters by intent and device before touching templates.
+- [Marie_Haynes-card-0183] When search intent shifts after product-category changes and you are using signal from @Marie_Haynes, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [Marie_Haynes-card-0184] When search intent shifts after product-category changes and you are using signal from @Marie_Haynes, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [Marie_Haynes-card-0185] When search intent shifts after product-category changes and you are using signal from @Marie_Haynes, set a rollback threshold before release and enforce it without exception.
+- [Marie_Haynes-card-0186] When search intent shifts after product-category changes and you are using signal from @Marie_Haynes, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [Marie_Haynes-card-0187] When search intent shifts after product-category changes and you are using signal from @Marie_Haynes, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [Marie_Haynes-card-0188] When search intent shifts after product-category changes and you are using signal from @Marie_Haynes, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [Marie_Haynes-card-0189] When search intent shifts after product-category changes and you are using signal from @Marie_Haynes, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [Marie_Haynes-card-0190] When search intent shifts after product-category changes and you are using signal from @Marie_Haynes, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [Marie_Haynes-card-0191] When analytics attribution masks true SEO impact and you are using signal from @Marie_Haynes, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [Marie_Haynes-card-0192] When analytics attribution masks true SEO impact and you are using signal from @Marie_Haynes, instrument query clusters by intent and device before touching templates.
+- [Marie_Haynes-card-0193] When analytics attribution masks true SEO impact and you are using signal from @Marie_Haynes, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [Marie_Haynes-card-0194] When analytics attribution masks true SEO impact and you are using signal from @Marie_Haynes, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [Marie_Haynes-card-0195] When analytics attribution masks true SEO impact and you are using signal from @Marie_Haynes, set a rollback threshold before release and enforce it without exception.
+- [Marie_Haynes-card-0196] When analytics attribution masks true SEO impact and you are using signal from @Marie_Haynes, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [Marie_Haynes-card-0197] When analytics attribution masks true SEO impact and you are using signal from @Marie_Haynes, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [Marie_Haynes-card-0198] When analytics attribution masks true SEO impact and you are using signal from @Marie_Haynes, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [Marie_Haynes-card-0199] When analytics attribution masks true SEO impact and you are using signal from @Marie_Haynes, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [Marie_Haynes-card-0200] When analytics attribution masks true SEO impact and you are using signal from @Marie_Haynes, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+
+### Fast Decision Rules
+- [Marie_Haynes-rule-001] If evidence is anecdotal and upside is low, skip implementation.
+- [Marie_Haynes-rule-002] If evidence is mixed and risk is high, run only in sandbox properties.
+- [Marie_Haynes-rule-003] If business impact is unmeasurable, deprioritize until instrumentation is fixed.
+- [Marie_Haynes-rule-004] If a tactic wins on traffic but loses on conversion quality, revert or redesign.
+- [Marie_Haynes-rule-005] If guidance aligns with multiple trusted sources, increase confidence tier.
+
+## 11. Matt Diggity (@mattdiggityseo)
+
+Primary focus: affiliate SEO, test-led ranking systems, conversion-aware organic growth.
+Signal rationale: Valuable for execution frameworks that tie ranking progress to monetization outcomes.
+Reference links:
+- https://www.twstalker.com/mattdiggityseo
+- https://diggitymarketing.com/
+- https://diggitymarketing.com/blog/
+Core themes:
+- Affiliate SEO systems
+- Test-driven SEO experimentation
+- Conversion-layer integration
+- Operator playbooks
+Execution defaults:
+- Use this account as a hypothesis generator, not a final authority.
+- If a claim is novel, require one low-risk pilot and one replication before broad rollout.
+- If a claim conflicts with Search Central guidance, document the conflict explicitly and downgrade confidence.
+- Convert social claims into issue tickets with owner, metric target, and expiration date.
+
+### Measurement Priorities
+- [mattdiggityseo-measure-001] Track impressions, clicks, CTR, qualified sessions, conversion rate, and revenue per landing page.
+- [mattdiggityseo-measure-002] Track query-cluster volatility by intent class and by URL template.
+- [mattdiggityseo-measure-003] Track indexation ratio: indexed URLs divided by submitted canonical URLs.
+- [mattdiggityseo-measure-004] Track internal-link depth and click-distance for money pages.
+- [mattdiggityseo-measure-005] Track AI-surface citation frequency where measurable.
+- [mattdiggityseo-measure-006] Track content decay windows and refresh impact lag.
+- [mattdiggityseo-measure-007] Track cannibalization risk with near-duplicate intent clusters.
+- [mattdiggityseo-measure-008] Track share-of-voice for high-value non-brand queries.
+- [mattdiggityseo-measure-009] Track anomaly lead time between ranking changes and business outcomes.
+- [mattdiggityseo-measure-010] Track assisted-conversion contribution from organic entry pages.
+
+### Atomic Action Cards
+- [mattdiggityseo-card-0001] When a broad core update rolls out and you are using signal from @mattdiggityseo, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [mattdiggityseo-card-0002] When a broad core update rolls out and you are using signal from @mattdiggityseo, instrument query clusters by intent and device before touching templates.
+- [mattdiggityseo-card-0003] When a broad core update rolls out and you are using signal from @mattdiggityseo, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [mattdiggityseo-card-0004] When a broad core update rolls out and you are using signal from @mattdiggityseo, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [mattdiggityseo-card-0005] When a broad core update rolls out and you are using signal from @mattdiggityseo, set a rollback threshold before release and enforce it without exception.
+- [mattdiggityseo-card-0006] When a broad core update rolls out and you are using signal from @mattdiggityseo, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [mattdiggityseo-card-0007] When a broad core update rolls out and you are using signal from @mattdiggityseo, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [mattdiggityseo-card-0008] When a broad core update rolls out and you are using signal from @mattdiggityseo, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [mattdiggityseo-card-0009] When a broad core update rolls out and you are using signal from @mattdiggityseo, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [mattdiggityseo-card-0010] When a broad core update rolls out and you are using signal from @mattdiggityseo, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [mattdiggityseo-card-0011] When a niche-specific ranking shock appears and you are using signal from @mattdiggityseo, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [mattdiggityseo-card-0012] When a niche-specific ranking shock appears and you are using signal from @mattdiggityseo, instrument query clusters by intent and device before touching templates.
+- [mattdiggityseo-card-0013] When a niche-specific ranking shock appears and you are using signal from @mattdiggityseo, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [mattdiggityseo-card-0014] When a niche-specific ranking shock appears and you are using signal from @mattdiggityseo, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [mattdiggityseo-card-0015] When a niche-specific ranking shock appears and you are using signal from @mattdiggityseo, set a rollback threshold before release and enforce it without exception.
+- [mattdiggityseo-card-0016] When a niche-specific ranking shock appears and you are using signal from @mattdiggityseo, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [mattdiggityseo-card-0017] When a niche-specific ranking shock appears and you are using signal from @mattdiggityseo, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [mattdiggityseo-card-0018] When a niche-specific ranking shock appears and you are using signal from @mattdiggityseo, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [mattdiggityseo-card-0019] When a niche-specific ranking shock appears and you are using signal from @mattdiggityseo, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [mattdiggityseo-card-0020] When a niche-specific ranking shock appears and you are using signal from @mattdiggityseo, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [mattdiggityseo-card-0021] When AI Overviews or answer engines reduce clicks and you are using signal from @mattdiggityseo, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [mattdiggityseo-card-0022] When AI Overviews or answer engines reduce clicks and you are using signal from @mattdiggityseo, instrument query clusters by intent and device before touching templates.
+- [mattdiggityseo-card-0023] When AI Overviews or answer engines reduce clicks and you are using signal from @mattdiggityseo, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [mattdiggityseo-card-0024] When AI Overviews or answer engines reduce clicks and you are using signal from @mattdiggityseo, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [mattdiggityseo-card-0025] When AI Overviews or answer engines reduce clicks and you are using signal from @mattdiggityseo, set a rollback threshold before release and enforce it without exception.
+- [mattdiggityseo-card-0026] When AI Overviews or answer engines reduce clicks and you are using signal from @mattdiggityseo, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [mattdiggityseo-card-0027] When AI Overviews or answer engines reduce clicks and you are using signal from @mattdiggityseo, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [mattdiggityseo-card-0028] When AI Overviews or answer engines reduce clicks and you are using signal from @mattdiggityseo, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [mattdiggityseo-card-0029] When AI Overviews or answer engines reduce clicks and you are using signal from @mattdiggityseo, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [mattdiggityseo-card-0030] When AI Overviews or answer engines reduce clicks and you are using signal from @mattdiggityseo, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [mattdiggityseo-card-0031] When crawl budget becomes constrained on large templates and you are using signal from @mattdiggityseo, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [mattdiggityseo-card-0032] When crawl budget becomes constrained on large templates and you are using signal from @mattdiggityseo, instrument query clusters by intent and device before touching templates.
+- [mattdiggityseo-card-0033] When crawl budget becomes constrained on large templates and you are using signal from @mattdiggityseo, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [mattdiggityseo-card-0034] When crawl budget becomes constrained on large templates and you are using signal from @mattdiggityseo, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [mattdiggityseo-card-0035] When crawl budget becomes constrained on large templates and you are using signal from @mattdiggityseo, set a rollback threshold before release and enforce it without exception.
+- [mattdiggityseo-card-0036] When crawl budget becomes constrained on large templates and you are using signal from @mattdiggityseo, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [mattdiggityseo-card-0037] When crawl budget becomes constrained on large templates and you are using signal from @mattdiggityseo, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [mattdiggityseo-card-0038] When crawl budget becomes constrained on large templates and you are using signal from @mattdiggityseo, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [mattdiggityseo-card-0039] When crawl budget becomes constrained on large templates and you are using signal from @mattdiggityseo, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [mattdiggityseo-card-0040] When crawl budget becomes constrained on large templates and you are using signal from @mattdiggityseo, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [mattdiggityseo-card-0041] When indexation mismatches appear between sitemap and search and you are using signal from @mattdiggityseo, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [mattdiggityseo-card-0042] When indexation mismatches appear between sitemap and search and you are using signal from @mattdiggityseo, instrument query clusters by intent and device before touching templates.
+- [mattdiggityseo-card-0043] When indexation mismatches appear between sitemap and search and you are using signal from @mattdiggityseo, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [mattdiggityseo-card-0044] When indexation mismatches appear between sitemap and search and you are using signal from @mattdiggityseo, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [mattdiggityseo-card-0045] When indexation mismatches appear between sitemap and search and you are using signal from @mattdiggityseo, set a rollback threshold before release and enforce it without exception.
+- [mattdiggityseo-card-0046] When indexation mismatches appear between sitemap and search and you are using signal from @mattdiggityseo, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [mattdiggityseo-card-0047] When indexation mismatches appear between sitemap and search and you are using signal from @mattdiggityseo, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [mattdiggityseo-card-0048] When indexation mismatches appear between sitemap and search and you are using signal from @mattdiggityseo, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [mattdiggityseo-card-0049] When indexation mismatches appear between sitemap and search and you are using signal from @mattdiggityseo, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [mattdiggityseo-card-0050] When indexation mismatches appear between sitemap and search and you are using signal from @mattdiggityseo, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [mattdiggityseo-card-0051] When internal-link architecture underperforms and you are using signal from @mattdiggityseo, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [mattdiggityseo-card-0052] When internal-link architecture underperforms and you are using signal from @mattdiggityseo, instrument query clusters by intent and device before touching templates.
+- [mattdiggityseo-card-0053] When internal-link architecture underperforms and you are using signal from @mattdiggityseo, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [mattdiggityseo-card-0054] When internal-link architecture underperforms and you are using signal from @mattdiggityseo, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [mattdiggityseo-card-0055] When internal-link architecture underperforms and you are using signal from @mattdiggityseo, set a rollback threshold before release and enforce it without exception.
+- [mattdiggityseo-card-0056] When internal-link architecture underperforms and you are using signal from @mattdiggityseo, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [mattdiggityseo-card-0057] When internal-link architecture underperforms and you are using signal from @mattdiggityseo, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [mattdiggityseo-card-0058] When internal-link architecture underperforms and you are using signal from @mattdiggityseo, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [mattdiggityseo-card-0059] When internal-link architecture underperforms and you are using signal from @mattdiggityseo, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [mattdiggityseo-card-0060] When internal-link architecture underperforms and you are using signal from @mattdiggityseo, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [mattdiggityseo-card-0061] When entity disambiguation issues dilute topical authority and you are using signal from @mattdiggityseo, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [mattdiggityseo-card-0062] When entity disambiguation issues dilute topical authority and you are using signal from @mattdiggityseo, instrument query clusters by intent and device before touching templates.
+- [mattdiggityseo-card-0063] When entity disambiguation issues dilute topical authority and you are using signal from @mattdiggityseo, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [mattdiggityseo-card-0064] When entity disambiguation issues dilute topical authority and you are using signal from @mattdiggityseo, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [mattdiggityseo-card-0065] When entity disambiguation issues dilute topical authority and you are using signal from @mattdiggityseo, set a rollback threshold before release and enforce it without exception.
+- [mattdiggityseo-card-0066] When entity disambiguation issues dilute topical authority and you are using signal from @mattdiggityseo, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [mattdiggityseo-card-0067] When entity disambiguation issues dilute topical authority and you are using signal from @mattdiggityseo, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [mattdiggityseo-card-0068] When entity disambiguation issues dilute topical authority and you are using signal from @mattdiggityseo, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [mattdiggityseo-card-0069] When entity disambiguation issues dilute topical authority and you are using signal from @mattdiggityseo, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [mattdiggityseo-card-0070] When entity disambiguation issues dilute topical authority and you are using signal from @mattdiggityseo, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [mattdiggityseo-card-0071] When large-scale content refresh decisions are needed and you are using signal from @mattdiggityseo, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [mattdiggityseo-card-0072] When large-scale content refresh decisions are needed and you are using signal from @mattdiggityseo, instrument query clusters by intent and device before touching templates.
+- [mattdiggityseo-card-0073] When large-scale content refresh decisions are needed and you are using signal from @mattdiggityseo, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [mattdiggityseo-card-0074] When large-scale content refresh decisions are needed and you are using signal from @mattdiggityseo, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [mattdiggityseo-card-0075] When large-scale content refresh decisions are needed and you are using signal from @mattdiggityseo, set a rollback threshold before release and enforce it without exception.
+- [mattdiggityseo-card-0076] When large-scale content refresh decisions are needed and you are using signal from @mattdiggityseo, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [mattdiggityseo-card-0077] When large-scale content refresh decisions are needed and you are using signal from @mattdiggityseo, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [mattdiggityseo-card-0078] When large-scale content refresh decisions are needed and you are using signal from @mattdiggityseo, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [mattdiggityseo-card-0079] When large-scale content refresh decisions are needed and you are using signal from @mattdiggityseo, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [mattdiggityseo-card-0080] When large-scale content refresh decisions are needed and you are using signal from @mattdiggityseo, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [mattdiggityseo-card-0081] When brand trust signals appear weak for YMYL queries and you are using signal from @mattdiggityseo, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [mattdiggityseo-card-0082] When brand trust signals appear weak for YMYL queries and you are using signal from @mattdiggityseo, instrument query clusters by intent and device before touching templates.
+- [mattdiggityseo-card-0083] When brand trust signals appear weak for YMYL queries and you are using signal from @mattdiggityseo, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [mattdiggityseo-card-0084] When brand trust signals appear weak for YMYL queries and you are using signal from @mattdiggityseo, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [mattdiggityseo-card-0085] When brand trust signals appear weak for YMYL queries and you are using signal from @mattdiggityseo, set a rollback threshold before release and enforce it without exception.
+- [mattdiggityseo-card-0086] When brand trust signals appear weak for YMYL queries and you are using signal from @mattdiggityseo, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [mattdiggityseo-card-0087] When brand trust signals appear weak for YMYL queries and you are using signal from @mattdiggityseo, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [mattdiggityseo-card-0088] When brand trust signals appear weak for YMYL queries and you are using signal from @mattdiggityseo, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [mattdiggityseo-card-0089] When brand trust signals appear weak for YMYL queries and you are using signal from @mattdiggityseo, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [mattdiggityseo-card-0090] When brand trust signals appear weak for YMYL queries and you are using signal from @mattdiggityseo, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [mattdiggityseo-card-0091] When affiliate pages rank but do not convert and you are using signal from @mattdiggityseo, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [mattdiggityseo-card-0092] When affiliate pages rank but do not convert and you are using signal from @mattdiggityseo, instrument query clusters by intent and device before touching templates.
+- [mattdiggityseo-card-0093] When affiliate pages rank but do not convert and you are using signal from @mattdiggityseo, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [mattdiggityseo-card-0094] When affiliate pages rank but do not convert and you are using signal from @mattdiggityseo, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [mattdiggityseo-card-0095] When affiliate pages rank but do not convert and you are using signal from @mattdiggityseo, set a rollback threshold before release and enforce it without exception.
+- [mattdiggityseo-card-0096] When affiliate pages rank but do not convert and you are using signal from @mattdiggityseo, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [mattdiggityseo-card-0097] When affiliate pages rank but do not convert and you are using signal from @mattdiggityseo, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [mattdiggityseo-card-0098] When affiliate pages rank but do not convert and you are using signal from @mattdiggityseo, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [mattdiggityseo-card-0099] When affiliate pages rank but do not convert and you are using signal from @mattdiggityseo, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [mattdiggityseo-card-0100] When affiliate pages rank but do not convert and you are using signal from @mattdiggityseo, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [mattdiggityseo-card-0101] When SERP features crowd out classic blue-link traffic and you are using signal from @mattdiggityseo, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [mattdiggityseo-card-0102] When SERP features crowd out classic blue-link traffic and you are using signal from @mattdiggityseo, instrument query clusters by intent and device before touching templates.
+- [mattdiggityseo-card-0103] When SERP features crowd out classic blue-link traffic and you are using signal from @mattdiggityseo, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [mattdiggityseo-card-0104] When SERP features crowd out classic blue-link traffic and you are using signal from @mattdiggityseo, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [mattdiggityseo-card-0105] When SERP features crowd out classic blue-link traffic and you are using signal from @mattdiggityseo, set a rollback threshold before release and enforce it without exception.
+- [mattdiggityseo-card-0106] When SERP features crowd out classic blue-link traffic and you are using signal from @mattdiggityseo, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [mattdiggityseo-card-0107] When SERP features crowd out classic blue-link traffic and you are using signal from @mattdiggityseo, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [mattdiggityseo-card-0108] When SERP features crowd out classic blue-link traffic and you are using signal from @mattdiggityseo, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [mattdiggityseo-card-0109] When SERP features crowd out classic blue-link traffic and you are using signal from @mattdiggityseo, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [mattdiggityseo-card-0110] When SERP features crowd out classic blue-link traffic and you are using signal from @mattdiggityseo, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [mattdiggityseo-card-0111] When new backlink opportunities spike but risk is unclear and you are using signal from @mattdiggityseo, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [mattdiggityseo-card-0112] When new backlink opportunities spike but risk is unclear and you are using signal from @mattdiggityseo, instrument query clusters by intent and device before touching templates.
+- [mattdiggityseo-card-0113] When new backlink opportunities spike but risk is unclear and you are using signal from @mattdiggityseo, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [mattdiggityseo-card-0114] When new backlink opportunities spike but risk is unclear and you are using signal from @mattdiggityseo, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [mattdiggityseo-card-0115] When new backlink opportunities spike but risk is unclear and you are using signal from @mattdiggityseo, set a rollback threshold before release and enforce it without exception.
+- [mattdiggityseo-card-0116] When new backlink opportunities spike but risk is unclear and you are using signal from @mattdiggityseo, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [mattdiggityseo-card-0117] When new backlink opportunities spike but risk is unclear and you are using signal from @mattdiggityseo, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [mattdiggityseo-card-0118] When new backlink opportunities spike but risk is unclear and you are using signal from @mattdiggityseo, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [mattdiggityseo-card-0119] When new backlink opportunities spike but risk is unclear and you are using signal from @mattdiggityseo, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [mattdiggityseo-card-0120] When new backlink opportunities spike but risk is unclear and you are using signal from @mattdiggityseo, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [mattdiggityseo-card-0121] When programmatic SEO expansions are proposed and you are using signal from @mattdiggityseo, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [mattdiggityseo-card-0122] When programmatic SEO expansions are proposed and you are using signal from @mattdiggityseo, instrument query clusters by intent and device before touching templates.
+- [mattdiggityseo-card-0123] When programmatic SEO expansions are proposed and you are using signal from @mattdiggityseo, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [mattdiggityseo-card-0124] When programmatic SEO expansions are proposed and you are using signal from @mattdiggityseo, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [mattdiggityseo-card-0125] When programmatic SEO expansions are proposed and you are using signal from @mattdiggityseo, set a rollback threshold before release and enforce it without exception.
+- [mattdiggityseo-card-0126] When programmatic SEO expansions are proposed and you are using signal from @mattdiggityseo, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [mattdiggityseo-card-0127] When programmatic SEO expansions are proposed and you are using signal from @mattdiggityseo, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [mattdiggityseo-card-0128] When programmatic SEO expansions are proposed and you are using signal from @mattdiggityseo, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [mattdiggityseo-card-0129] When programmatic SEO expansions are proposed and you are using signal from @mattdiggityseo, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [mattdiggityseo-card-0130] When programmatic SEO expansions are proposed and you are using signal from @mattdiggityseo, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [mattdiggityseo-card-0131] When international rollout introduces hreflang complexity and you are using signal from @mattdiggityseo, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [mattdiggityseo-card-0132] When international rollout introduces hreflang complexity and you are using signal from @mattdiggityseo, instrument query clusters by intent and device before touching templates.
+- [mattdiggityseo-card-0133] When international rollout introduces hreflang complexity and you are using signal from @mattdiggityseo, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [mattdiggityseo-card-0134] When international rollout introduces hreflang complexity and you are using signal from @mattdiggityseo, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [mattdiggityseo-card-0135] When international rollout introduces hreflang complexity and you are using signal from @mattdiggityseo, set a rollback threshold before release and enforce it without exception.
+- [mattdiggityseo-card-0136] When international rollout introduces hreflang complexity and you are using signal from @mattdiggityseo, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [mattdiggityseo-card-0137] When international rollout introduces hreflang complexity and you are using signal from @mattdiggityseo, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [mattdiggityseo-card-0138] When international rollout introduces hreflang complexity and you are using signal from @mattdiggityseo, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [mattdiggityseo-card-0139] When international rollout introduces hreflang complexity and you are using signal from @mattdiggityseo, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [mattdiggityseo-card-0140] When international rollout introduces hreflang complexity and you are using signal from @mattdiggityseo, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [mattdiggityseo-card-0141] When new AI-search referral channels appear and you are using signal from @mattdiggityseo, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [mattdiggityseo-card-0142] When new AI-search referral channels appear and you are using signal from @mattdiggityseo, instrument query clusters by intent and device before touching templates.
+- [mattdiggityseo-card-0143] When new AI-search referral channels appear and you are using signal from @mattdiggityseo, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [mattdiggityseo-card-0144] When new AI-search referral channels appear and you are using signal from @mattdiggityseo, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [mattdiggityseo-card-0145] When new AI-search referral channels appear and you are using signal from @mattdiggityseo, set a rollback threshold before release and enforce it without exception.
+- [mattdiggityseo-card-0146] When new AI-search referral channels appear and you are using signal from @mattdiggityseo, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [mattdiggityseo-card-0147] When new AI-search referral channels appear and you are using signal from @mattdiggityseo, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [mattdiggityseo-card-0148] When new AI-search referral channels appear and you are using signal from @mattdiggityseo, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [mattdiggityseo-card-0149] When new AI-search referral channels appear and you are using signal from @mattdiggityseo, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [mattdiggityseo-card-0150] When new AI-search referral channels appear and you are using signal from @mattdiggityseo, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [mattdiggityseo-card-0151] When stakeholders demand instant recovery plans and you are using signal from @mattdiggityseo, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [mattdiggityseo-card-0152] When stakeholders demand instant recovery plans and you are using signal from @mattdiggityseo, instrument query clusters by intent and device before touching templates.
+- [mattdiggityseo-card-0153] When stakeholders demand instant recovery plans and you are using signal from @mattdiggityseo, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [mattdiggityseo-card-0154] When stakeholders demand instant recovery plans and you are using signal from @mattdiggityseo, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [mattdiggityseo-card-0155] When stakeholders demand instant recovery plans and you are using signal from @mattdiggityseo, set a rollback threshold before release and enforce it without exception.
+- [mattdiggityseo-card-0156] When stakeholders demand instant recovery plans and you are using signal from @mattdiggityseo, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [mattdiggityseo-card-0157] When stakeholders demand instant recovery plans and you are using signal from @mattdiggityseo, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [mattdiggityseo-card-0158] When stakeholders demand instant recovery plans and you are using signal from @mattdiggityseo, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [mattdiggityseo-card-0159] When stakeholders demand instant recovery plans and you are using signal from @mattdiggityseo, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [mattdiggityseo-card-0160] When stakeholders demand instant recovery plans and you are using signal from @mattdiggityseo, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [mattdiggityseo-card-0161] When technical debt blocks roadmap velocity and you are using signal from @mattdiggityseo, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [mattdiggityseo-card-0162] When technical debt blocks roadmap velocity and you are using signal from @mattdiggityseo, instrument query clusters by intent and device before touching templates.
+- [mattdiggityseo-card-0163] When technical debt blocks roadmap velocity and you are using signal from @mattdiggityseo, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [mattdiggityseo-card-0164] When technical debt blocks roadmap velocity and you are using signal from @mattdiggityseo, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [mattdiggityseo-card-0165] When technical debt blocks roadmap velocity and you are using signal from @mattdiggityseo, set a rollback threshold before release and enforce it without exception.
+- [mattdiggityseo-card-0166] When technical debt blocks roadmap velocity and you are using signal from @mattdiggityseo, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [mattdiggityseo-card-0167] When technical debt blocks roadmap velocity and you are using signal from @mattdiggityseo, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [mattdiggityseo-card-0168] When technical debt blocks roadmap velocity and you are using signal from @mattdiggityseo, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [mattdiggityseo-card-0169] When technical debt blocks roadmap velocity and you are using signal from @mattdiggityseo, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [mattdiggityseo-card-0170] When technical debt blocks roadmap velocity and you are using signal from @mattdiggityseo, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [mattdiggityseo-card-0171] When competitors gain visibility with uncertain methods and you are using signal from @mattdiggityseo, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [mattdiggityseo-card-0172] When competitors gain visibility with uncertain methods and you are using signal from @mattdiggityseo, instrument query clusters by intent and device before touching templates.
+- [mattdiggityseo-card-0173] When competitors gain visibility with uncertain methods and you are using signal from @mattdiggityseo, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [mattdiggityseo-card-0174] When competitors gain visibility with uncertain methods and you are using signal from @mattdiggityseo, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [mattdiggityseo-card-0175] When competitors gain visibility with uncertain methods and you are using signal from @mattdiggityseo, set a rollback threshold before release and enforce it without exception.
+- [mattdiggityseo-card-0176] When competitors gain visibility with uncertain methods and you are using signal from @mattdiggityseo, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [mattdiggityseo-card-0177] When competitors gain visibility with uncertain methods and you are using signal from @mattdiggityseo, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [mattdiggityseo-card-0178] When competitors gain visibility with uncertain methods and you are using signal from @mattdiggityseo, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [mattdiggityseo-card-0179] When competitors gain visibility with uncertain methods and you are using signal from @mattdiggityseo, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [mattdiggityseo-card-0180] When competitors gain visibility with uncertain methods and you are using signal from @mattdiggityseo, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [mattdiggityseo-card-0181] When search intent shifts after product-category changes and you are using signal from @mattdiggityseo, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [mattdiggityseo-card-0182] When search intent shifts after product-category changes and you are using signal from @mattdiggityseo, instrument query clusters by intent and device before touching templates.
+- [mattdiggityseo-card-0183] When search intent shifts after product-category changes and you are using signal from @mattdiggityseo, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [mattdiggityseo-card-0184] When search intent shifts after product-category changes and you are using signal from @mattdiggityseo, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [mattdiggityseo-card-0185] When search intent shifts after product-category changes and you are using signal from @mattdiggityseo, set a rollback threshold before release and enforce it without exception.
+- [mattdiggityseo-card-0186] When search intent shifts after product-category changes and you are using signal from @mattdiggityseo, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [mattdiggityseo-card-0187] When search intent shifts after product-category changes and you are using signal from @mattdiggityseo, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [mattdiggityseo-card-0188] When search intent shifts after product-category changes and you are using signal from @mattdiggityseo, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [mattdiggityseo-card-0189] When search intent shifts after product-category changes and you are using signal from @mattdiggityseo, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [mattdiggityseo-card-0190] When search intent shifts after product-category changes and you are using signal from @mattdiggityseo, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [mattdiggityseo-card-0191] When analytics attribution masks true SEO impact and you are using signal from @mattdiggityseo, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [mattdiggityseo-card-0192] When analytics attribution masks true SEO impact and you are using signal from @mattdiggityseo, instrument query clusters by intent and device before touching templates.
+- [mattdiggityseo-card-0193] When analytics attribution masks true SEO impact and you are using signal from @mattdiggityseo, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [mattdiggityseo-card-0194] When analytics attribution masks true SEO impact and you are using signal from @mattdiggityseo, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [mattdiggityseo-card-0195] When analytics attribution masks true SEO impact and you are using signal from @mattdiggityseo, set a rollback threshold before release and enforce it without exception.
+- [mattdiggityseo-card-0196] When analytics attribution masks true SEO impact and you are using signal from @mattdiggityseo, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [mattdiggityseo-card-0197] When analytics attribution masks true SEO impact and you are using signal from @mattdiggityseo, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [mattdiggityseo-card-0198] When analytics attribution masks true SEO impact and you are using signal from @mattdiggityseo, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [mattdiggityseo-card-0199] When analytics attribution masks true SEO impact and you are using signal from @mattdiggityseo, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [mattdiggityseo-card-0200] When analytics attribution masks true SEO impact and you are using signal from @mattdiggityseo, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+
+### Fast Decision Rules
+- [mattdiggityseo-rule-001] If evidence is anecdotal and upside is low, skip implementation.
+- [mattdiggityseo-rule-002] If evidence is mixed and risk is high, run only in sandbox properties.
+- [mattdiggityseo-rule-003] If business impact is unmeasurable, deprioritize until instrumentation is fixed.
+- [mattdiggityseo-rule-004] If a tactic wins on traffic but loses on conversion quality, revert or redesign.
+- [mattdiggityseo-rule-005] If guidance aligns with multiple trusted sources, increase confidence tier.
+
+## 12. Rand Fishkin (@randfish)
+
+Primary focus: audience-first marketing, zero-click search realities, brand strategy beyond Google.
+Signal rationale: Important strategic counterweight: visibility is not only rankings, and distribution diversification matters.
+Reference links:
+- https://www.twstalker.com/randfish
+- https://sparktoro.com/blog/
+- https://sparktoro.com/blog/2024-zero-click-search-study-for-every-1000-us-google-searches-only-374-clicks-go-to-the-open-web-in-the-eu-its-360/
+Core themes:
+- Zero-click search dynamics
+- Audience intelligence
+- Brand/distribution diversification
+- Marketing measurement realism
+Execution defaults:
+- Use this account as a hypothesis generator, not a final authority.
+- If a claim is novel, require one low-risk pilot and one replication before broad rollout.
+- If a claim conflicts with Search Central guidance, document the conflict explicitly and downgrade confidence.
+- Convert social claims into issue tickets with owner, metric target, and expiration date.
+
+### Measurement Priorities
+- [randfish-measure-001] Track impressions, clicks, CTR, qualified sessions, conversion rate, and revenue per landing page.
+- [randfish-measure-002] Track query-cluster volatility by intent class and by URL template.
+- [randfish-measure-003] Track indexation ratio: indexed URLs divided by submitted canonical URLs.
+- [randfish-measure-004] Track internal-link depth and click-distance for money pages.
+- [randfish-measure-005] Track AI-surface citation frequency where measurable.
+- [randfish-measure-006] Track content decay windows and refresh impact lag.
+- [randfish-measure-007] Track cannibalization risk with near-duplicate intent clusters.
+- [randfish-measure-008] Track share-of-voice for high-value non-brand queries.
+- [randfish-measure-009] Track anomaly lead time between ranking changes and business outcomes.
+- [randfish-measure-010] Track assisted-conversion contribution from organic entry pages.
+
+### Atomic Action Cards
+- [randfish-card-0001] When a broad core update rolls out and you are using signal from @randfish, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [randfish-card-0002] When a broad core update rolls out and you are using signal from @randfish, instrument query clusters by intent and device before touching templates.
+- [randfish-card-0003] When a broad core update rolls out and you are using signal from @randfish, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [randfish-card-0004] When a broad core update rolls out and you are using signal from @randfish, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [randfish-card-0005] When a broad core update rolls out and you are using signal from @randfish, set a rollback threshold before release and enforce it without exception.
+- [randfish-card-0006] When a broad core update rolls out and you are using signal from @randfish, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [randfish-card-0007] When a broad core update rolls out and you are using signal from @randfish, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [randfish-card-0008] When a broad core update rolls out and you are using signal from @randfish, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [randfish-card-0009] When a broad core update rolls out and you are using signal from @randfish, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [randfish-card-0010] When a broad core update rolls out and you are using signal from @randfish, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [randfish-card-0011] When a niche-specific ranking shock appears and you are using signal from @randfish, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [randfish-card-0012] When a niche-specific ranking shock appears and you are using signal from @randfish, instrument query clusters by intent and device before touching templates.
+- [randfish-card-0013] When a niche-specific ranking shock appears and you are using signal from @randfish, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [randfish-card-0014] When a niche-specific ranking shock appears and you are using signal from @randfish, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [randfish-card-0015] When a niche-specific ranking shock appears and you are using signal from @randfish, set a rollback threshold before release and enforce it without exception.
+- [randfish-card-0016] When a niche-specific ranking shock appears and you are using signal from @randfish, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [randfish-card-0017] When a niche-specific ranking shock appears and you are using signal from @randfish, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [randfish-card-0018] When a niche-specific ranking shock appears and you are using signal from @randfish, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [randfish-card-0019] When a niche-specific ranking shock appears and you are using signal from @randfish, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [randfish-card-0020] When a niche-specific ranking shock appears and you are using signal from @randfish, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [randfish-card-0021] When AI Overviews or answer engines reduce clicks and you are using signal from @randfish, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [randfish-card-0022] When AI Overviews or answer engines reduce clicks and you are using signal from @randfish, instrument query clusters by intent and device before touching templates.
+- [randfish-card-0023] When AI Overviews or answer engines reduce clicks and you are using signal from @randfish, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [randfish-card-0024] When AI Overviews or answer engines reduce clicks and you are using signal from @randfish, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [randfish-card-0025] When AI Overviews or answer engines reduce clicks and you are using signal from @randfish, set a rollback threshold before release and enforce it without exception.
+- [randfish-card-0026] When AI Overviews or answer engines reduce clicks and you are using signal from @randfish, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [randfish-card-0027] When AI Overviews or answer engines reduce clicks and you are using signal from @randfish, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [randfish-card-0028] When AI Overviews or answer engines reduce clicks and you are using signal from @randfish, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [randfish-card-0029] When AI Overviews or answer engines reduce clicks and you are using signal from @randfish, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [randfish-card-0030] When AI Overviews or answer engines reduce clicks and you are using signal from @randfish, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [randfish-card-0031] When crawl budget becomes constrained on large templates and you are using signal from @randfish, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [randfish-card-0032] When crawl budget becomes constrained on large templates and you are using signal from @randfish, instrument query clusters by intent and device before touching templates.
+- [randfish-card-0033] When crawl budget becomes constrained on large templates and you are using signal from @randfish, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [randfish-card-0034] When crawl budget becomes constrained on large templates and you are using signal from @randfish, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [randfish-card-0035] When crawl budget becomes constrained on large templates and you are using signal from @randfish, set a rollback threshold before release and enforce it without exception.
+- [randfish-card-0036] When crawl budget becomes constrained on large templates and you are using signal from @randfish, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [randfish-card-0037] When crawl budget becomes constrained on large templates and you are using signal from @randfish, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [randfish-card-0038] When crawl budget becomes constrained on large templates and you are using signal from @randfish, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [randfish-card-0039] When crawl budget becomes constrained on large templates and you are using signal from @randfish, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [randfish-card-0040] When crawl budget becomes constrained on large templates and you are using signal from @randfish, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [randfish-card-0041] When indexation mismatches appear between sitemap and search and you are using signal from @randfish, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [randfish-card-0042] When indexation mismatches appear between sitemap and search and you are using signal from @randfish, instrument query clusters by intent and device before touching templates.
+- [randfish-card-0043] When indexation mismatches appear between sitemap and search and you are using signal from @randfish, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [randfish-card-0044] When indexation mismatches appear between sitemap and search and you are using signal from @randfish, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [randfish-card-0045] When indexation mismatches appear between sitemap and search and you are using signal from @randfish, set a rollback threshold before release and enforce it without exception.
+- [randfish-card-0046] When indexation mismatches appear between sitemap and search and you are using signal from @randfish, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [randfish-card-0047] When indexation mismatches appear between sitemap and search and you are using signal from @randfish, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [randfish-card-0048] When indexation mismatches appear between sitemap and search and you are using signal from @randfish, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [randfish-card-0049] When indexation mismatches appear between sitemap and search and you are using signal from @randfish, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [randfish-card-0050] When indexation mismatches appear between sitemap and search and you are using signal from @randfish, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [randfish-card-0051] When internal-link architecture underperforms and you are using signal from @randfish, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [randfish-card-0052] When internal-link architecture underperforms and you are using signal from @randfish, instrument query clusters by intent and device before touching templates.
+- [randfish-card-0053] When internal-link architecture underperforms and you are using signal from @randfish, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [randfish-card-0054] When internal-link architecture underperforms and you are using signal from @randfish, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [randfish-card-0055] When internal-link architecture underperforms and you are using signal from @randfish, set a rollback threshold before release and enforce it without exception.
+- [randfish-card-0056] When internal-link architecture underperforms and you are using signal from @randfish, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [randfish-card-0057] When internal-link architecture underperforms and you are using signal from @randfish, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [randfish-card-0058] When internal-link architecture underperforms and you are using signal from @randfish, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [randfish-card-0059] When internal-link architecture underperforms and you are using signal from @randfish, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [randfish-card-0060] When internal-link architecture underperforms and you are using signal from @randfish, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [randfish-card-0061] When entity disambiguation issues dilute topical authority and you are using signal from @randfish, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [randfish-card-0062] When entity disambiguation issues dilute topical authority and you are using signal from @randfish, instrument query clusters by intent and device before touching templates.
+- [randfish-card-0063] When entity disambiguation issues dilute topical authority and you are using signal from @randfish, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [randfish-card-0064] When entity disambiguation issues dilute topical authority and you are using signal from @randfish, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [randfish-card-0065] When entity disambiguation issues dilute topical authority and you are using signal from @randfish, set a rollback threshold before release and enforce it without exception.
+- [randfish-card-0066] When entity disambiguation issues dilute topical authority and you are using signal from @randfish, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [randfish-card-0067] When entity disambiguation issues dilute topical authority and you are using signal from @randfish, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [randfish-card-0068] When entity disambiguation issues dilute topical authority and you are using signal from @randfish, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [randfish-card-0069] When entity disambiguation issues dilute topical authority and you are using signal from @randfish, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [randfish-card-0070] When entity disambiguation issues dilute topical authority and you are using signal from @randfish, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [randfish-card-0071] When large-scale content refresh decisions are needed and you are using signal from @randfish, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [randfish-card-0072] When large-scale content refresh decisions are needed and you are using signal from @randfish, instrument query clusters by intent and device before touching templates.
+- [randfish-card-0073] When large-scale content refresh decisions are needed and you are using signal from @randfish, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [randfish-card-0074] When large-scale content refresh decisions are needed and you are using signal from @randfish, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [randfish-card-0075] When large-scale content refresh decisions are needed and you are using signal from @randfish, set a rollback threshold before release and enforce it without exception.
+- [randfish-card-0076] When large-scale content refresh decisions are needed and you are using signal from @randfish, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [randfish-card-0077] When large-scale content refresh decisions are needed and you are using signal from @randfish, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [randfish-card-0078] When large-scale content refresh decisions are needed and you are using signal from @randfish, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [randfish-card-0079] When large-scale content refresh decisions are needed and you are using signal from @randfish, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [randfish-card-0080] When large-scale content refresh decisions are needed and you are using signal from @randfish, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [randfish-card-0081] When brand trust signals appear weak for YMYL queries and you are using signal from @randfish, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [randfish-card-0082] When brand trust signals appear weak for YMYL queries and you are using signal from @randfish, instrument query clusters by intent and device before touching templates.
+- [randfish-card-0083] When brand trust signals appear weak for YMYL queries and you are using signal from @randfish, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [randfish-card-0084] When brand trust signals appear weak for YMYL queries and you are using signal from @randfish, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [randfish-card-0085] When brand trust signals appear weak for YMYL queries and you are using signal from @randfish, set a rollback threshold before release and enforce it without exception.
+- [randfish-card-0086] When brand trust signals appear weak for YMYL queries and you are using signal from @randfish, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [randfish-card-0087] When brand trust signals appear weak for YMYL queries and you are using signal from @randfish, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [randfish-card-0088] When brand trust signals appear weak for YMYL queries and you are using signal from @randfish, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [randfish-card-0089] When brand trust signals appear weak for YMYL queries and you are using signal from @randfish, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [randfish-card-0090] When brand trust signals appear weak for YMYL queries and you are using signal from @randfish, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [randfish-card-0091] When affiliate pages rank but do not convert and you are using signal from @randfish, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [randfish-card-0092] When affiliate pages rank but do not convert and you are using signal from @randfish, instrument query clusters by intent and device before touching templates.
+- [randfish-card-0093] When affiliate pages rank but do not convert and you are using signal from @randfish, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [randfish-card-0094] When affiliate pages rank but do not convert and you are using signal from @randfish, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [randfish-card-0095] When affiliate pages rank but do not convert and you are using signal from @randfish, set a rollback threshold before release and enforce it without exception.
+- [randfish-card-0096] When affiliate pages rank but do not convert and you are using signal from @randfish, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [randfish-card-0097] When affiliate pages rank but do not convert and you are using signal from @randfish, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [randfish-card-0098] When affiliate pages rank but do not convert and you are using signal from @randfish, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [randfish-card-0099] When affiliate pages rank but do not convert and you are using signal from @randfish, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [randfish-card-0100] When affiliate pages rank but do not convert and you are using signal from @randfish, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [randfish-card-0101] When SERP features crowd out classic blue-link traffic and you are using signal from @randfish, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [randfish-card-0102] When SERP features crowd out classic blue-link traffic and you are using signal from @randfish, instrument query clusters by intent and device before touching templates.
+- [randfish-card-0103] When SERP features crowd out classic blue-link traffic and you are using signal from @randfish, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [randfish-card-0104] When SERP features crowd out classic blue-link traffic and you are using signal from @randfish, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [randfish-card-0105] When SERP features crowd out classic blue-link traffic and you are using signal from @randfish, set a rollback threshold before release and enforce it without exception.
+- [randfish-card-0106] When SERP features crowd out classic blue-link traffic and you are using signal from @randfish, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [randfish-card-0107] When SERP features crowd out classic blue-link traffic and you are using signal from @randfish, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [randfish-card-0108] When SERP features crowd out classic blue-link traffic and you are using signal from @randfish, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [randfish-card-0109] When SERP features crowd out classic blue-link traffic and you are using signal from @randfish, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [randfish-card-0110] When SERP features crowd out classic blue-link traffic and you are using signal from @randfish, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [randfish-card-0111] When new backlink opportunities spike but risk is unclear and you are using signal from @randfish, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [randfish-card-0112] When new backlink opportunities spike but risk is unclear and you are using signal from @randfish, instrument query clusters by intent and device before touching templates.
+- [randfish-card-0113] When new backlink opportunities spike but risk is unclear and you are using signal from @randfish, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [randfish-card-0114] When new backlink opportunities spike but risk is unclear and you are using signal from @randfish, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [randfish-card-0115] When new backlink opportunities spike but risk is unclear and you are using signal from @randfish, set a rollback threshold before release and enforce it without exception.
+- [randfish-card-0116] When new backlink opportunities spike but risk is unclear and you are using signal from @randfish, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [randfish-card-0117] When new backlink opportunities spike but risk is unclear and you are using signal from @randfish, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [randfish-card-0118] When new backlink opportunities spike but risk is unclear and you are using signal from @randfish, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [randfish-card-0119] When new backlink opportunities spike but risk is unclear and you are using signal from @randfish, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [randfish-card-0120] When new backlink opportunities spike but risk is unclear and you are using signal from @randfish, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [randfish-card-0121] When programmatic SEO expansions are proposed and you are using signal from @randfish, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [randfish-card-0122] When programmatic SEO expansions are proposed and you are using signal from @randfish, instrument query clusters by intent and device before touching templates.
+- [randfish-card-0123] When programmatic SEO expansions are proposed and you are using signal from @randfish, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [randfish-card-0124] When programmatic SEO expansions are proposed and you are using signal from @randfish, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [randfish-card-0125] When programmatic SEO expansions are proposed and you are using signal from @randfish, set a rollback threshold before release and enforce it without exception.
+- [randfish-card-0126] When programmatic SEO expansions are proposed and you are using signal from @randfish, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [randfish-card-0127] When programmatic SEO expansions are proposed and you are using signal from @randfish, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [randfish-card-0128] When programmatic SEO expansions are proposed and you are using signal from @randfish, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [randfish-card-0129] When programmatic SEO expansions are proposed and you are using signal from @randfish, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [randfish-card-0130] When programmatic SEO expansions are proposed and you are using signal from @randfish, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [randfish-card-0131] When international rollout introduces hreflang complexity and you are using signal from @randfish, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [randfish-card-0132] When international rollout introduces hreflang complexity and you are using signal from @randfish, instrument query clusters by intent and device before touching templates.
+- [randfish-card-0133] When international rollout introduces hreflang complexity and you are using signal from @randfish, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [randfish-card-0134] When international rollout introduces hreflang complexity and you are using signal from @randfish, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [randfish-card-0135] When international rollout introduces hreflang complexity and you are using signal from @randfish, set a rollback threshold before release and enforce it without exception.
+- [randfish-card-0136] When international rollout introduces hreflang complexity and you are using signal from @randfish, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [randfish-card-0137] When international rollout introduces hreflang complexity and you are using signal from @randfish, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [randfish-card-0138] When international rollout introduces hreflang complexity and you are using signal from @randfish, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [randfish-card-0139] When international rollout introduces hreflang complexity and you are using signal from @randfish, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [randfish-card-0140] When international rollout introduces hreflang complexity and you are using signal from @randfish, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [randfish-card-0141] When new AI-search referral channels appear and you are using signal from @randfish, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [randfish-card-0142] When new AI-search referral channels appear and you are using signal from @randfish, instrument query clusters by intent and device before touching templates.
+- [randfish-card-0143] When new AI-search referral channels appear and you are using signal from @randfish, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [randfish-card-0144] When new AI-search referral channels appear and you are using signal from @randfish, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [randfish-card-0145] When new AI-search referral channels appear and you are using signal from @randfish, set a rollback threshold before release and enforce it without exception.
+- [randfish-card-0146] When new AI-search referral channels appear and you are using signal from @randfish, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [randfish-card-0147] When new AI-search referral channels appear and you are using signal from @randfish, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [randfish-card-0148] When new AI-search referral channels appear and you are using signal from @randfish, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [randfish-card-0149] When new AI-search referral channels appear and you are using signal from @randfish, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [randfish-card-0150] When new AI-search referral channels appear and you are using signal from @randfish, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [randfish-card-0151] When stakeholders demand instant recovery plans and you are using signal from @randfish, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [randfish-card-0152] When stakeholders demand instant recovery plans and you are using signal from @randfish, instrument query clusters by intent and device before touching templates.
+- [randfish-card-0153] When stakeholders demand instant recovery plans and you are using signal from @randfish, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [randfish-card-0154] When stakeholders demand instant recovery plans and you are using signal from @randfish, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [randfish-card-0155] When stakeholders demand instant recovery plans and you are using signal from @randfish, set a rollback threshold before release and enforce it without exception.
+- [randfish-card-0156] When stakeholders demand instant recovery plans and you are using signal from @randfish, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [randfish-card-0157] When stakeholders demand instant recovery plans and you are using signal from @randfish, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [randfish-card-0158] When stakeholders demand instant recovery plans and you are using signal from @randfish, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [randfish-card-0159] When stakeholders demand instant recovery plans and you are using signal from @randfish, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [randfish-card-0160] When stakeholders demand instant recovery plans and you are using signal from @randfish, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [randfish-card-0161] When technical debt blocks roadmap velocity and you are using signal from @randfish, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [randfish-card-0162] When technical debt blocks roadmap velocity and you are using signal from @randfish, instrument query clusters by intent and device before touching templates.
+- [randfish-card-0163] When technical debt blocks roadmap velocity and you are using signal from @randfish, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [randfish-card-0164] When technical debt blocks roadmap velocity and you are using signal from @randfish, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [randfish-card-0165] When technical debt blocks roadmap velocity and you are using signal from @randfish, set a rollback threshold before release and enforce it without exception.
+- [randfish-card-0166] When technical debt blocks roadmap velocity and you are using signal from @randfish, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [randfish-card-0167] When technical debt blocks roadmap velocity and you are using signal from @randfish, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [randfish-card-0168] When technical debt blocks roadmap velocity and you are using signal from @randfish, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [randfish-card-0169] When technical debt blocks roadmap velocity and you are using signal from @randfish, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [randfish-card-0170] When technical debt blocks roadmap velocity and you are using signal from @randfish, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [randfish-card-0171] When competitors gain visibility with uncertain methods and you are using signal from @randfish, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [randfish-card-0172] When competitors gain visibility with uncertain methods and you are using signal from @randfish, instrument query clusters by intent and device before touching templates.
+- [randfish-card-0173] When competitors gain visibility with uncertain methods and you are using signal from @randfish, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [randfish-card-0174] When competitors gain visibility with uncertain methods and you are using signal from @randfish, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [randfish-card-0175] When competitors gain visibility with uncertain methods and you are using signal from @randfish, set a rollback threshold before release and enforce it without exception.
+- [randfish-card-0176] When competitors gain visibility with uncertain methods and you are using signal from @randfish, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [randfish-card-0177] When competitors gain visibility with uncertain methods and you are using signal from @randfish, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [randfish-card-0178] When competitors gain visibility with uncertain methods and you are using signal from @randfish, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [randfish-card-0179] When competitors gain visibility with uncertain methods and you are using signal from @randfish, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [randfish-card-0180] When competitors gain visibility with uncertain methods and you are using signal from @randfish, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [randfish-card-0181] When search intent shifts after product-category changes and you are using signal from @randfish, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [randfish-card-0182] When search intent shifts after product-category changes and you are using signal from @randfish, instrument query clusters by intent and device before touching templates.
+- [randfish-card-0183] When search intent shifts after product-category changes and you are using signal from @randfish, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [randfish-card-0184] When search intent shifts after product-category changes and you are using signal from @randfish, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [randfish-card-0185] When search intent shifts after product-category changes and you are using signal from @randfish, set a rollback threshold before release and enforce it without exception.
+- [randfish-card-0186] When search intent shifts after product-category changes and you are using signal from @randfish, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [randfish-card-0187] When search intent shifts after product-category changes and you are using signal from @randfish, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [randfish-card-0188] When search intent shifts after product-category changes and you are using signal from @randfish, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [randfish-card-0189] When search intent shifts after product-category changes and you are using signal from @randfish, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [randfish-card-0190] When search intent shifts after product-category changes and you are using signal from @randfish, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [randfish-card-0191] When analytics attribution masks true SEO impact and you are using signal from @randfish, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [randfish-card-0192] When analytics attribution masks true SEO impact and you are using signal from @randfish, instrument query clusters by intent and device before touching templates.
+- [randfish-card-0193] When analytics attribution masks true SEO impact and you are using signal from @randfish, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [randfish-card-0194] When analytics attribution masks true SEO impact and you are using signal from @randfish, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [randfish-card-0195] When analytics attribution masks true SEO impact and you are using signal from @randfish, set a rollback threshold before release and enforce it without exception.
+- [randfish-card-0196] When analytics attribution masks true SEO impact and you are using signal from @randfish, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [randfish-card-0197] When analytics attribution masks true SEO impact and you are using signal from @randfish, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [randfish-card-0198] When analytics attribution masks true SEO impact and you are using signal from @randfish, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [randfish-card-0199] When analytics attribution masks true SEO impact and you are using signal from @randfish, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [randfish-card-0200] When analytics attribution masks true SEO impact and you are using signal from @randfish, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+
+### Fast Decision Rules
+- [randfish-rule-001] If evidence is anecdotal and upside is low, skip implementation.
+- [randfish-rule-002] If evidence is mixed and risk is high, run only in sandbox properties.
+- [randfish-rule-003] If business impact is unmeasurable, deprioritize until instrumentation is fixed.
+- [randfish-rule-004] If a tactic wins on traffic but loses on conversion quality, revert or redesign.
+- [randfish-rule-005] If guidance aligns with multiple trusted sources, increase confidence tier.
+
+## 13. Barry Schwartz (@rustybrick)
+
+Primary focus: rapid Google update coverage, SERP tests, real-time search change tracking.
+Signal rationale: Essential tactical feed for near-real-time change awareness and early SERP anomaly detection.
+Reference links:
+- https://www.twstalker.com/rustybrick
+- https://www.seroundtable.com/
+- https://searchengineland.com/author/barry-schwartz
+Core themes:
+- Google update alerting
+- SERP test tracking
+- Rapid news synthesis
+- Change detection in production SEO
+Execution defaults:
+- Use this account as a hypothesis generator, not a final authority.
+- If a claim is novel, require one low-risk pilot and one replication before broad rollout.
+- If a claim conflicts with Search Central guidance, document the conflict explicitly and downgrade confidence.
+- Convert social claims into issue tickets with owner, metric target, and expiration date.
+
+### Measurement Priorities
+- [rustybrick-measure-001] Track impressions, clicks, CTR, qualified sessions, conversion rate, and revenue per landing page.
+- [rustybrick-measure-002] Track query-cluster volatility by intent class and by URL template.
+- [rustybrick-measure-003] Track indexation ratio: indexed URLs divided by submitted canonical URLs.
+- [rustybrick-measure-004] Track internal-link depth and click-distance for money pages.
+- [rustybrick-measure-005] Track AI-surface citation frequency where measurable.
+- [rustybrick-measure-006] Track content decay windows and refresh impact lag.
+- [rustybrick-measure-007] Track cannibalization risk with near-duplicate intent clusters.
+- [rustybrick-measure-008] Track share-of-voice for high-value non-brand queries.
+- [rustybrick-measure-009] Track anomaly lead time between ranking changes and business outcomes.
+- [rustybrick-measure-010] Track assisted-conversion contribution from organic entry pages.
+
+### Atomic Action Cards
+- [rustybrick-card-0001] When a broad core update rolls out and you are using signal from @rustybrick, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [rustybrick-card-0002] When a broad core update rolls out and you are using signal from @rustybrick, instrument query clusters by intent and device before touching templates.
+- [rustybrick-card-0003] When a broad core update rolls out and you are using signal from @rustybrick, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [rustybrick-card-0004] When a broad core update rolls out and you are using signal from @rustybrick, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [rustybrick-card-0005] When a broad core update rolls out and you are using signal from @rustybrick, set a rollback threshold before release and enforce it without exception.
+- [rustybrick-card-0006] When a broad core update rolls out and you are using signal from @rustybrick, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [rustybrick-card-0007] When a broad core update rolls out and you are using signal from @rustybrick, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [rustybrick-card-0008] When a broad core update rolls out and you are using signal from @rustybrick, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [rustybrick-card-0009] When a broad core update rolls out and you are using signal from @rustybrick, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [rustybrick-card-0010] When a broad core update rolls out and you are using signal from @rustybrick, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [rustybrick-card-0011] When a niche-specific ranking shock appears and you are using signal from @rustybrick, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [rustybrick-card-0012] When a niche-specific ranking shock appears and you are using signal from @rustybrick, instrument query clusters by intent and device before touching templates.
+- [rustybrick-card-0013] When a niche-specific ranking shock appears and you are using signal from @rustybrick, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [rustybrick-card-0014] When a niche-specific ranking shock appears and you are using signal from @rustybrick, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [rustybrick-card-0015] When a niche-specific ranking shock appears and you are using signal from @rustybrick, set a rollback threshold before release and enforce it without exception.
+- [rustybrick-card-0016] When a niche-specific ranking shock appears and you are using signal from @rustybrick, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [rustybrick-card-0017] When a niche-specific ranking shock appears and you are using signal from @rustybrick, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [rustybrick-card-0018] When a niche-specific ranking shock appears and you are using signal from @rustybrick, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [rustybrick-card-0019] When a niche-specific ranking shock appears and you are using signal from @rustybrick, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [rustybrick-card-0020] When a niche-specific ranking shock appears and you are using signal from @rustybrick, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [rustybrick-card-0021] When AI Overviews or answer engines reduce clicks and you are using signal from @rustybrick, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [rustybrick-card-0022] When AI Overviews or answer engines reduce clicks and you are using signal from @rustybrick, instrument query clusters by intent and device before touching templates.
+- [rustybrick-card-0023] When AI Overviews or answer engines reduce clicks and you are using signal from @rustybrick, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [rustybrick-card-0024] When AI Overviews or answer engines reduce clicks and you are using signal from @rustybrick, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [rustybrick-card-0025] When AI Overviews or answer engines reduce clicks and you are using signal from @rustybrick, set a rollback threshold before release and enforce it without exception.
+- [rustybrick-card-0026] When AI Overviews or answer engines reduce clicks and you are using signal from @rustybrick, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [rustybrick-card-0027] When AI Overviews or answer engines reduce clicks and you are using signal from @rustybrick, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [rustybrick-card-0028] When AI Overviews or answer engines reduce clicks and you are using signal from @rustybrick, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [rustybrick-card-0029] When AI Overviews or answer engines reduce clicks and you are using signal from @rustybrick, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [rustybrick-card-0030] When AI Overviews or answer engines reduce clicks and you are using signal from @rustybrick, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [rustybrick-card-0031] When crawl budget becomes constrained on large templates and you are using signal from @rustybrick, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [rustybrick-card-0032] When crawl budget becomes constrained on large templates and you are using signal from @rustybrick, instrument query clusters by intent and device before touching templates.
+- [rustybrick-card-0033] When crawl budget becomes constrained on large templates and you are using signal from @rustybrick, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [rustybrick-card-0034] When crawl budget becomes constrained on large templates and you are using signal from @rustybrick, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [rustybrick-card-0035] When crawl budget becomes constrained on large templates and you are using signal from @rustybrick, set a rollback threshold before release and enforce it without exception.
+- [rustybrick-card-0036] When crawl budget becomes constrained on large templates and you are using signal from @rustybrick, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [rustybrick-card-0037] When crawl budget becomes constrained on large templates and you are using signal from @rustybrick, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [rustybrick-card-0038] When crawl budget becomes constrained on large templates and you are using signal from @rustybrick, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [rustybrick-card-0039] When crawl budget becomes constrained on large templates and you are using signal from @rustybrick, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [rustybrick-card-0040] When crawl budget becomes constrained on large templates and you are using signal from @rustybrick, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [rustybrick-card-0041] When indexation mismatches appear between sitemap and search and you are using signal from @rustybrick, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [rustybrick-card-0042] When indexation mismatches appear between sitemap and search and you are using signal from @rustybrick, instrument query clusters by intent and device before touching templates.
+- [rustybrick-card-0043] When indexation mismatches appear between sitemap and search and you are using signal from @rustybrick, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [rustybrick-card-0044] When indexation mismatches appear between sitemap and search and you are using signal from @rustybrick, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [rustybrick-card-0045] When indexation mismatches appear between sitemap and search and you are using signal from @rustybrick, set a rollback threshold before release and enforce it without exception.
+- [rustybrick-card-0046] When indexation mismatches appear between sitemap and search and you are using signal from @rustybrick, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [rustybrick-card-0047] When indexation mismatches appear between sitemap and search and you are using signal from @rustybrick, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [rustybrick-card-0048] When indexation mismatches appear between sitemap and search and you are using signal from @rustybrick, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [rustybrick-card-0049] When indexation mismatches appear between sitemap and search and you are using signal from @rustybrick, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [rustybrick-card-0050] When indexation mismatches appear between sitemap and search and you are using signal from @rustybrick, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [rustybrick-card-0051] When internal-link architecture underperforms and you are using signal from @rustybrick, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [rustybrick-card-0052] When internal-link architecture underperforms and you are using signal from @rustybrick, instrument query clusters by intent and device before touching templates.
+- [rustybrick-card-0053] When internal-link architecture underperforms and you are using signal from @rustybrick, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [rustybrick-card-0054] When internal-link architecture underperforms and you are using signal from @rustybrick, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [rustybrick-card-0055] When internal-link architecture underperforms and you are using signal from @rustybrick, set a rollback threshold before release and enforce it without exception.
+- [rustybrick-card-0056] When internal-link architecture underperforms and you are using signal from @rustybrick, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [rustybrick-card-0057] When internal-link architecture underperforms and you are using signal from @rustybrick, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [rustybrick-card-0058] When internal-link architecture underperforms and you are using signal from @rustybrick, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [rustybrick-card-0059] When internal-link architecture underperforms and you are using signal from @rustybrick, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [rustybrick-card-0060] When internal-link architecture underperforms and you are using signal from @rustybrick, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [rustybrick-card-0061] When entity disambiguation issues dilute topical authority and you are using signal from @rustybrick, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [rustybrick-card-0062] When entity disambiguation issues dilute topical authority and you are using signal from @rustybrick, instrument query clusters by intent and device before touching templates.
+- [rustybrick-card-0063] When entity disambiguation issues dilute topical authority and you are using signal from @rustybrick, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [rustybrick-card-0064] When entity disambiguation issues dilute topical authority and you are using signal from @rustybrick, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [rustybrick-card-0065] When entity disambiguation issues dilute topical authority and you are using signal from @rustybrick, set a rollback threshold before release and enforce it without exception.
+- [rustybrick-card-0066] When entity disambiguation issues dilute topical authority and you are using signal from @rustybrick, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [rustybrick-card-0067] When entity disambiguation issues dilute topical authority and you are using signal from @rustybrick, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [rustybrick-card-0068] When entity disambiguation issues dilute topical authority and you are using signal from @rustybrick, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [rustybrick-card-0069] When entity disambiguation issues dilute topical authority and you are using signal from @rustybrick, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [rustybrick-card-0070] When entity disambiguation issues dilute topical authority and you are using signal from @rustybrick, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [rustybrick-card-0071] When large-scale content refresh decisions are needed and you are using signal from @rustybrick, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [rustybrick-card-0072] When large-scale content refresh decisions are needed and you are using signal from @rustybrick, instrument query clusters by intent and device before touching templates.
+- [rustybrick-card-0073] When large-scale content refresh decisions are needed and you are using signal from @rustybrick, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [rustybrick-card-0074] When large-scale content refresh decisions are needed and you are using signal from @rustybrick, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [rustybrick-card-0075] When large-scale content refresh decisions are needed and you are using signal from @rustybrick, set a rollback threshold before release and enforce it without exception.
+- [rustybrick-card-0076] When large-scale content refresh decisions are needed and you are using signal from @rustybrick, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [rustybrick-card-0077] When large-scale content refresh decisions are needed and you are using signal from @rustybrick, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [rustybrick-card-0078] When large-scale content refresh decisions are needed and you are using signal from @rustybrick, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [rustybrick-card-0079] When large-scale content refresh decisions are needed and you are using signal from @rustybrick, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [rustybrick-card-0080] When large-scale content refresh decisions are needed and you are using signal from @rustybrick, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [rustybrick-card-0081] When brand trust signals appear weak for YMYL queries and you are using signal from @rustybrick, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [rustybrick-card-0082] When brand trust signals appear weak for YMYL queries and you are using signal from @rustybrick, instrument query clusters by intent and device before touching templates.
+- [rustybrick-card-0083] When brand trust signals appear weak for YMYL queries and you are using signal from @rustybrick, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [rustybrick-card-0084] When brand trust signals appear weak for YMYL queries and you are using signal from @rustybrick, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [rustybrick-card-0085] When brand trust signals appear weak for YMYL queries and you are using signal from @rustybrick, set a rollback threshold before release and enforce it without exception.
+- [rustybrick-card-0086] When brand trust signals appear weak for YMYL queries and you are using signal from @rustybrick, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [rustybrick-card-0087] When brand trust signals appear weak for YMYL queries and you are using signal from @rustybrick, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [rustybrick-card-0088] When brand trust signals appear weak for YMYL queries and you are using signal from @rustybrick, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [rustybrick-card-0089] When brand trust signals appear weak for YMYL queries and you are using signal from @rustybrick, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [rustybrick-card-0090] When brand trust signals appear weak for YMYL queries and you are using signal from @rustybrick, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [rustybrick-card-0091] When affiliate pages rank but do not convert and you are using signal from @rustybrick, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [rustybrick-card-0092] When affiliate pages rank but do not convert and you are using signal from @rustybrick, instrument query clusters by intent and device before touching templates.
+- [rustybrick-card-0093] When affiliate pages rank but do not convert and you are using signal from @rustybrick, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [rustybrick-card-0094] When affiliate pages rank but do not convert and you are using signal from @rustybrick, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [rustybrick-card-0095] When affiliate pages rank but do not convert and you are using signal from @rustybrick, set a rollback threshold before release and enforce it without exception.
+- [rustybrick-card-0096] When affiliate pages rank but do not convert and you are using signal from @rustybrick, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [rustybrick-card-0097] When affiliate pages rank but do not convert and you are using signal from @rustybrick, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [rustybrick-card-0098] When affiliate pages rank but do not convert and you are using signal from @rustybrick, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [rustybrick-card-0099] When affiliate pages rank but do not convert and you are using signal from @rustybrick, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [rustybrick-card-0100] When affiliate pages rank but do not convert and you are using signal from @rustybrick, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [rustybrick-card-0101] When SERP features crowd out classic blue-link traffic and you are using signal from @rustybrick, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [rustybrick-card-0102] When SERP features crowd out classic blue-link traffic and you are using signal from @rustybrick, instrument query clusters by intent and device before touching templates.
+- [rustybrick-card-0103] When SERP features crowd out classic blue-link traffic and you are using signal from @rustybrick, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [rustybrick-card-0104] When SERP features crowd out classic blue-link traffic and you are using signal from @rustybrick, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [rustybrick-card-0105] When SERP features crowd out classic blue-link traffic and you are using signal from @rustybrick, set a rollback threshold before release and enforce it without exception.
+- [rustybrick-card-0106] When SERP features crowd out classic blue-link traffic and you are using signal from @rustybrick, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [rustybrick-card-0107] When SERP features crowd out classic blue-link traffic and you are using signal from @rustybrick, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [rustybrick-card-0108] When SERP features crowd out classic blue-link traffic and you are using signal from @rustybrick, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [rustybrick-card-0109] When SERP features crowd out classic blue-link traffic and you are using signal from @rustybrick, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [rustybrick-card-0110] When SERP features crowd out classic blue-link traffic and you are using signal from @rustybrick, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [rustybrick-card-0111] When new backlink opportunities spike but risk is unclear and you are using signal from @rustybrick, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [rustybrick-card-0112] When new backlink opportunities spike but risk is unclear and you are using signal from @rustybrick, instrument query clusters by intent and device before touching templates.
+- [rustybrick-card-0113] When new backlink opportunities spike but risk is unclear and you are using signal from @rustybrick, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [rustybrick-card-0114] When new backlink opportunities spike but risk is unclear and you are using signal from @rustybrick, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [rustybrick-card-0115] When new backlink opportunities spike but risk is unclear and you are using signal from @rustybrick, set a rollback threshold before release and enforce it without exception.
+- [rustybrick-card-0116] When new backlink opportunities spike but risk is unclear and you are using signal from @rustybrick, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [rustybrick-card-0117] When new backlink opportunities spike but risk is unclear and you are using signal from @rustybrick, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [rustybrick-card-0118] When new backlink opportunities spike but risk is unclear and you are using signal from @rustybrick, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [rustybrick-card-0119] When new backlink opportunities spike but risk is unclear and you are using signal from @rustybrick, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [rustybrick-card-0120] When new backlink opportunities spike but risk is unclear and you are using signal from @rustybrick, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [rustybrick-card-0121] When programmatic SEO expansions are proposed and you are using signal from @rustybrick, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [rustybrick-card-0122] When programmatic SEO expansions are proposed and you are using signal from @rustybrick, instrument query clusters by intent and device before touching templates.
+- [rustybrick-card-0123] When programmatic SEO expansions are proposed and you are using signal from @rustybrick, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [rustybrick-card-0124] When programmatic SEO expansions are proposed and you are using signal from @rustybrick, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [rustybrick-card-0125] When programmatic SEO expansions are proposed and you are using signal from @rustybrick, set a rollback threshold before release and enforce it without exception.
+- [rustybrick-card-0126] When programmatic SEO expansions are proposed and you are using signal from @rustybrick, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [rustybrick-card-0127] When programmatic SEO expansions are proposed and you are using signal from @rustybrick, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [rustybrick-card-0128] When programmatic SEO expansions are proposed and you are using signal from @rustybrick, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [rustybrick-card-0129] When programmatic SEO expansions are proposed and you are using signal from @rustybrick, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [rustybrick-card-0130] When programmatic SEO expansions are proposed and you are using signal from @rustybrick, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [rustybrick-card-0131] When international rollout introduces hreflang complexity and you are using signal from @rustybrick, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [rustybrick-card-0132] When international rollout introduces hreflang complexity and you are using signal from @rustybrick, instrument query clusters by intent and device before touching templates.
+- [rustybrick-card-0133] When international rollout introduces hreflang complexity and you are using signal from @rustybrick, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [rustybrick-card-0134] When international rollout introduces hreflang complexity and you are using signal from @rustybrick, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [rustybrick-card-0135] When international rollout introduces hreflang complexity and you are using signal from @rustybrick, set a rollback threshold before release and enforce it without exception.
+- [rustybrick-card-0136] When international rollout introduces hreflang complexity and you are using signal from @rustybrick, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [rustybrick-card-0137] When international rollout introduces hreflang complexity and you are using signal from @rustybrick, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [rustybrick-card-0138] When international rollout introduces hreflang complexity and you are using signal from @rustybrick, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [rustybrick-card-0139] When international rollout introduces hreflang complexity and you are using signal from @rustybrick, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [rustybrick-card-0140] When international rollout introduces hreflang complexity and you are using signal from @rustybrick, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [rustybrick-card-0141] When new AI-search referral channels appear and you are using signal from @rustybrick, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [rustybrick-card-0142] When new AI-search referral channels appear and you are using signal from @rustybrick, instrument query clusters by intent and device before touching templates.
+- [rustybrick-card-0143] When new AI-search referral channels appear and you are using signal from @rustybrick, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [rustybrick-card-0144] When new AI-search referral channels appear and you are using signal from @rustybrick, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [rustybrick-card-0145] When new AI-search referral channels appear and you are using signal from @rustybrick, set a rollback threshold before release and enforce it without exception.
+- [rustybrick-card-0146] When new AI-search referral channels appear and you are using signal from @rustybrick, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [rustybrick-card-0147] When new AI-search referral channels appear and you are using signal from @rustybrick, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [rustybrick-card-0148] When new AI-search referral channels appear and you are using signal from @rustybrick, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [rustybrick-card-0149] When new AI-search referral channels appear and you are using signal from @rustybrick, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [rustybrick-card-0150] When new AI-search referral channels appear and you are using signal from @rustybrick, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [rustybrick-card-0151] When stakeholders demand instant recovery plans and you are using signal from @rustybrick, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [rustybrick-card-0152] When stakeholders demand instant recovery plans and you are using signal from @rustybrick, instrument query clusters by intent and device before touching templates.
+- [rustybrick-card-0153] When stakeholders demand instant recovery plans and you are using signal from @rustybrick, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [rustybrick-card-0154] When stakeholders demand instant recovery plans and you are using signal from @rustybrick, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [rustybrick-card-0155] When stakeholders demand instant recovery plans and you are using signal from @rustybrick, set a rollback threshold before release and enforce it without exception.
+- [rustybrick-card-0156] When stakeholders demand instant recovery plans and you are using signal from @rustybrick, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [rustybrick-card-0157] When stakeholders demand instant recovery plans and you are using signal from @rustybrick, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [rustybrick-card-0158] When stakeholders demand instant recovery plans and you are using signal from @rustybrick, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [rustybrick-card-0159] When stakeholders demand instant recovery plans and you are using signal from @rustybrick, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [rustybrick-card-0160] When stakeholders demand instant recovery plans and you are using signal from @rustybrick, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [rustybrick-card-0161] When technical debt blocks roadmap velocity and you are using signal from @rustybrick, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [rustybrick-card-0162] When technical debt blocks roadmap velocity and you are using signal from @rustybrick, instrument query clusters by intent and device before touching templates.
+- [rustybrick-card-0163] When technical debt blocks roadmap velocity and you are using signal from @rustybrick, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [rustybrick-card-0164] When technical debt blocks roadmap velocity and you are using signal from @rustybrick, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [rustybrick-card-0165] When technical debt blocks roadmap velocity and you are using signal from @rustybrick, set a rollback threshold before release and enforce it without exception.
+- [rustybrick-card-0166] When technical debt blocks roadmap velocity and you are using signal from @rustybrick, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [rustybrick-card-0167] When technical debt blocks roadmap velocity and you are using signal from @rustybrick, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [rustybrick-card-0168] When technical debt blocks roadmap velocity and you are using signal from @rustybrick, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [rustybrick-card-0169] When technical debt blocks roadmap velocity and you are using signal from @rustybrick, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [rustybrick-card-0170] When technical debt blocks roadmap velocity and you are using signal from @rustybrick, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [rustybrick-card-0171] When competitors gain visibility with uncertain methods and you are using signal from @rustybrick, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [rustybrick-card-0172] When competitors gain visibility with uncertain methods and you are using signal from @rustybrick, instrument query clusters by intent and device before touching templates.
+- [rustybrick-card-0173] When competitors gain visibility with uncertain methods and you are using signal from @rustybrick, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [rustybrick-card-0174] When competitors gain visibility with uncertain methods and you are using signal from @rustybrick, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [rustybrick-card-0175] When competitors gain visibility with uncertain methods and you are using signal from @rustybrick, set a rollback threshold before release and enforce it without exception.
+- [rustybrick-card-0176] When competitors gain visibility with uncertain methods and you are using signal from @rustybrick, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [rustybrick-card-0177] When competitors gain visibility with uncertain methods and you are using signal from @rustybrick, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [rustybrick-card-0178] When competitors gain visibility with uncertain methods and you are using signal from @rustybrick, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [rustybrick-card-0179] When competitors gain visibility with uncertain methods and you are using signal from @rustybrick, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [rustybrick-card-0180] When competitors gain visibility with uncertain methods and you are using signal from @rustybrick, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [rustybrick-card-0181] When search intent shifts after product-category changes and you are using signal from @rustybrick, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [rustybrick-card-0182] When search intent shifts after product-category changes and you are using signal from @rustybrick, instrument query clusters by intent and device before touching templates.
+- [rustybrick-card-0183] When search intent shifts after product-category changes and you are using signal from @rustybrick, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [rustybrick-card-0184] When search intent shifts after product-category changes and you are using signal from @rustybrick, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [rustybrick-card-0185] When search intent shifts after product-category changes and you are using signal from @rustybrick, set a rollback threshold before release and enforce it without exception.
+- [rustybrick-card-0186] When search intent shifts after product-category changes and you are using signal from @rustybrick, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [rustybrick-card-0187] When search intent shifts after product-category changes and you are using signal from @rustybrick, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [rustybrick-card-0188] When search intent shifts after product-category changes and you are using signal from @rustybrick, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [rustybrick-card-0189] When search intent shifts after product-category changes and you are using signal from @rustybrick, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [rustybrick-card-0190] When search intent shifts after product-category changes and you are using signal from @rustybrick, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [rustybrick-card-0191] When analytics attribution masks true SEO impact and you are using signal from @rustybrick, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [rustybrick-card-0192] When analytics attribution masks true SEO impact and you are using signal from @rustybrick, instrument query clusters by intent and device before touching templates.
+- [rustybrick-card-0193] When analytics attribution masks true SEO impact and you are using signal from @rustybrick, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [rustybrick-card-0194] When analytics attribution masks true SEO impact and you are using signal from @rustybrick, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [rustybrick-card-0195] When analytics attribution masks true SEO impact and you are using signal from @rustybrick, set a rollback threshold before release and enforce it without exception.
+- [rustybrick-card-0196] When analytics attribution masks true SEO impact and you are using signal from @rustybrick, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [rustybrick-card-0197] When analytics attribution masks true SEO impact and you are using signal from @rustybrick, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [rustybrick-card-0198] When analytics attribution masks true SEO impact and you are using signal from @rustybrick, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [rustybrick-card-0199] When analytics attribution masks true SEO impact and you are using signal from @rustybrick, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [rustybrick-card-0200] When analytics attribution masks true SEO impact and you are using signal from @rustybrick, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+
+### Fast Decision Rules
+- [rustybrick-rule-001] If evidence is anecdotal and upside is low, skip implementation.
+- [rustybrick-rule-002] If evidence is mixed and risk is high, run only in sandbox properties.
+- [rustybrick-rule-003] If business impact is unmeasurable, deprioritize until instrumentation is fixed.
+- [rustybrick-rule-004] If a tactic wins on traffic but loses on conversion quality, revert or redesign.
+- [rustybrick-rule-005] If guidance aligns with multiple trusted sources, increase confidence tier.
+
+## 14. AJ Ghergich (@SEO)
+
+Primary focus: enterprise SEO, technical SEO at scale, content-led growth systems.
+Signal rationale: Useful for enterprise implementation constraints and operationalizing SEO in larger organizations.
+Reference links:
+- https://x.com/seo
+- https://www.botify.com/authors/aj-ghergich
+- https://www.botify.com/blog
+Core themes:
+- Enterprise SEO governance
+- Technical SEO at scale
+- Programmatic/content system design
+- Cross-team execution
+Execution defaults:
+- Use this account as a hypothesis generator, not a final authority.
+- If a claim is novel, require one low-risk pilot and one replication before broad rollout.
+- If a claim conflicts with Search Central guidance, document the conflict explicitly and downgrade confidence.
+- Convert social claims into issue tickets with owner, metric target, and expiration date.
+
+### Measurement Priorities
+- [SEO-measure-001] Track impressions, clicks, CTR, qualified sessions, conversion rate, and revenue per landing page.
+- [SEO-measure-002] Track query-cluster volatility by intent class and by URL template.
+- [SEO-measure-003] Track indexation ratio: indexed URLs divided by submitted canonical URLs.
+- [SEO-measure-004] Track internal-link depth and click-distance for money pages.
+- [SEO-measure-005] Track AI-surface citation frequency where measurable.
+- [SEO-measure-006] Track content decay windows and refresh impact lag.
+- [SEO-measure-007] Track cannibalization risk with near-duplicate intent clusters.
+- [SEO-measure-008] Track share-of-voice for high-value non-brand queries.
+- [SEO-measure-009] Track anomaly lead time between ranking changes and business outcomes.
+- [SEO-measure-010] Track assisted-conversion contribution from organic entry pages.
+
+### Atomic Action Cards
+- [SEO-card-0001] When a broad core update rolls out and you are using signal from @SEO, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [SEO-card-0002] When a broad core update rolls out and you are using signal from @SEO, instrument query clusters by intent and device before touching templates.
+- [SEO-card-0003] When a broad core update rolls out and you are using signal from @SEO, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [SEO-card-0004] When a broad core update rolls out and you are using signal from @SEO, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [SEO-card-0005] When a broad core update rolls out and you are using signal from @SEO, set a rollback threshold before release and enforce it without exception.
+- [SEO-card-0006] When a broad core update rolls out and you are using signal from @SEO, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [SEO-card-0007] When a broad core update rolls out and you are using signal from @SEO, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [SEO-card-0008] When a broad core update rolls out and you are using signal from @SEO, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [SEO-card-0009] When a broad core update rolls out and you are using signal from @SEO, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [SEO-card-0010] When a broad core update rolls out and you are using signal from @SEO, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [SEO-card-0011] When a niche-specific ranking shock appears and you are using signal from @SEO, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [SEO-card-0012] When a niche-specific ranking shock appears and you are using signal from @SEO, instrument query clusters by intent and device before touching templates.
+- [SEO-card-0013] When a niche-specific ranking shock appears and you are using signal from @SEO, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [SEO-card-0014] When a niche-specific ranking shock appears and you are using signal from @SEO, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [SEO-card-0015] When a niche-specific ranking shock appears and you are using signal from @SEO, set a rollback threshold before release and enforce it without exception.
+- [SEO-card-0016] When a niche-specific ranking shock appears and you are using signal from @SEO, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [SEO-card-0017] When a niche-specific ranking shock appears and you are using signal from @SEO, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [SEO-card-0018] When a niche-specific ranking shock appears and you are using signal from @SEO, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [SEO-card-0019] When a niche-specific ranking shock appears and you are using signal from @SEO, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [SEO-card-0020] When a niche-specific ranking shock appears and you are using signal from @SEO, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [SEO-card-0021] When AI Overviews or answer engines reduce clicks and you are using signal from @SEO, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [SEO-card-0022] When AI Overviews or answer engines reduce clicks and you are using signal from @SEO, instrument query clusters by intent and device before touching templates.
+- [SEO-card-0023] When AI Overviews or answer engines reduce clicks and you are using signal from @SEO, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [SEO-card-0024] When AI Overviews or answer engines reduce clicks and you are using signal from @SEO, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [SEO-card-0025] When AI Overviews or answer engines reduce clicks and you are using signal from @SEO, set a rollback threshold before release and enforce it without exception.
+- [SEO-card-0026] When AI Overviews or answer engines reduce clicks and you are using signal from @SEO, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [SEO-card-0027] When AI Overviews or answer engines reduce clicks and you are using signal from @SEO, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [SEO-card-0028] When AI Overviews or answer engines reduce clicks and you are using signal from @SEO, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [SEO-card-0029] When AI Overviews or answer engines reduce clicks and you are using signal from @SEO, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [SEO-card-0030] When AI Overviews or answer engines reduce clicks and you are using signal from @SEO, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [SEO-card-0031] When crawl budget becomes constrained on large templates and you are using signal from @SEO, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [SEO-card-0032] When crawl budget becomes constrained on large templates and you are using signal from @SEO, instrument query clusters by intent and device before touching templates.
+- [SEO-card-0033] When crawl budget becomes constrained on large templates and you are using signal from @SEO, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [SEO-card-0034] When crawl budget becomes constrained on large templates and you are using signal from @SEO, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [SEO-card-0035] When crawl budget becomes constrained on large templates and you are using signal from @SEO, set a rollback threshold before release and enforce it without exception.
+- [SEO-card-0036] When crawl budget becomes constrained on large templates and you are using signal from @SEO, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [SEO-card-0037] When crawl budget becomes constrained on large templates and you are using signal from @SEO, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [SEO-card-0038] When crawl budget becomes constrained on large templates and you are using signal from @SEO, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [SEO-card-0039] When crawl budget becomes constrained on large templates and you are using signal from @SEO, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [SEO-card-0040] When crawl budget becomes constrained on large templates and you are using signal from @SEO, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [SEO-card-0041] When indexation mismatches appear between sitemap and search and you are using signal from @SEO, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [SEO-card-0042] When indexation mismatches appear between sitemap and search and you are using signal from @SEO, instrument query clusters by intent and device before touching templates.
+- [SEO-card-0043] When indexation mismatches appear between sitemap and search and you are using signal from @SEO, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [SEO-card-0044] When indexation mismatches appear between sitemap and search and you are using signal from @SEO, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [SEO-card-0045] When indexation mismatches appear between sitemap and search and you are using signal from @SEO, set a rollback threshold before release and enforce it without exception.
+- [SEO-card-0046] When indexation mismatches appear between sitemap and search and you are using signal from @SEO, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [SEO-card-0047] When indexation mismatches appear between sitemap and search and you are using signal from @SEO, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [SEO-card-0048] When indexation mismatches appear between sitemap and search and you are using signal from @SEO, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [SEO-card-0049] When indexation mismatches appear between sitemap and search and you are using signal from @SEO, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [SEO-card-0050] When indexation mismatches appear between sitemap and search and you are using signal from @SEO, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [SEO-card-0051] When internal-link architecture underperforms and you are using signal from @SEO, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [SEO-card-0052] When internal-link architecture underperforms and you are using signal from @SEO, instrument query clusters by intent and device before touching templates.
+- [SEO-card-0053] When internal-link architecture underperforms and you are using signal from @SEO, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [SEO-card-0054] When internal-link architecture underperforms and you are using signal from @SEO, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [SEO-card-0055] When internal-link architecture underperforms and you are using signal from @SEO, set a rollback threshold before release and enforce it without exception.
+- [SEO-card-0056] When internal-link architecture underperforms and you are using signal from @SEO, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [SEO-card-0057] When internal-link architecture underperforms and you are using signal from @SEO, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [SEO-card-0058] When internal-link architecture underperforms and you are using signal from @SEO, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [SEO-card-0059] When internal-link architecture underperforms and you are using signal from @SEO, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [SEO-card-0060] When internal-link architecture underperforms and you are using signal from @SEO, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [SEO-card-0061] When entity disambiguation issues dilute topical authority and you are using signal from @SEO, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [SEO-card-0062] When entity disambiguation issues dilute topical authority and you are using signal from @SEO, instrument query clusters by intent and device before touching templates.
+- [SEO-card-0063] When entity disambiguation issues dilute topical authority and you are using signal from @SEO, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [SEO-card-0064] When entity disambiguation issues dilute topical authority and you are using signal from @SEO, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [SEO-card-0065] When entity disambiguation issues dilute topical authority and you are using signal from @SEO, set a rollback threshold before release and enforce it without exception.
+- [SEO-card-0066] When entity disambiguation issues dilute topical authority and you are using signal from @SEO, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [SEO-card-0067] When entity disambiguation issues dilute topical authority and you are using signal from @SEO, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [SEO-card-0068] When entity disambiguation issues dilute topical authority and you are using signal from @SEO, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [SEO-card-0069] When entity disambiguation issues dilute topical authority and you are using signal from @SEO, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [SEO-card-0070] When entity disambiguation issues dilute topical authority and you are using signal from @SEO, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [SEO-card-0071] When large-scale content refresh decisions are needed and you are using signal from @SEO, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [SEO-card-0072] When large-scale content refresh decisions are needed and you are using signal from @SEO, instrument query clusters by intent and device before touching templates.
+- [SEO-card-0073] When large-scale content refresh decisions are needed and you are using signal from @SEO, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [SEO-card-0074] When large-scale content refresh decisions are needed and you are using signal from @SEO, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [SEO-card-0075] When large-scale content refresh decisions are needed and you are using signal from @SEO, set a rollback threshold before release and enforce it without exception.
+- [SEO-card-0076] When large-scale content refresh decisions are needed and you are using signal from @SEO, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [SEO-card-0077] When large-scale content refresh decisions are needed and you are using signal from @SEO, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [SEO-card-0078] When large-scale content refresh decisions are needed and you are using signal from @SEO, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [SEO-card-0079] When large-scale content refresh decisions are needed and you are using signal from @SEO, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [SEO-card-0080] When large-scale content refresh decisions are needed and you are using signal from @SEO, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [SEO-card-0081] When brand trust signals appear weak for YMYL queries and you are using signal from @SEO, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [SEO-card-0082] When brand trust signals appear weak for YMYL queries and you are using signal from @SEO, instrument query clusters by intent and device before touching templates.
+- [SEO-card-0083] When brand trust signals appear weak for YMYL queries and you are using signal from @SEO, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [SEO-card-0084] When brand trust signals appear weak for YMYL queries and you are using signal from @SEO, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [SEO-card-0085] When brand trust signals appear weak for YMYL queries and you are using signal from @SEO, set a rollback threshold before release and enforce it without exception.
+- [SEO-card-0086] When brand trust signals appear weak for YMYL queries and you are using signal from @SEO, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [SEO-card-0087] When brand trust signals appear weak for YMYL queries and you are using signal from @SEO, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [SEO-card-0088] When brand trust signals appear weak for YMYL queries and you are using signal from @SEO, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [SEO-card-0089] When brand trust signals appear weak for YMYL queries and you are using signal from @SEO, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [SEO-card-0090] When brand trust signals appear weak for YMYL queries and you are using signal from @SEO, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [SEO-card-0091] When affiliate pages rank but do not convert and you are using signal from @SEO, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [SEO-card-0092] When affiliate pages rank but do not convert and you are using signal from @SEO, instrument query clusters by intent and device before touching templates.
+- [SEO-card-0093] When affiliate pages rank but do not convert and you are using signal from @SEO, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [SEO-card-0094] When affiliate pages rank but do not convert and you are using signal from @SEO, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [SEO-card-0095] When affiliate pages rank but do not convert and you are using signal from @SEO, set a rollback threshold before release and enforce it without exception.
+- [SEO-card-0096] When affiliate pages rank but do not convert and you are using signal from @SEO, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [SEO-card-0097] When affiliate pages rank but do not convert and you are using signal from @SEO, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [SEO-card-0098] When affiliate pages rank but do not convert and you are using signal from @SEO, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [SEO-card-0099] When affiliate pages rank but do not convert and you are using signal from @SEO, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [SEO-card-0100] When affiliate pages rank but do not convert and you are using signal from @SEO, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [SEO-card-0101] When SERP features crowd out classic blue-link traffic and you are using signal from @SEO, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [SEO-card-0102] When SERP features crowd out classic blue-link traffic and you are using signal from @SEO, instrument query clusters by intent and device before touching templates.
+- [SEO-card-0103] When SERP features crowd out classic blue-link traffic and you are using signal from @SEO, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [SEO-card-0104] When SERP features crowd out classic blue-link traffic and you are using signal from @SEO, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [SEO-card-0105] When SERP features crowd out classic blue-link traffic and you are using signal from @SEO, set a rollback threshold before release and enforce it without exception.
+- [SEO-card-0106] When SERP features crowd out classic blue-link traffic and you are using signal from @SEO, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [SEO-card-0107] When SERP features crowd out classic blue-link traffic and you are using signal from @SEO, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [SEO-card-0108] When SERP features crowd out classic blue-link traffic and you are using signal from @SEO, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [SEO-card-0109] When SERP features crowd out classic blue-link traffic and you are using signal from @SEO, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [SEO-card-0110] When SERP features crowd out classic blue-link traffic and you are using signal from @SEO, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [SEO-card-0111] When new backlink opportunities spike but risk is unclear and you are using signal from @SEO, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [SEO-card-0112] When new backlink opportunities spike but risk is unclear and you are using signal from @SEO, instrument query clusters by intent and device before touching templates.
+- [SEO-card-0113] When new backlink opportunities spike but risk is unclear and you are using signal from @SEO, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [SEO-card-0114] When new backlink opportunities spike but risk is unclear and you are using signal from @SEO, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [SEO-card-0115] When new backlink opportunities spike but risk is unclear and you are using signal from @SEO, set a rollback threshold before release and enforce it without exception.
+- [SEO-card-0116] When new backlink opportunities spike but risk is unclear and you are using signal from @SEO, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [SEO-card-0117] When new backlink opportunities spike but risk is unclear and you are using signal from @SEO, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [SEO-card-0118] When new backlink opportunities spike but risk is unclear and you are using signal from @SEO, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [SEO-card-0119] When new backlink opportunities spike but risk is unclear and you are using signal from @SEO, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [SEO-card-0120] When new backlink opportunities spike but risk is unclear and you are using signal from @SEO, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [SEO-card-0121] When programmatic SEO expansions are proposed and you are using signal from @SEO, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [SEO-card-0122] When programmatic SEO expansions are proposed and you are using signal from @SEO, instrument query clusters by intent and device before touching templates.
+- [SEO-card-0123] When programmatic SEO expansions are proposed and you are using signal from @SEO, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [SEO-card-0124] When programmatic SEO expansions are proposed and you are using signal from @SEO, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [SEO-card-0125] When programmatic SEO expansions are proposed and you are using signal from @SEO, set a rollback threshold before release and enforce it without exception.
+- [SEO-card-0126] When programmatic SEO expansions are proposed and you are using signal from @SEO, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [SEO-card-0127] When programmatic SEO expansions are proposed and you are using signal from @SEO, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [SEO-card-0128] When programmatic SEO expansions are proposed and you are using signal from @SEO, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [SEO-card-0129] When programmatic SEO expansions are proposed and you are using signal from @SEO, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [SEO-card-0130] When programmatic SEO expansions are proposed and you are using signal from @SEO, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [SEO-card-0131] When international rollout introduces hreflang complexity and you are using signal from @SEO, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [SEO-card-0132] When international rollout introduces hreflang complexity and you are using signal from @SEO, instrument query clusters by intent and device before touching templates.
+- [SEO-card-0133] When international rollout introduces hreflang complexity and you are using signal from @SEO, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [SEO-card-0134] When international rollout introduces hreflang complexity and you are using signal from @SEO, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [SEO-card-0135] When international rollout introduces hreflang complexity and you are using signal from @SEO, set a rollback threshold before release and enforce it without exception.
+- [SEO-card-0136] When international rollout introduces hreflang complexity and you are using signal from @SEO, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [SEO-card-0137] When international rollout introduces hreflang complexity and you are using signal from @SEO, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [SEO-card-0138] When international rollout introduces hreflang complexity and you are using signal from @SEO, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [SEO-card-0139] When international rollout introduces hreflang complexity and you are using signal from @SEO, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [SEO-card-0140] When international rollout introduces hreflang complexity and you are using signal from @SEO, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [SEO-card-0141] When new AI-search referral channels appear and you are using signal from @SEO, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [SEO-card-0142] When new AI-search referral channels appear and you are using signal from @SEO, instrument query clusters by intent and device before touching templates.
+- [SEO-card-0143] When new AI-search referral channels appear and you are using signal from @SEO, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [SEO-card-0144] When new AI-search referral channels appear and you are using signal from @SEO, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [SEO-card-0145] When new AI-search referral channels appear and you are using signal from @SEO, set a rollback threshold before release and enforce it without exception.
+- [SEO-card-0146] When new AI-search referral channels appear and you are using signal from @SEO, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [SEO-card-0147] When new AI-search referral channels appear and you are using signal from @SEO, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [SEO-card-0148] When new AI-search referral channels appear and you are using signal from @SEO, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [SEO-card-0149] When new AI-search referral channels appear and you are using signal from @SEO, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [SEO-card-0150] When new AI-search referral channels appear and you are using signal from @SEO, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [SEO-card-0151] When stakeholders demand instant recovery plans and you are using signal from @SEO, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [SEO-card-0152] When stakeholders demand instant recovery plans and you are using signal from @SEO, instrument query clusters by intent and device before touching templates.
+- [SEO-card-0153] When stakeholders demand instant recovery plans and you are using signal from @SEO, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [SEO-card-0154] When stakeholders demand instant recovery plans and you are using signal from @SEO, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [SEO-card-0155] When stakeholders demand instant recovery plans and you are using signal from @SEO, set a rollback threshold before release and enforce it without exception.
+- [SEO-card-0156] When stakeholders demand instant recovery plans and you are using signal from @SEO, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [SEO-card-0157] When stakeholders demand instant recovery plans and you are using signal from @SEO, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [SEO-card-0158] When stakeholders demand instant recovery plans and you are using signal from @SEO, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [SEO-card-0159] When stakeholders demand instant recovery plans and you are using signal from @SEO, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [SEO-card-0160] When stakeholders demand instant recovery plans and you are using signal from @SEO, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [SEO-card-0161] When technical debt blocks roadmap velocity and you are using signal from @SEO, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [SEO-card-0162] When technical debt blocks roadmap velocity and you are using signal from @SEO, instrument query clusters by intent and device before touching templates.
+- [SEO-card-0163] When technical debt blocks roadmap velocity and you are using signal from @SEO, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [SEO-card-0164] When technical debt blocks roadmap velocity and you are using signal from @SEO, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [SEO-card-0165] When technical debt blocks roadmap velocity and you are using signal from @SEO, set a rollback threshold before release and enforce it without exception.
+- [SEO-card-0166] When technical debt blocks roadmap velocity and you are using signal from @SEO, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [SEO-card-0167] When technical debt blocks roadmap velocity and you are using signal from @SEO, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [SEO-card-0168] When technical debt blocks roadmap velocity and you are using signal from @SEO, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [SEO-card-0169] When technical debt blocks roadmap velocity and you are using signal from @SEO, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [SEO-card-0170] When technical debt blocks roadmap velocity and you are using signal from @SEO, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [SEO-card-0171] When competitors gain visibility with uncertain methods and you are using signal from @SEO, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [SEO-card-0172] When competitors gain visibility with uncertain methods and you are using signal from @SEO, instrument query clusters by intent and device before touching templates.
+- [SEO-card-0173] When competitors gain visibility with uncertain methods and you are using signal from @SEO, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [SEO-card-0174] When competitors gain visibility with uncertain methods and you are using signal from @SEO, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [SEO-card-0175] When competitors gain visibility with uncertain methods and you are using signal from @SEO, set a rollback threshold before release and enforce it without exception.
+- [SEO-card-0176] When competitors gain visibility with uncertain methods and you are using signal from @SEO, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [SEO-card-0177] When competitors gain visibility with uncertain methods and you are using signal from @SEO, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [SEO-card-0178] When competitors gain visibility with uncertain methods and you are using signal from @SEO, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [SEO-card-0179] When competitors gain visibility with uncertain methods and you are using signal from @SEO, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [SEO-card-0180] When competitors gain visibility with uncertain methods and you are using signal from @SEO, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [SEO-card-0181] When search intent shifts after product-category changes and you are using signal from @SEO, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [SEO-card-0182] When search intent shifts after product-category changes and you are using signal from @SEO, instrument query clusters by intent and device before touching templates.
+- [SEO-card-0183] When search intent shifts after product-category changes and you are using signal from @SEO, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [SEO-card-0184] When search intent shifts after product-category changes and you are using signal from @SEO, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [SEO-card-0185] When search intent shifts after product-category changes and you are using signal from @SEO, set a rollback threshold before release and enforce it without exception.
+- [SEO-card-0186] When search intent shifts after product-category changes and you are using signal from @SEO, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [SEO-card-0187] When search intent shifts after product-category changes and you are using signal from @SEO, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [SEO-card-0188] When search intent shifts after product-category changes and you are using signal from @SEO, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [SEO-card-0189] When search intent shifts after product-category changes and you are using signal from @SEO, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [SEO-card-0190] When search intent shifts after product-category changes and you are using signal from @SEO, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+- [SEO-card-0191] When analytics attribution masks true SEO impact and you are using signal from @SEO, run a 14-day controlled test with a holdout cohort and report median movement, not best-case snapshots.
+- [SEO-card-0192] When analytics attribution masks true SEO impact and you are using signal from @SEO, instrument query clusters by intent and device before touching templates.
+- [SEO-card-0193] When analytics attribution masks true SEO impact and you are using signal from @SEO, prioritize fixes by expected business lift multiplied by implementation confidence.
+- [SEO-card-0194] When analytics attribution masks true SEO impact and you are using signal from @SEO, separate policy-safe tactics from policy-sensitive tactics in the implementation brief.
+- [SEO-card-0195] When analytics attribution masks true SEO impact and you are using signal from @SEO, set a rollback threshold before release and enforce it without exception.
+- [SEO-card-0196] When analytics attribution masks true SEO impact and you are using signal from @SEO, compare impacted URLs against unaffected sibling templates to isolate likely causes.
+- [SEO-card-0197] When analytics attribution masks true SEO impact and you are using signal from @SEO, log each assumption in a test ledger with evidence status: observed, inferred, or unverified.
+- [SEO-card-0198] When analytics attribution masks true SEO impact and you are using signal from @SEO, triage changes into immediate containment, medium-term remediation, and structural prevention.
+- [SEO-card-0199] When analytics attribution masks true SEO impact and you are using signal from @SEO, force a stakeholder readout that includes risk, uncertainty, and next test cadence.
+- [SEO-card-0200] When analytics attribution masks true SEO impact and you are using signal from @SEO, promote the tactic to production only when conversion-quality metrics improve alongside visibility.
+
+### Fast Decision Rules
+- [SEO-rule-001] If evidence is anecdotal and upside is low, skip implementation.
+- [SEO-rule-002] If evidence is mixed and risk is high, run only in sandbox properties.
+- [SEO-rule-003] If business impact is unmeasurable, deprioritize until instrumentation is fixed.
+- [SEO-rule-004] If a tactic wins on traffic but loses on conversion quality, revert or redesign.
+- [SEO-rule-005] If guidance aligns with multiple trusted sources, increase confidence tier.
+
+## Cross-Account Fusion Model
+- Use @rustybrick for detection speed.
+- Use @JohnMu for policy interpretation boundaries.
+- Use @glenngabe and @Marie_Haynes for incident diagnostics.
+- Use @lilyraynyc for quality/trust durability.
+- Use @aleyda, @CyrusShepard, @Dixon_Jones, and @SEO for architecture and technical implementation.
+- Use @mattdiggityseo, @Kasra_Dash, and @harpreetchatha_ for growth-experiment pressure testing.
+- Use @randfish for channel diversification and zero-click economics.
+- Use @Charles_SEO only with explicit risk controls and legal/policy review.
+
+## Weekly Operating Cadence
+1. Ingest: collect top claims from all 14 accounts.
+2. Triage: classify claims by type, reliability, and risk.
+3. Design: draft 3-5 experiments with stop conditions.
+4. Execute: ship only instrumented tests.
+5. Review: update a living claim-to-outcome ledger.
+
