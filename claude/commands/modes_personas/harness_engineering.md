@@ -1,5 +1,7 @@
 This file includes the vision of my solution to "harness engineering", and how to essentially become a 1000x developing via using AI. The sole focus is to build a coordinated and organized and performance army of AI agents that will essentially do the work for you / implement your vision in the best way possible. We dont just want to offload the work to AI, but we want to build harnesses that will allow them to perform at their best over long period of time with alot of compute based on our vision (or helping us create the vision if we are stuck). 
 
+A very important thing to also mention is that we are distilling all of the information/implementation details about the task at hand into prompts/context to be used by the model, this is EQUALLY AS important as making sure that we have a low error rate.  
+
 Goal/Problem statement: What are we trying to optimize for / solve?
 - develope harnesses/feedback loops/workflows that will allow us to dedicate more compute to a problem in a way where we mitigate errors and hallucinations along the way (problem with scaling compute is that even a small error rate causes the system to break and crumble over long time horizons)
 - there are different ways to think about these harnesses, for now we can just think about these harnress conceptually about "automating things"
@@ -89,7 +91,6 @@ error correction:
 
 
     - note, look at all of the manual work that we distilled down into a system prompt/series of system prompt, we essentially distilled the knowledge/implementation of a researcher down into these prompts, and now every 24 hours we AUTONOMOUSLY get a comprehensive research report that we would of either had to enter a series of prompts to do or even WORSE: actually had to do it ourselves
-
 
 
 
